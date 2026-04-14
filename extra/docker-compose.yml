@@ -1,0 +1,118 @@
+name: agentbench-fc
+
+services:
+
+  controller:
+    image: jingbh/agentrl-controller:latest
+    container_name: agentrl-controller
+    ports:
+      - "5038:5020"
+    command:
+      - controller
+
+  alfworld-std:
+    build:
+      context: ..
+      dockerfile: src/server/tasks/alfworld/Dockerfile
+    command: --controller http://172.17.0.1:5038/api alfworld-std
+    deploy:
+      mode: replicated
+      replicas: 1
+    depends_on:
+      - controller
+
+  dbbench-std:
+    build:
+      context: ..
+      dockerfile: src/server/tasks/dbbench/Dockerfile
+    command: --controller http://172.17.0.1:5038/api dbbench-std
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - DBBENCH_STD_PARAMETERS_ENV_OPTIONS_NETWORK_NAME=agentbench-fc_default
+    deploy:
+      mode: replicated
+      replicas: 1
+    depends_on:
+      - controller
+
+  knowledgegraph-std:
+    build:
+      context: ..
+      dockerfile: src/server/tasks/knowledgegraph/Dockerfile
+    command: --controller http://172.17.0.1:5038/api kg-std
+    environment:
+      - KG_STD_PARAMETERS_ENV_OPTIONS_URLS_KG=http://freebase:3001/sparql
+    deploy:
+      mode: replicated
+      replicas: 1
+    depends_on:
+      - controller
+      - freebase
+
+  os_interaction-std:
+    build:
+      context: ..
+      dockerfile: src/server/tasks/os_interaction/Dockerfile
+    command: --controller http://172.17.0.1:5038/api os-std
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - OS_STD_PARAMETERS_ENV_OPTIONS_NETWORK_NAME=agentbench-fc_default
+    deploy:
+      mode: replicated
+      replicas: 1
+    depends_on:
+      - controller
+
+  local-os-default:
+    build:
+      context: ../data/os_interaction/res/dockerfiles
+      dockerfile: default
+    image: local-os/default:latest
+    command: /bin/true
+    profiles:
+      - build-only
+
+  local-os-packages:
+    build:
+      context: ../data/os_interaction/res/dockerfiles
+      dockerfile: packages
+    image: local-os/packages:latest
+    command: /bin/true
+    profiles:
+      - build-only
+
+  local-os-ubuntu:
+    build:
+      context: ../data/os_interaction/res/dockerfiles
+      dockerfile: ubuntu
+    image: local-os/ubuntu:latest
+    command: /bin/true
+    profiles:
+      - build-only
+
+  # webshop-std:
+  #   build:
+  #     context: ..
+  #     dockerfile: src/server/tasks/webshop/Dockerfile
+  #   command: --controller http://172.17.0.1:5038/api webshop-std
+  #   deploy:
+  #     mode: replicated
+  #     replicas: 1
+  #   depends_on:
+  #     - controller
+
+  freebase:
+    build:
+      context: ..
+      dockerfile: extra/freebase.Dockerfile
+    volumes:
+      - "C:/Users/123/Desktop/code/agent-memory/virtuoso_db:/database"
+    init: true
+
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "7000:6379"

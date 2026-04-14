@@ -1,0 +1,36 @@
+mem0:
+  api_key: "m0-xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+  # ===== user_id configuration =====
+  # User-defined user_id for grouping memories in Mem0 Platform
+  # e.g.: "experiment_001", "dbbench_cross_task", "alfworld_online"
+  user_id: "exp_067"
+
+  # ===== Memory operation configuration =====
+  infer: true  # true: automatically extract structured memories, false: store raw messages
+
+  # Retrieval configuration
+  top_k: 50  # retrieve top_k most relevant memories  # best practice: 50
+  threshold: 0  # similarity threshold (optional, 0.0-1.0; memories below this are filtered out)
+  rerank: true  # whether to enable reranking
+
+  # ===== Filter configuration =====
+  success_only: true  # only store successful samples (finish==True)
+  reward_bigger_than_zero: true  # true: only store samples with reward > 0, false: store all
+
+  # ===== Prompt template =====
+  # Memory content is injected into the user question at the position specified by `where`
+  prompt_template: |
+    Based on your previous interactions, here are relevant memories:
+    {memories}
+  where: front  # tail: memory appended after user question | front: memory prepended before user question
+
+  # ===== Retry configuration =====
+  # max_retries: -1 = unlimited retries (keep retrying until success), 0 = no retry, >0 = max retry count
+  # For rigorous experiments, -1 (unlimited) is recommended
+  max_retries: -1
+  retry_delay: 5.0  # retry delay (seconds), initial value for exponential backoff
+  retry_backoff: 2.0  # exponential backoff multiplier (each retry delay = previous delay * retry_backoff)
+
+  # ===== Wait configuration =====
+  wait_time: 60.0  # time to wait after each successful memory add (seconds)

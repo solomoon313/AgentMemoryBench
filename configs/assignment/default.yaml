@@ -1,0 +1,114 @@
+# Lifelong Learning Benchmark Configuration
+# Configure tasks, memory mechanisms, execution methods, and experiment parameters
+
+# ===== Task Configuration =====
+# List of tasks to evaluate (5 system memory tasks + 2 user memory tasks, 7 total)
+tasks:
+  # system memory tasks
+  # - name: dbbench-std
+  #   config_path: configs/tasks/dbbench.yaml
+  # - name: os-std
+  #   config_path: configs/tasks/os.yaml
+  # - name: kg-std
+  #   config_path: configs/tasks/kg.yaml
+  # - name: alfworld-std
+  #   config_path: configs/tasks/alfworld.yaml
+  # - name: webshop-std
+  #   config_path: configs/tasks/webshop.yaml
+
+  # user memory tasks
+  # - name: locomo-0
+  #   config_path: configs/tasks/locomo.yaml
+  # - name: locomo-1
+  #   config_path: configs/tasks/locomo.yaml
+  # - name: locomo-2
+  #   config_path: configs/tasks/locomo.yaml
+  # - name: locomo-3
+  #   config_path: configs/tasks/locomo.yaml
+  # - name: locomo-4
+  #   config_path: configs/tasks/locomo.yaml
+  - name: locomo-5
+    config_path: configs/tasks/locomo.yaml
+  # - name: locomo-6
+  #   config_path: configs/tasks/locomo.yaml
+  # - name: locomo-7
+  #   config_path: configs/tasks/locomo.yaml
+  # - name: locomo-8
+  #   config_path: configs/tasks/locomo.yaml
+  # - name: locomo-9
+  #   config_path: configs/tasks/locomo.yaml
+
+# ===== Memory Mechanism Configuration =====
+# Select a memory mechanism from the memory folder (all use snake_case naming)
+memory_mechanism:
+  name: zero_shot  # options: zero_shot, stream_icl, mem0, awm_pro, mems
+
+# ===== Execution Method Configuration =====
+# Select an execution method from the execution folder
+execution_method:
+  name: single_agent  # only single_agent is supported in the current version
+  config_path: execution/single_agent/single_agent.yaml
+
+# ===== Experiment Parameters =====
+experiment:
+  # Training mode: online (online learning), offline (offline learning), replay (replay learning),
+  # transfer (transfer learning), or repair (repair learning)
+  training_mode: online  # online | offline | replay | transfer | repair
+
+  train_size: 0.6  # only effective when training_mode is offline
+
+  # Learn on transfer_task (update + enhance, equivalent to online) and test on transfer_after_task (enhance only)
+  transfer_task: dbbench-std  # only effective when training_mode is transfer
+  transfer_after_task: os-std  # only effective when training_mode is transfer
+  forward_transfer_num: 3  # only effective when training_mode is transfer and transfer_task == transfer_after_task; number of forward-transfer steps
+
+  # After learning m samples (update + enhance, equivalent to online), randomly sample n learned samples for testing (enhance only)
+  replay_m: 20  # only effective when training_mode is replay
+  replay_n: 20  # only effective when training_mode is replay
+  replay_seed: 66  # only effective when training_mode is replay
+
+  # Divide all cases into groups of m; groups are learned sequentially,
+  # but within each group n cases have their reward judgments reversed
+  repair_m: 20  # only effective when training_mode is repair (for non-locomo tasks); samples per group
+  repair_n: 20  # only effective when training_mode is repair; number of samples per group with reversed rewards
+  repair_seed: 66  # only effective when training_mode is repair; random seed for selecting samples to reverse
+  repair_size_locomo: 0.5  # only effective when training_mode is repair and task is locomo; fraction of QAs per session to reverse (0-1)
+
+  # Cross-task learning: whether to allow knowledge transfer and learning across tasks
+  # - online mode:
+  #   * cross_task=True or cross_task=False both ok
+  #   * e.g. dbbench+locomo-0: simulates real-world agents where task boundaries are blurred
+  # - offline mode:
+  #   * cross_task=True is not supported (will raise an error)
+  #   * must use cross_task=False and select exactly one dataset
+  # - online mode:
+  #   * cross_task=True, shuffle=True: shuffle all tasks globally, share knowledge across tasks
+  #   * cross_task=False, shuffle=True: shuffle within the current task only, reset memory on task switch
+  #   * cross_task=True, shuffle=False: error (shuffle is required for cross-task)
+  #   * cross_task=False: must select exactly one dataset (otherwise raises an error)
+  #   * cross_task=True: must select more than one dataset (otherwise raises an error)
+  # - transfer mode (transfer learning):
+  #   * when transfer_task != transfer_after_task (cross-task transfer):
+  #     - must use cross_task=True (cross_task=False and locomo tasks are not supported)
+  #     - must select exactly two tasks: transfer_task and transfer_after_task
+  #     - the selected tasks must include both transfer_task and transfer_after_task
+  #     - if shuffle.enabled=True, each task is shuffled independently using shuffle.seed
+  #   * when transfer_task == transfer_after_task (forward transfer):
+  #     - any task is allowed (including locomo)
+  #     - forward_transfer_num must be set
+  #     - the main loop is equivalent to online mode; after each case, test the N-th future case with the current memory
+  #     - for locomo tasks, session injection markers are skipped when counting
+  # - replay mode (replay learning):
+  #   * must use cross_task=False (cross_task=True is not supported)
+  #   * must select exactly one task
+  #   * if shuffle.enabled=True, training samples are shuffled using shuffle.seed
+  #   * test sample random sampling uses replay_seed (independent of shuffle)
+  # - repair mode (repair learning):
+  #   * must use cross_task=False (cross_task=True is not supported)
+  #   * must select exactly one task
+  cross_task: False  # True | False
+
+  # Data shuffling: whether to shuffle the task order; an optional random seed can be set
+  shuffle:
+    enabled: True  # True | False
+    seed: 66  # integer seed used when enabled is true

@@ -1,0 +1,12 @@
+ # Single-agent execution configuration
+ # 仅使用一个 agent 逐一完成所有任务，可在此处切换/覆写 agent
+
+single_agent:
+  description: >
+    Run every task with the same agent instance. Useful for establishing a
+    baseline or when we want to study the impact of memory/execution settings
+    without introducing multi-agent effects.
+
+  # ===== Agent selection =====
+  agent:
+    name: Qwen/Qwen3.5-27B

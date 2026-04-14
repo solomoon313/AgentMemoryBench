@@ -1,0 +1,21 @@
+# Each top-level key is an agent name used by scripts/frontends to select the model
+
+# zgc
+gpt-5.4-mini:
+  import: "./api.yaml"
+  parameters:
+    name: "gpt-5.4-mini"
+    body:
+      model: "gpt-5.4-mini"
+      max_tokens: 4096
+      temperature: 0
+
+# siliconCloud
+Qwen/Qwen3.5-27B:
+  import: "./api.yaml"
+  parameters:
+    name: "Qwen/Qwen3.5-27B"
+    body:
+      model: "Qwen/Qwen3.5-27B"
+      max_tokens: 4096
+      temperature: 0

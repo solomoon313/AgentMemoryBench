@@ -1,0 +1,20 @@
+stream_icl:
+
+  # ===== Filter configuration =====
+  success_only: true  # true: only store samples with status=="completed", false: store all
+  reward_bigger_than_zero: true  # true: only store samples with reward>0, false: store all
+
+  # ===== Prompt template =====
+  # The memory block is injected into the user message at the position specified by `where`
+  prompt_template: "Here are some examples of the task you have completed:\n\n{examples}"
+  where: front  # tail: inject after the user question | front: inject before the user question
+
+  # RAG configuration
+  rag:
+
+    # For offline/local loading, provide the absolute path to the local model directory, e.g.:
+    embedding_model: "C:/Users/123/Desktop/code/agent-memory/bge-base-en-v1.5"  # embedding model used to encode questions
+
+    top_k: 4  # number of most similar experiences to retrieve
+    order: "similar_at_top"  # "similar_at_top" | "similar_at_bottom" | "random"
+    seed: 42  # random seed; only used when order="random" to control shuffle reproducibility

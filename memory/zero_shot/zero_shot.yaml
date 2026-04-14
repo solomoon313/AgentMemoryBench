@@ -1,0 +1,15 @@
+# zero_shot memory mechanism configuration
+# Currently serves as a placeholder config, referenced by configs/assignment/default.yaml.
+#
+# Since zero_shot does not persist any experience, no additional parameters are needed.
+#
+# For future extensions (e.g., injecting fixed system few-shots per task), add
+# per-task description text here and read it inside ZeroShotMemory.
+
+zero_shot:
+  description: >
+    Baseline memory mechanism that does not use or persist any experience.
+    The frontend will directly use the system/user messages returned by
+    backend /start_sample without modification.
+
+

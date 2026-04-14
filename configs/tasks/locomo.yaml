@@ -1,0 +1,54 @@
+default:
+  module: "src.server.tasks.locomo.LocomoBaseTask"
+  parameters:
+    llm_judge_agent: "gpt-4o-mini"  # select agent from configs/llmapi/evaluate_agent.yaml
+
+locomo-0:
+  parameters:
+    name: "locomo-0"
+    data_file: "data/locomo/locomo0.json"
+
+locomo-1:
+  parameters:
+    name: "locomo-1"
+    data_file: "data/locomo/locomo1.json"
+
+locomo-2:
+  parameters:
+    name: "locomo-2"
+    data_file: "data/locomo/locomo2.json"
+
+locomo-3:
+  parameters:
+    name: "locomo-3"
+    data_file: "data/locomo/locomo3.json"
+
+locomo-4:
+  parameters:
+    name: "locomo-4"
+    data_file: "data/locomo/locomo4.json"
+
+locomo-5:
+  parameters:
+    name: "locomo-5"
+    data_file: "data/locomo/locomo5.json"
+
+locomo-6:
+  parameters:
+    name: "locomo-6"
+    data_file: "data/locomo/locomo6.json"
+
+locomo-7:
+  parameters:
+    name: "locomo-7"
+    data_file: "data/locomo/locomo7.json"
+
+locomo-8:
+  parameters:
+    name: "locomo-8"
+    data_file: "data/locomo/locomo8.json"
+
+locomo-9:
+  parameters:
+    name: "locomo-9"
+    data_file: "data/locomo/locomo9.json"

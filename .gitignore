@@ -1,0 +1,47 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
+
+# Test / type / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Notebook / local tooling
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Project-local generated data
+outputs/
+
+# Local agent metadata
+.claude/
+AGENTS.md
+TASK_FAILURE_TYPES.md
+
+# other projects as references
+ref-project/

@@ -1,0 +1,638 @@
+[
+  {
+    "id": "0",
+    "text": "Given that a user wants to find out what content is produced by a specific producer, this workflow extracts the relevant content.\\n[Step 1: Identify the producer using {producer_name} and retrieve the content they produce.]\\n[Step 2: Return the list of content associated with {producer_name}.]"
+  },
+  {
+    "id": "1",
+    "text": "Given that there are two sets of content produced by different producers, this workflow finds the common content produced by both.\\n[Step 1: Retrieve the content produced by {producer_1} and {producer_2}.]\\n[Step 2: Identify and return the intersection of the two content sets.]"
+  },
+  {
+    "id": "2",
+    "text": "Given that a user needs to understand the details of specific content, this workflow verifies the attributes of the content.\\n[Step 1: Check the attributes of the content identified by {content_variable} to gather details.]\\n[Step 2: Return the attributes such as {attribute_1}, {attribute_2}, and {attribute_3} for further analysis.]"
+  },
+  {
+    "id": "3",
+    "text": "Given that the user is seeking to identify the common parent industry between two entities, this workflow extracts the shared parent industry.\\n[Step 1: Identify the parent industry of {entity_1} using relevant observations]\\n[Step 2: Identify the parent industry of {entity_2} using relevant observations]\\n[Step 3: Compare the two parent industries to find the common parent industry]"
+  },
+  {
+    "id": "4",
+    "text": "Given that a user wants to find the last World Series won by a specific team mascot, this workflow retrieves the relevant championship event.\\n[Step 1: Identify the mascot {mascot_name} and find the associated sports team.]\\n[Step 2: Query the sports championship events to find the latest event {championship_event} won by the identified team.]"
+  },
+  {
+    "id": "5",
+    "text": "Given that a user encounters issues with function calls during a query, this workflow checks for valid function calls and revalidates them.\\n[Step 1: Review the previous function calls to identify any invalid calls {previous_function_calls}.]\\n[Step 2: Suggest rechecking the function calls based on the identified issues {identified_issues}.]"
+  },
+  {
+    "id": "6",
+    "text": "Given that the user wants to find content produced by a specific producer, this workflow retrieves content associated with a given producer.\\n[Step 1: Retrieve the producer of the content using {entity_id} as the identifier for the content.]\\n[Step 2: Get the content produced by the retrieved producer using {producer_variable}.]"
+  },
+  {
+    "id": "7",
+    "text": "Given that the user is interested in content of a specific genre, this workflow identifies content associated with a specified genre.\\n[Step 1: Retrieve content associated with the genre using {genre_id} as the identifier for the genre.]\\n[Step 2: Store the retrieved content in {genre_content_variable}.]"
+  },
+  {
+    "id": "8",
+    "text": "Given that the user needs to find common content between two sets, this workflow identifies content that is present in both sets.\\n[Step 1: Find the intersection of two content sets using {content_set_1} and {content_set_2} as the identifiers for the sets.]\\n[Step 2: Store the intersected content in {intersected_content_variable}.]"
+  },
+  {
+    "id": "9",
+    "text": "Given that the user wants to know the number of elements in a set, this workflow counts the number of items in a specified content set.\\n[Step 1: Count the number of elements in {content_variable} to determine the total count.]\\n[Step 2: Store the count result in {count_variable}.]"
+  },
+  {
+    "id": "10",
+    "text": "Given that the user is inquiring about variable stars, this workflow retrieves individual variable star entities from their subcategories.\\n[Step 1: Identify the subcategories of variable stars using the relation {relation_name}]\\n[Step 2: Retrieve instances of variable stars from the identified subcategories using {subcategory_variable}]"
+  },
+  {
+    "id": "11",
+    "text": "Given that the user wants to know the farthest variable star, this workflow finds the variable star with the maximum cosmological distance.\\n[Step 1: Gather attributes of variable stars including {distance_attribute} to identify distance-related information]\\n[Step 2: Use argmax to determine the variable star with the maximum {cosmological_distance}]"
+  },
+  {
+    "id": "12",
+    "text": "Given that the user wants to find cyclones in the same category as a specific tropical storm, this workflow retrieves the category of the specified tropical storm.\\n[Step 1: Retrieve the category of the tropical storm using {tropical_storm_name}]\\n[Step 2: Store the category in {category_variable}]"
+  },
+  {
+    "id": "13",
+    "text": "Given that the category of a tropical storm has been identified, this workflow finds all cyclones that belong to that category.\\n[Step 1: Query all cyclones in the category using {category_variable}]\\n[Step 2: Store the list of cyclones in {cyclone_list_variable}]"
+  },
+  {
+    "id": "14",
+    "text": "Given that a list of cyclones in a specific category has been obtained, this workflow identifies the most recently formed cyclone from that list.\\n[Step 1: Check the formation dates of cyclones in {cyclone_list_variable}]\\n[Step 2: Identify the cyclone with the maximum formation date and store it in {most_recent_cyclone_variable}]"
+  },
+  {
+    "id": "15",
+    "text": "Given that the user is inquiring about the basketball position played by specific athletes, this workflow extracts the common basketball position from a set of players.\\n[Step 1: Identify the basketball positions played by {athlete_1} and {athlete_2} from the dataset.]\\n[Step 2: Determine the intersection of positions and return the common position(s) as the answer.]"
+  },
+  {
+    "id": "16",
+    "text": "Given that the intersection of basketball positions needs validation, this workflow checks the count of common positions to ensure accuracy.\\n[Step 1: Check the count of positions in the intersection set {position_set} to confirm if it contains a single position.]\\n[Step 2: If the count is 1, return the position name; otherwise, indicate that there are multiple or no common positions.]"
+  },
+  {
+    "id": "17",
+    "text": "Given that the user wants to know which Super Bowls were won by NFL teams from a specific location, this workflow extracts the relevant championship events.\\n[Step 1: Identify the {location} of interest and gather associated {sports_teams} that have won championships.]\\n[Step 2: Retrieve the {superbowl_events} won by the identified {sports_teams} from the {location}.]"
+  },
+  {
+    "id": "18",
+    "text": "Given that the user needs to know the number of Super Bowls won by teams from a specific location, this workflow counts the relevant championship events.\\n[Step 1: Collect the {superbowl_events} associated with the {sports_teams} from the {location}.]\\n[Step 2: Count the total number of {superbowl_events} to provide the {count}.]"
+  },
+  {
+    "id": "19",
+    "text": "Given that a user wants to know the beer styles associated with specific hops, this workflow retrieves the beer styles for each hop.\\n[Step 1: Retrieve the beer styles used by {hop_name_1} from the database]\\n[Step 2: Retrieve the beer styles used by {hop_name_2} from the database]"
+  },
+  {
+    "id": "20",
+    "text": "Given that a user needs to find the number of common beer styles between two hops, this workflow counts the intersection of beer styles.\\n[Step 1: Find the intersection of beer styles from {beer_styles_set_1} and {beer_styles_set_2}]\\n[Step 2: Count the number of elements in the intersection and store it in {count_variable}]"
+  },
+  {
+    "id": "21",
+    "text": "Given that the user wants to identify the producers associated with specific music releases, this workflow retrieves the producers for a given release and its associated record label.\\n[Step 1: Retrieve the producers of the music release using {release_id} and store in {producers_of_release}]\\n[Step 2: Retrieve the releases of the record label using {record_label_id} and store in {releases_of_label}]"
+  },
+  {
+    "id": "22",
+    "text": "Given that the user is interested in finding common producers between two sets of music releases, this workflow identifies the intersection of producers from two different sources.\\n[Step 1: Find the producers of the first music release using {first_release_producers} and store in {producers_set_1}]\\n[Step 2: Find the producers of the second music release using {second_release_producers} and store in {producers_set_2}]\\n[Step 3: Calculate the intersection of {producers_set_1} and {producers_set_2} to find common producers and store in {common_producers}]"
+  },
+  {
+    "id": "23",
+    "text": "Given that the user wants to determine the category of schools for specific educational institutions, this workflow extracts the common school category for the provided entities.\\n[Step 1: Identify the school types for the entities {entity_1} and {entity_2}]\\n[Step 2: Find the intersection of the school types to determine the common category {school_type_1} and {school_type_2}]"
+  },
+  {
+    "id": "24",
+    "text": "Given that the user needs detailed information about educational institutions, this workflow analyzes various attributes of the specified institutions.\\n[Step 1: Gather attributes of the educational institution {institution_id} such as total enrollment, number of staff, and school type]\\n[Step 2: Compile the relevant observations into a structured format for {institution_id}]"
+  },
+  {
+    "id": "25",
+    "text": "Given that a user is inquiring about the category of schools for specific educational institutions, this workflow identifies the common school category for the provided institutions.\\n[Step 1: Identify the school types for {institution_1} and {institution_2} using relevant observations.]\\n[Step 2: Determine the intersection of school types to find the common category represented by {common_category}.]"
+  },
+  {
+    "id": "26",
+    "text": "Given that a user needs to gather specific observations related to educational institutions, this workflow retrieves relevant data points for analysis.\\n[Step 1: Collect observations related to {institution} such as school type, faculty, and total enrollment.]\\n[Step 2: Compile the observations into a structured format for further processing or analysis.]"
+  },
+  {
+    "id": "27",
+    "text": "Given that the user wants to know the standard time zone for a specific location, this workflow retrieves the time zone information for that location.\\n[Step 1: Identify the {location_name} and gather relevant data about its time zone.]\\n[Step 2: Extract the {time_zone} information associated with the {location_name} from the gathered data.]"
+  },
+  {
+    "id": "28",
+    "text": "Given that there are multiple locations involved, this workflow checks for common time zones between two or more locations.\\n[Step 1: Collect the {time_zone_data} for each {location} to find intersections.]\\n[Step 2: Determine the {common_time_zone} that applies to all specified {locations}.]"
+  },
+  {
+    "id": "29",
+    "text": "Given that a user wants to determine the sensor type of a digital camera based on its color filter array type and ISO settings, this workflow extracts the relevant sensor type(s).\\n[Step 1: Identify the cameras that match the criteria of {color_filter_array_type} and {iso_setting}.]\\n[Step 2: Retrieve the sensor type(s) associated with the identified cameras.]"
+  },
+  {
+    "id": "30",
+    "text": "Given that a user needs to know how many sensor types are associated with a specific set of cameras, this workflow counts the number of sensor types.\\n[Step 1: Retrieve the sensor type(s) from the cameras that match the criteria of {color_filter_array_type} and {iso_setting}.]\\n[Step 2: Count the number of unique sensor types in the retrieved set.]"
+  },
+  {
+    "id": "31",
+    "text": "Given that a user is looking for a specific sensor type from a set of sensor types, this workflow determines if there is a single sensor type or multiple types.\\n[Step 1: Check the count of sensor types retrieved from the cameras that match the criteria of {color_filter_array_type} and {iso_setting}.]\\n[Step 2: If there is only one sensor type, return that type; if multiple, identify the common or specific sensor type needed.]"
+  },
+  {
+    "id": "32",
+    "text": "Given that the user is inquiring about Olympic events contested in specific years and locations, this workflow identifies and extracts the relevant Olympic events.\\n[Step 1: Identify the intersection of events from the {year_1} Olympics and the {year_2} Olympics hosted in {location}.]\\n[Step 2: Retrieve the details of the events from the intersection identified in Step 1.]"
+  },
+  {
+    "id": "33",
+    "text": "Given that the user needs to know the number of Olympic events contested, this workflow counts the events from a specified Olympic year and location.\\n[Step 1: Count the number of events in the intersection of the {year_1} Olympics and the {year_2} Olympics hosted in {location}.]\\n[Step 2: Store the count in a variable for further use or display.]"
+  },
+  {
+    "id": "34",
+    "text": "Given that the user is looking for specific details about Olympic events, this workflow verifies and retrieves detailed information about the identified events.\\n[Step 1: Check the details of the events stored in {event_variable} to ensure they are correctly identified as contested events.]\\n[Step 2: Return the specific names or details of the events to the user.]"
+  },
+  {
+    "id": "35",
+    "text": "Given that a user wants to know the last championship won by a specific sports team, this workflow retrieves the most recent championship event for that team.\\n[Step 1: Identify the sports team using the mascot name {mascot_name}]\\n[Step 2: Retrieve the championship event with the maximum start date for the identified team {team_name}]"
+  },
+  {
+    "id": "36",
+    "text": "Given that the user is inquiring about the political ideologies of specific organizations and elections, this workflow extracts the common political ideology shared by them.\\n[Step 1: Identify the political ideologies of {organization_name_1} and {organization_name_2} based on their respective contexts.]\\n[Step 2: Determine the intersection of the identified political ideologies and store the result in {common_ideology}.]"
+  },
+  {
+    "id": "37",
+    "text": "Given that the user is interested in the outcomes of a specific election, this workflow analyzes the results and identifies the winning party and its associated political ideology.\\n[Step 1: Retrieve the winner of the {election_name} and the political party associated with the winning candidate.]\\n[Step 2: Extract the political ideology of the winning party from the election results.]"
+  },
+  {
+    "id": "38",
+    "text": "Given that the user is inquiring about the discoverers of specific chemical elements, this workflow identifies the discoverers of multiple elements.\\n[Step 1: Identify the discoverer of {element_1} and {element_2}]\\n[Step 2: Compute the intersection of discoverers for {element_1} and {element_2}]"
+  },
+  {
+    "id": "39",
+    "text": "Given that the intersection of discoverers has been computed, this workflow verifies the entities within that intersection.\\n[Step 1: Check the entities in the intersection variable {intersection_variable}]\\n[Step 2: Confirm the discoverers of {element_1} and {element_2} are included in the intersection]"
+  },
+  {
+    "id": "40",
+    "text": "Given that the user wants to compare ISO settings of different cameras, this workflow extracts the ISO capabilities of specified digital cameras.\\n[Step 1: Retrieve the ISO settings for {camera_1} using the query for its ISO capabilities.]\\n[Step 2: Retrieve the ISO settings for {camera_2} using the query for its ISO capabilities.]"
+  },
+  {
+    "id": "41",
+    "text": "Given that the user is interested in the intersection of ISO settings between two cameras, this workflow compares the ISO settings of the specified cameras.\\n[Step 1: Count the distinct ISO settings for {camera_1} and {camera_2} to find common settings.]\\n[Step 2: Return the count of common ISO settings as {common_iso_count}.]"
+  },
+  {
+    "id": "42",
+    "text": "Given that the user wants to identify the common category of schools for two educational institutions, this workflow computes the intersection of their school types.\\n[Step 1: Retrieve the school type of {institution_1} and store it in variable #1]\\n[Step 2: Retrieve the school type of {institution_2} and store it in variable #2]\\n[Step 3: Compute the intersection of the school types from #1 and #2 and store it in variable #4]"
+  },
+  {
+    "id": "43",
+    "text": "Given that the intersection of school categories has been computed, this workflow verifies the count of entities in the intersection.\\n[Step 1: Check the count of entities in the intersection stored in variable #4 and store it in variable #6]\\n[Step 2: Verify the contents of the intersection by examining variable #4]"
+  },
+  {
+    "id": "44",
+    "text": "Given that the user wants to know the number of religious practices associated with specific religions, this workflow extracts the relevant practices for the specified religions.\n[Step 1: Identify the religious entities {religion_1} and {religion_2} from the user's query]\n[Step 2: Retrieve the number of religious practices associated with {religion_1} and {religion_2}]"
+  },
+  {
+    "id": "45",
+    "text": "Given that the user wants to know the number of programming language paradigms for specific programming languages, this workflow retrieves the count of paradigms associated with a given language.\\n[Step 1: Identify the programming language {programming_language} and retrieve its associated paradigms.]\\n[Step 2: Count the number of unique paradigms for {programming_language} and return the result.]"
+  },
+  {
+    "id": "46",
+    "text": "Given that the user wants to know the number of children of a specific character born in a specific location, this workflow retrieves that information.\\n[Step 1: Identify the character {character_name} and the location {location_name} where the children were born.]\\n[Step 2: Query the database to count the number of children for {character_name} born in {location_name}.]"
+  },
+  {
+    "id": "47",
+    "text": "Given that errors may occur during tool calls, this workflow manages and logs those errors for troubleshooting.\\n[Step 1: Capture the error message {error_message} generated during the tool call.]\\n[Step 2: Log the error message {error_message} for further analysis and debugging.]"
+  },
+  {
+    "id": "48",
+    "text": "Given that a basketball team has a head coach and a championship event, this workflow extracts the date of the last championship won by the team.\\n[Step 1: Identify the basketball team associated with the head coach {head_coach_name} using the relationship between the coach and the team.]\\n[Step 2: Retrieve the most recent championship event {championship_event} for the identified team and extract its start date.]"
+  },
+  {
+    "id": "49",
+    "text": "Given that a specific basketball team is being queried, this workflow finds the last championship event won by that team.\\n[Step 1: Query the championship events associated with the basketball team {team_name} to gather all relevant events.]\\n[Step 2: Determine the championship event with the maximum start date from the gathered events to identify the last championship.]"
+  },
+  {
+    "id": "50",
+    "text": "Given that the user wants to know the content produced by specific entities, this workflow retrieves and compares the content produced by two different producers.\\n1. Retrieve the content produced by {entity_1} using the relation `broadcast.producer.produces`, which gives {content_from_entity_1}.\\n2. Retrieve the producer(s) of {entity_2} using the relation `broadcast.content.producer`, which gives {producer_of_entity_2}.\\n3. Retrieve the content produced by {producer_of_entity_2} using the relation `broadcast.producer.produces`, which gives {content_from_producer_of_entity_2}.\\n4. Find the intersection of {content_from_entity_1} and {content_from_producer_of_entity_2}, which results in {common_content}."
+  },
+  {
+    "id": "51",
+    "text": "Given that the user needs to find common content produced by two different sources, this workflow identifies overlapping content between two sets.\\n1. Define the first set of content as {set_1}.\\n2. Define the second set of content as {set_2}.\\n3. Compute the intersection of {set_1} and {set_2}, resulting in {common_content}."
+  },
+  {
+    "id": "52",
+    "text": "Given that the user wants to know how many types of blended spirits exist for a specific combination of whiskies, this workflow counts the distinct types of blended spirits based on given entities.\\n[Step 1: Identify the distinct blended spirits related to {entity_1}, {entity_2}, and {entity_3}]\\n[Step 2: Count the number of distinct blended spirits and store the result in {count_variable}]"
+  },
+  {
+    "id": "53",
+    "text": "Given that the user is inquiring about the number of religious texts related to specific topics, this workflow retrieves the count of relevant religious texts.\\n[Step 1: Identify the religious topics by extracting {topic_1} and {topic_2} from the user query]\\n[Step 2: Query the database to count the instances of religious texts that include both {topic_1} and {topic_2}]"
+  },
+  {
+    "id": "54",
+    "text": "Given that the user wants to find discoverers of specific chemical elements, this workflow extracts the discoverers of a given element and checks for intersections with other elements.\\n[Step 1: Identify discoverers of {element_1} using {tool_1}]\\n[Step 2: Identify discoverers of {element_2} using {tool_2}]\\n[Step 3: Compute the intersection of discoverers from both elements and store in {intersection_variable}]"
+  },
+  {
+    "id": "55",
+    "text": "Given that the user needs to know how many discoverers are common between two elements, this workflow counts the number of discoverers in the intersection.\\n[Step 1: Calculate the count of discoverers in {intersection_variable} and store in {count_variable}]\\n[Step 2: Return the count of discoverers as the final output]"
+  },
+  {
+    "id": "56",
+    "text": "Given that the user is inquiring about a specific type of dish that contains certain ingredients and is associated with a particular cuisine, this workflow identifies the dish type based on the provided ingredients and cuisine.\\n[Step 1: Identify the dishes containing {ingredient} that are common in {cuisine}.]\\n[Step 2: Extract the specific type(s) of dish from the identified dishes.]"
+  },
+  {
+    "id": "57",
+    "text": "Given that the user wants to know the number of dishes that meet specific criteria, this workflow counts the number of dishes that contain certain ingredients and are associated with a particular cuisine.\\n[Step 1: Identify the dishes containing {ingredient} that are common in {cuisine}.]\\n[Step 2: Count the number of identified dishes and store the result in {count_variable}.]"
+  },
+  {
+    "id": "58",
+    "text": "Given that the user is seeking information about rocket engine designers, this workflow identifies designers of specific bipropellant rocket engines.\\n[Step 1: Identify the type of rocket engine by specifying {engine_type} and {fuel_type}]\\n[Step 2: Retrieve the list of designers associated with the specified {engine_type} and {fuel_type}]"
+  },
+  {
+    "id": "59",
+    "text": "Given that the user wants to understand the characteristics of a specific rocket engine, this workflow gathers detailed information about the engine's attributes.\\n[Step 1: Collect observations on the engine's {engine_cycle}, {fuel}, and {oxidizer}]\\n[Step 2: Compile data on the {design_period}, {manufactured_by}, and {status} of the engine]"
+  },
+  {
+    "id": "60",
+    "text": "Given that the user is interested in instances of a specific type of rocket engine, this workflow retrieves relevant instances based on defined criteria.\\n[Step 1: Query for instances of {engine_category} based on {engine_type} and {fuel_type}]\\n[Step 2: Filter the results to include only those that match the {design_criteria}]"
+  },
+  {
+    "id": "61",
+    "text": "Given that the user is inquiring about programming language paradigms related to specific languages, this workflow extracts the common programming language paradigms used by a specified language and another influenced language.\\n[Step 1: Identify the programming language {language_1} and the influenced language {language_2} to analyze their paradigms.]\\n[Step 2: Retrieve the intersection of programming language paradigms from {language_1} and {language_2} to determine the common paradigms.]"
+  },
+  {
+    "id": "62",
+    "text": "Given that a user is inquiring about the political ideologies of specific political entities, this workflow extracts the common political ideology shared by those entities.\\n[Step 1: Identify the political parties involved using {party_1} and {party_2} as inputs.]\\n[Step 2: Compute the intersection of the political ideologies associated with {party_1} and {party_2} to determine the common ideology, storing the result in {common_ideology}.]"
+  },
+  {
+    "id": "63",
+    "text": "Given that a user wants to understand the outcomes of a specific election, this workflow analyzes the results of the election and identifies the winning party and its associated ideology.\\n[Step 1: Retrieve the winner of the election using {election_name} as input.]\\n[Step 2: Determine the political ideology of the winning party using {winning_party} as input.]"
+  },
+  {
+    "id": "64",
+    "text": "Given that the user wants to know the number of active websites owned by a specific individual, this workflow retrieves the count of active websites associated with a given owner.\\n[Step 1: Query the database for active websites owned by {owner_name}]\\n[Step 2: Count the number of active websites returned from the query]"
+  },
+  {
+    "id": "65",
+    "text": "Given that there is a need to check the status of websites owned by a specific entity, this workflow checks the status of websites.\\n[Step 1: Specify the entity {entity_name} whose websites' statuses need to be checked.]\\n[Step 2: Retrieve the status of all websites owned by {entity_name} from the database.]"
+  },
+  {
+    "id": "66",
+    "text": "Given that the user needs to find compatible storage types for a specific camera model, this workflow retrieves the storage types supported by a given camera.\\n[Step 1: Retrieve storage types for the camera model {camera_model}]\\n[Step 2: Return the list of supported storage types for {camera_model}]"
+  },
+  {
+    "id": "67",
+    "text": "Given that the user wants to find common storage types between two sets of cameras, this workflow identifies the intersection of storage types supported by two different camera types.\\n[Step 1: Get storage types for the first camera type {camera_type_1}]\\n[Step 2: Get storage types for the second camera type {camera_type_2}]\\n[Step 3: Find and return the intersection of storage types from {camera_type_1} and {camera_type_2}]"
+  },
+  {
+    "id": "68",
+    "text": "Given that a user wants to know the sensor type of a digital camera based on its color filter array and ISO settings, this workflow identifies the appropriate sensor type.\\n[Step 1: Identify the cameras that match the criteria of {color_filter_array_type} and {iso_setting}.]\\n[Step 2: Retrieve the sensor type(s) associated with the identified cameras.]"
+  },
+  {
+    "id": "69",
+    "text": "Given that a user needs to know if there is a single or multiple sensor types for a specific camera configuration, this workflow checks the count of sensor types.\\n[Step 1: Count the number of sensor types associated with the cameras that match the criteria of {color_filter_array_type} and {iso_setting}.]\\n[Step 2: If the count is 1, return that sensor type; if multiple, identify the common or specific sensor type needed.]"
+  },
+  {
+    "id": "70",
+    "text": "Given that a user wants to find dog breeds with similar temperaments, this workflow identifies breeds that share temperament traits with specified breeds.\\n[Step 1: Retrieve the temperament traits of {breed_1} and {breed_2} from the database.]\\n[Step 2: Find and list dog breeds that match the temperament traits of {breed_1} and {breed_2}.]"
+  },
+  {
+    "id": "71",
+    "text": "Given that observations are needed for dog breeds, this workflow extracts relevant observations about dog breeds from the database.\\n[Step 1: Collect observations related to {dog_breed} including temperament, size, and place of origin.]\\n[Step 2: Compile a list of attributes such as {attribute_1}, {attribute_2}, and {attribute_3} for {dog_breed}.]"
+  },
+  {
+    "id": "72",
+    "text": "Given that the user is inquiring about the number of different religious texts associated with specific religious groups, this workflow extracts and counts the relevant religious texts.\\n[Step 1: Identify the religious groups using {religious_group_1} and {religious_group_2}]\\n[Step 2: Retrieve and count the instances of religious texts associated with {religious_group_1} and {religious_group_2}]"
+  },
+  {
+    "id": "73",
+    "text": "Given that the user needs to know the total number of religious texts, this workflow counts the total instances of religious texts retrieved.\\n[Step 1: Collect the instances of religious texts into a list from {source}]\\n[Step 2: Calculate the total number of texts in the list]"
+  },
+  {
+    "id": "74",
+    "text": "Given that the user is inquiring about the number of religious practices associated with specific religious groups, this workflow extracts relevant practices and their counts.\\n[Step 1: Identify the religious groups {religious_group_1} and {religious_group_2} to analyze their practices.]\\n[Step 2: Retrieve the number of religious practices associated with each group and return the count as {number_of_practices}.]"
+  },
+  {
+    "id": "75",
+    "text": "Given that the user seeks comprehensive information about various aspects of religions, this workflow collects detailed data on religious organizations, practices, and beliefs.\\n[Step 1: Collect data on religious organizations, practices, and beliefs related to {religion_name}.]\\n[Step 2: Compile the gathered data into a structured format for easy reference.]"
+  },
+  {
+    "id": "76",
+    "text": "Given that a user wants to know how many contents were produced by a specific producer, this workflow retrieves the count of contents associated with that producer.\\n[Step 1: Identify the {producer_id} for the specific producer]\\n[Step 2: Query the total number of contents produced by {producer_id} and store the result in {content_count}]"
+  },
+  {
+    "id": "77",
+    "text": "Given that a user is interested in the genre of a specific content, this workflow retrieves the genre associated with that content.\\n[Step 1: Identify the {content_id} for the specific content]\\n[Step 2: Query the genre of {content_id} and store the result in {genre}]"
+  },
+  {
+    "id": "78",
+    "text": "Given that an error may occur during a query execution, this workflow manages the error response to ensure proper handling.\\n[Step 1: Capture the {error_code} and {error_message} from the response]\\n[Step 2: Log the error details for further investigation and notify the user about the issue]"
+  },
+  {
+    "id": "79",
+    "text": "Given that the user wants to identify the fastest amusement ride designed by a specific designer, this workflow retrieves the relevant rides and their speeds.\\n[Step 1: Identify the rides designed by {designer_name} from the database of amusement rides.]\\n[Step 2: Compare the maximum speeds of the identified rides to determine the fastest one.]"
+  },
+  {
+    "id": "80",
+    "text": "Given that the user is interested in specific attributes of amusement rides, this workflow gathers detailed information about a particular ride.\\n[Step 1: Retrieve the details of the ride named {ride_name} including its height, duration, and capacity.]\\n[Step 2: Compile the information into a structured format for easy reference.]"
+  },
+  {
+    "id": "81",
+    "text": "Given that a user wants to know about rockets created by a specific manufacturer, this workflow identifies all rockets manufactured by that manufacturer, excluding specified rockets.\\n[Step 1: Retrieve the list of all rockets manufactured by {manufacturer_name}.]\\n[Step 2: Filter out the specified rockets {excluded_rockets} from the list of all rockets.]"
+  },
+  {
+    "id": "82",
+    "text": "Given that a user may need to know the number of rockets manufactured by a specific manufacturer, this workflow counts the total number of rockets associated with that manufacturer.\\n[Step 1: Retrieve the list of rockets manufactured by {manufacturer_name}.]\\n[Step 2: Count the number of rockets in the list and return the count.]"
+  },
+  {
+    "id": "83",
+    "text": "Given that a user is interested in finding other rockets created by a manufacturer, this workflow identifies rockets excluding the ones already mentioned.\\n[Step 1: Retrieve the list of all rockets manufactured by {manufacturer_name}.]\\n[Step 2: Exclude the specified rockets {original_rockets} from the list to find other rockets.]"
+  },
+  {
+    "id": "84",
+    "text": "Given that the user wants to know the attitude (temperament) of specific dog breeds, this workflow extracts the temperament of a given dog breed.\\n[Step 1: Retrieve the breed of the dog using {dog_entity} to find its associated breed.]\\n[Step 2: Get the temperament of the breed using {breed_entity} to determine its temperament.]"
+  },
+  {
+    "id": "85",
+    "text": "Given that the user is interested in the common temperament between two dog breeds, this workflow identifies the intersection of temperaments for the specified breeds.\\n[Step 1: Extract the temperament of the first dog's breed using {first_dog_breed} to gather its temperament data.]\\n[Step 2: Extract the temperament of the second dog's breed using {second_dog_breed} to gather its temperament data.]\\n[Step 3: Find the intersection of temperaments from {first_dog_temperament} and {second_dog_temperament} to determine the common temperament.]"
+  },
+  {
+    "id": "86",
+    "text": "Given that we want to find the number of contents about a specific genre produced by a particular producer, this workflow counts the relevant content.\\n[Step 1: Identify the {producer} of the reference content]\\n[Step 2: Count the number of {genre} contents produced by the identified {producer}]"
+  },
+  {
+    "id": "87",
+    "text": "Given that we need to find the intersection of two sets of content, this workflow identifies content that belongs to both specified categories.\\n[Step 1: Gather all contents produced by {producer} from the reference content]\\n[Step 2: Filter these contents to find those that are also categorized under {genre}]"
+  },
+  {
+    "id": "88",
+    "text": "Given that we want to count the number of filtered contents, this workflow counts the total number of items in a specified list.\\n[Step 1: Take the list of {filtered_contents}]\\n[Step 2: Return the count of {filtered_contents}]"
+  },
+  {
+    "id": "89",
+    "text": "Given that the user is inquiring about the computer designers for specific models, this workflow identifies the designers associated with multiple computer models.\\n[Step 1: Identify the computer models {model_1} and {model_2} for which designers are needed]\\n[Step 2: Retrieve the common designers for both models from the database, storing the result in {designers_list}]"
+  },
+  {
+    "id": "90",
+    "text": "Given that multiple observations can be made from tool outputs, this workflow collects and organizes observations for further analysis.\\n[Step 1: Collect observations from the tool output into a list {observations_list}]\\n[Step 2: Categorize the observations based on their types {observation_type}]"
+  },
+  {
+    "id": "91",
+    "text": "Given that a user wants to find websites based on specific criteria, this workflow identifies websites that match a given category and use a specified API.\\n[Step 1: Identify websites that belong to the category {website_category} using the API {api_type}.]\\n[Step 2: Return the list of websites that satisfy both conditions as {matching_websites}.]"
+  },
+  {
+    "id": "92",
+    "text": "Given that a user is interested in specific attributes of websites, this workflow retrieves detailed information about websites based on their category and API usage.\\n[Step 1: Gather details about websites in the category {website_category} that utilize the API {api_type}.]\\n[Step 2: Compile the relevant attributes of these websites into {website_details}.]"
+  },
+  {
+    "id": "93",
+    "text": "Given that a user wants to find a cheese made from a specific type of milk that shares a texture with another cheese, this workflow identifies the matching cheese.\\n[Step 1: Identify the source of milk for the cheese by using {milk_source} and the texture of the reference cheese using {reference_cheese}.]\\n[Step 2: Search for cheeses that match the {milk_source} and have the same {texture} as the {reference_cheese}.]"
+  },
+  {
+    "id": "94",
+    "text": "Given that a user is interested in the characteristics of a specific cheese, this workflow retrieves information about the cheese's source and related attributes.\\n[Step 1: Gather information about the cheese's source of milk using {cheese_name}.]\\n[Step 2: Collect details about the cheese's texture and region of origin using {cheese_name}.]"
+  },
+  {
+    "id": "95",
+    "text": "Given that a user wants to know the ISO capabilities of specific camera models, this workflow retrieves the ISO settings for the specified cameras.\\n[Step 1: Identify the camera models {camera_model_1} and {camera_model_2} to query their ISO capabilities.]\\n[Step 2: Retrieve the ISO settings for {camera_model_1} and {camera_model_2} from the database.]"
+  },
+  {
+    "id": "96",
+    "text": "Given that the user is inquiring about the release regions of a specific game version, this workflow extracts the regions where a game version is released based on its developer and distribution platform.\\n[Step 1: Identify the game version using {developer_name} and {distribution_platform}]\\n[Step 2: Retrieve the release regions for the identified game version from {game_version_variable}]"
+  },
+  {
+    "id": "97",
+    "text": "Given that there is a need to confirm the number of entities in a specific variable, this workflow checks the count of entities to ensure data completeness.\\n[Step 1: Access the variable containing entities, {entity_variable}]\\n[Step 2: Count the number of entities in {entity_variable} to verify completeness]"
+  },
+  {
+    "id": "98",
+    "text": "Given that the user is inquiring about diseases transmitted through sex that share the same type of infectious agents as tuberculosis, this workflow identifies and extracts those diseases.\\n[Step 1: Identify the type of infectious agent for {disease_name} using {infectious_agent_type_variable}]\\n[Step 2: Find diseases that are transmitted through sex and match the identified infectious agent type from {infectious_agent_type_variable}]"
+  },
+  {
+    "id": "99",
+    "text": "Given that the user needs confirmation on the extracted diseases, this workflow verifies the final answer and ensures it meets the query requirements.\\n[Step 1: Check the contents of {variable_name} to confirm it contains the relevant diseases]\\n[Step 2: Validate that {variable_name} satisfies both conditions: sexually transmitted and same infectious agent type as {reference_disease}]"
+  },
+  {
+    "id": "100",
+    "text": "Given that the user is inquiring about the types of viewfinders associated with cameras that have an unknown sensor and use JPEG (EXIF 2.2) format, this workflow extracts the relevant viewfinder types.\\n[Step 1: Retrieve the set of viewfinder types associated with cameras that have an unknown sensor and use JPEG (EXIF 2.2) format from {camera_data}.]\\n[Step 2: Determine the count of the retrieved viewfinder types to check if there is a single type or multiple types from {viewfinder_types}.]"
+  },
+  {
+    "id": "101",
+    "text": "Given that there is a need to understand the attributes of the retrieved viewfinder types, this workflow checks for distinguishing attributes of the viewfinder types.\\n[Step 1: Retrieve the attributes of the viewfinder types from {viewfinder_type_entities}.]\\n[Step 2: Analyze the attributes to identify any distinguishing features or commonalities among the viewfinder types from {viewfinder_attributes}.]"
+  },
+  {
+    "id": "102",
+    "text": "Given that the user wants to find artworks associated with a specific artist and material, this workflow identifies artworks that meet both criteria.\\n[Step 1: Retrieve artworks associated with the artist {artist_name} from the art period/movement.]\\n[Step 2: Retrieve artworks that use {material} as support.]"
+  },
+  {
+    "id": "103",
+    "text": "Given that the user needs to find common artworks from two different sets, this workflow finds the intersection of two sets of artworks.\\n[Step 1: Identify the first set of artworks {artwork_set_1} based on the artist and period/movement.]\\n[Step 2: Identify the second set of artworks {artwork_set_2} based on the material used as support.]"
+  },
+  {
+    "id": "104",
+    "text": "Given that the user wants to identify shared rocket functions between different rockets, this workflow extracts common rocket functions from specified rockets.\\n[Step 1: Identify the {rocket_1} and {rocket_2} to compare for common functions.]\\n[Step 2: Retrieve the list of {rocket_function} for both {rocket_1} and {rocket_2} and find the intersection.]"
+  },
+  {
+    "id": "105",
+    "text": "Given that the user needs to gather rocket functions for a specific rocket, this workflow retrieves the functions associated with a given rocket.\\n[Step 1: Input the {rocket_name} to query its associated rocket functions.]\\n[Step 2: Return the list of {rocket_function} associated with {rocket_name}.]"
+  },
+  {
+    "id": "106",
+    "text": "Given that a user wants to find out how much content is produced by a specific producer, this workflow extracts the relevant broadcast content information.\\n[Step 1: Identify the {producer_name} associated with the specific content, such as \"Let the Good Times Roll\".]\\n[Step 2: Retrieve the total amount of {content_type} produced by the {producer_name}.]"
+  },
+  {
+    "id": "107",
+    "text": "Given that a user is interested in understanding the awards associated with a specific broadcast content, this workflow analyzes the award-winning works.\\n[Step 1: Determine the {content_name} for which awards need to be analyzed.]\\n[Step 2: List the awards won by the {content_name} and their respective categories.]"
+  },
+  {
+    "id": "108",
+    "text": "Given that the user wants to know the shared content produced by two different producers, this workflow identifies and extracts the common content produced by both entities.\\n[Step 1: Identify the producers of {entity_1} and {entity_2}]\\n[Step 2: Find the intersection of content produced by {entity_1} and {entity_2}]"
+  },
+  {
+    "id": "109",
+    "text": "Given that the user needs to know how many pieces of content are shared between two producers, this workflow counts the common content produced by both entities.\\n[Step 1: Determine the common content produced by {entity_1} and {entity_2}]\\n[Step 2: Count the number of items in the common content list]"
+  },
+  {
+    "id": "110",
+    "text": "Given that the user wants to find the earliest event related to a specific individual being sworn in, this workflow extracts the earliest inauguration event for a given person.\\n[Step 1: Identify the individual {individual_name} for whom the earliest inauguration event is to be found.]\\n[Step 2: Retrieve the inauguration event with the minimum start date where {individual_name} was the speaker.]"
+  },
+  {
+    "id": "111",
+    "text": "Given that there is a need to confirm the type of an event, this workflow checks if a specific event instance belongs to a defined category.\\n[Step 1: Check if the event {event_instance} is an instance of the category {event_category} to ensure it matches the expected type.]\\n[Step 2: Confirm the details of {event_instance} to validate its relevance to the query.]"
+  },
+  {
+    "id": "112",
+    "text": "Given that a user wants to know about the last championship won by a specific sports team, this workflow retrieves the relevant championship information.\\n[Step 1: Identify the team coached by {coach_name}]\\n[Step 2: Retrieve the last championship won by the team {team_name}]"
+  },
+  {
+    "id": "113",
+    "text": "Given that an error occurs during a tool call, this workflow manages the error and provides a fallback response.\\n[Step 1: Log the error message {error_message}]\\n[Step 2: Provide a user-friendly error response {user_response}]"
+  },
+  {
+    "id": "114",
+    "text": "Given that there is a need to observe relationships between entities in a sports context, this workflow extracts relevant observations.\\n[Step 1: Identify the relevant entities related to {entity_type}]\\n[Step 2: Extract observations for {observation_type}]"
+  },
+  {
+    "id": "115",
+    "text": "Given that the user is inquiring about diseases transmitted via sex that share the same type of infectious agent as tuberculosis, this workflow identifies and extracts relevant diseases.\\n[Step 1: Identify the {infectious_agent} associated with the disease {disease_name} (e.g., tb).]\\n[Step 2: Retrieve a list of diseases transmitted via sex that share the same {infectious_agent} type.]"
+  },
+  {
+    "id": "116",
+    "text": "Given that the user seeks detailed information about diseases, this workflow gathers relevant data about a specified disease.\\n[Step 1: Collect information on the disease {disease_name} including symptoms, causes, and treatments.]\\n[Step 2: Compile a list of notable people associated with the disease {disease_name} and any relevant risk factors.]"
+  },
+  {
+    "id": "117",
+    "text": "Given that the user wants to know the total count of religious practices, this workflow counts the instances of religious practices for the specified religions.\n[Step 1: Gather the instances of religious practices for {religion_1} and {religion_2}]\n[Step 2: Calculate the total number of practices from the gathered instances]"
+  },
+  {
+    "id": "118",
+    "text": "Given that the user is seeking a character with specific powers and an item destroyed by Tempus, this workflow identifies such characters.\\n[Step 1: Identify characters with powers related to {power_name} and items destroyed by {destroyer_name}]\\n[Step 2: Retrieve the list of characters that match both criteria and store in {result_variable}]"
+  },
+  {
+    "id": "119",
+    "text": "Given that the user wants to know which characters possess a specific power, this workflow extracts characters with that ability.\\n[Step 1: Query the database for characters with the power of {power_name}]\\n[Step 2: Compile the results into a list stored in {result_variable}]"
+  },
+  {
+    "id": "120",
+    "text": "Given that the user is interested in characters associated with a specific item destroyer, this workflow finds those characters.\\n[Step 1: Search for items destroyed by {destroyer_name}]\\n[Step 2: List all characters associated with the destroyed items in {result_variable}]"
+  },
+  {
+    "id": "121",
+    "text": "Given that the user is inquiring about a specific ingredient in a regional cuisine, this workflow identifies dishes that contain the specified ingredient.\\n[Step 1: Query the database for dishes that include the ingredient {ingredient_name} in the cuisine {cuisine_name}.]\\n[Step 2: Filter the results to return only the dishes that are categorized under {type_of_dish}.]"
+  },
+  {
+    "id": "122",
+    "text": "Given that the user wants to know about dishes from a specific cuisine, this workflow retrieves all dishes associated with that cuisine.\\n[Step 1: Retrieve all dishes from the database that belong to the cuisine {cuisine_name}.]\\n[Step 2: List the dishes along with their main ingredients and types.]"
+  },
+  {
+    "id": "123",
+    "text": "Given that the user is inquiring about a specific type of cheese based on its texture and source, this workflow retrieves the name of the cheese that meets the specified criteria.\\n[Step 1: Identify the cheese(s) with {texture} texture sourced from {milk_source_1} and {milk_source_2}.]\\n[Step 2: Determine if the result set contains a single cheese or multiple cheeses and return the name(s) from the set.]"
+  },
+  {
+    "id": "124",
+    "text": "Given that the user wants to know the time zone for a specific location, this workflow identifies the common time zone(s) used in that area.\\n[Step 1: Identify the common time zone(s) for {location_1} and {location_2} using the intersection of time zones.]\\n[Step 2: Select the specific time zone from the identified common time zone(s) that has the maximum offset from UTC.]"
+  },
+  {
+    "id": "125",
+    "text": "Given that a specific time zone has been identified, this workflow checks the details of that time zone.\\n[Step 1: Retrieve the details of the time zone identified as {time_zone} including its offset from UTC and DST information.]\\n[Step 2: Confirm the presence of the time zone in the context of {location} to ensure accuracy.]"
+  },
+  {
+    "id": "126",
+    "text": "Given that the user wants to find a musical release produced by a specific producer and labeled by a specific record label, this workflow extracts the relevant musical releases.\\n[Step 1: Identify the musical producer using {producer_name} and the record label using {record_label_name}]\\n[Step 2: Retrieve the musical releases that match both the {producer_name} and {record_label_name}]"
+  },
+  {
+    "id": "127",
+    "text": "Given that a user wants to know the number of religious practices associated with specific religions, this workflow retrieves and counts the common practices.\\n[Step 1: Retrieve the practices associated with {religion_1} - stored in {variable_0}]\\n[Step 2: Retrieve the practices associated with {religion_2} - stored in {variable_1}]\\n[Step 3: Find the intersection of the practices from {variable_0} and {variable_1} - stored in {variable_2}]\\n[Step 4: Count the number of practices in the intersection - stored in {variable_3}]"
+  },
+  {
+    "id": "128",
+    "text": "Given that the user is inquiring about the form of government in specific locations, this workflow extracts government information for a given country and its relevant locations.\\n[Step 1: Retrieve the current form of government for {country_name}]\\n[Step 2: Retrieve the forms of government for locations where {person_name} was born]"
+  },
+  {
+    "id": "129",
+    "text": "Given that the user wants to compare government types, this workflow identifies common forms of government between two entities.\\n[Step 1: Identify the form of government for {country_name}]\\n[Step 2: Identify the forms of government for locations associated with {entity_name}] \\n[Step 3: Determine the intersection of the two sets of government forms]"
+  },
+  {
+    "id": "130",
+    "text": "Given that the user wants to know the programming language paradigms for specific languages, this workflow extracts the common paradigms shared by those languages.\\n[Step 1: Identify the programming languages {language_1} and {language_2} to analyze their paradigms.]\\n[Step 2: Compute the intersection of programming language paradigms for {language_1} and {language_2} and store the result in {common_paradigms}.]"
+  },
+  {
+    "id": "131",
+    "text": "Given that the user is interested in the number of common programming language paradigms, this workflow counts the number of shared paradigms between two languages.\\n[Step 1: Retrieve the common programming language paradigms from {common_paradigms}.]\\n[Step 2: Count the number of items in {common_paradigms} and store the result in {paradigm_count}.]"
+  },
+  {
+    "id": "132",
+    "text": "Given that a user wants to know what content is produced by a specific producer, this workflow retrieves the relevant content information.\\n[Step 1: Identify the {producer_name} and gather their production details]\\n[Step 2: List the {content_types} produced by {producer_name}]"
+  },
+  {
+    "id": "133",
+    "text": "Given that a user is interested in the awards won by a specific producer or content, this workflow retrieves the award information.\\n[Step 1: Identify the {producer_name} or {content_name} and gather their award details]\\n[Step 2: List the {awards} won by {producer_name} or {content_name}]"
+  },
+  {
+    "id": "134",
+    "text": "Given that the user is inquiring about the number of religious practices associated with specific religions, this workflow extracts and counts the relevant practices.\\n[Step 1: Identify the religious entities {religion_1} and {religion_2} from the user's query]\\n[Step 2: Retrieve the list of practices associated with {religion_1} and {religion_2} and count them]"
+  },
+  {
+    "id": "135",
+    "text": "Given that observations are made regarding various aspects of religious practices, this workflow analyzes the data to identify relevant variables.\\n[Step 1: Collect observations related to religious practices and their attributes from the data source]\\n[Step 2: Categorize the observations into distinct variables such as {variable_1}, {variable_2}, and {variable_3}]"
+  },
+  {
+    "id": "136",
+    "text": "Given that the user wants to know the total number of religious practices, this workflow counts the instances of religious practices.\\n[Step 1: Gather all instances of religious practices from the identified variables]\\n[Step 2: Calculate the total number of practices and return the count as {total_practices}]"
+  },
+  {
+    "id": "137",
+    "text": "Given that the user wants to know the most recent championship event for a specific sports team, this workflow retrieves the latest championship event and extracts its start date.\\n[Step 1: Retrieve the most recent championship event {championship_event} for the identified team]\\n[Step 2: Extract the start date from the championship event {championship_event}]"
+  },
+  {
+    "id": "138",
+    "text": "Given that a user wants to know the championship history of a specific sports team, this workflow retrieves the team's championship events.\\n[Step 1: Identify the {team_name} that won a specific championship, such as the 1969 World Series.]\\n[Step 2: Retrieve all {championship_events} associated with the {team_name} to analyze their history.]"
+  },
+  {
+    "id": "139",
+    "text": "Given that a user is interested in the latest championship won by a specific sports team, this workflow identifies the most recent championship event.\\n[Step 1: Gather all {championship_events} for the {team_name} retrieved in the previous workflow.]\\n[Step 2: Determine the {most_recent_championship} by finding the event with the maximum {start_date}.]"
+  },
+  {
+    "id": "140",
+    "text": "Given that the user wants to find the home stadium of a sports team that won a specific championship, this workflow retrieves the stadium information.\\n[Step 1: Identify the champion team from the championship event {championship_event}]\\n[Step 2: Retrieve the home stadium of the identified team {champion_team}]"
+  },
+  {
+    "id": "141",
+    "text": "Given that the user is looking for websites in a specific category that provide a web API for a programming language, this workflow identifies such websites.\\n[Step 1: Retrieve all websites belonging to the category of {category_name}]\\n[Step 2: Filter the retrieved websites to find those that have a web API for {programming_language}]"
+  },
+  {
+    "id": "142",
+    "text": "Given that the user needs to find common websites from two different sets, this workflow finds the intersection of two lists of websites.\\n[Step 1: Collect websites from {first_website_set}]\\n[Step 2: Identify websites that are also present in {second_website_set}]"
+  },
+  {
+    "id": "143",
+    "text": "Given that the user is inquiring about the founding leader of a specific religion, this workflow extracts the name of the founding figure associated with that religion.\\n[Step 1: Identify the religion associated with the holiday {holiday_name} and retrieve its founding figure(s).]\\n[Step 2: Extract the name of the founding figure from the retrieved entity {founding_figure}.]"
+  },
+  {
+    "id": "144",
+    "text": "Given that the user needs confirmation about the religion and its founding figure, this workflow verifies the relationship between the religion and its founding leader.\\n[Step 1: Check the entity representing the religion {religion_entity} to confirm its characteristics and features, such as holidays. ]\\n[Step 2: Validate the founding figure {founding_figure} to ensure it corresponds to the identified religion {religion_name}.]"
+  },
+  {
+    "id": "145",
+    "text": "Given that we need to identify the owner of a specific casino and find all casinos owned by that same individual, this workflow retrieves the owner and their associated casinos.\\n[Step 1: Retrieve the owner of the casino using {casino_name} as the input.]\\n[Step 2: Find all casinos owned by the retrieved owner using {owner_variable} as the input.]"
+  },
+  {
+    "id": "146",
+    "text": "Given that we have a list of casinos and need to determine which one is the smallest based on specific attributes, this workflow identifies the smallest casino.\\n[Step 1: Evaluate the casinos using {casinos_list} to find the one with the minimum value for {size_attribute} (e.g., number of rooms, gaming floor space).]\\n[Step 2: Return the casino identified as the smallest using {smallest_casino_variable} as the output.]"
+  },
+  {
+    "id": "147",
+    "text": "Given that the user wants to identify tropical cyclones of a specific category affecting a location, this workflow retrieves relevant tropical cyclones.\\n[Step 1: Identify the category of the tropical cyclone {tropical_cyclone_name} to be compared.]\\n[Step 2: Retrieve all tropical cyclones that are in the same category as {tropical_cyclone_name} and affected {location}.]"
+  },
+  {
+    "id": "148",
+    "text": "Given that the system processes various tool observations to extract relevant data, this workflow organizes and categorizes observations for further analysis.\\n[Step 1: Collect observations related to {observation_type} from the tool responses.]\\n[Step 2: Filter and categorize the observations based on {category_criteria} for clarity.]"
+  },
+  {
+    "id": "149",
+    "text": "Given that a user wants to find specific content produced by a certain producer within a defined genre, this workflow extracts and counts the relevant content.\\n[Step 1: Retrieve content produced by {producer_name} using the {producer_entity} entity]\\n[Step 2: Filter the retrieved content to include only those with the genre {genre_name} using the {genre_entity} entity]"
+  },
+  {
+    "id": "150",
+    "text": "Given that a user needs to determine the number of items that meet specific criteria, this workflow counts the intersection of two sets of content.\\n[Step 1: Identify the intersection of content produced by {producer_entity} and content with genre {genre_entity}]\\n[Step 2: Count the number of items in the intersection and store the result in {count_variable}]"
+  },
+  {
+    "id": "151",
+    "text": "Given that we need to identify a character with a specific ability, this workflow extracts characters possessing a certain power.\\n[Step 1: Identify characters with the ability of {ability_name}]\\n[Step 2: Filter characters who own an item destroyed by {destroyer_name}]"
+  },
+  {
+    "id": "152",
+    "text": "Given that we want to gather detailed information about a character, this workflow analyzes various attributes of a fictional character.\\n[Step 1: Retrieve attributes such as {attribute_name} for character {character_name}]\\n[Step 2: Compile a list of related entities like {related_entity_type} associated with {character_name}]"
+  },
+  {
+    "id": "153",
+    "text": "Given that the user wants to determine the category of educational institutions, this workflow extracts the common school category for given entities.\\n[Step 1: Identify the educational institutions from the provided entities {entity_1} and {entity_2}]\\n[Step 2: Compute the intersection of school types for {entity_1} and {entity_2} and store the result in {common_school_category}]"
+  },
+  {
+    "id": "154",
+    "text": "Given that the user wants to find typefaces created by a specific designer, this workflow retrieves typefaces designed by a particular creator.\\n[Step 1: Identify the creator of the typeface {typeface_name}]\\n[Step 2: Retrieve all typefaces created by {creator_name}]"
+  },
+  {
+    "id": "155",
+    "text": "Given that the user is interested in typefaces from a specific foundry, this workflow retrieves all typefaces from Microsoft.\\n[Step 1: Query the database for all typefaces from {foundry_name}]\\n[Step 2: Filter the results to include only typefaces from Microsoft]"
+  },
+  {
+    "id": "156",
+    "text": "Given that the user needs to count items while excluding a specific one, this workflow counts the number of typefaces excluding a specified typeface.\\n[Step 1: Count the total number of typefaces from {foundry_name} designed by {creator_name}]\\n[Step 2: Subtract 1 from the count if {excluded_typeface} is included in the results]"
+  },
+  {
+    "id": "157",
+    "text": "Given that two dog breeds are being compared for shared temperaments, this workflow retrieves the number of temperaments they have in common.\\n[Step 1: Identify the temperaments of the first dog breed {first_dog_breed_id} using the property base.petbreeds.dog_breed.temperament]\\n[Step 2: Identify the temperaments of the second dog breed {second_dog_breed_id} using the property base.petbreeds.dog_breed.temperament and count the shared temperaments]"
+  },
+  {
+    "id": "158",
+    "text": "Given that detailed information about a dog breed is required, this workflow retrieves various attributes of a specified dog breed.\\n[Step 1: Retrieve the attributes of the dog breed {dog_breed_id} including color, size, and temperament using the properties base.petbreeds.dog_breed.color, base.petbreeds.dog_breed.size, and base.petbreeds.dog_breed.temperament]\\n[Step 2: Retrieve additional attributes such as exercise requirement and life expectancy using the properties base.petbreeds.dog_breed.exercise_requirement and base.petbreeds.dog_breed.life_expectancy]"
+  }
+]

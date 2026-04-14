@@ -1,0 +1,37 @@
+# ===== Core Dependencies (Client-side only) =====
+# Note: src/server tasks run in Docker containers and don't need local installation
+
+# AI/ML frameworks
+torch==2.8.0
+transformers==4.34.1
+scikit-learn==1.6.1
+
+# Memory systems
+mem0ai==1.0.1
+faiss-cpu==1.13.0
+
+# Scientific computing
+numpy==2.0.2
+
+# Visualization
+matplotlib==3.9.4
+
+# HTTP client
+requests==2.32.5
+
+# Configuration
+PyYAML==6.0.3
+
+# LLM API (used by memory systems)
+openai==2.14.0
+
+# Utilities (commonly used)
+tqdm==4.65.2
+colorama==0.4.6
+nltk==3.9.1
+pydantic==2.12.5
+pydantic-settings==2.11.0
+json-repair==0.30.1
+
+# Optional: Docker management (if running tasks locally)
+docker==6.1.2

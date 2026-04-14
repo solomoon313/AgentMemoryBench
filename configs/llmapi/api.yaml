@@ -1,0 +1,26 @@
+module: src.client.agents.HTTPAgent
+
+parameters:
+  # ===== Base HTTP Configuration (update for your service) =====
+  url: https://api.siliconflow.cn/v1/chat/completions
+#
+  headers:
+    Content-Type: application/json
+
+    Authorization: "Bearer sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+  # ===== Default Model Call Parameters (can be overridden by agent.yaml) =====
+  body:
+    # model is not set here; each agent specifies its own model in agent.yaml
+    max_tokens: 512
+
+  # ===== Prompt Format and Response Parsing (consistent with AgentBench) =====
+  prompter:
+    name: role_content_dict
+    args:
+      agent_role: assistant
+
+  # Default response parsing rule; can be overridden per agent in agent.yaml
+  return_format: "{response[choices][0][message][content]}"
+
+
