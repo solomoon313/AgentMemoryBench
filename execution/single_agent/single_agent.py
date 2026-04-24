@@ -7,6 +7,7 @@ from typing import Any, Dict, List, Tuple
 import yaml
 
 from ..base import ExecutionEngine
+from src.runner.backend import BackendSessionNotFoundError
 
 
 @dataclass
@@ -108,7 +109,20 @@ class SingleAgentExecutionEngine(ExecutionEngine):
 
             # 5) 无论如何都发送到后端（让后端处理 turn 计数和错误提示）
             # 参考 AgentBench 和 LifelongAgentBench：每次 LLM 推理后都调用 /interact
-            env_out = backend_client.interact(session_id, [assistant_msg])
+            try:
+                env_out = backend_client.interact(session_id, [assistant_msg])
+            except BackendSessionNotFoundError as e:
+                result = {
+                    "task": task,
+                    "index": index,
+                    "agent_name": self.config.agent_name,
+                    "status": "backend_session_expired",
+                    "reward": 0,
+                    "metric": {},
+                    "error": str(e),
+                    "note": "SingleAgentExecutionEngine: backend session expired before /interact completed.",
+                }
+                return history, result
             env_messages = env_out.get("messages", []) or []
             current_tools = env_out.get("tools", current_tools) or current_tools
 
@@ -220,5 +234,4 @@ def load_single_agent_engine_from_yaml(config_path: str) -> SingleAgentExecution
 
     cfg = SingleAgentConfig(agent_name=agent_name)
     return SingleAgentExecutionEngine(cfg)
-
 

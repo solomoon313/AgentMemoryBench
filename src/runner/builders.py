@@ -20,8 +20,10 @@ def build_memory_from_config(cfg: ExperimentConfig):
     - zero_shot: no-memory baseline
     - stream_icl: streaming In-Context Learning
     - mem0: Mem0 memory system
+    - everos_agent: EverOS hosted agent-memory system
+    - everos_personal: EverOS hosted personal-memory system
     - mems: Multi-Memory System (MEMs)
-    - awm_pro: Agent Workflow Memory Pro
+    - awm: Agent Workflow Memory
 
     Note: regardless of the configured memory_mechanism, the returned instance is used
     for update_memory. In offline mode, use_memory is forced to zero_shot (see main).

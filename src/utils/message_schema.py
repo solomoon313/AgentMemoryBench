@@ -207,6 +207,40 @@ def enhance_messages_with_memory(
     return enhanced
 
 
+def assert_memory_injection_position(
+    messages: List[Dict[str, Any]],
+    where: str,
+) -> None:
+    """
+    Validate that injected memory matches the expected position.
+
+    Raises:
+        AssertionError: if the first user message does not match the expected format
+    """
+    if where not in {"front", "tail"}:
+        raise AssertionError(f"Unsupported memory injection position: {where}")
+
+    for msg in messages or []:
+        role, content, _ = extract_message_info(msg)
+        if role != "user":
+            continue
+
+        content = str(content or "")
+        has_separator = ORIGINAL_QUESTION_SEPARATOR in content
+
+        if where == "front" and not has_separator:
+            raise AssertionError(
+                "Expected front-injected memory to include the original-question separator."
+            )
+        if where == "tail" and has_separator:
+            raise AssertionError(
+                "Expected tail-injected memory not to include the original-question separator."
+            )
+        return
+
+    raise AssertionError("No user message found after memory injection.")
+
+
 def extract_original_question(
     messages: List[Dict[str, Any]],
     where: str = "tail",

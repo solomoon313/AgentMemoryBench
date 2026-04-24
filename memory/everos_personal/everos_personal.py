@@ -1,0 +1,331 @@
+from __future__ import annotations
+
+import logging
+import time
+from dataclasses import dataclass, field
+from typing import Any, Dict, List, Optional
+
+import requests
+import yaml
+
+from ..base import MemoryMechanism
+from src.utils.message_schema import (
+    assert_memory_injection_position,
+    enhance_messages_with_memory,
+    extract_message_info,
+    extract_original_question,
+)
+
+
+LOGGER = logging.getLogger(__name__)
+
+
+@dataclass
+class EverOSPersonalConfig:
+    api_key: str = ""
+    base_url: str = "https://api.evermind.ai"
+    user_id: str = "default"
+    session_id: Optional[str] = None
+    use_session_filter: bool = False
+    top_k: int = 10
+    search_method: str = "hybrid"
+    memory_types: List[str] = field(default_factory=lambda: ["episodic_memory", "profile"])
+    radius: Optional[float] = None
+    include_original_data: bool = False
+    async_mode: bool = False
+    flush_after_add: bool = True
+    success_only: bool = True
+    reward_bigger_than_zero: bool = False
+    prompt_template: str = "Based on your previous interactions, here are relevant personal memories:\n{memories}"
+    where: str = "tail"
+    request_timeout: float = 60.0
+    max_retries: int = 3
+    retry_delay: float = 2.0
+    retry_backoff: float = 2.0
+    wait_time: float = 0.0
+
+
+class EverOSPersonalMemory(MemoryMechanism):
+    def __init__(self, config: EverOSPersonalConfig) -> None:
+        self.config = config
+        self.template_title = self.config.prompt_template.split("{memories}")[0].strip()
+        if not self.config.api_key:
+            raise ValueError("EverOS personal memory requires api_key in config")
+
+        self._session = requests.Session()
+        self._session.headers.update(
+            {
+                "Authorization": f"Bearer {self.config.api_key}",
+                "Content-Type": "application/json",
+            }
+        )
+
+    def _build_url(self, path: str) -> str:
+        return f"{self.config.base_url.rstrip('/')}{path}"
+
+    def _request_with_retry(
+        self,
+        method: str,
+        path: str,
+        json_body: Dict[str, Any],
+        expected_statuses: tuple[int, ...],
+        purpose: str,
+    ) -> requests.Response:
+        attempt = 0
+        delay = self.config.retry_delay
+        while True:
+            try:
+                response = self._session.request(
+                    method=method,
+                    url=self._build_url(path),
+                    json=json_body,
+                    timeout=self.config.request_timeout,
+                )
+                if response.status_code in expected_statuses:
+                    return response
+                response.raise_for_status()
+                return response
+            except requests.RequestException as exc:
+                attempt += 1
+                if self.config.max_retries >= 0 and attempt > self.config.max_retries:
+                    raise RuntimeError(
+                        f"[EverOSPersonal] {purpose} failed after {attempt} attempts: {exc}"
+                    ) from exc
+                LOGGER.warning(
+                    "[EverOSPersonal] %s failed on attempt %s: %s; retrying in %.2fs",
+                    purpose,
+                    attempt,
+                    exc,
+                    delay,
+                )
+                time.sleep(delay)
+                delay *= self.config.retry_backoff
+
+    def _extract_query(self, messages: List[Dict[str, Any]]) -> Optional[str]:
+        template_titles = [self.template_title]
+        question = extract_original_question(messages, where=self.config.where, template_titles=template_titles)
+        if question:
+            return str(question).strip()
+        return None
+
+    def _build_search_filters(self) -> Dict[str, Any]:
+        filters: Dict[str, Any] = {"user_id": self.config.user_id}
+        if self.config.use_session_filter and self.config.session_id:
+            filters["session_id"] = self.config.session_id
+        return filters
+
+    @staticmethod
+    def _format_episode(item: Dict[str, Any]) -> Optional[str]:
+        episode = str(item.get("episode") or item.get("summary") or "").strip()
+        if not episode:
+            return None
+        score = item.get("score")
+        prefix = f"[score={score:.3f}] " if isinstance(score, (int, float)) else ""
+        return f"- {prefix}{episode}"
+
+    @staticmethod
+    def _format_profile(item: Dict[str, Any]) -> Optional[str]:
+        profile_data = item.get("profile_data")
+        if profile_data in (None, "", {}):
+            return None
+        return f"- {profile_data}"
+
+    def _format_search_results(self, data: Dict[str, Any]) -> str:
+        lines: List[str] = []
+        for item in data.get("episodes", []) or []:
+            formatted = self._format_episode(item)
+            if formatted:
+                lines.append(formatted)
+        for item in data.get("profiles", []) or []:
+            formatted = self._format_profile(item)
+            if formatted:
+                lines.append(formatted)
+        return "\n".join(lines)
+
+    def use_memory(self, task: str, messages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        enhanced = list(messages) if messages is not None else []
+        query = self._extract_query(messages)
+        if not query:
+            return enhanced
+
+        body: Dict[str, Any] = {
+            "query": query,
+            "filters": self._build_search_filters(),
+            "method": self.config.search_method,
+            "memory_types": self.config.memory_types,
+            "top_k": self.config.top_k,
+            "include_original_data": self.config.include_original_data,
+        }
+        if self.config.radius is not None:
+            body["radius"] = self.config.radius
+
+        try:
+            response = self._request_with_retry(
+                method="POST",
+                path="/api/v1/memories/search",
+                json_body=body,
+                expected_statuses=(200,),
+                purpose="search personal memories",
+            )
+            payload = response.json() if response.content else {}
+            data = payload.get("data", {}) if isinstance(payload, dict) else {}
+            memory_text = self._format_search_results(data)
+            if not memory_text:
+                return enhanced
+            memory_content = self.config.prompt_template.format(memories=memory_text)
+            enhanced = enhance_messages_with_memory(enhanced, memory_content, where=self.config.where)
+            assert_memory_injection_position(enhanced, self.config.where)
+            return enhanced
+        except Exception as exc:
+            LOGGER.warning("[EverOSPersonal] Search failed for task=%s: %s", task, exc)
+            return enhanced
+
+    def _normalize_role(self, role: Any) -> str:
+        role_str = str(role or "").strip().lower()
+        if role_str == "assistant":
+            return "assistant"
+        return "user"
+
+    def _serialize_history(self, history: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        template_titles = [self.template_title]
+        serialized: List[Dict[str, Any]] = []
+        base_ts = int(time.time() * 1000)
+
+        for idx, msg in enumerate(history):
+            role, content, msg_dict = extract_message_info(msg)
+            if role is None:
+                continue
+
+            content_value = content
+            if role == "user" and content:
+                question = extract_original_question([msg], where=self.config.where, template_titles=template_titles)
+                if question:
+                    content_value = question
+
+            raw = dict(msg_dict) if isinstance(msg_dict, dict) else {"role": role, "content": content_value}
+            normalized_role = self._normalize_role(role)
+            text_parts: List[str] = []
+            reasoning_content = raw.get("reasoning_content", "")
+            if (
+                normalized_role == "assistant"
+                and isinstance(reasoning_content, str)
+                and reasoning_content.strip()
+            ):
+                text_parts.append(f"<think>{reasoning_content.strip()}</think>")
+
+            text = str(content_value).strip() if content_value is not None else ""
+            if text:
+                text_parts.append(text)
+
+            tool_calls = raw.get("tool_calls")
+            if normalized_role == "assistant" and isinstance(tool_calls, list) and tool_calls:
+                for tc in tool_calls:
+                    if not isinstance(tc, dict):
+                        continue
+                    function = tc.get("function", {}) if isinstance(tc.get("function"), dict) else {}
+                    tool_name = function.get("name", "")
+                    tool_args = function.get("arguments", "")
+                    if tool_name:
+                        text_parts.append(f"Tool call: {tool_name}({tool_args})")
+
+            text = "\n".join(text_parts)
+
+            if not text:
+                continue
+
+            serialized.append(
+                {
+                    "role": normalized_role,
+                    "timestamp": base_ts + idx,
+                    "content": text,
+                }
+            )
+
+        return serialized
+
+    def _resolve_session_id(self, task: str) -> Optional[str]:
+        if self.config.session_id:
+            return self.config.session_id
+        return task
+
+    def _flush(self, session_id: Optional[str]) -> None:
+        body: Dict[str, Any] = {"user_id": self.config.user_id}
+        if session_id:
+            body["session_id"] = session_id
+        self._request_with_retry(
+            method="POST",
+            path="/api/v1/memories/flush",
+            json_body=body,
+            expected_statuses=(200,),
+            purpose="flush personal memories",
+        )
+
+    def update_memory(self, task: str, history: List[Dict[str, Any]], result: Dict[str, Any]) -> None:
+        finish = result.get("finish", False)
+        status = result.get("status", "")
+        reward = result.get("reward", 0)
+        is_success = finish or status == "completed"
+
+        if self.config.success_only and not is_success:
+            return
+        if self.config.reward_bigger_than_zero and reward <= 0:
+            return
+
+        messages = self._serialize_history(history)
+        if not messages:
+            return
+
+        session_id = self._resolve_session_id(task)
+        body: Dict[str, Any] = {
+            "user_id": self.config.user_id,
+            "messages": messages,
+            "async_mode": self.config.async_mode,
+        }
+        if session_id:
+            body["session_id"] = session_id
+
+        try:
+            self._request_with_retry(
+                method="POST",
+                path="/api/v1/memories",
+                json_body=body,
+                expected_statuses=(200, 202),
+                purpose="add personal memories",
+            )
+            if self.config.flush_after_add:
+                self._flush(session_id)
+            if self.config.wait_time > 0:
+                time.sleep(self.config.wait_time)
+        except Exception as exc:
+            LOGGER.warning("[EverOSPersonal] Update failed for task=%s: %s", task, exc)
+
+
+def load_everos_personal_from_yaml(config_path: str) -> EverOSPersonalMemory:
+    with open(config_path, "r", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f) or {}
+
+    raw = cfg.get("everos_personal", {}) or {}
+    config = EverOSPersonalConfig(
+        api_key=str(raw.get("api_key", "")),
+        base_url=str(raw.get("base_url", "https://api.evermind.ai")),
+        user_id=str(raw.get("user_id", "default")),
+        session_id=raw.get("session_id"),
+        use_session_filter=bool(raw.get("use_session_filter", False)),
+        top_k=int(raw.get("top_k", 10)),
+        search_method=str(raw.get("search_method", "hybrid")),
+        memory_types=[str(x) for x in (raw.get("memory_types", ["episodic_memory", "profile"]) or ["episodic_memory", "profile"])],
+        radius=float(raw["radius"]) if raw.get("radius") is not None else None,
+        include_original_data=bool(raw.get("include_original_data", False)),
+        async_mode=bool(raw.get("async_mode", False)),
+        flush_after_add=bool(raw.get("flush_after_add", True)),
+        success_only=bool(raw.get("success_only", True)),
+        reward_bigger_than_zero=bool(raw.get("reward_bigger_than_zero", False)),
+        prompt_template=str(raw.get("prompt_template", "Based on your previous interactions, here are relevant personal memories:\n{memories}")),
+        where=str(raw.get("where", "tail")),
+        request_timeout=float(raw.get("request_timeout", 60.0)),
+        max_retries=int(raw.get("max_retries", 3)),
+        retry_delay=float(raw.get("retry_delay", 2.0)),
+        retry_backoff=float(raw.get("retry_backoff", 2.0)),
+        wait_time=float(raw.get("wait_time", 0.0)),
+    )
+    return EverOSPersonalMemory(config)

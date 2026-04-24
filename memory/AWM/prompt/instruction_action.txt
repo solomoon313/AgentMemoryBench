@@ -1,0 +1,5 @@
+Given one completed agent task, your task is to extract reusable workflows that help solve similar tasks.
+The input task contains a natural language instruction and a series of actions used to solve it. You should identify reusable subsets of actions from the trajectory and extract them as workflows.
+Each workflow should be a commonly reused sub-routine. Do not generate similar or overlapping workflows. Each workflow should have at least two steps.
+When possible, extract workflows that correspond to distinct reusable sub-tasks within the trajectory.
+The workflows should capture different sub-routines rather than restating the same process with different wording.

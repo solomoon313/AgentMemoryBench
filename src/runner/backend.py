@@ -10,6 +10,10 @@ import requests
 from src.client.scheduler import SampleIndex
 
 
+class BackendSessionNotFoundError(requests.HTTPError):
+    """Raised when the backend no longer recognizes a session_id."""
+
+
 class BackendClient:
     """
     Minimal backend client wrapping /start_sample and /list_workers.
@@ -80,6 +84,23 @@ class BackendClient:
         headers = {"session_id": str(session_id)}
         payload = {"messages": messages}
         resp = requests.post(url, headers=headers, json=payload, timeout=300)
-        resp.raise_for_status()
+        try:
+            resp.raise_for_status()
+        except requests.HTTPError as e:
+            response_text = (resp.text or "").strip()
+            response_lower = response_text.lower()
+            if resp.status_code == 400 and "session not found" in response_lower:
+                raise BackendSessionNotFoundError(
+                    f"{e}. Response body: {response_text}",
+                    response=resp,
+                    request=resp.request,
+                ) from e
+            if response_text:
+                raise requests.HTTPError(
+                    f"{e}. Response body: {response_text}",
+                    response=resp,
+                    request=resp.request,
+                ) from e
+            raise
         data = resp.json()
         return data

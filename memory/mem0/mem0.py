@@ -284,30 +284,35 @@ class Mem0Memory(MemoryMechanism):
         for msg in serialized_history:
             role = msg.get("role", "")
             content = msg.get("content", "")
+            reasoning_content = msg.get("reasoning_content", "")
             tool_calls = msg.get("tool_calls")  # check for tool_calls field
 
             # Ensure role exists
             if not role or not isinstance(role, str):
                 continue
 
-            # For messages with tool_calls, convert them to text and merge into content
-            # Mem0 API does not support the tool_calls field; convert to text
-            if tool_calls and isinstance(tool_calls, list) and len(tool_calls) > 0:
-                # Convert tool_calls to text descriptions
+            content_parts = []
+            if reasoning_content and isinstance(reasoning_content, str) and reasoning_content.strip():
+                content_parts.append(f"<think>{reasoning_content.strip()}</think>")
+
+            if content and isinstance(content, str) and content.strip():
+                content_parts.append(content.strip())
+
+            # Mem0 API does not support tool_calls, so keep them in the same
+            # assistant turn after reasoning and visible content.
+            if tool_calls and isinstance(tool_calls, list):
                 tool_calls_text = []
                 for tc in tool_calls:
-                    if isinstance(tc, dict):
-                        func_name = tc.get("function", {}).get("name", "") if isinstance(tc.get("function"), dict) else ""
-                        func_args = tc.get("function", {}).get("arguments", "") if isinstance(tc.get("function"), dict) else ""
-                        if func_name:
-                            tool_calls_text.append(f"Tool call: {func_name}({func_args})")
-                if tool_calls_text:
-                    tool_calls_str = "\n".join(tool_calls_text)
-                    # Append tool_calls info to content
-                    if content and str(content).strip():
-                        content = f"{content}\n{tool_calls_str}"
-                    else:
-                        content = tool_calls_str
+                    if not isinstance(tc, dict):
+                        continue
+                    function = tc.get("function", {}) if isinstance(tc.get("function"), dict) else {}
+                    func_name = function.get("name", "")
+                    func_args = function.get("arguments", "")
+                    if func_name:
+                        tool_calls_text.append(f"Tool call: {func_name}({func_args})")
+                content_parts.extend(tool_calls_text)
+
+            content = "\n".join(content_parts)
 
             # Ensure content is present and non-empty (tool_calls may have been converted to content)
             if not content or not isinstance(content, str) or not str(content).strip():

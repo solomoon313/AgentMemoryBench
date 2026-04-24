@@ -1,19 +1,14 @@
 mems:
-  # ===== 模型配置 =====
   model_name: "Pro/Qwen/Qwen2.5-7B-Instruct"
 
-  # ===== 记忆源1配置 =====
   memory_source_1:
-    name: "system_memory"  # 记忆源名称（用于trigger model识别）
-    config_path: "memory/awmPro/awmPro.yaml"  # 记忆源的配置文件路径
+    name: "system_memory"
+    config_path: "memory/AWM/AWM.yaml"
 
-  # ===== 记忆源2配置 =====
   memory_source_2:
-    name: "personal_memory"  # 记忆源名称（用于trigger model识别）
-    config_path: "memory/mem0/mem0.yaml"  # 记忆源的配置文件路径
+    name: "personal_memory"
+    config_path: "memory/mem0/mem0.yaml"
 
-  # ===== Retrieval Trigger Prompt =====
-  # 在检索阶段，trigger model决定检索哪个记忆源
   retrieval_trigger_prompt: |
     You are a memory source selector. Given the task query, decide which memory source(s) should be retrieved from.
 
@@ -30,8 +25,6 @@ mems:
       "reasoning": "brief explanation"
     }}
 
-  # ===== Update Trigger Prompt =====
-  # 在更新阶段，trigger model决定更新哪个记忆源
   update_trigger_prompt: |
     You are a memory source selector. Given the task interaction trajectory, decide which memory source(s) should be updated.
 
@@ -48,9 +41,6 @@ mems:
       "reasoning": "brief explanation"
     }}
 
-  # ===== Trigger Model 配置 =====
-  trigger_model_max_retries: 5  # Trigger model调用的最大重试次数
-
-  # Update阶段过滤条件（只在满足条件时才调用update trigger model）
-  update_success_only: true  # 只在成功样本上更新记忆
-  update_reward_bigger_than_zero: true  # 只在reward>0时更新记忆
+  trigger_model_max_retries: 5
+  update_success_only: true
+  update_reward_bigger_than_zero: true

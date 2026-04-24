@@ -3,7 +3,9 @@
     "qa": [
       {
         "question": "What kind of car does Evan drive?",
-        "answer": "Prius",
+        "answer": [
+          "Prius"
+        ],
         "evidence": [
           "D1:2",
           "D1:4",
@@ -12,6 +14,7 @@
           "D22:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           1,
@@ -21,7 +24,9 @@
       },
       {
         "question": "What kinds of things did Evan have broken?",
-        "answer": "His old Prius and his new Prius.",
+        "answer": [
+          "His old Prius and his new Prius."
+        ],
         "evidence": [
           "D18:1",
           "D18:2",
@@ -30,6 +35,7 @@
           "D1:4"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           1,
@@ -38,13 +44,16 @@
       },
       {
         "question": "Where has Evan been on roadtrips with his family?",
-        "answer": "Rockies, Jasper",
+        "answer": [
+          "Rockies, Jasper"
+        ],
         "evidence": [
           "D1:2",
           "D1:4",
           "D2:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           1,
@@ -53,12 +62,15 @@
       },
       {
         "question": "How many Prius has Evan owned?",
-        "answer": "two",
+        "answer": [
+          "two"
+        ],
         "evidence": [
           "D1:2",
           "D1:4"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -66,11 +78,14 @@
       },
       {
         "question": "Which hobby did Sam take up in May 2023?",
-        "answer": "painting",
+        "answer": [
+          "painting"
+        ],
         "evidence": [
           "D1:11"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -78,11 +93,14 @@
       },
       {
         "question": "Which country was Evan visiting in May 2023?",
-        "answer": "Canada",
+        "answer": [
+          "Canada"
+        ],
         "evidence": [
           "D2:1"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -90,12 +108,15 @@
       },
       {
         "question": "How many roadtrips did Evan take in May 2023?",
-        "answer": "two",
+        "answer": [
+          "two"
+        ],
         "evidence": [
           "D1:4",
           "D2:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           1,
@@ -103,35 +124,10 @@
         ]
       },
       {
-        "question": "What new hobbies did Sam consider trying?",
-        "answer": "Painting, kayaking, hiking, cooking, running",
-        "evidence": [
-          "D1:11",
-          "D2:10",
-          "D10:8",
-          "D13:6",
-          "D13:8",
-          "D20:6",
-          "D7:2",
-          "D7:4",
-          "D7:6",
-          "D21:19"
-        ],
-        "category": 1,
-        "where": 21,
-        "where_ground_truth": [
-          1,
-          2,
-          7,
-          10,
-          13,
-          20,
-          21
-        ]
-      },
-      {
         "question": "What hobby did Evan start practicing a few years ago that he enjoys?",
-        "answer": "Watercolor painting",
+        "answer": [
+          "Watercolor painting"
+        ],
         "evidence": [
           "D1:14",
           "D1:16",
@@ -139,6 +135,7 @@
           "D8:14"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           1,
@@ -147,11 +144,15 @@
       },
       {
         "question": "When did Evan go to Jasper with his family?",
-        "answer": "weekend before May 24, 2023",
+        "answer": [
+          "weekend before May 24, 2023",
+          "From May 20, 2023 to May 21, 2023"
+        ],
         "evidence": [
           "D2:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -159,7 +160,9 @@
       },
       {
         "question": "Which type of vacation would Evan prefer with his family, walking tours in metropolitan cities or camping trip in the outdoors?",
-        "answer": "camping trip in the outdoors",
+        "answer": [
+          "camping trip in the outdoors"
+        ],
         "evidence": [
           "D2:1",
           "D2:3",
@@ -167,6 +170,7 @@
           "D19:3"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           2,
@@ -175,7 +179,9 @@
       },
       {
         "question": "What health issue did Sam face that motivated him to change his lifestyle?",
-        "answer": "Weight problem",
+        "answer": [
+          "Weight problem"
+        ],
         "evidence": [
           "D2:6",
           "D3:4",
@@ -198,6 +204,7 @@
           "D25:3"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 25,
         "where_ground_truth": [
           2,
@@ -219,31 +226,24 @@
       },
       {
         "question": "When did Sam first go to the doctor and find out he had a weight problem?",
-        "answer": "A few days before May 24, 2023.",
+        "answer": [
+          "A few days before May 24, 2023."
+        ],
         "evidence": [
           "D2:6"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
         ]
       },
       {
-        "question": "When did Evan have his sudden heart palpitation incident that really shocked him up?",
-        "answer": "first week of June 2023",
-        "evidence": [
-          "D3:1"
-        ],
-        "category": 2,
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
         "question": "What is Evan's favorite food?",
-        "answer": "Ginger snaps",
+        "answer": [
+          "Ginger snaps"
+        ],
         "evidence": [
           "D3:3",
           "D5:5",
@@ -251,6 +251,7 @@
           "D22:12"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           3,
@@ -261,11 +262,14 @@
       },
       {
         "question": "What kind of unhealthy snacks does Sam enjoy eating?",
-        "answer": "soda, candy",
+        "answer": [
+          "soda, candy"
+        ],
         "evidence": [
           "D3:4"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -273,12 +277,15 @@
       },
       {
         "question": "What recurring issue frustrates Sam at the grocery store?",
-        "answer": "Malfunctioning self-checkout machines.",
+        "answer": [
+          "Malfunctioning self-checkout machines."
+        ],
         "evidence": [
           "D3:16",
           "D22:19"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           3,
@@ -287,11 +294,15 @@
       },
       {
         "question": "When did Sam's friends mock him for being overweight?",
-        "answer": "Friday before 27 July 2023",
+        "answer": [
+          "Friday before 27 July 2023",
+          "July 21, 2023"
+        ],
         "evidence": [
           "D4:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -299,7 +310,9 @@
       },
       {
         "question": "What kind of healthy food suggestions has Evan given to Sam?",
-        "answer": "flavored seltzer water, dark chocolate with high cocoa content, air-popped popcorn and fruit, veggies, healthy sandwich snacks, energy balls, grilled chicken salad with avocado",
+        "answer": [
+          "flavored seltzer water, dark chocolate with high cocoa content, air-popped popcorn and fruit, veggies, healthy sandwich snacks, energy balls, grilled chicken salad with avocado"
+        ],
         "evidence": [
           "D3:5",
           "D4:10",
@@ -308,6 +321,7 @@
           "D24:15"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           3,
@@ -317,35 +331,10 @@
         ]
       },
       {
-        "question": "Considering their conversations and personal growth, what advice might Evan and Sam give to someone facing a major life transition or challenge?",
-        "answer": "Evan and Sam would likely advise embracing small, consistent changes​​, finding stress-relieving activities like hiking​​, painting, and road trips​​, and the importance of friendship and support in navigating challenges​​.",
-        "evidence": [
-          "D3:10",
-          "D3:15",
-          "D22:1",
-          "D8:17",
-          "D8:22",
-          "D9:8",
-          "D9:11",
-          "D14:7",
-          "D14:12",
-          "D12:7",
-          "D12:11"
-        ],
-        "category": 3,
-        "where": 22,
-        "where_ground_truth": [
-          3,
-          8,
-          9,
-          12,
-          14,
-          22
-        ]
-      },
-      {
         "question": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
-        "answer": "a cookbook with healthy recipes or a subscription to a healthy meal delivery service.",
+        "answer": [
+          "a cookbook with healthy recipes or a subscription to a healthy meal delivery service."
+        ],
         "evidence": [
           "D2:9",
           "D3:1",
@@ -366,6 +355,7 @@
           "D9:1"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 14,
         "where_ground_truth": [
           2,
@@ -380,13 +370,16 @@
       },
       {
         "question": "How does Evan describe the woman and his feelings for her that he met in Canada?",
-        "answer": "He says she's cool, incredible, like something out of a movie, and that he feels alive around her. Every moment with her is fun and energetic, also Evan feels really lucky to have someone who gets him.",
+        "answer": [
+          "He says she's cool, incredible, like something out of a movie, and that he feels alive around her. Every moment with her is fun and energetic, also Evan feels really lucky to have someone who gets him."
+        ],
         "evidence": [
           "D5:1",
           "D5:3",
           "D23:3"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           5,
@@ -395,11 +388,15 @@
       },
       {
         "question": "When Evan did meet his future wife?",
-        "answer": "week before August 7, 2023.",
+        "answer": [
+          "week before August 7, 2023.",
+          "From July 31, 2023 to August 6, 2023"
+        ],
         "evidence": [
           "D5:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
@@ -407,50 +404,30 @@
       },
       {
         "question": "When did Sam start working out at the gym?",
-        "answer": "July 28, 2023",
+        "answer": [
+          "July 28, 2023"
+        ],
         "evidence": [
           "D4:15"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
         ]
       },
       {
-        "question": "What significant event happened in Sam's life towards the end of summer 2023?",
-        "answer": "He fell in love with a Canadian woman",
-        "evidence": [
-          "D5:1"
-        ],
-        "category": 2,
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
         "question": "Which year did Evan start taking care of his health seriously?",
-        "answer": "2021",
+        "answer": [
+          "2021"
+        ],
         "evidence": [
           "D5:6",
           "D5:7"
         ],
         "category": 2,
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
-        "question": "What motivates Evan to take care of his health?",
-        "answer": "family, fitness tracker, thirst for adventure on interesting hikes",
-        "evidence": [
-          "D5:9",
-          "D5:11",
-          "D5:13"
-        ],
-        "category": 1,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
@@ -458,11 +435,14 @@
       },
       {
         "question": "What electronic device could Evan gift Sam to help him keep up with his fitness goals?",
-        "answer": "fitness tracker",
+        "answer": [
+          "fitness tracker"
+        ],
         "evidence": [
           "D5:7"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
@@ -470,12 +450,15 @@
       },
       {
         "question": "What kind of writing does Sam do to relax and cope with his health issues?",
-        "answer": "journalling, creative writing",
+        "answer": [
+          "journalling, creative writing"
+        ],
         "evidence": [
           "D6:4",
           "D11:7"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           6,
@@ -484,12 +467,15 @@
       },
       {
         "question": "Who did Evan meet on his trip to Canada, and who did he come back from Canada with?",
-        "answer": "Evan met the woman he fell in love with and returned with her.",
+        "answer": [
+          "Evan met the woman he fell in love with and returned with her."
+        ],
         "evidence": [
           "D5:1",
           "D6:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 6,
         "where_ground_truth": [
           5,
@@ -498,36 +484,31 @@
       },
       {
         "question": "When Evan get back from a vacation with his SO?",
-        "answer": "August 13, 2023",
+        "answer": [
+          "August 13, 2023",
+          "Before August 13, 2023"
+        ],
         "evidence": [
           "D6:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 6,
         "where_ground_truth": [
           6
         ]
       },
       {
-        "question": "How might Evan and Sam's experiences with health and lifestyle changes influence their approach to stress and challenges?",
-        "answer": "Their experiences likely lead them to view challenges as opportunities for growth and change. They both have embraced healthier lifestyles, indicating a proactive approach to managing stress and challenges.",
-        "evidence": [
-          "D9:1 D4:4 D4:6"
-        ],
-        "category": 3,
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
         "question": "What recurring frustration does Evan experience?",
-        "answer": "Evan consistently misplaces his keys every week.",
+        "answer": [
+          "Evan consistently misplaces his keys every week."
+        ],
         "evidence": [
           "D6:13",
           "D21:20"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           6,
@@ -536,12 +517,15 @@
       },
       {
         "question": "What is the recurring dream that Sam keeps having?",
-        "answer": "he's flying over a cityscape.",
+        "answer": [
+          "he's flying over a cityscape."
+        ],
         "evidence": [
           "D6:14",
           "D24:22"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           6,
@@ -550,12 +534,15 @@
       },
       {
         "question": "What accidents has Evan's son faced lately?",
-        "answer": "injured at a soccer game, fell off his bike",
+        "answer": [
+          "injured at a soccer game, fell off his bike"
+        ],
         "evidence": [
           "D7:1",
           "D20:3"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
           7,
@@ -564,62 +551,30 @@
       },
       {
         "question": "When was Evan's son injured at soccer?",
-        "answer": "Saturday before August 15, 2023.",
+        "answer": [
+          "Saturday before August 15, 2023.",
+          "August 12, 2023"
+        ],
         "evidence": [
           "D7:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 7,
         "where_ground_truth": [
           7
         ]
       },
       {
-        "question": "What kind of foods or recipes has Sam recommended to Evan?",
-        "answer": "grilled vegetables, grilled chicken and veggie stir-fry, poutine",
-        "evidence": [
-          "D7:8",
-          "D8:7",
-          "D23:26"
-        ],
-        "category": 1,
-        "where": 23,
-        "where_ground_truth": [
-          7,
-          8,
-          23
-        ]
-      },
-      {
-        "question": "What kind of healthy meals did Sam start eating after getting a health scare?",
-        "answer": "salad, grilled salmon and vegetables, grilled chicken and veggie stir-fry, Beef Merlot, fruit bowl, smoothie bowl",
-        "evidence": [
-          "D3:2",
-          "D8:1",
-          "D7:4",
-          "D8:7",
-          "D10:2",
-          "D11:1",
-          "D18:6"
-        ],
-        "category": 1,
-        "where": 18,
-        "where_ground_truth": [
-          3,
-          7,
-          8,
-          10,
-          11,
-          18
-        ]
-      },
-      {
         "question": "What role does nature and the outdoors play in Evan and Sam's mental well-being?",
-        "answer": "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being.",
+        "answer": [
+          "Nature and outdoor activities seem to be significant stress relievers and sources of joy for both Evan and Sam. These activities likely contribute positively to their mental well-being."
+        ],
         "evidence": [
           "D22:1 D22:2 D9:10 D9:11"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -627,12 +582,15 @@
       },
       {
         "question": "How many months lapsed between Sam's first and second doctor's appointment?",
-        "answer": "three months",
+        "answer": [
+          "three months"
+        ],
         "evidence": [
           "D2:6",
           "D7:2"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           2,
@@ -641,11 +599,15 @@
       },
       {
         "question": "When did Evan start taking painting classes?",
-        "answer": "Few days before 19 August, 2023.",
+        "answer": [
+          "Few days before 19 August, 2023,",
+          "the middle of August, 2023"
+        ],
         "evidence": [
           "D8:12"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -653,11 +615,14 @@
       },
       {
         "question": "Which classes did Evan join in mid-August 2023?",
-        "answer": "painting classes",
+        "answer": [
+          "painting classes"
+        ],
         "evidence": [
           "D8:12"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -665,7 +630,9 @@
       },
       {
         "question": "How did Evan get into painting?",
-        "answer": "His friend got him into it by gifting him a painting and giving him some advice. The painting inspired Evan.",
+        "answer": [
+          "His friend got him into it by gifting him a painting and giving him some advice. The painting inspired Evan."
+        ],
         "evidence": [
           "D1:14",
           "D1:15",
@@ -673,6 +640,7 @@
           "D8:14"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           1,
@@ -680,48 +648,17 @@
         ]
       },
       {
-        "question": "How often does Sam get health checkups?",
-        "answer": "every three months",
-        "evidence": [
-          "D2:6",
-          "D7:2",
-          "D12:1"
-        ],
-        "category": 3,
-        "where": 12,
-        "where_ground_truth": [
-          2,
-          7,
-          12
-        ]
-      },
-      {
-        "question": "What kind of subjects does Evan enjoy painting?",
-        "answer": "nature landscapes, portraits, abstract minimalism",
-        "evidence": [
-          "D8:20",
-          "D20:13",
-          "D20:15",
-          "D21:10",
-          "D21:14"
-        ],
-        "category": 1,
-        "where": 21,
-        "where_ground_truth": [
-          8,
-          20,
-          21
-        ]
-      },
-      {
         "question": "Which places in Canada was Evan visiting in July 2023?",
-        "answer": "Banff, Rocky Mountains",
+        "answer": [
+          "Banff, Rocky Mountains"
+        ],
         "evidence": [
           "D8:27",
           "D9:8",
           "D9:10"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           8,
@@ -730,11 +667,14 @@
       },
       {
         "question": "How do Evan and Sam use creative outlets to cope with life's challenges?",
-        "answer": "Evan and Sam use creative activities, like painting and writing, as therapeutic tools to express themselves and cope with stress.",
+        "answer": [
+          "Evan and Sam use creative activities, like painting and writing, as therapeutic tools to express themselves and cope with stress."
+        ],
         "evidence": [
           "D21:18 D21:22 D11:15 D11:19"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -742,39 +682,26 @@
       },
       {
         "question": "When did Evan go skiing in Banff?",
-        "answer": "July 2023",
+        "answer": [
+          "July 2023"
+        ],
         "evidence": [
           "D8:26",
           "D8:27",
           "D8:28"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
         ]
       },
       {
-        "question": "What new diet and lifestyle change did Sam adopt over time?",
-        "answer": "Healthy eating, exercise routine, running, hiking",
-        "evidence": [
-          "D8:1",
-          "D9:1",
-          "D21:9",
-          "D22:1"
-        ],
-        "category": 1,
-        "where": 22,
-        "where_ground_truth": [
-          8,
-          9,
-          21,
-          22
-        ]
-      },
-      {
         "question": "Who was injured in Evan's family?",
-        "answer": "Evan's son and Evan himself",
+        "answer": [
+          "Evan's son and Evan himself"
+        ],
         "evidence": [
           "D7:1",
           "D7:9",
@@ -784,6 +711,7 @@
           "D11:3"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           7,
@@ -792,32 +720,10 @@
         ]
       },
       {
-        "question": "What kind of hobbies does Evan pursue?",
-        "answer": "painting, hiking, reading books, biking, skiing, snowboarding, ice skating, swimming, camping, kayaking",
-        "evidence": [
-          "D1:14",
-          "D1:6",
-          "D4:8",
-          "D6:1",
-          "D8:30",
-          "D9:6",
-          "D25:8",
-          "D25:10"
-        ],
-        "category": 1,
-        "where": 25,
-        "where_ground_truth": [
-          1,
-          4,
-          6,
-          8,
-          9,
-          25
-        ]
-      },
-      {
         "question": "What challenges does Sam face in his quest for a healthier lifestyle, and how does he address them?",
-        "answer": "Sam faces challenges like maintaining motivation and making dietary changes. He addresses them by enrolling in cooking classes and seeking support from friends like Evan.",
+        "answer": [
+          "Sam faces challenges like maintaining motivation and making dietary changes. He addresses them by enrolling in cooking classes and seeking support from friends like Evan."
+        ],
         "evidence": [
           "D4:2",
           "D4:6",
@@ -825,6 +731,7 @@
           "D14:2"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 14,
         "where_ground_truth": [
           4,
@@ -833,13 +740,16 @@
       },
       {
         "question": "Which activity do Evan and Sam plan on doing together during September 2023?",
-        "answer": "painting",
+        "answer": [
+          "painting"
+        ],
         "evidence": [
           "D10:12",
           "D10:13",
           "D10:14"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -847,42 +757,34 @@
       },
       {
         "question": "When did Evan and Sam decide to paint together?",
-        "answer": "Saturday after 11 September, 2023.",
+        "answer": [
+          "Saturday of the week after 11 September, 2023",
+          "23 September, 2023",
+          "September, 2023"
+        ],
         "evidence": [
           "D10:12",
           "D10:13",
           "D10:14"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
         ]
       },
       {
-        "question": "What personal health incidents does Evan face in 2023?",
-        "answer": "heart palpitations, twisted ankle, twisted ankle",
-        "evidence": [
-          "D3:1",
-          "D9:2",
-          "D11:2"
-        ],
-        "category": 1,
-        "where": 11,
-        "where_ground_truth": [
-          3,
-          9,
-          11
-        ]
-      },
-      {
         "question": "What recurring adventure does Evan have with strangers?",
-        "answer": "Helping lost tourists and experiencing unexpected adventures in the city.",
+        "answer": [
+          "Helping lost tourists and experiencing unexpected adventures in the city."
+        ],
         "evidence": [
           "D11:6",
           "D14:2"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           11,
@@ -891,12 +793,15 @@
       },
       {
         "question": "What is Sam's persistent problem with his phone?",
-        "answer": "His new phone malfunctioning, particularly with the navigation app.",
+        "answer": [
+          "His new phone malfunctioning, particularly with the navigation app."
+        ],
         "evidence": [
           "D11:15",
           "D14:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           11,
@@ -904,36 +809,36 @@
         ]
       },
       {
-        "question": "Which US state was Sam travelling in during October 2023?",
-        "answer": "California",
+        "question": "Which US state(s) was Sam travelling in during October 2023?",
+        "answer": [
+          "California and Nevada",
+          "California",
+          "Nevada",
+          "California and Nevada (Lake Tahoe)"
+        ],
         "evidence": [
           "D13:14"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
         ]
       },
       {
-        "question": "When did Evan start lifting weights?",
-        "answer": "October 2022",
-        "evidence": [
-          "D12:2"
-        ],
-        "category": 2,
-        "where": 12,
-        "where_ground_truth": [
-          12
-        ]
-      },
-      {
         "question": "When did Sam and his friend decide to try kayaking?",
-        "answer": "October 14, 2023",
+        "answer": [
+          "October 14, 2023"
+        ],
         "evidence": [
+          "D13:7",
+          "D13:8",
+          "D13:9",
           "D13:10"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -941,11 +846,14 @@
       },
       {
         "question": "Which new activity does Sam take up in October 2023?",
-        "answer": "kayaking",
+        "answer": [
+          "kayaking"
+        ],
         "evidence": [
           "D13:8"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -953,40 +861,31 @@
       },
       {
         "question": "What kind of stress was Sam dealing with in October 2023?",
-        "answer": "work-related stress",
+        "answer": [
+          "work-related stress"
+        ],
         "evidence": [
           "D13:4"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
         ]
       },
       {
-        "question": "What health scares did Sam and Evan experience?",
-        "answer": "Sam faced a health scare with stomach pains that turned out to be gastritis, prompting him to rethink his health habits. Evan, on the other hand, experienced two separate incidents: a sudden heart palpitation incident and a different event involving a misunderstanding during a medical check-up. These experiences have significantly influenced their perspectives on health and well-being.",
-        "evidence": [
-          "D3:1",
-          "D14:1",
-          "D14:2",
-          "D17:2"
-        ],
-        "category": 1,
-        "where": 17,
-        "where_ground_truth": [
-          3,
-          14,
-          17
-        ]
-      },
-      {
         "question": "When was Sam in the ER?",
-        "answer": "weekend before 17 October, 2023.",
+        "answer": [
+          "weekend before 17 October, 2023.",
+          "October, 2023.",
+          "From October 14, 2023 to October 15, 2023"
+        ],
         "evidence": [
           "D14:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -994,7 +893,9 @@
       },
       {
         "question": "Which ailment does Sam have to face due to his weight?",
-        "answer": "gastritis",
+        "answer": [
+          "gastritis"
+        ],
         "evidence": [
           "D2:6",
           "D7:2",
@@ -1002,6 +903,7 @@
           "D14:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           2,
@@ -1012,13 +914,16 @@
       },
       {
         "question": "Does Evan live close to a beach or mountains?",
-        "answer": "beach",
+        "answer": [
+          "beach"
+        ],
         "evidence": [
           "D16:16",
           "D16:18",
           "D16:20"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1026,11 +931,14 @@
       },
       {
         "question": "When did Evan lose his job?",
-        "answer": "end of October 2023",
+        "answer": [
+          "October 2023"
+        ],
         "evidence": [
           "D16:10"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1038,11 +946,14 @@
       },
       {
         "question": "When did Evan and Sam planned a trip to the beach together?",
-        "answer": "December, 2023",
+        "answer": [
+          "December, 2023"
+        ],
         "evidence": [
           "D16:24"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1050,11 +961,14 @@
       },
       {
         "question": "What was Sam doing on December 4, 2023?",
-        "answer": "Attending a Weight Watchers meeting",
+        "answer": [
+          "Attending a Weight Watchers meeting"
+        ],
         "evidence": [
           "D18:6"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1062,12 +976,15 @@
       },
       {
         "question": "Which two significant life events occur in Evan's life in December 2023 with his partner?",
-        "answer": "his partner gets pregnant and they get married",
+        "answer": [
+          "his partner gets pregnant and they get married"
+        ],
         "evidence": [
           "D19:1",
           "D21:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           19,
@@ -1075,26 +992,15 @@
         ]
       },
       {
-        "question": "How long did Evan and his partner date before getting married?",
-        "answer": "four months",
-        "evidence": [
-          "D5:1",
-          "D21:1"
-        ],
-        "category": 2,
-        "where": 21,
-        "where_ground_truth": [
-          5,
-          21
-        ]
-      },
-      {
         "question": "Which major holiday season conincides with Evan's wedding?",
-        "answer": "Christmas",
+        "answer": [
+          "Christmas"
+        ],
         "evidence": [
           "D21:2"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1102,12 +1008,15 @@
       },
       {
         "question": "Which activity did Sam resume in December 2023 after a long time?",
-        "answer": "hiking",
+        "answer": [
+          "hiking"
+        ],
         "evidence": [
           "D20:6",
           "D22:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           20,
@@ -1116,11 +1025,14 @@
       },
       {
         "question": "When is Evan planning a big family reunion?",
-        "answer": "Summer 2024",
+        "answer": [
+          "Summer 2024"
+        ],
         "evidence": [
           "D19:11"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1128,11 +1040,16 @@
       },
       {
         "question": "When did Evan's son fall off his bike?",
-        "answer": "Thursday before December 17, 2023.",
+        "answer": [
+          "Tuesday before December 17, 2023",
+          "December, 2023",
+          "December 12, 2023"
+        ],
         "evidence": [
           "D20:3"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1140,11 +1057,14 @@
       },
       {
         "question": "When did Evan announce his marriage to his extended family?",
-        "answer": "January 5, 2024",
+        "answer": [
+          "January 5, 2024"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1152,12 +1072,15 @@
       },
       {
         "question": "When did Evan finish the painting that's hanging in the exhibit?",
-        "answer": "few days before 17 December, 2023.",
+        "answer": [
+          "few days before 17 December, 2023."
+        ],
         "evidence": [
           "D20:13",
           "D20:15"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1165,7 +1088,9 @@
       },
       {
         "question": "How does Evan spend his time with his bride after the wedding?",
-        "answer": "family get-together, honeymoon in Canada to see snowy landscapes, ski, taste local cuisine and do some snowshoeing",
+        "answer": [
+          "family get-together, honeymoon in Canada to see snowy landscapes, ski, taste local cuisine and do some snowshoeing"
+        ],
         "evidence": [
           "D23:15",
           "D23:23",
@@ -1173,6 +1098,7 @@
           "D24:9"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           23,
@@ -1181,7 +1107,9 @@
       },
       {
         "question": "Who did Evan tell about his marriage?",
-        "answer": "To Sam, to his friends from work, and to his and his wife's families.",
+        "answer": [
+          "To Sam, to his friends from work, and to his and his wife's families."
+        ],
         "evidence": [
           "D21:2",
           "D22:4",
@@ -1190,6 +1118,7 @@
           "D23:5"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           21,
@@ -1199,11 +1128,14 @@
       },
       {
         "question": "When will Evan and his partner have their honeymoon in Canada?",
-        "answer": "February 2024",
+        "answer": [
+          "February 2024"
+        ],
         "evidence": [
           "D23:23"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1211,72 +1143,29 @@
       },
       {
         "question": "When did Evan have a drunken night with his friends?",
-        "answer": "January 9, 2023",
+        "answer": [
+          "2024-01-09 00:00:00"
+        ],
         "evidence": [
           "D24:3"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
-        ]
-      },
-      {
-        "question": "What is a stress reliever for Evan?",
-        "answer": "Drawing, traveling, places with a beautiful view, yoga, sunsets or something comfortable for Evan",
-        "evidence": [
-          "D1:14",
-          "D2:10",
-          "D2:11",
-          "D2:14",
-          "D8:18",
-          "D10:8",
-          "D11:8",
-          "D16:23",
-          "D18:7",
-          "D24:19",
-          "D24:21"
-        ],
-        "category": 1,
-        "where": 24,
-        "where_ground_truth": [
-          1,
-          2,
-          8,
-          10,
-          11,
-          16,
-          18,
-          24
-        ]
-      },
-      {
-        "question": "What is a stress reliever for Sam?",
-        "answer": "Unhealthy snacks, sweets, yoga, places with beautiful views",
-        "evidence": [
-          "D10:6",
-          "D13:2",
-          "D13:4",
-          "D16:17",
-          "D16:23",
-          "D18:8"
-        ],
-        "category": 1,
-        "where": 18,
-        "where_ground_truth": [
-          10,
-          13,
-          16,
-          18
         ]
       },
       {
         "question": "What type of car did Evan get after his old Prius broke down?",
-        "answer": "new Prius",
+        "answer": [
+          "new Prius"
+        ],
         "evidence": [
           "D1:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1284,11 +1173,14 @@
       },
       {
         "question": "How did Evan get into watercolor painting?",
-        "answer": "friend's advice",
+        "answer": [
+          "friend's advice"
+        ],
         "evidence": [
           "D1:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1296,11 +1188,14 @@
       },
       {
         "question": "What did Evan start doing a few years back as a stress-buster?",
-        "answer": "watercolor painting",
+        "answer": [
+          "watercolor painting"
+        ],
         "evidence": [
           "D1:14"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1308,11 +1203,14 @@
       },
       {
         "question": "What advice did Evan give Sam about finding a passion?",
-        "answer": "keep trying new things until something sparks excitement",
+        "answer": [
+          "keep trying new things until something sparks excitement"
+        ],
         "evidence": [
           "D1:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1320,11 +1218,14 @@
       },
       {
         "question": "Where did Evan take his family for a road trip on 24 May, 2023?",
-        "answer": "Jasper",
+        "answer": [
+          "Jasper"
+        ],
         "evidence": [
           "D2:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1332,11 +1233,14 @@
       },
       {
         "question": "What did Evan find relaxing about his road trip to Jasper?",
-        "answer": "fresh air, peacefulness, cozy cabin surrounded by mountains and forests",
+        "answer": [
+          "fresh air, peacefulness, cozy cabin surrounded by mountains and forests"
+        ],
         "evidence": [
           "D2:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1344,11 +1248,17 @@
       },
       {
         "question": "What habit is Sam trying to change in terms of diet?",
-        "answer": "consuming soda and candy",
+        "answer": [
+          "consuming soda and candy"
+        ],
         "evidence": [
-          "D3:4"
+          "D3:2",
+          "D3:4",
+          "D3:5",
+          "D3:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1356,11 +1266,14 @@
       },
       {
         "question": "What new suggestion did Evan give to Sam regarding his soda and candy consumption?",
-        "answer": "try flavored seltzer water and dark chocolate with high cocoa content",
+        "answer": [
+          "try flavored seltzer water and dark chocolate with high cocoa content"
+        ],
         "evidence": [
           "D3:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1368,11 +1281,14 @@
       },
       {
         "question": "What did Sam agree to try instead of soda and candy?",
-        "answer": "flavored seltzer water and dark chocolate with high cocoa content",
+        "answer": [
+          "flavored seltzer water and dark chocolate with high cocoa content"
+        ],
         "evidence": [
           "D3:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1380,11 +1296,14 @@
       },
       {
         "question": "What frustrating issue did Sam face at the supermarket?",
-        "answer": "broken self-checkout machines",
+        "answer": [
+          "broken self-checkout machines"
+        ],
         "evidence": [
           "D3:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1392,11 +1311,14 @@
       },
       {
         "question": "What novel is Evan reading that he finds gripping?",
-        "answer": "The Great Gatsby",
+        "answer": [
+          "The Great Gatsby"
+        ],
         "evidence": [
           "D4:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1404,11 +1326,14 @@
       },
       {
         "question": "What kind of water does Evan suggest Sam try as an alternative to soda?",
-        "answer": "Flavored seltzer water",
+        "answer": [
+          "Flavored seltzer water"
+        ],
         "evidence": [
           "D4:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1416,11 +1341,14 @@
       },
       {
         "question": "What does the smartwatch help Evan with?",
-        "answer": "tracks progress and serves as a constant reminder to keep going",
+        "answer": [
+          "tracks progress and serves as a constant reminder to keep going"
+        ],
         "evidence": [
           "D5:9"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1428,11 +1356,14 @@
       },
       {
         "question": "What does the bonsai tree symbolize for Evan?",
-        "answer": "strength and resilience",
+        "answer": [
+          "strength and resilience"
+        ],
         "evidence": [
           "D5:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1440,11 +1371,14 @@
       },
       {
         "question": "Why did Evan decide to get the bonsai tree?",
-        "answer": "motivates him to keep going through tough times",
+        "answer": [
+          "motivates him to keep going through tough times"
+        ],
         "evidence": [
           "D5:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1452,11 +1386,14 @@
       },
       {
         "question": "According to Sam, what is more important than perfection?",
-        "answer": "progress",
+        "answer": [
+          "progress"
+        ],
         "evidence": [
           "D6:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1464,11 +1401,14 @@
       },
       {
         "question": "What did Evan suggest Sam to check out for insights into his dream?",
-        "answer": "dream interpretation book",
+        "answer": [
+          "dream interpretation book"
+        ],
         "evidence": [
           "D6:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1476,11 +1416,14 @@
       },
       {
         "question": "What did Evan mention he had been searching for fruitlessly for half an hour?",
-        "answer": "his keys",
+        "answer": [
+          "his keys"
+        ],
         "evidence": [
           "D6:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1488,11 +1431,14 @@
       },
       {
         "question": "What class is Sam taking to learn how to make healthier meals?",
-        "answer": "cooking class",
+        "answer": [
+          "cooking class"
+        ],
         "evidence": [
           "D7:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1500,23 +1446,14 @@
       },
       {
         "question": "What dish did Sam make on 18 August, 2023 that turned out flavorful?",
-        "answer": "grilled dish with salmon and vegetables",
+        "answer": [
+          "grilled dish with salmon and vegetables"
+        ],
         "evidence": [
           "D7:4"
         ],
         "category": 4,
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What kind of recipe did Evan request from Sam on 19 August, 2023?",
-        "answer": "recipes with more vegetables",
-        "evidence": [
-          "D7:7"
-        ],
-        "category": 4,
+        "is_multi_modality": true,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1524,11 +1461,14 @@
       },
       {
         "question": "What food did Sam share a photo of on 19 August, 2023?",
-        "answer": "bowl of spinach, avocado, and strawberries",
+        "answer": [
+          "bowl of spinach, avocado, and strawberries"
+        ],
         "evidence": [
           "D8:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1536,23 +1476,15 @@
       },
       {
         "question": "What type of painting classes did Evan start taking in 2023?",
-        "answer": "watercolor painting classes",
+        "answer": [
+          "watercolor painting classes"
+        ],
         "evidence": [
+          "D8:11",
           "D8:12"
         ],
         "category": 4,
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What did Evan start painting years ago due to being inspired by a friend's gift?",
-        "answer": "forest scene",
-        "evidence": [
-          "D8:14"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1560,23 +1492,14 @@
       },
       {
         "question": "What nature concept do watercolor painting classes emphasize according to Evan?",
-        "answer": "observing nature and painting what is seen",
+        "answer": [
+          "observing nature and painting what is seen"
+        ],
         "evidence": [
           "D8:18"
         ],
         "category": 4,
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What type of landscapes does Evan love painting the most?",
-        "answer": "sunsets over the ocean",
-        "evidence": [
-          "D8:20"
-        ],
-        "category": 4,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1584,11 +1507,14 @@
       },
       {
         "question": "What fun activity did Evan mention doing in July 2023?",
-        "answer": "skiing",
+        "answer": [
+          "skiing"
+        ],
         "evidence": [
           "D8:26"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1596,11 +1522,14 @@
       },
       {
         "question": "What injury did Evan suffer from in August 2023?",
-        "answer": "Twisted knee",
+        "answer": [
+          "Twisted knee"
+        ],
         "evidence": [
           "D9:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1608,11 +1537,14 @@
       },
       {
         "question": "What sports activity has Evan been doing to stay active while dealing with the knee injury?",
-        "answer": "Swimming",
+        "answer": [
+          "Swimming"
+        ],
         "evidence": [
           "D9:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1620,11 +1552,14 @@
       },
       {
         "question": "What suggestion did Sam give to Evan to help with his knee issue?",
-        "answer": "Consider low-impact exercises or physical therapy",
+        "answer": [
+          "Consider low-impact exercises or physical therapy"
+        ],
         "evidence": [
           "D9:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1632,11 +1567,14 @@
       },
       {
         "question": "What did Evan suggest Sam try as a calming hobby?",
-        "answer": "Painting",
+        "answer": [
+          "Painting"
+        ],
         "evidence": [
           "D10:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1644,11 +1582,14 @@
       },
       {
         "question": "What did Evan recommend Sam acquire to get started with painting?",
-        "answer": "Acrylic paints, brushes, canvas/paper, palette",
+        "answer": [
+          "Acrylic paints, brushes, canvas/paper, palette"
+        ],
         "evidence": [
           "D10:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1656,11 +1597,14 @@
       },
       {
         "question": "What activity does Evan do to keep himself busy while healing his knee?",
-        "answer": "Watercolor painting",
+        "answer": [
+          "Watercolor painting"
+        ],
         "evidence": [
           "D11:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1668,11 +1612,14 @@
       },
       {
         "question": "What painting did Evan share with Sam in October?",
-        "answer": "a cactus in the desert",
+        "answer": [
+          "a cactus in the desert"
+        ],
         "evidence": [
           "D11:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1680,11 +1627,14 @@
       },
       {
         "question": "What kind of writing does Sam enjoy as a form of expression?",
-        "answer": "creative writing",
+        "answer": [
+          "creative writing"
+        ],
         "evidence": [
           "D11:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1692,11 +1642,14 @@
       },
       {
         "question": "What electronics issue has been frustrating Sam lately?",
-        "answer": "malfunctioning navigation app on the new phone",
+        "answer": [
+          "malfunctioning navigation app on the new phone"
+        ],
         "evidence": [
           "D11:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1704,11 +1657,14 @@
       },
       {
         "question": "What activity did Evan start one year ago?",
-        "answer": "lifting weights",
+        "answer": [
+          "lifting weights"
+        ],
         "evidence": [
           "D12:2"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1716,11 +1672,17 @@
       },
       {
         "question": "What advice did Evan give to Sam to avoid injuries while starting weightlifting?",
-        "answer": "Find a trainer",
+        "answer": [
+          "start out with good form and technique",
+          "Find a trainer",
+          "Start with something small",
+          "Stay consistent with your workout routine"
+        ],
         "evidence": [
           "D12:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1728,11 +1690,14 @@
       },
       {
         "question": "Where did Sam and his mate plan to try kayaking?",
-        "answer": "Lake Tahoe",
+        "answer": [
+          "Lake Tahoe"
+        ],
         "evidence": [
           "D13:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1740,11 +1705,14 @@
       },
       {
         "question": "What digestive issue did Sam experience lately?",
-        "answer": "Gastritis",
+        "answer": [
+          "Gastritis"
+        ],
         "evidence": [
           "D14:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1752,11 +1720,14 @@
       },
       {
         "question": "What adventurous theme is emerging in Evan's life as mentioned by Sam?",
-        "answer": "helping lost tourists",
+        "answer": [
+          "helping lost tourists"
+        ],
         "evidence": [
           "D14:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1764,11 +1735,14 @@
       },
       {
         "question": "What does Evan mention about his progress at the gym to Sam?",
-        "answer": "gaining strength",
+        "answer": [
+          "gaining strength"
+        ],
         "evidence": [
           "D14:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1776,11 +1750,14 @@
       },
       {
         "question": "How did Evan start his transformation journey two years ago?",
-        "answer": "Changed his diet and started walking regularly",
+        "answer": [
+          "Changed his diet and started walking regularly"
+        ],
         "evidence": [
           "D15:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1788,11 +1765,14 @@
       },
       {
         "question": "What gift did Evan receive from a close friend?",
-        "answer": "1968 Kustom K-200A vintage guitar",
+        "answer": [
+          "1968 Kustom K-200A vintage guitar"
+        ],
         "evidence": [
           "D16:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1800,11 +1780,14 @@
       },
       {
         "question": "Why had Evan been going through a tough time lately?",
-        "answer": "Lost their job due to downsizing",
+        "answer": [
+          "Lost their job due to downsizing"
+        ],
         "evidence": [
           "D16:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1812,11 +1795,14 @@
       },
       {
         "question": "How does Evan describe the island he grew up on?",
-        "answer": "A happy place",
+        "answer": [
+          "A happy place"
+        ],
         "evidence": [
           "D17:18"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1824,23 +1810,14 @@
       },
       {
         "question": "What was the main reason for Evan's frustration with his new Prius breaking down?",
-        "answer": "He relied on it for his active lifestyle and road trips",
+        "answer": [
+          "He relied on it for his active lifestyle and road trips"
+        ],
         "evidence": [
           "D18:1"
         ],
         "category": 4,
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "How did Sam suggest Evan view the setback with his broken Prius?",
-        "answer": "As a chance to explore other ways of staying active and traveling",
-        "evidence": [
-          "D18:5"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1848,11 +1825,14 @@
       },
       {
         "question": "What did Sam suggest Evan try for stress relief and flexibility?",
-        "answer": "Yoga",
+        "answer": [
+          "Yoga"
+        ],
         "evidence": [
           "D18:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1860,11 +1840,14 @@
       },
       {
         "question": "What did Sam offer Evan regarding yoga?",
-        "answer": "Support and tips",
+        "answer": [
+          "Support and tips"
+        ],
         "evidence": [
           "D18:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1872,11 +1855,14 @@
       },
       {
         "question": "What news did Evan share with Sam on 9th December 2023?",
-        "answer": "partner is pregnant",
+        "answer": [
+          "partner is pregnant"
+        ],
         "evidence": [
           "D19:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1884,11 +1870,14 @@
       },
       {
         "question": "What family event is Evan planning for next summer?",
-        "answer": "big family reunion",
+        "answer": [
+          "big family reunion"
+        ],
         "evidence": [
           "D19:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1896,11 +1885,14 @@
       },
       {
         "question": "What is the motto of Evan's family?",
-        "answer": "'Bring it on Home'",
+        "answer": [
+          "'Bring it on Home'"
+        ],
         "evidence": [
           "D19:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1908,11 +1900,14 @@
       },
       {
         "question": "According to Evan, what is important for Sam to believe in concerning his weight?",
-        "answer": "Your worth is not defined by your weight",
+        "answer": [
+          "Your worth is not defined by your weight"
+        ],
         "evidence": [
           "D20:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1920,11 +1915,14 @@
       },
       {
         "question": "Who helped Evan get the painting published in the exhibition?",
-        "answer": "a close friend",
+        "answer": [
+          "a close friend"
+        ],
         "evidence": [
           "D20:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1932,11 +1930,14 @@
       },
       {
         "question": "What did Sam recently start enjoying to clear his head?",
-        "answer": "running in the mornings",
+        "answer": [
+          "running in the mornings"
+        ],
         "evidence": [
           "D21:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1944,11 +1945,14 @@
       },
       {
         "question": "What did Sam suggest Evan should do with his keys?",
-        "answer": "put a GPS sensor on them",
+        "answer": [
+          "put a GPS sensor on them"
+        ],
         "evidence": [
           "D21:21"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1956,11 +1960,14 @@
       },
       {
         "question": "How did Evan feel when he painted the piece with the bird flying over it?",
-        "answer": "a sense of joy and freedom",
+        "answer": [
+          "a sense of joy and freedom"
+        ],
         "evidence": [
           "D21:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1968,11 +1975,14 @@
       },
       {
         "question": "What did Evan suggest Sam should keep doing to find his own version of love?",
-        "answer": "Keep trying new things",
+        "answer": [
+          "Keep trying new things"
+        ],
         "evidence": [
           "D21:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1980,11 +1990,14 @@
       },
       {
         "question": "How did Evan describe the process of creating the painting with the bird flying over it?",
-        "answer": "embracing the creative process without restraint",
+        "answer": [
+          "embracing the creative process without restraint"
+        ],
         "evidence": [
           "D21:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1992,35 +2005,14 @@
       },
       {
         "question": "What did Evan want to share with his work friends?",
-        "answer": "getting married",
+        "answer": [
+          "getting married"
+        ],
         "evidence": [
           "D22:4"
         ],
         "category": 4,
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "What did Evan share with Sam after their hiking trip?",
-        "answer": "a photo of a man standing on a rock looking out over a valley",
-        "evidence": [
-          "D22:1"
-        ],
-        "category": 4,
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "What did Evan offer to share with Sam after talking about healthy snacks?",
-        "answer": "the recipes for cookies",
-        "evidence": [
-          "D22:12"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -2028,11 +2020,14 @@
       },
       {
         "question": "What did Evan and his partner share with their extended family on January 5, 2024?",
-        "answer": "their marriage",
+        "answer": [
+          "their marriage"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2040,11 +2035,14 @@
       },
       {
         "question": "What was Evan limiting himself to on his new diet?",
-        "answer": "just two ginger snaps a day",
+        "answer": [
+          "just two ginger snaps a day"
+        ],
         "evidence": [
           "D23:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2052,11 +2050,14 @@
       },
       {
         "question": "What sports activity did Evan and his partner try in a recent weekend?",
-        "answer": "Snowshoeing",
+        "answer": [
+          "Snowshoeing"
+        ],
         "evidence": [
           "D24:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2064,12 +2065,15 @@
       },
       {
         "question": "What advice did Evan suggest Sam seek from a doctor?",
-        "answer": "diet plan and low-impact exercises",
+        "answer": [
+          "diet and exercise tips"
+        ],
         "evidence": [
           "D24:11",
           "D24:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2077,11 +2081,14 @@
       },
       {
         "question": "What suggestions did Evan give for low-impact exercises?",
-        "answer": "swimming, yoga, walking",
+        "answer": [
+          "swimming, yoga, walking"
+        ],
         "evidence": [
           "D24:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2089,11 +2096,14 @@
       },
       {
         "question": "What movie did Sam watch that motivated him to keep up with his routine?",
-        "answer": "The Godfather",
+        "answer": [
+          "The Godfather"
+        ],
         "evidence": [
           "D24:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2101,35 +2111,29 @@
       },
       {
         "question": "What activity helped Evan with stress and flexibility?",
-        "answer": "Yoga",
+        "answer": [
+          "Yoga"
+        ],
         "evidence": [
           "D24:19"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
         ]
       },
       {
-        "question": "What did Evan share a photo of that was taken on a camping trip?",
-        "answer": "a kayak",
-        "evidence": [
-          "D25:8"
-        ],
-        "category": 4,
-        "where": 25,
-        "where_ground_truth": [
-          25
-        ]
-      },
-      {
         "question": "Why did Evan apologize to his partner?",
-        "answer": "for a drunken night",
+        "answer": [
+          "for a drunken night"
+        ],
         "evidence": [
           "D25:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2137,494 +2141,82 @@
       },
       {
         "question": "How does Evan describe being out on the water while kayaking and watching the sunset?",
-        "answer": "peaceful",
+        "answer": [
+          "peaceful,unforgettable",
+          "peaceful"
+        ],
         "evidence": [
           "D25:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
         ]
       },
       {
-        "question": "What type of car did Sam get after his old Prius broke down?",
-        "evidence": [
-          "D1:2"
+        "question": "What did Evan share with Sam after their hiking trip?",
+        "answer": [
+          "a photo of a man standing on a rock looking out over a valley"
         ],
-        "category": 5,
-        "adversarial_answer": "new Prius",
-        "where": 1,
+        "evidence": [
+          "D22:1"
+        ],
+        "category": 4,
+        "is_multi_modality": true,
+        "where": 22,
         "where_ground_truth": [
-          1
+          22
         ]
       },
       {
-        "question": "How did Sam get into watercolor painting?",
-        "evidence": [
-          "D1:16"
+        "question": "What did Evan share a photo of that was taken on a camping trip?",
+        "answer": [
+          "a kayak"
         ],
-        "category": 5,
-        "adversarial_answer": "friend's advice",
-        "where": 1,
+        "evidence": [
+          "D25:8"
+        ],
+        "category": 4,
+        "is_multi_modality": true,
+        "where": 25,
         "where_ground_truth": [
-          1
+          25
         ]
       },
       {
-        "question": "What did Sam start doing a few years back as a stress-buster?",
-        "evidence": [
-          "D1:14"
+        "question": "How many times does Sam mention having had a health checkup or doctor's appointment?",
+        "answer": [
+          "three times"
         ],
-        "category": 5,
-        "adversarial_answer": "watercolor painting",
-        "where": 1,
-        "where_ground_truth": [
-          1
-        ]
-      },
-      {
-        "question": "Where did Sam take his family for a road trip on 24 May, 2023?",
         "evidence": [
-          "D2:1"
+          "D2:6",
+          "D7:2",
+          "D12:1"
         ],
-        "category": 5,
-        "adversarial_answer": "Jasper",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "What did Sam find relaxing about his road trip to Jasper?",
-        "evidence": [
-          "D2:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "fresh air, peacefulness, cozy cabin surrounded by mountains and forests",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "What habit is Evan trying to change in terms of diet?",
-        "evidence": [
-          "D3:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "consuming soda and candy",
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
-        "question": "What frustrating issue did Evan face at the supermarket?",
-        "evidence": [
-          "D3:16"
-        ],
-        "category": 5,
-        "adversarial_answer": "broken self-checkout machines",
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
-        "question": "What novel is Sam reading that he finds gripping?",
-        "evidence": [
-          "D4:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "The Great Gatsby",
-        "where": 4,
-        "where_ground_truth": [
-          4
-        ]
-      },
-      {
-        "question": "What does the smartwatch help Sam with?",
-        "evidence": [
-          "D5:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "tracks progress and serves as a constant reminder to keep going",
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
-        "question": "Why did Sam decide to get the bonsai tree?",
-        "evidence": [
-          "D5:17"
-        ],
-        "category": 5,
-        "adversarial_answer": "motivates him to keep going through tough times",
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
-        "question": "What did Sam mention he had been searching for fruitlessly for half an hour?",
-        "evidence": [
-          "D6:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "his keys",
-        "where": 6,
-        "where_ground_truth": [
-          6
-        ]
-      },
-      {
-        "question": "What class is Evan taking to learn how to make healthier meals?",
-        "evidence": [
-          "D7:2"
-        ],
-        "category": 5,
-        "adversarial_answer": "cooking class",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What dish did Sam make on 18 August, 2023 that turned out bland?",
-        "evidence": [
-          "D7:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "grilled dish with salmon and vegetables",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What food did Evan share a photo of on 19 August, 2023?",
-        "evidence": [
-          "D8:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "bowl of spinach, avocado, and strawberries",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What did Evan start sculpting years ago due to being inspired by a friend's gift?",
-        "evidence": [
-          "D8:14"
-        ],
-        "category": 5,
-        "adversarial_answer": "forest scene",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What nature concept do watercolor painting classes emphasize according to Sam?",
-        "evidence": [
-          "D8:18"
-        ],
-        "category": 5,
-        "adversarial_answer": "observing nature and painting what is seen",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What type of landscapes does Sam love painting the most?",
-        "evidence": [
-          "D8:20"
-        ],
-        "category": 5,
-        "adversarial_answer": "sunsets over the ocean",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What sports activity has Sam been doing to stay active while dealing with the knee injury?",
-        "evidence": [
-          "D9:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Swimming",
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "What activity does Sam do to keep himself busy while healing his knee?",
-        "evidence": [
-          "D11:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Watercolor painting",
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
-        "question": "What kind of writing does Evan enjoy as a form of expression?",
-        "evidence": [
-          "D11:17"
-        ],
-        "category": 5,
-        "adversarial_answer": "creative writing",
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
-        "question": "What electronics issue has been frustrating Evan lately?",
-        "evidence": [
-          "D11:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "malfunctioning navigation app on the new phone",
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
-        "question": "What activity did Evan quit one year ago?",
-        "evidence": [
-          "D12:2"
-        ],
-        "category": 5,
-        "adversarial_answer": "lifting weights",
+        "category": 3,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
+          2,
+          7,
           12
         ]
       },
       {
-        "question": "Where did Sam and his mate plan to try skydiving?",
-        "evidence": [
-          "D13:14"
+        "question": "How did Evan try to view the setback with his broken Prius?",
+        "answer": [
+          "As a chance to explore other ways of staying active and traveling"
         ],
-        "category": 5,
-        "adversarial_answer": "Lake Tahoe",
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "What digestive issue did Evan experience lately?",
         "evidence": [
-          "D14:1"
+          "D18:5"
         ],
-        "category": 5,
-        "adversarial_answer": "Gastritis",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "How did Sam start his transformation journey two years ago?",
-        "evidence": [
-          "D15:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "Changed his diet and started walking regularly",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "What gift did Sam receive from a close friend?",
-        "evidence": [
-          "D16:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "1968 Kustom K-200A vintage guitar",
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
-        "question": "How does Sam describe the island he grew up on?",
-        "evidence": [
-          "D17:18"
-        ],
-        "category": 5,
-        "adversarial_answer": "A happy place",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "What was the main reason for Evan's frustration with his new Prius getting stolen?",
-        "evidence": [
-          "D18:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "He relied on it for his active lifestyle and road trips",
+        "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
-        ]
-      },
-      {
-        "question": "What family event is Sam planning for next summer?",
-        "evidence": [
-          "D19:11"
-        ],
-        "category": 5,
-        "adversarial_answer": "big family reunion",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What is the motto of Sam's family?",
-        "evidence": [
-          "D19:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "'Bring it on Home'",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "Who helped Sam get the painting published in the exhibition?",
-        "evidence": [
-          "D20:17"
-        ],
-        "category": 5,
-        "adversarial_answer": "a close friend",
-        "where": 20,
-        "where_ground_truth": [
-          20
-        ]
-      },
-      {
-        "question": "How did Sam feel when he painted the piece with the bird flying over it?",
-        "evidence": [
-          "D21:16"
-        ],
-        "category": 5,
-        "adversarial_answer": "a sense of joy and freedom",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "How did Sam describe the process of creating the painting with the bird flying over it?",
-        "evidence": [
-          "D21:16"
-        ],
-        "category": 5,
-        "adversarial_answer": "embracing the creative process without restraint",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What did Evan and his partner keep from their extended family on January 5, 2024?",
-        "evidence": [
-          "D23:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "their marriage",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What was Sam limiting himself to on his new diet?",
-        "evidence": [
-          "D23:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "just two ginger snaps a day",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What dance activity did Evan and his partner try in a recent weekend?",
-        "evidence": [
-          "D24:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "Snowshoeing",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What suggestions did Evan give for high-impact exercises?",
-        "evidence": [
-          "D24:17"
-        ],
-        "category": 5,
-        "adversarial_answer": "swimming, yoga, walking",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What movie did Evan watch that motivated him to keep up with his routine?",
-        "evidence": [
-          "D24:18"
-        ],
-        "category": 5,
-        "adversarial_answer": "The Godfather",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What activity hindered Evan's stress and flexibility?",
-        "evidence": [
-          "D24:19"
-        ],
-        "category": 5,
-        "adversarial_answer": "Yoga",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What did Sam share a photo of that was taken on a camping trip?",
-        "evidence": [
-          "D25:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "a kayak",
-        "where": 25,
-        "where_ground_truth": [
-          25
         ]
       }
     ],

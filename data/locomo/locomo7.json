@@ -3,39 +3,29 @@
     "qa": [
       {
         "question": "What kind of project was Jolene working on in the beginning of January 2023?",
-        "answer": "electricity engineering project",
+        "answer": [
+          "electricity engineering project"
+        ],
         "evidence": [
           "D1:2"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
         ]
       },
       {
-        "question": "Which of Deborah`s family and friends have passed away?",
-        "answer": "mother, father, her friend Karlie",
-        "evidence": [
-          "D1:5",
-          "D2:1",
-          "D6:4"
-        ],
-        "category": 1,
-        "where": 6,
-        "where_ground_truth": [
-          1,
-          2,
-          6
-        ]
-      },
-      {
         "question": "When did Deborah`s mother pass away?",
-        "answer": "a few years before 2023",
+        "answer": [
+          "a few years before 2023"
+        ],
         "evidence": [
           "D1:5"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -43,11 +33,14 @@
       },
       {
         "question": "When did Jolene`s mother pass away?",
-        "answer": "in 2022",
+        "answer": [
+          "in 2022"
+        ],
         "evidence": [
           "D1:6"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -55,11 +48,14 @@
       },
       {
         "question": "When did Jolene's mom gift her a pendant?",
-        "answer": "in 2010",
+        "answer": [
+          "in 2010"
+        ],
         "evidence": [
           "D1:8"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -67,24 +63,14 @@
       },
       {
         "question": "In what country did Jolene's mother buy her the pendant?",
-        "answer": "In France",
+        "answer": [
+          "In France"
+        ],
         "evidence": [
           "D1:8"
         ],
         "category": 3,
-        "where": 1,
-        "where_ground_truth": [
-          1
-        ]
-      },
-      {
-        "question": "What symbolic gifts do Deborah and Jolene have from their mothers?",
-        "answer": "pendants",
-        "evidence": [
-          "D1:8",
-          "D1:9"
-        ],
-        "category": 1,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -92,11 +78,14 @@
       },
       {
         "question": "Which country were Jolene and her mother visiting in 2010?",
-        "answer": "France",
+        "answer": [
+          "France"
+        ],
         "evidence": [
           "D1:8"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -104,7 +93,9 @@
       },
       {
         "question": "What helped Deborah find peace when grieving deaths of her loved ones?",
-        "answer": "yoga, old photos, the roses and dahlias in a flower garden, nature",
+        "answer": [
+          "yoga, old photos, the roses and dahlias in a flower garden, nature"
+        ],
         "evidence": [
           "D1:15",
           "D2:3",
@@ -112,6 +103,7 @@
           "D15:29"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           1,
@@ -122,11 +114,14 @@
       },
       {
         "question": "When did Deborah's father pass away?",
-        "answer": "January 25, 2023",
+        "answer": [
+          "January 25, 2023"
+        ],
         "evidence": [
           "D2:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -134,11 +129,14 @@
       },
       {
         "question": "When was Deborah's parents' wedding?",
-        "answer": "in 1993",
+        "answer": [
+          "in 1993"
+        ],
         "evidence": [
           "D2:3"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -146,7 +144,9 @@
       },
       {
         "question": "Is Deborah married?",
-        "answer": "yes",
+        "answer": [
+          "yes"
+        ],
         "evidence": [
           "D2:5",
           "D19:11",
@@ -154,6 +154,7 @@
           "D28:11"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           2,
@@ -164,11 +165,14 @@
       },
       {
         "question": "When did Deborah receive an appreciation letter from her community?",
-        "answer": "January 26, 2023",
+        "answer": [
+          "January 26, 2023"
+        ],
         "evidence": [
           "D2:7"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -176,7 +180,9 @@
       },
       {
         "question": "What places give Deborah peace?",
-        "answer": "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park",
+        "answer": [
+          "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park"
+        ],
         "evidence": [
           "D2:13",
           "D4:34",
@@ -184,6 +190,7 @@
           "D19:17"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           2,
@@ -194,7 +201,9 @@
       },
       {
         "question": "What were Deborah's mother's hobbies?",
-        "answer": "reading, traveling, art, cooking",
+        "answer": [
+          "reading, traveling, art, cooking"
+        ],
         "evidence": [
           "D2:17",
           "D2:19",
@@ -202,6 +211,7 @@
           "D29:7"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           2,
@@ -211,13 +221,16 @@
       },
       {
         "question": "What pets does Jolene have?",
-        "answer": "snakes",
+        "answer": [
+          "snakes"
+        ],
         "evidence": [
           "D2:20",
           "D2:22",
           "D2:24"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -225,12 +238,15 @@
       },
       {
         "question": "What are the names of Jolene's snakes?",
-        "answer": "Susie, Seraphim",
+        "answer": [
+          "Susie, Seraphim"
+        ],
         "evidence": [
           "D2:20",
           "D2:22"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -238,11 +254,14 @@
       },
       {
         "question": "When did Jolene buy her pet Seraphim?",
-        "answer": "in 2022",
+        "answer": [
+          "in 2022"
+        ],
         "evidence": [
           "D2:24"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -250,11 +269,14 @@
       },
       {
         "question": "In what country did Jolene buy snake Seraphim?",
-        "answer": "In France",
+        "answer": [
+          "In France"
+        ],
         "evidence": [
           "D2:24"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -262,12 +284,15 @@
       },
       {
         "question": "How many times has Jolene been to France?",
-        "answer": "two times",
+        "answer": [
+          "two times"
+        ],
         "evidence": [
           "D2:24",
           "D1:8"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           1,
@@ -276,7 +301,9 @@
       },
       {
         "question": "Which games have Jolene and her partner played together?",
-        "answer": "Detroit, Walking Dead, Battlefield 1, It Takes Two, Overcooked 2",
+        "answer": [
+          "Detroit, Walking Dead, Battlefield 1, It Takes Two, Overcooked 2"
+        ],
         "evidence": [
           "D2:26",
           "D2:30",
@@ -285,6 +312,7 @@
           "D19:10"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
           2,
@@ -295,11 +323,15 @@
       },
       {
         "question": "When do Jolene and her partner plan to complete the game \"Walking Dead\"?",
-        "answer": "Saturday after 27 January, 2023",
+        "answer": [
+          "Saturday after 27 January, 2023",
+          "January 28, 2023"
+        ],
         "evidence": [
           "D2:30"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -307,11 +339,14 @@
       },
       {
         "question": "When did Deborah meet Anna?",
-        "answer": "31 January, 2023",
+        "answer": [
+          "31 January, 2023"
+        ],
         "evidence": [
           "D3:4"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -319,12 +354,15 @@
       },
       {
         "question": "Why did Jolene sometimes put off doing yoga?",
-        "answer": "She's more interested in playing video games",
+        "answer": [
+          "She's more interested in playing video games"
+        ],
         "evidence": [
           "D3:11",
           "D2:30"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           2,
@@ -333,13 +371,16 @@
       },
       {
         "question": "What new yoga poses did Deborah try?",
-        "answer": "Warrior II, Dancer Pose (Natarajasana), Tree pose",
+        "answer": [
+          "Warrior II, Dancer Pose (Natarajasana), Tree pose"
+        ],
         "evidence": [
           "D4:14",
           "D14:3",
           "D14:15"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 14,
         "where_ground_truth": [
           4,
@@ -348,12 +389,15 @@
       },
       {
         "question": "What are Jolene's favorite books?",
-        "answer": "Sapiens, Avalanche by Neal Stephenson",
+        "answer": [
+          "Sapiens, Avalanche by Neal Stephenson"
+        ],
         "evidence": [
           "D4:21",
           "D4:23"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -361,11 +405,14 @@
       },
       {
         "question": "Which book did Jolene read in January 2023?",
-        "answer": "Avalanche by Neal Stephenson",
+        "answer": [
+          "Avalanche by Neal Stephenson"
+        ],
         "evidence": [
           "D4:23"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -373,11 +420,14 @@
       },
       {
         "question": "When was Jolene in Bogota?",
-        "answer": "in summer 2022",
+        "answer": [
+          "in summer 2022"
+        ],
         "evidence": [
           "D4:33"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
@@ -385,11 +435,14 @@
       },
       {
         "question": "In what country was Jolene during summer 2022?",
-        "answer": "Colombia",
+        "answer": [
+          "Colombia"
+        ],
         "evidence": [
           "D4:33"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
@@ -397,11 +450,15 @@
       },
       {
         "question": "When did Jolene have a mini-retreat to reflect on her career?",
-        "answer": "Wednesday before 9 February, 2023",
+        "answer": [
+          "Wednesday before 9 February, 2023",
+          "February 8, 2023"
+        ],
         "evidence": [
           "D5:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -409,11 +466,14 @@
       },
       {
         "question": "When did Jolene have a dinner and drinks with her friends?",
-        "answer": "21 February, 2023",
+        "answer": [
+          "21 February, 2023"
+        ],
         "evidence": [
           "D6:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 6,
         "where_ground_truth": [
           6
@@ -421,11 +481,14 @@
       },
       {
         "question": "When was the last photo of Deborah and Karlie taken?",
-        "answer": "in summer 2022",
+        "answer": [
+          "in summer 2022"
+        ],
         "evidence": [
           "D6:8"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 6,
         "where_ground_truth": [
           6
@@ -433,11 +496,14 @@
       },
       {
         "question": "When was Deborah in Bali?",
-        "answer": "in 2022",
+        "answer": [
+          "in 2022"
+        ],
         "evidence": [
           "D6:10"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 6,
         "where_ground_truth": [
           6
@@ -445,11 +511,14 @@
       },
       {
         "question": "How long have Jolene and her partner been together?",
-        "answer": "for three years",
+        "answer": [
+          "for three years"
+        ],
         "evidence": [
           "D7:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -457,11 +526,14 @@
       },
       {
         "question": "Which year did Jolene and her partner start dating?",
-        "answer": "2020",
+        "answer": [
+          "2020"
+        ],
         "evidence": [
           "D7:7"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -469,50 +541,30 @@
       },
       {
         "question": "When did Deborah go for her first morning jog in a nearby park?",
-        "answer": "24 February, 2023",
+        "answer": [
+          "24 February, 2023"
+        ],
         "evidence": [
           "D7:18"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
         ]
       },
       {
-        "question": "How old is Jolene?",
-        "answer": "likely no more than 30; since she's in school",
-        "evidence": [
-          "D8:2",
-          "D13:5",
-          "D21:6",
-          "D21:8",
-          "D22:6",
-          "D22:14",
-          "D24:2",
-          "D24:14",
-          "D25:5",
-          "D26:6"
-        ],
-        "category": 3,
-        "where": 26,
-        "where_ground_truth": [
-          8,
-          13,
-          21,
-          22,
-          24,
-          25,
-          26
-        ]
-      },
-      {
         "question": "When did Jolene take Seraphim to the park?",
-        "answer": "Sunday before 2 March, 2023",
+        "answer": [
+          "Sunday before 2 March, 2023",
+          "February 26, 2023"
+        ],
         "evidence": [
           "D8:8"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
@@ -520,11 +572,15 @@
       },
       {
         "question": "When did Deborah start the yoga class in the neighborhood?",
-        "answer": "Friday before 13 March, 2023",
+        "answer": [
+          "Friday before 13 March, 2023",
+          "March 10, 2023"
+        ],
         "evidence": [
           "D9:5"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           9
@@ -532,7 +588,9 @@
       },
       {
         "question": "What time management techniques do Deborah and Jolene use?",
-        "answer": "the Pomodoro Technique - 25 minutes work and 5-minute break, scheduler or to-do list, The Eisenhower Matrix, bullet journal",
+        "answer": [
+          "the Pomodoro Technique - 25 minutes work and 5-minute break, scheduler or to-do list, The Eisenhower Matrix, bullet journal"
+        ],
         "evidence": [
           "D10:4",
           "D10:5",
@@ -541,6 +599,7 @@
           "D18:3"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           10,
@@ -549,11 +608,14 @@
       },
       {
         "question": "Does Deborah live close to the beach or the mountains?",
-        "answer": "beach",
+        "answer": [
+          "beach"
+        ],
         "evidence": [
           "D10:17"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 10,
         "where_ground_truth": [
           10
@@ -561,7 +623,9 @@
       },
       {
         "question": "What ways do Deborah and Jolene use to enhance their yoga practice?",
-        "answer": "candles, music, essential oils",
+        "answer": [
+          "candles, music, essential oils"
+        ],
         "evidence": [
           "D11:4",
           "D11:7",
@@ -569,6 +633,7 @@
           "D28:18"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           11,
@@ -577,12 +642,15 @@
       },
       {
         "question": "What music pieces does Deborah listen to during her yoga practice?",
-        "answer": "Savana, Sleep",
+        "answer": [
+          "Savana, Sleep"
+        ],
         "evidence": [
           "D11:8",
           "D11:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -590,11 +658,15 @@
       },
       {
         "question": "When did Deborah go for a bicycle ride with Anna?",
-        "answer": "first week of April, 2023",
+        "answer": [
+          "first week of April, 2023",
+          "From April 3, 2023 to April 9, 2023"
+        ],
         "evidence": [
           "D12:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -602,11 +674,14 @@
       },
       {
         "question": "When did Deborah go to an art show with Anna?",
-        "answer": "on 9 April, 2023",
+        "answer": [
+          "on 9 April, 2023"
+        ],
         "evidence": [
           "D12:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -614,39 +689,29 @@
       },
       {
         "question": "When did Jolene finish her robotics project?",
-        "answer": "May 2023",
+        "answer": [
+          "May 2023"
+        ],
         "evidence": [
           "D13:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "How long did Jolene work on the robotics project given to her by her Professor?",
-        "answer": "four months",
-        "evidence": [
-          "D3:1",
-          "D12:10",
-          "D13:1"
-        ],
-        "category": 2,
-        "where": 13,
-        "where_ground_truth": [
-          3,
-          12,
           13
         ]
       },
       {
         "question": "When did Jolene do yoga at Talkeetna?",
-        "answer": "on 5 June, 2023",
+        "answer": [
+          "on 5 June, 2023"
+        ],
         "evidence": [
           "D13:15"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -654,11 +719,14 @@
       },
       {
         "question": "Which US state did Jolene visit during her internship?",
-        "answer": "Alaska",
+        "answer": [
+          "Alaska"
+        ],
         "evidence": [
           "D13:15"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -666,11 +734,14 @@
       },
       {
         "question": "How long has Jolene been doing yoga and meditation?",
-        "answer": "about 3 years",
+        "answer": [
+          "about 3 years"
+        ],
         "evidence": [
           "D13:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -678,11 +749,14 @@
       },
       {
         "question": "Which year did Jolene start practicing yoga?",
-        "answer": "2020",
+        "answer": [
+          "2020"
+        ],
         "evidence": [
           "D13:17"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -690,11 +764,14 @@
       },
       {
         "question": "When did Jolene buy a new aquarium for Seraphim?",
-        "answer": "24 June, 2023",
+        "answer": [
+          "24 June, 2023"
+        ],
         "evidence": [
           "D14:4"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 14,
         "where_ground_truth": [
           14
@@ -702,11 +779,15 @@
       },
       {
         "question": "When did Jolene lose a lot of progress in her work?",
-        "answer": "last week of July 2023",
+        "answer": [
+          "last week of July 2023",
+          "From July 24, 2023 to July 30, 2023"
+        ],
         "evidence": [
           "D16:2"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -714,12 +795,15 @@
       },
       {
         "question": "When did Jolene adopt her snake Susie?",
-        "answer": "in 2021",
+        "answer": [
+          "in 2021"
+        ],
         "evidence": [
           "D16:6",
           "D28:26"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           16,
@@ -728,13 +812,16 @@
       },
       {
         "question": "Which pet did Jolene adopt first - Susie or Seraphim?",
-        "answer": "Susie",
+        "answer": [
+          "Susie"
+        ],
         "evidence": [
           "D2:24",
           "D2:28",
           "D16:6"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           2,
@@ -743,13 +830,16 @@
       },
       {
         "question": "Which pet did Jolene adopt more recently - Susie or Seraphim?",
-        "answer": "Seraphim",
+        "answer": [
+          "Seraphim"
+        ],
         "evidence": [
           "D2:24",
           "D2:28",
           "D16:6"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           2,
@@ -758,11 +848,15 @@
       },
       {
         "question": "When did Deborah lead a meditation session during the sunset?",
-        "answer": "week before 16 August, 2023",
+        "answer": [
+          "week before 16 August, 2023",
+          "From August 7, 2023 to August 13, 2023"
+        ],
         "evidence": [
           "D18:8"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           18
@@ -770,11 +864,14 @@
       },
       {
         "question": "When did Jolene gift her partner a new console?",
-        "answer": "17 August, 2023",
+        "answer": [
+          "17 August, 2023"
+        ],
         "evidence": [
           "D19:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           19
@@ -782,12 +879,15 @@
       },
       {
         "question": "What games does Jolene recommend for Deborah?",
-        "answer": "Zelda BOTW for Switch , Animal Crossing: New Horizons, Overcooked 2",
+        "answer": [
+          "Zelda BOTW for Switch , Animal Crossing: New Horizons, Overcooked 2"
+        ],
         "evidence": [
           "D19:8",
           "D19:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -795,12 +895,15 @@
       },
       {
         "question": "What do Deborah and her husband do together?",
-        "answer": "play detective games together, spend time outdoors and explore nature",
+        "answer": [
+          "play detective games together, spend time outdoors and explore nature"
+        ],
         "evidence": [
           "D19:13",
           "D19:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -808,11 +911,14 @@
       },
       {
         "question": "When did Deborah go to a yoga retreat near her mom's place?",
-        "answer": "a week before 24 August,2023",
+        "answer": [
+          "a week before 24 August,2023"
+        ],
         "evidence": [
           "D21:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -820,12 +926,15 @@
       },
       {
         "question": "What projects is Jolene planning for next year?",
-        "answer": "developing renewable energy finding ways to supply clean water to those with limited access",
+        "answer": [
+          "developing renewable energy finding ways to supply clean water to those with limited access"
+        ],
         "evidence": [
           "D22:10",
           "D22:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -833,12 +942,15 @@
       },
       {
         "question": "Where did Deborah get her cats?",
-        "answer": "Luna is from the shelter and Max is her mother's cat",
+        "answer": [
+          "Luna is from the shelter and Max is her mother's cat"
+        ],
         "evidence": [
           "D22:23",
           "D22:25"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -846,12 +958,15 @@
       },
       {
         "question": "How old are Deborah's cats?",
-        "answer": "Max is 8 years old and Luna is 5 years old",
+        "answer": [
+          "Max is 8 years old and Luna is 5 years old"
+        ],
         "evidence": [
           "D22:27",
           "D22:29"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -859,12 +974,15 @@
       },
       {
         "question": "Does Deborah like cats?",
-        "answer": "Yes",
+        "answer": [
+          "Yes"
+        ],
         "evidence": [
           "D22:27",
           "D15:25"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           15,
@@ -873,11 +991,14 @@
       },
       {
         "question": "Which country was Jolene located in during the last week of August 2023?",
-        "answer": "Brazil",
+        "answer": [
+          "Brazil"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -885,11 +1006,14 @@
       },
       {
         "question": "When did Jolene and her partner return home from Rio de Janeiro?",
-        "answer": "29 August, 2023",
+        "answer": [
+          "29 August, 2023"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -897,7 +1021,9 @@
       },
       {
         "question": "What was Jolene doing with her partner in Rio de Janeiro?",
-        "answer": "they went on excursions, checked out some cool yoga classes, visited a lot of delicious cafes, visited an old temple",
+        "answer": [
+          "they went on excursions, checked out some cool yoga classes, visited a lot of delicious cafes, visited an old temple"
+        ],
         "evidence": [
           "D23:15",
           "D23:1",
@@ -905,6 +1031,7 @@
           "D23:17"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -912,11 +1039,14 @@
       },
       {
         "question": "When did Deborah visit Brazil?",
-        "answer": "2020",
+        "answer": [
+          "2020"
+        ],
         "evidence": [
           "D23:18"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -924,13 +1054,16 @@
       },
       {
         "question": "Have Deborah and Jolene been to Rio de Janeiro?",
-        "answer": "yes",
+        "answer": [
+          "yes"
+        ],
         "evidence": [
           "D23:1",
           "D23:3",
           "D23:18"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -938,35 +1071,29 @@
       },
       {
         "question": "Is the friend who wrote Deborah the motivational quote no longer alive?",
-        "answer": "likely yes",
+        "answer": [
+          "likely yes"
+        ],
         "evidence": [
           "D23:22"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
         ]
       },
       {
-        "question": "When did Deborah go to a community meetup?",
-        "answer": "last week of August 2023",
-        "evidence": [
-          "D24:1"
-        ],
-        "category": 2,
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
         "question": "When did Jolene's parents give her first console?",
-        "answer": "when she was 10",
+        "answer": [
+          "when she was 10"
+        ],
         "evidence": [
           "D24:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           24
@@ -974,12 +1101,15 @@
       },
       {
         "question": "Did Jolene teach herself how to play the console?",
-        "answer": "yes",
+        "answer": [
+          "yes"
+        ],
         "evidence": [
           "D2:28",
           "D24:8"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           2,
@@ -988,12 +1118,16 @@
       },
       {
         "question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
-        "answer": "coffee and fresh pastries",
+        "answer": [
+          "coffee and fresh pastries",
+          "fresh pastries"
+        ],
         "evidence": [
           "D26:10",
           "D26:12"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 26,
         "where_ground_truth": [
           26
@@ -1001,11 +1135,14 @@
       },
       {
         "question": "What card game is Deborah talking about?",
-        "answer": "Exploding Kittens",
+        "answer": [
+          "Exploding Kittens"
+        ],
         "evidence": [
           "D27:12"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -1013,37 +1150,30 @@
       },
       {
         "question": "When did Jolene and her partner try scuba diving lessons?",
-        "answer": "Friday before 17 September, 2023",
+        "answer": [
+          "Friday before 17 September, 2023",
+          "September 15, 2023"
+        ],
         "evidence": [
           "D29:4"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "Where did Jolene and her partner find a cool diving spot?",
-        "answer": "Phuket",
-        "evidence": [
-          "D27:1",
-          "D29:4"
-        ],
-        "category": 1,
-        "where": 29,
-        "where_ground_truth": [
-          27,
           29
         ]
       },
       {
         "question": "Where did Jolene and her partner spend most of September 2023?",
-        "answer": "Phuket",
+        "answer": [
+          "Phuket"
+        ],
         "evidence": [
           "D2:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1051,12 +1181,15 @@
       },
       {
         "question": "Has Deborah tried surfing?",
-        "answer": "yes",
+        "answer": [
+          "yes"
+        ],
         "evidence": [
           "D28:11",
           "D29:25"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           28,
@@ -1065,13 +1198,16 @@
       },
       {
         "question": "Has Jolene tried surfing?",
-        "answer": "no",
+        "answer": [
+          "no"
+        ],
         "evidence": [
           "D10:20",
           "D29:26",
           "D29:30"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           10,
@@ -1080,52 +1216,24 @@
       },
       {
         "question": "When did the Deboran and Jolene agree to go surfing?",
-        "answer": "in October 2023",
+        "answer": [
+          "in October 2023"
+        ],
         "evidence": [
           "D29:34"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
         ]
       },
       {
-        "question": "Which locations does Deborah practice her yoga at?",
-        "answer": "at her mother's old home, park, yoga studio, beach",
-        "evidence": [
-          "D2:11",
-          "D2:13",
-          "D3:6",
-          "D4:12",
-          "D6:10"
-        ],
-        "category": 1,
-        "where": 6,
-        "where_ground_truth": [
-          2,
-          3,
-          4,
-          6
-        ]
-      },
-      {
-        "question": "What kind of professional activities does Jolene participate in to gain more experience in her field?",
-        "answer": "present work at virtual conference, attend workshops  and intern at firms",
-        "evidence": [
-          "D21:6",
-          "D13:5"
-        ],
-        "category": 1,
-        "where": 21,
-        "where_ground_truth": [
-          13,
-          21
-        ]
-      },
-      {
         "question": "What kind of engineering projects has Jolene worked on?",
-        "answer": "electrical engineering, robotics, sustainable water purifier, productive and affordable aerial surveillance system",
+        "answer": [
+          "electrical engineering, robotics, sustainable water purifier, productive and affordable aerial surveillance system"
+        ],
         "evidence": [
           "D1:2",
           "D3:1",
@@ -1134,6 +1242,7 @@
           "D17:12"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           1,
@@ -1144,13 +1253,16 @@
       },
       {
         "question": "Which community activities have Deborah and Anna participated in?",
-        "answer": "yoga, running",
+        "answer": [
+          "yoga, running"
+        ],
         "evidence": [
           "D4:12",
           "D4:16",
           "D15:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           4,
@@ -1158,31 +1270,16 @@
         ]
       },
       {
-        "question": "What gifts has Deborah received?",
-        "answer": "an appreciate letter from her community, a flower bouqet from her friend, a motivational quote from a friend",
-        "evidence": [
-          "D2:7",
-          "D2:9",
-          "D4:26",
-          "D23:20",
-          "D23:22"
-        ],
-        "category": 1,
-        "where": 23,
-        "where_ground_truth": [
-          2,
-          4,
-          23
-        ]
-      },
-      {
         "question": "Which countries has Deborah traveled to?",
-        "answer": "Thailand, Brazil",
+        "answer": [
+          "Thailand, Brazil"
+        ],
         "evidence": [
           "D6:10",
           "D23:18"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           6,
@@ -1190,176 +1287,15 @@
         ]
       },
       {
-        "question": "What activities does Deborah pursue besides practicing and teaching yoga?",
-        "answer": "biking, going to art shows, running, organizing workshops to practice mindfulness and self-care, surfing, gardening",
-        "evidence": [
-          "D12:1",
-          "D15:1",
-          "D15:11",
-          "D28:11",
-          "D29:1"
-        ],
-        "category": 1,
-        "where": 29,
-        "where_ground_truth": [
-          12,
-          15,
-          28,
-          29
-        ]
-      },
-      {
-        "question": "What are the names of Jolene's snakes?",
-        "answer": "Susie, Seraphim",
-        "evidence": [
-          "D2:20",
-          "D2:22"
-        ],
-        "category": 4,
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "What are Jolene's favorite books?",
-        "answer": "Sapiens, Avalanche by Neal Stephenson",
-        "evidence": [
-          "D4:21",
-          "D4:23"
-        ],
-        "category": 4,
-        "where": 4,
-        "where_ground_truth": [
-          4
-        ]
-      },
-      {
-        "question": "What music pieces does Deborah listen to during her yoga practice?",
-        "answer": "Savana, Sleep",
-        "evidence": [
-          "D11:8",
-          "D11:10"
-        ],
-        "category": 4,
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
-        "question": "What games does Jolene recommend for Deborah?",
-        "answer": "Zelda BOTW for Switch , Animal Crossing: New Horizons, Overcooked 2",
-        "evidence": [
-          "D19:8",
-          "D19:10"
-        ],
-        "category": 4,
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What projects is Jolene planning for next year?",
-        "answer": "developing renewable energy finding ways to supply clean water to those with limited access",
-        "evidence": [
-          "D22:10",
-          "D22:12"
-        ],
-        "category": 4,
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "Where did Deborah get her cats?",
-        "answer": "Luna is from the shelter and Max is her mother's cat",
-        "evidence": [
-          "D22:23",
-          "D22:25"
-        ],
-        "category": 4,
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "How old are Deborah's cats?",
-        "answer": "Max is 8 years old and Luna is 5 years old",
-        "evidence": [
-          "D22:27",
-          "D22:29"
-        ],
-        "category": 4,
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "What was Jolene doing with her partner in Rio de Janeiro?",
-        "answer": "they went on excursions, checked out some cool yoga classes, visited a lot of delicious cafes, visited an old temple",
-        "evidence": [
-          "D23:15",
-          "D23:1",
-          "D23:3",
-          "D23:17"
-        ],
-        "category": 4,
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "Have Deborah and Jolene been to Rio de Janeiro?",
-        "answer": "yes",
-        "evidence": [
-          "D23:1",
-          "D23:3",
-          "D23:18"
-        ],
-        "category": 4,
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "When did Jolene's parents give her first console?",
-        "answer": "when she was 10",
-        "evidence": [
-          "D24:6"
-        ],
-        "category": 4,
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
-        "answer": "coffee and fresh pastries",
-        "evidence": [
-          "D26:10",
-          "D26:12"
-        ],
-        "category": 4,
-        "where": 26,
-        "where_ground_truth": [
-          26
-        ]
-      },
-      {
         "question": "What project did Jolene finish last week before 23 January, 2023?",
-        "answer": "an electrical engineering project",
+        "answer": [
+          "an electrical engineering project"
+        ],
         "evidence": [
           "D1:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1367,11 +1303,16 @@
       },
       {
         "question": "When did Jolene buy her pet snake?",
-        "answer": "A year ago",
+        "answer": [
+          "A year ago",
+          "January 2022"
+        ],
         "evidence": [
+          "D2:22",
           "D2:24"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1379,11 +1320,14 @@
       },
       {
         "question": "What project was Jolene working on as of 1 February, 2023?",
-        "answer": "Robotics project",
+        "answer": [
+          "Robotics project"
+        ],
         "evidence": [
           "D3:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1391,11 +1335,14 @@
       },
       {
         "question": "Where did Deborah meet her new neighbor Anna?",
-        "answer": "yoga in the park",
+        "answer": [
+          "yoga in the park"
+        ],
         "evidence": [
           "D3:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1403,11 +1350,14 @@
       },
       {
         "question": "What activity did Jolene and her partner plan to do together instead of resuming yoga?",
-        "answer": "play the console",
+        "answer": [
+          "play the console"
+        ],
         "evidence": [
           "D3:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1415,11 +1365,15 @@
       },
       {
         "question": "What milestone did Jolene achieve recently on 4 February, 2023?",
-        "answer": "Design and build a sustainable water purifier for a rural community",
+        "answer": [
+          "Design and build a sustainable water purifier for a rural community"
+        ],
         "evidence": [
-          "D4:3"
+          "D4:3",
+          "D4:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1427,11 +1381,14 @@
       },
       {
         "question": "What is Jolene's favorite book which she mentioned on 4 February, 2023?",
-        "answer": "\"Sapiens\"",
+        "answer": [
+          "\"Sapiens\""
+        ],
         "evidence": [
           "D4:21"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1439,11 +1396,14 @@
       },
       {
         "question": "What does Deborah bring with her whenever she comes to reflect on her mom?",
-        "answer": "amulet",
+        "answer": [
+          "amulet"
+        ],
         "evidence": [
           "D4:36"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1451,11 +1411,14 @@
       },
       {
         "question": "What new outlook did Jolene gain after her mini retreat on 9 February, 2023?",
-        "answer": "A confidence boost",
+        "answer": [
+          "A confidence boost"
+        ],
         "evidence": [
           "D5:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1463,11 +1426,14 @@
       },
       {
         "question": "What cool stuff did Jolene accomplish at the retreat on 9 February, 2023?",
-        "answer": "Came up with neat solutions for her engineering project",
+        "answer": [
+          "Came up with neat solutions for her engineering project"
+        ],
         "evidence": [
           "D5:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1475,11 +1441,14 @@
       },
       {
         "question": "What idea did Jolene have to help underprivileged kids learn about STEM subjects on 9 February, 2023?",
-        "answer": "A volunteer program where engineers teach STEM to underprivileged kids",
+        "answer": [
+          "A volunteer program where engineers teach STEM to underprivileged kids"
+        ],
         "evidence": [
           "D5:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1487,11 +1456,14 @@
       },
       {
         "question": "How does Jolene plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
-        "answer": "As guest speakers for workshops",
+        "answer": [
+          "As guest speakers for workshops"
+        ],
         "evidence": [
           "D5:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1499,11 +1471,14 @@
       },
       {
         "question": "What gave Deborah peace in the garden she visited?",
-        "answer": "Roses and dahlias",
+        "answer": [
+          "Roses and dahlias"
+        ],
         "evidence": [
           "D6:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1511,11 +1486,14 @@
       },
       {
         "question": "Why did Deborah spend time in the garden?",
-        "answer": "to find comfort after losing a friend",
+        "answer": [
+          "to find comfort after losing a friend"
+        ],
         "evidence": [
           "D6:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1523,23 +1501,14 @@
       },
       {
         "question": "How did Jolene and her partner initially meet?",
-        "answer": "In an engineering class in college",
+        "answer": [
+          "In an engineering class in college"
+        ],
         "evidence": [
           "D7:9"
         ],
         "category": 4,
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What activity does Deborah incorporate into her daily routine after going for a morning jog in the park?",
-        "answer": "spending time with loved ones",
-        "evidence": [
-          "D7:18"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1547,11 +1516,14 @@
       },
       {
         "question": "According to Jolene, what does exercise help her to feel?",
-        "answer": "connected to her body",
+        "answer": [
+          "connected to her body"
+        ],
         "evidence": [
           "D7:20"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1559,11 +1531,14 @@
       },
       {
         "question": "What did Deb share a photo of, which brought a smile to Jolene's face?",
-        "answer": "a yellow coffee cup with a handwritten message",
+        "answer": [
+          "a yellow coffee cup with a handwritten message"
+        ],
         "evidence": [
           "D8:22"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1571,11 +1546,14 @@
       },
       {
         "question": "What is one of Jolene's favorite dishes?",
-        "answer": "lasagna",
+        "answer": [
+          "lasagna"
+        ],
         "evidence": [
           "D8:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1583,23 +1561,14 @@
       },
       {
         "question": "What picture did Jolene share related to feeling overwhelmed?",
-        "answer": "a photo of a desk with a notebook and a computer monitor",
+        "answer": [
+          "a photo of a desk with a notebook and a computer monitor"
+        ],
         "evidence": [
           "D8:16"
         ],
         "category": 4,
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What did Jolene and Deb discuss as a helpful strategy for studying and time management?",
-        "answer": "breaking tasks into smaller pieces and setting goals, using planners or schedulers",
-        "evidence": [
-          "D8:19"
-        ],
-        "category": 4,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1607,11 +1576,14 @@
       },
       {
         "question": "What did Jolene ask Deb to help with on 13 March, 2023?",
-        "answer": "time management",
+        "answer": [
+          "time management"
+        ],
         "evidence": [
           "D9:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1619,11 +1591,14 @@
       },
       {
         "question": "What method does Deb suggest Jolene to try for organizing tasks based on importance and urgency?",
-        "answer": "The Eisenhower Matrix",
+        "answer": [
+          "The Eisenhower Matrix"
+        ],
         "evidence": [
           "D10:13"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1631,11 +1606,14 @@
       },
       {
         "question": "What did Jolene and Anna discuss while watching the sunset by the sea?",
-        "answer": "They realized they inspire each other",
+        "answer": [
+          "They realized they inspire each other"
+        ],
         "evidence": [
           "D10:17"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1643,11 +1621,14 @@
       },
       {
         "question": "How does Jolene plan to pursue her dream of learning to surf?",
-        "answer": "gathering information, watching videos, getting a beginners' guide",
+        "answer": [
+          "gathering information, watching videos, getting a beginners' guide"
+        ],
         "evidence": [
           "D10:20"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1655,11 +1636,14 @@
       },
       {
         "question": "What did Deborah buy to enhance her yoga practice besides the props?",
-        "answer": "candle",
+        "answer": [
+          "candle"
+        ],
         "evidence": [
           "D11:4"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1667,11 +1651,14 @@
       },
       {
         "question": "What type of music does Deborah find helpful during her yoga practice?",
-        "answer": "instrumental tracks with mellow melodies and rhythms",
+        "answer": [
+          "instrumental tracks with mellow melodies and rhythms"
+        ],
         "evidence": [
           "D11:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1679,11 +1666,14 @@
       },
       {
         "question": "Who are the musicians mentioned by Jolene that she enjoys listening to during her yoga practice?",
-        "answer": "Nils Frahm and Olafur Arnalds",
+        "answer": [
+          "Nils Frahm and Olafur Arnalds"
+        ],
         "evidence": [
           "D11:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1691,11 +1681,14 @@
       },
       {
         "question": "What album does Deborah recommend for meditation and deep relaxation?",
-        "answer": "'Sleep'",
+        "answer": [
+          "'Sleep'"
+        ],
         "evidence": [
           "D11:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1703,11 +1696,14 @@
       },
       {
         "question": "Which show did Deborah go to with a friend on 9 April, 2023?",
-        "answer": "an art show",
+        "answer": [
+          "an art show"
+        ],
         "evidence": [
           "D12:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1715,11 +1711,14 @@
       },
       {
         "question": "What does Deborah find comforting about going to art shows?",
-        "answer": "It makes her feel like she's still experiencing it with her mom",
+        "answer": [
+          "It makes her feel like she's still experiencing it with her mom"
+        ],
         "evidence": [
           "D12:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1727,11 +1726,14 @@
       },
       {
         "question": "How does Jolene describe the time spent with her snakes and partner?",
-        "answer": "Valuable and relaxing",
+        "answer": [
+          "Valuable and relaxing"
+        ],
         "evidence": [
           "D12:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1739,11 +1741,14 @@
       },
       {
         "question": "What does Jolene enjoy doing with her partner after a long day?",
-        "answer": "Playing video games",
+        "answer": [
+          "Playing video games"
+        ],
         "evidence": [
           "D12:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1751,11 +1756,14 @@
       },
       {
         "question": "What is Jolene currently doing in June 2023?",
-        "answer": "interning at a well-known engineering firm",
+        "answer": [
+          "interning at a well-known engineering firm"
+        ],
         "evidence": [
           "D13:5"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1763,11 +1771,16 @@
       },
       {
         "question": "For how long has Jolene had Seraphim as a pet?",
-        "answer": "one year",
+        "answer": [
+          "one year"
+        ],
         "evidence": [
+          "D14:4",
+          "D14:5",
           "D14:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1775,11 +1788,14 @@
       },
       {
         "question": "How does Jolene feel when spending time with Seraphim?",
-        "answer": "comforted",
+        "answer": [
+          "comforted"
+        ],
         "evidence": [
           "D14:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1787,11 +1803,14 @@
       },
       {
         "question": "Which new yoga pose did Deborah share a photo of?",
-        "answer": "tree pose",
+        "answer": [
+          "tree pose"
+        ],
         "evidence": [
           "D14:15"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1799,11 +1818,14 @@
       },
       {
         "question": "What group activity did Deborah start with Anna?",
-        "answer": "running group",
+        "answer": [
+          "running group"
+        ],
         "evidence": [
           "D15:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1811,11 +1833,14 @@
       },
       {
         "question": "What made being part of the running group easy for Deborah to stay motivated?",
-        "answer": "helping and pushing each other during runs",
+        "answer": [
+          "helping and pushing each other during runs"
+        ],
         "evidence": [
           "D15:3"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1823,11 +1848,14 @@
       },
       {
         "question": "Why did Jolene decide to get a snake as a pet?",
-        "answer": "fascinated by reptiles and it felt like the perfect pet",
+        "answer": [
+          "fascinated by reptiles and it felt like the perfect pet"
+        ],
         "evidence": [
           "D15:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1835,11 +1863,14 @@
       },
       {
         "question": "What is the favorite game Jolene plays with her partner?",
-        "answer": "It takes two",
+        "answer": [
+          "It takes two"
+        ],
         "evidence": [
           "D15:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1847,11 +1878,14 @@
       },
       {
         "question": "What activity does Deborah do with her cats?",
-        "answer": "take them out for a run in the park every morning and evening",
+        "answer": [
+          "take them out for a run in the park every morning and evening"
+        ],
         "evidence": [
           "D15:27"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1859,11 +1893,14 @@
       },
       {
         "question": "How does Jolene describe the feeling of finding her snake snuggled under the bed after it got out?",
-        "answer": "It really showed how much she loves her.",
+        "answer": [
+          "It really showed how much she loves her."
+        ],
         "evidence": [
           "D15:20"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1871,11 +1908,14 @@
       },
       {
         "question": "Why does Deborah take her cats out for a run in the park every day?",
-        "answer": "Exercise and nature are important to her",
+        "answer": [
+          "Exercise and nature are important to her"
+        ],
         "evidence": [
           "D15:27"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1883,23 +1923,14 @@
       },
       {
         "question": "How did Jolene come to have her pet, Susie?",
-        "answer": "She adopted her two years ago when feeling lonely.",
+        "answer": [
+          "She adopted her two years ago when feeling lonely."
+        ],
         "evidence": [
           "D16:6"
         ],
         "category": 4,
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
-        "question": "What activities have been helping Jolene stay distracted during tough times?",
-        "answer": "Video games and spending time with her pet, Susie",
-        "evidence": [
-          "D16:4"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1907,11 +1938,14 @@
       },
       {
         "question": "What kind of yoga routine does Deborah recommend to Jolene?",
-        "answer": "A gentle flow routine focused on breathing and grounding",
+        "answer": [
+          "A gentle flow routine focused on breathing and grounding"
+        ],
         "evidence": [
           "D16:15"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1919,11 +1953,14 @@
       },
       {
         "question": "What did Jolene design inspired by their love for space and engines?",
-        "answer": "Notebooks",
+        "answer": [
+          "Notebooks"
+        ],
         "evidence": [
           "D17:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1931,11 +1968,14 @@
       },
       {
         "question": "What journal has Jolene been using to help track tasks and stay organized?",
-        "answer": "bullet journal",
+        "answer": [
+          "bullet journal"
+        ],
         "evidence": [
           "D18:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1943,11 +1983,14 @@
       },
       {
         "question": "What game did Jolene recommend for being calming and cute?",
-        "answer": "Animal Crossing: New Horizons",
+        "answer": [
+          "Animal Crossing: New Horizons"
+        ],
         "evidence": [
           "D19:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1955,11 +1998,14 @@
       },
       {
         "question": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
-        "answer": "Zelda BOTW",
+        "answer": [
+          "Zelda BOTW"
+        ],
         "evidence": [
           "D19:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1967,11 +2013,14 @@
       },
       {
         "question": "What did Deborah and her husband use to play to bond and make memories?",
-        "answer": "video games",
+        "answer": [
+          "video games"
+        ],
         "evidence": [
           "D19:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1979,11 +2028,14 @@
       },
       {
         "question": "What is special about the bench at the park near Deborah's house?",
-        "answer": "It holds special memories of conversations with her mom",
+        "answer": [
+          "It holds special memories of conversations with her mom"
+        ],
         "evidence": [
           "D19:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1991,11 +2043,14 @@
       },
       {
         "question": "What did Deborah and her mom chat about at their special bench in the park?",
-        "answer": "dreams and life",
+        "answer": [
+          "dreams and life"
+        ],
         "evidence": [
           "D19:19"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -2003,35 +2058,29 @@
       },
       {
         "question": "What feeling does Deborah get when she thinks about the time spent with her mom at their special spot?",
-        "answer": "peace and gratitude",
+        "answer": [
+          "peace and gratitude"
+        ],
         "evidence": [
           "D19:21"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
         ]
       },
       {
-        "question": "What habits does Jolene practice to feel balanced?",
-        "answer": "yoga, meditation, walks, and mindfulness",
-        "evidence": [
-          "D20:12"
-        ],
-        "category": 4,
-        "where": 20,
-        "where_ground_truth": [
-          20
-        ]
-      },
-      {
         "question": "Which yoga pose is Jolene a fan of for rest and calmness?",
-        "answer": "savasana (the corpse pose)",
+        "answer": [
+          "savasana (the corpse pose)"
+        ],
         "evidence": [
           "D20:19"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
           20
@@ -2039,11 +2088,14 @@
       },
       {
         "question": "How long has Jolene been doing yoga?",
-        "answer": "3 years",
+        "answer": [
+          "3 years"
+        ],
         "evidence": [
           "D20:21"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -2051,11 +2103,14 @@
       },
       {
         "question": "What did Jolene participate in recently that provided her with a rewarding experience?",
-        "answer": "presenting at a virtual conference",
+        "answer": [
+          "presenting at a virtual conference"
+        ],
         "evidence": [
           "D21:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2063,11 +2118,14 @@
       },
       {
         "question": "How did Jolene feel after receiving positive feedback at the virtual conference?",
-        "answer": "thrilled and rewarded",
+        "answer": [
+          "thrilled and rewarded"
+        ],
         "evidence": [
           "D21:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2075,11 +2133,14 @@
       },
       {
         "question": "What kind of event did Jolene present at recently?",
-        "answer": "virtual conference",
+        "answer": [
+          "virtual conference"
+        ],
         "evidence": [
           "D21:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2087,11 +2148,14 @@
       },
       {
         "question": "What did Jolene's mom stress the value of, which she wants to keep in mind for her engineering projects?",
-        "answer": "Helping others",
+        "answer": [
+          "Helping others"
+        ],
         "evidence": [
           "D22:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -2099,11 +2163,14 @@
       },
       {
         "question": "What type of projects is Jolene interested in getting involved in the future?",
-        "answer": "Sustainable initiatives and developing innovative solutions for environmental issues",
+        "answer": [
+          "Sustainable initiatives and developing innovative solutions for environmental issues"
+        ],
         "evidence": [
           "D22:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -2111,11 +2178,14 @@
       },
       {
         "question": "How did Deborah get Luna, one of her cats?",
-        "answer": "From the shelter",
+        "answer": [
+          "From the shelter"
+        ],
         "evidence": [
           "D22:25"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -2123,11 +2193,14 @@
       },
       {
         "question": "How old is Max?",
-        "answer": "8 years old",
+        "answer": [
+          "8 years old"
+        ],
         "evidence": [
           "D22:27"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -2135,11 +2208,14 @@
       },
       {
         "question": "What type of classes did Jolene and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
-        "answer": "Yoga classes",
+        "answer": [
+          "Yoga classes"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2147,11 +2223,14 @@
       },
       {
         "question": "What type of place does Jolene visit to meditate?",
-        "answer": "A tranquil spot by a pond",
+        "answer": [
+          "A tranquil spot by a pond"
+        ],
         "evidence": [
           "D23:9"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2159,11 +2238,14 @@
       },
       {
         "question": "What was the new plant Jolene got used as a reminder for on 30 August, 2023?",
-        "answer": "To nurture herself and embrace fresh starts",
+        "answer": [
+          "To nurture herself and embrace fresh starts"
+        ],
         "evidence": [
           "D23:29"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2171,11 +2253,14 @@
       },
       {
         "question": "Why did Jolene get the new plant on 30 August, 2023?",
-        "answer": "As a reminder to nurture herself and embrace fresh starts",
+        "answer": [
+          "As a reminder to nurture herself and embrace fresh starts"
+        ],
         "evidence": [
           "D23:29"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2183,11 +2268,14 @@
       },
       {
         "question": "What has Jolene been focusing on lately besides studying?",
-        "answer": "relationship with her partner",
+        "answer": [
+          "relationship with her partner"
+        ],
         "evidence": [
           "D24:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2195,11 +2283,14 @@
       },
       {
         "question": "How did Deborah's mom support her yoga practice when she first started?",
-        "answer": "attended classes with her",
+        "answer": [
+          "attended classes with her"
+        ],
         "evidence": [
           "D24:5"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2207,11 +2298,14 @@
       },
       {
         "question": "What was the video game console that Jolene's parents got her at age 10?",
-        "answer": "nintendo game console",
+        "answer": [
+          "nintendo game console"
+        ],
         "evidence": [
           "D24:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2219,11 +2313,14 @@
       },
       {
         "question": "What was one of Jolene's favorite games to play with her mom on the nintendo wii game system?",
-        "answer": "Monster Hunter: World",
+        "answer": [
+          "Monster Hunter: World"
+        ],
         "evidence": [
           "D24:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2231,11 +2328,14 @@
       },
       {
         "question": "What course did Jolene sign up for on 6 September 2023?",
-        "answer": "meditation",
+        "answer": [
+          "meditation"
+        ],
         "evidence": [
           "D25:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2243,11 +2343,14 @@
       },
       {
         "question": "Why did Jolene have to reschedule their meeting with Deborah on September 8, 2023?",
-        "answer": "Jolene already had plans",
+        "answer": [
+          "Jolene already had plans"
+        ],
         "evidence": [
           "D26:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -2255,11 +2358,14 @@
       },
       {
         "question": "Where did Jolene and her partner travel for a few weeks in September 2023?",
-        "answer": "Phuket",
+        "answer": [
+          "Phuket"
+        ],
         "evidence": [
           "D27:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2267,11 +2373,14 @@
       },
       {
         "question": "What was the main focus of the session that stood out to Jolene during the retreat?",
-        "answer": "releasing expectations and judgments and savoring the present",
+        "answer": [
+          "releasing expectations and judgments and savoring the present"
+        ],
         "evidence": [
           "D27:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2279,11 +2388,14 @@
       },
       {
         "question": "How did Jolene feel about her progress in practicing mindfulness and gratitude?",
-        "answer": "experiencing a new level of joy and happiness",
+        "answer": [
+          "experiencing a new level of joy and happiness"
+        ],
         "evidence": [
           "D27:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2291,11 +2403,14 @@
       },
       {
         "question": "What positive change did Jolene experience during the retreat?",
-        "answer": "finding inner peace",
+        "answer": [
+          "finding inner peace"
+        ],
         "evidence": [
           "D27:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2303,11 +2418,14 @@
       },
       {
         "question": "What did Jolene recently play that she described to Deb?",
-        "answer": "a card game about cats",
+        "answer": [
+          "a card game about cats"
+        ],
         "evidence": [
           "D27:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2315,11 +2433,14 @@
       },
       {
         "question": "What did Deborah do with their mom's old friends?",
-        "answer": "reminisced and looked through photos",
+        "answer": [
+          "reminisced and looked through photos"
+        ],
         "evidence": [
           "D28:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2327,11 +2448,14 @@
       },
       {
         "question": "Where did Deborah get married?",
-        "answer": "on the beach",
+        "answer": [
+          "on the beach"
+        ],
         "evidence": [
           "D28:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2339,11 +2463,14 @@
       },
       {
         "question": "What does yoga on the beach provide for Deborah?",
-        "answer": "a peaceful atmosphere",
+        "answer": [
+          "a peaceful atmosphere"
+        ],
         "evidence": [
           "D28:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2351,11 +2478,14 @@
       },
       {
         "question": "How does Jolene describe their home room?",
-        "answer": "little haven for peace and rest",
+        "answer": [
+          "little haven for peace and rest"
+        ],
         "evidence": [
           "D28:22"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2363,23 +2493,14 @@
       },
       {
         "question": "What new activity did Deborah and her neighbor organize for the community on 16 September, 2023?",
-        "answer": "Free gardening class",
+        "answer": [
+          "Free gardening class"
+        ],
         "evidence": [
           "D29:1"
         ],
         "category": 4,
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What was Deborah's mom passionate about?",
-        "answer": "Cooking",
-        "evidence": [
-          "D29:7"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -2387,11 +2508,14 @@
       },
       {
         "question": "What food did Deborah's mom make for her on birthdays?",
-        "answer": "Pineapple cakes",
+        "answer": [
+          "Pineapple cakes"
+        ],
         "evidence": [
           "D29:9"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           29
@@ -2399,23 +2523,31 @@
       },
       {
         "question": "What kind of cookies did Jolene used to bake with someone close to her?",
-        "answer": "Chocolate chip cookies",
+        "answer": [
+          "Chocolate chip cookies"
+        ],
         "evidence": [
           "D29:12"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           29
         ]
       },
       {
-        "question": "What outdoor activity did Jolene suggest doing together with Deborah?",
-        "answer": "Surfing",
+        "question": "What outdoor activity did Deborah suggest doing together with Jolene?",
+        "answer": [
+          "Surfing"
+        ],
         "evidence": [
+          "D29:25",
+          "D29:26",
           "D29:27"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -2423,11 +2555,14 @@
       },
       {
         "question": "What activity did Deborah enjoy at the music festival with their pals on September 20, 2023?",
-        "answer": "Dancing and bopping around",
+        "answer": [
+          "Dancing and bopping around"
+        ],
         "evidence": [
           "D30:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 30,
         "where_ground_truth": [
           30
@@ -2435,591 +2570,14 @@
       },
       {
         "question": "What did Deborah find freeing at the music festival?",
-        "answer": "Dancing and bopping around",
+        "answer": [
+          "Dancing and bopping around"
+        ],
         "evidence": [
           "D30:1"
         ],
         "category": 4,
-        "where": 30,
-        "where_ground_truth": [
-          30
-        ]
-      },
-      {
-        "question": "What are the names of Deborah's snakes?",
-        "evidence": [
-          "D2:20",
-          "D2:22"
-        ],
-        "category": 5,
-        "adversarial_answer": "Susie, Seraphim",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "What are Deborah's favorite books?",
-        "evidence": [
-          "D4:21",
-          "D4:23"
-        ],
-        "category": 5,
-        "adversarial_answer": "Sapiens, Avalanche by Neal Stephenson",
-        "where": 4,
-        "where_ground_truth": [
-          4
-        ]
-      },
-      {
-        "question": "Where did Deborah get her dogs?",
-        "evidence": [
-          "D22:23",
-          "D22:25"
-        ],
-        "category": 5,
-        "adversarial_answer": "Luna is from the shelter and Max is her mother's cat",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "How old are Jolene's cats?",
-        "evidence": [
-          "D22:27",
-          "D22:29"
-        ],
-        "category": 5,
-        "adversarial_answer": "Max is 8 years old and Luna is 5 years old",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "When did Deborah's parents give her first console?",
-        "evidence": [
-          "D24:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "when she was 10",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "When did Jolene release her pet snake?",
-        "evidence": [
-          "D2:24"
-        ],
-        "category": 5,
-        "adversarial_answer": "A year ago",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "Where did Jolene meet her new friend Anna?",
-        "evidence": [
-          "D3:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "yoga in the park",
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
-        "question": "What is Deborah's favorite book which she mentioned on 4 February, 2023?",
-        "evidence": [
-          "D4:21"
-        ],
-        "category": 5,
-        "adversarial_answer": "\"Sapiens\"",
-        "where": 4,
-        "where_ground_truth": [
-          4
-        ]
-      },
-      {
-        "question": "What cool stuff did Deborah accomplish at the retreat on 9 February, 2023?",
-        "evidence": [
-          "D5:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "Came up with neat solutions for her engineering project",
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
-        "question": "How does Deborah plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
-        "evidence": [
-          "D5:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "As guest speakers for workshops",
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
-        "question": "What gave Deborah anxiety in the garden she visited?",
-        "evidence": [
-          "D6:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "Roses and dahlias",
-        "where": 6,
-        "where_ground_truth": [
-          6
-        ]
-      },
-      {
-        "question": "Why did Jolene spend time in the garden?",
-        "evidence": [
-          "D6:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "to find comfort after losing a friend",
-        "where": 6,
-        "where_ground_truth": [
-          6
-        ]
-      },
-      {
-        "question": "How did Jolene and her rival initially meet?",
-        "evidence": [
-          "D7:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "In an engineering class in college",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What activity does Jolene incorporate into her daily routine after going for a morning jog in the park?",
-        "evidence": [
-          "D7:18"
-        ],
-        "category": 5,
-        "adversarial_answer": "spending time with loved ones",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What method does Jolene suggest Deborah to try for organizing tasks based on importance and urgency?",
-        "evidence": [
-          "D10:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "The Eisenhower Matrix",
-        "where": 10,
-        "where_ground_truth": [
-          10
-        ]
-      },
-      {
-        "question": "How does Jolene plan to pursue her dream of climbing mountains?",
-        "evidence": [
-          "D10:20"
-        ],
-        "category": 5,
-        "adversarial_answer": "gathering information, watching videos, getting a beginners' guide",
-        "where": 10,
-        "where_ground_truth": [
-          10
-        ]
-      },
-      {
-        "question": "Who are the authors mentioned by Jolene that she enjoys reading during her yoga practice?",
-        "evidence": [
-          "D11:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "Nils Frahm and Olafur Arnalds",
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
-        "question": "Which show did Jolene go to with a friend on 9 April, 2023?",
-        "evidence": [
-          "D12:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "an art show",
-        "where": 12,
-        "where_ground_truth": [
-          12
-        ]
-      },
-      {
-        "question": "What does Deborah find comforting about going to horror movie screenings?",
-        "evidence": [
-          "D12:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "It makes her feel like she's still experiencing it with her mom",
-        "where": 12,
-        "where_ground_truth": [
-          12
-        ]
-      },
-      {
-        "question": "How does Deborah describe the time spent with her snakes and partner?",
-        "evidence": [
-          "D12:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Valuable and relaxing",
-        "where": 12,
-        "where_ground_truth": [
-          12
-        ]
-      },
-      {
-        "question": "For how long has Jolene had Lucifer as a pet?",
-        "evidence": [
-          "D14:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "one year",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "How does Deborah feel when spending time with Seraphim?",
-        "evidence": [
-          "D14:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "comforted",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "What made being part of the running group easy for Jolene to stay motivated?",
-        "evidence": [
-          "D15:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "helping and pushing each other during runs",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "Why did Jolene decide to get a tarantula as a pet?",
-        "evidence": [
-          "D15:18"
-        ],
-        "category": 5,
-        "adversarial_answer": "fascinated by reptiles and it felt like the perfect pet",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "How did Deborah come to have her pet, Susie?",
-        "evidence": [
-          "D16:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "She adopted her two years ago when feeling lonely.",
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
-        "question": "What did Deborah design inspired by their love for space and engines?",
-        "evidence": [
-          "D17:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Notebooks",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "What journal has Deborah been using to help track tasks and stay organized?",
-        "evidence": [
-          "D18:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "bullet journal",
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "What game did Jolene recommend to Deborah for being thrilling and intense?",
-        "evidence": [
-          "D19:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "Animal Crossing: New Horizons",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What game did Deborah suggest as an awesome open-world game for the Nintendo Switch?",
-        "evidence": [
-          "D19:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "Zelda BOTW",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What is special about the bench at the park near Jolene's house?",
-        "evidence": [
-          "D19:18"
-        ],
-        "category": 5,
-        "adversarial_answer": "It holds special memories of conversations with her mom",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What did Jolene and her mom chat about at their special bench in the park?",
-        "evidence": [
-          "D19:19"
-        ],
-        "category": 5,
-        "adversarial_answer": "dreams and life",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "How did Deborah feel after receiving positive feedback at the virtual conference?",
-        "evidence": [
-          "D21:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "thrilled and rewarded",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What kind of event did Deborah present at recently?",
-        "evidence": [
-          "D21:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "virtual conference",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What did Deborah's mom stress the value of, which she wants to keep in mind for her engineering projects?",
-        "evidence": [
-          "D22:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Helping others",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "What type of projects is Deborah interested in getting involved in the future?",
-        "evidence": [
-          "D22:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "Sustainable initiatives and developing innovative solutions for environmental issues",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "How did Jolene get Luna, one of her cats?",
-        "evidence": [
-          "D22:25"
-        ],
-        "category": 5,
-        "adversarial_answer": "From the shelter",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "What type of classes did Deborah and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
-        "evidence": [
-          "D23:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "Yoga classes",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "Why did Deborah get the new plant on 30 August, 2023?",
-        "evidence": [
-          "D23:29"
-        ],
-        "category": 5,
-        "adversarial_answer": "As a reminder to nurture herself and embrace fresh starts",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "How did Jolene's mom support her yoga practice when she first started?",
-        "evidence": [
-          "D24:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "attended classes with her",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What was the video game console that Deborah's parents got her at age 10?",
-        "evidence": [
-          "D24:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "nintendo game console",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What was one of Deborah's favorite games to play with her mom on the PlayStation game system?",
-        "evidence": [
-          "D24:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "Monster Hunter: World",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "Where did Deborah and her partner travel for a few weeks in September 2023?",
-        "evidence": [
-          "D27:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "Phuket",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What did Jolene do with their mom's old friends?",
-        "evidence": [
-          "D28:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "reminisced and looked through photos",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "Where did Jolene get married?",
-        "evidence": [
-          "D28:11"
-        ],
-        "category": 5,
-        "adversarial_answer": "on the beach",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What new activity did Jolene and her neighbor organize for the community on 16 September, 2023?",
-        "evidence": [
-          "D29:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "Free gardening class",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What food did Jolene's mom make for her on holidays?",
-        "evidence": [
-          "D29:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "Pineapple cakes",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What kind of cookies did Deborah used to bake with someone close to her?",
-        "evidence": [
-          "D29:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "Chocolate chip cookies",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What activity did Jolene enjoy at the music festival with their pals on September 20, 2023?",
-        "evidence": [
-          "D30:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "Dancing and bopping around",
+        "is_multi_modality": false,
         "where": 30,
         "where_ground_truth": [
           30

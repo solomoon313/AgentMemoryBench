@@ -1,0 +1,31 @@
+everos_agent:
+  api_key: "YOUR_EVEROS_API_KEY"
+  base_url: "https://api.evermind.ai"
+
+  user_id: "exp_001"
+  session_id: null
+  use_session_filter: false
+
+  top_k: 10
+  search_method: "hybrid"  # keyword | vector | hybrid | agentic
+  memory_types:
+    - "agent_memory"
+  radius: null
+  include_original_data: false
+
+  async_mode: false
+  flush_after_add: true
+
+  success_only: true
+  reward_bigger_than_zero: false
+
+  prompt_template: |
+    Here are relevant agent experiences:
+    {memories}
+  where: front
+
+  request_timeout: 60.0
+  max_retries: 3
+  retry_delay: 2.0
+  retry_backoff: 2.0
+  wait_time: 0.0

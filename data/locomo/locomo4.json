@@ -3,13 +3,16 @@
     "qa": [
       {
         "question": "what are John's goals with regards to his basketball career?",
-        "answer": "improve shooting percentage, win a championship",
+        "answer": [
+          "improve shooting percentage, win a championship"
+        ],
         "evidence": [
           "D1:9",
           "D6:15",
           "D11:17"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           1,
@@ -19,12 +22,15 @@
       },
       {
         "question": "What are John's goals for his career that are not related to his basketball skills?",
-        "answer": "get endorsements, build his brand, do charity work",
+        "answer": [
+          "get endorsements, build his brand, do charity work"
+        ],
         "evidence": [
           "D6:15",
           "D11:17"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           6,
@@ -32,116 +38,43 @@
         ]
       },
       {
-        "question": "What items does John collect?",
-        "answer": "sneakers, fantasy movie DVDs, jerseys",
-        "evidence": [
-          "D1:15",
-          "D12:18",
-          "D27:20"
-        ],
-        "category": 1,
-        "where": 27,
-        "where_ground_truth": [
-          1,
-          12,
-          27
-        ]
-      },
-      {
         "question": "Would Tim enjoy reading books by C. S. Lewis or John Greene?",
-        "answer": "C. S.Lewis",
+        "answer": [
+          "C. S.Lewis"
+        ],
         "evidence": [
           "D1:14",
           "D1:16",
           "D1:18"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
         ]
       },
       {
-        "question": "What books has Tim read?",
-        "answer": "Harry Potter, Game of Thrones, the Name of the Wind, The Alchemist, The Hobbit, A Dance with Dragons, and the Wheel of Time.",
-        "evidence": [
-          "D1:14",
-          "D2:7",
-          "D6:8",
-          "D11:26",
-          "D20:21",
-          "D26:36",
-          "D22:13"
-        ],
-        "category": 1,
-        "where": 26,
-        "where_ground_truth": [
-          1,
-          2,
-          6,
-          11,
-          20,
-          22,
-          26
-        ]
-      },
-      {
-        "question": "Based on Tim's collections, what is a shop that he would enjoy visiting in New York city?",
-        "answer": "House of MinaLima",
-        "evidence": [
-          "D2:9"
-        ],
-        "category": 3,
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
         "question": "In which month's game did John achieve a career-high score in points?",
-        "answer": "June 2023",
+        "answer": [
+          "Last week of July 16, 2023",
+          "June 2023"
+        ],
         "evidence": [
           "D3:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 3,
         "where_ground_truth": [
           3
         ]
       },
       {
-        "question": "Which geographical locations has Tim been to?",
-        "answer": "California, London, the Smoky Mountains",
-        "evidence": [
-          "D1:18",
-          "D3:2",
-          "D14:16"
-        ],
-        "category": 1,
-        "where": 14,
-        "where_ground_truth": [
-          1,
-          3,
-          14
-        ]
-      },
-      {
-        "question": "Which outdoor gear company likely signed up John for an endorsement deal?",
-        "answer": "Under Armour",
-        "evidence": [
-          "D3:15",
-          "D25:2"
-        ],
-        "category": 3,
-        "where": 25,
-        "where_ground_truth": [
-          3,
-          25
-        ]
-      },
-      {
         "question": "Which endorsement deals has John been offered?",
-        "answer": "basketball shoes and gear deal with Nike, potential sponsorship with Gatorade, Moxie a popular beverage company, outdoor gear company",
+        "answer": [
+          "basketball shoes and gear deal with Nike, potential sponsorship with Gatorade, a popular beverage company"
+        ],
         "evidence": [
           "D3:13",
           "D3:15",
@@ -149,6 +82,7 @@
           "D29:4"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           3,
@@ -158,12 +92,15 @@
       },
       {
         "question": "When was John in Seattle for a game?",
-        "answer": "early August, 2023",
+        "answer": [
+          "early August, 2023"
+        ],
         "evidence": [
           "D3:19",
           "D5:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           3,
@@ -172,7 +109,9 @@
       },
       {
         "question": "What sports does John like besides basketball?",
-        "answer": "surfing",
+        "answer": [
+          "surfing"
+        ],
         "evidence": [
           "D1:7",
           "D2:14",
@@ -180,6 +119,7 @@
           "D3:25"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 3,
         "where_ground_truth": [
           1,
@@ -189,11 +129,14 @@
       },
       {
         "question": "What year did John start surfing?",
-        "answer": "2018",
+        "answer": [
+          "2018"
+        ],
         "evidence": [
           "D3:27"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -201,12 +144,15 @@
       },
       {
         "question": "What does Tim do to escape reality?",
-        "answer": "Read fantasy books.",
+        "answer": [
+          "Read fantasy books."
+        ],
         "evidence": [
           "D2:11",
           "D3:30"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 3,
         "where_ground_truth": [
           2,
@@ -215,7 +161,9 @@
       },
       {
         "question": "What kind of writing does Tim do?",
-        "answer": "comments on favorite books in a fantasy literature forum, articles on fantasy novels, studying characters, themes, and making book recommendations, writing a fantasy novel",
+        "answer": [
+          "articles on fantasy novels, studying characters, themes, and making book recommendations, writing a fantasy novel"
+        ],
         "evidence": [
           "D2:1",
           "D4:3",
@@ -223,6 +171,7 @@
           "D15:3"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           2,
@@ -231,34 +180,10 @@
         ]
       },
       {
-        "question": "Who is Anthony?",
-        "answer": "likely John's friend, colleague or family",
-        "evidence": [
-          "D4:8"
-        ],
-        "category": 3,
-        "where": 4,
-        "where_ground_truth": [
-          4
-        ]
-      },
-      {
-        "question": "After how many weeks did Tim reconnect with the fellow Harry Potter fan from California?",
-        "answer": "three weeks",
-        "evidence": [
-          "D3:2",
-          "D5:1"
-        ],
-        "category": 2,
-        "where": 5,
-        "where_ground_truth": [
-          3,
-          5
-        ]
-      },
-      {
         "question": "How many games has John mentioned winning?",
-        "answer": "6",
+        "answer": [
+          "6"
+        ],
         "evidence": [
           "D3:3",
           "D5:2",
@@ -267,6 +192,7 @@
           "D24:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           3,
@@ -277,46 +203,10 @@
         ]
       },
       {
-        "question": "What authors has Tim read books from?",
-        "answer": "J.K. Rowling, R.R. Martin, Patrick Rothfuss, Paulo Coelho, and J. R. R. Tolkien.",
-        "evidence": [
-          "D1:14",
-          "D2:7",
-          "D4:7",
-          "D5:15",
-          "D:11:26",
-          "D20:21",
-          "D26:36"
-        ],
-        "category": 1,
-        "where": 26,
-        "where_ground_truth": [
-          1,
-          2,
-          4,
-          5,
-          20,
-          26
-        ]
-      },
-      {
-        "question": "What is a prominent charity organization that John might want to work with and why?",
-        "answer": "Good Sports, because they work with Nike, Gatorade, and Under Armour and they aim toprovide youth sports opportunities for kids ages 3-18 in high-need communities.",
-        "evidence": [
-          "D3:13",
-          "D3:15",
-          "D6:15"
-        ],
-        "category": 3,
-        "where": 6,
-        "where_ground_truth": [
-          3,
-          6
-        ]
-      },
-      {
         "question": "Which city was John in before traveling to Chicago?",
-        "answer": "Seattle",
+        "answer": [
+          "Seattle"
+        ],
         "evidence": [
           "D3:19",
           "D5:2",
@@ -324,6 +214,7 @@
           "D6:3"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 6,
         "where_ground_truth": [
           3,
@@ -333,13 +224,16 @@
       },
       {
         "question": "Which US cities does John mention visiting to Tim?",
-        "answer": "Seattle, Chicago, New York",
+        "answer": [
+          "Seattle, Chicago, New York"
+        ],
         "evidence": [
           "D3:19",
           "D6:3",
           "D9:6"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           3,
@@ -349,11 +243,14 @@
       },
       {
         "question": "When did John meet with his teammates after returning from Chicago?",
-        "answer": "August 15, 2023",
+        "answer": [
+          "August 15, 2023"
+        ],
         "evidence": [
           "D7:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -361,11 +258,14 @@
       },
       {
         "question": "When is Tim attending a book conference?",
-        "answer": "September 2023",
+        "answer": [
+          "September 2023"
+        ],
         "evidence": [
           "D7:6"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -373,13 +273,16 @@
       },
       {
         "question": "Where was John between August 11 and August 15 2023?",
-        "answer": "Chicago",
+        "answer": [
+          "Chicago"
+        ],
         "evidence": [
           "D6:1",
           "D6:3",
           "D7:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           6,
@@ -388,7 +291,9 @@
       },
       {
         "question": "What similar sports collectible do Tim and John own?",
-        "answer": "signed basketball",
+        "answer": [
+          "signed basketball"
+        ],
         "evidence": [
           "D7:7",
           "D7:9",
@@ -396,6 +301,7 @@
           "D16:9"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           7,
@@ -404,13 +310,16 @@
       },
       {
         "question": "Which TV series does Tim mention watching?",
-        "answer": "That, Wheel of Time",
+        "answer": [
+          "Wheel of Time"
+        ],
         "evidence": [
           "D17:1",
           "D17:11",
           "D26:36"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           17,
@@ -419,69 +328,30 @@
       },
       {
         "question": "Which popular time management technique does Tim use to prepare for exams?",
-        "answer": "Pomodoro technique",
+        "answer": [
+          "Pomodoro technique"
+        ],
         "evidence": [
           "D18:3",
           "D18:7"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
         ]
       },
       {
-        "question": "Which popular music composer's tunes does Tim enjoy playing on the piano?",
-        "answer": "John Williams",
-        "evidence": [
-          "D8:14",
-          "D8:16"
-        ],
-        "category": 3,
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What schools did John play basketball in and how many years was he with his team during high school?",
-        "answer": "Middle school, high school, and college and he was with his high school team for 4 years.",
-        "evidence": [
-          "D6:13",
-          "D9:4"
-        ],
-        "category": 1,
-        "where": 9,
-        "where_ground_truth": [
-          6,
-          9
-        ]
-      },
-      {
-        "question": "Which cities has John been to?",
-        "answer": "Seattle, Chicago, New York, and Paris.",
-        "evidence": [
-          "D3:19",
-          "D6:3",
-          "D9:6",
-          "D27:36"
-        ],
-        "category": 1,
-        "where": 27,
-        "where_ground_truth": [
-          3,
-          6,
-          9,
-          27
-        ]
-      },
-      {
         "question": "What month did Tim plan on going to Universal Studios?",
-        "answer": "September, 2023",
+        "answer": [
+          "September, 2023"
+        ],
         "evidence": [
           "D10:9"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -489,11 +359,14 @@
       },
       {
         "question": "Which US states might Tim be in during September 2023 based on his plans of visiting Universal Studios?",
-        "answer": "California or Florida",
+        "answer": [
+          "California or Florida"
+        ],
         "evidence": [
           "D10:9"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -501,40 +374,30 @@
       },
       {
         "question": "When does John plan on traveling with his team on a team trip?",
-        "answer": "October, 2023",
+        "answer": [
+          "October, 2023"
+        ],
         "evidence": [
           "D11:7"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
         ]
       },
       {
-        "question": "What could John do after his basketball career?",
-        "answer": "become a basketball coach since he likes giving back and leadership",
-        "evidence": [
-          "D11:19",
-          "D26:1",
-          "D27:26"
-        ],
-        "category": 3,
-        "where": 27,
-        "where_ground_truth": [
-          11,
-          26,
-          27
-        ]
-      },
-      {
         "question": "What outdoor activities does John enjoy?",
-        "answer": "Hiking, surfing",
+        "answer": [
+          "Hiking, surfing"
+        ],
         "evidence": [
           "D3:27",
           "D12:6"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           3,
@@ -543,13 +406,16 @@
       },
       {
         "question": "Who is Tim and John's favorite basketball player?",
-        "answer": "LeBron James",
+        "answer": [
+          "LeBron James"
+        ],
         "evidence": [
           "D12:20",
           "D12:22",
           "D16:9"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           12,
@@ -558,11 +424,14 @@
       },
       {
         "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
-        "answer": "The week before October 13th, 2023.",
+        "answer": [
+          "The week before October 13th, 2023."
+        ],
         "evidence": [
           "D13:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -570,13 +439,16 @@
       },
       {
         "question": "which country has Tim visited most frequently in his travels?",
-        "answer": "UK",
+        "answer": [
+          "UK"
+        ],
         "evidence": [
           "D1:18",
           "D13:1",
           "D18:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           1,
@@ -586,11 +458,14 @@
       },
       {
         "question": "What year did Tim go to the Smoky Mountains?",
-        "answer": "2022",
+        "answer": [
+          "2022"
+        ],
         "evidence": [
           "D14:16"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -598,11 +473,14 @@
       },
       {
         "question": "Has Tim been to North Carolina and/or Tennesee states in the US?",
-        "answer": "Yes",
+        "answer": [
+          "Yes"
+        ],
         "evidence": [
           "D14:16"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -610,12 +488,15 @@
       },
       {
         "question": "What kind of fiction stories does Tim write?",
-        "answer": "Fantasy stories with plot twists",
+        "answer": [
+          "Fantasy stories with plot twists"
+        ],
         "evidence": [
           "D15:3",
           "D16:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           15,
@@ -624,7 +505,9 @@
       },
       {
         "question": "What has John cooked?",
-        "answer": "Soup, a slow cooker meal, and honey garlic chicken with roasted veg.",
+        "answer": [
+          "Soup, a slow cooker meal, and honey garlic chicken with roasted veg."
+        ],
         "evidence": [
           "D10:4",
           "D15:30",
@@ -632,6 +515,7 @@
           "D15:32"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           10,
@@ -640,12 +524,15 @@
       },
       {
         "question": "What does John like about Lebron James?",
-        "answer": "His heart, determination, skills, and leadership.",
+        "answer": [
+          "His heart, determination, skills, and leadership."
+        ],
         "evidence": [
           "D12:20",
           "D16:12"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           12,
@@ -654,11 +541,14 @@
       },
       {
         "question": "When did John and his wife go on a European vacation?",
-        "answer": "November, 2023.",
+        "answer": [
+          "November, 2023."
+        ],
         "evidence": [
           "D16:14"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -666,11 +556,14 @@
       },
       {
         "question": "Which country was Tim visiting in the second week of November?",
-        "answer": "UK",
+        "answer": [
+          "UK"
+        ],
         "evidence": [
           "D18:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           18
@@ -678,11 +571,15 @@
       },
       {
         "question": "Where was Tim in the week before 16 November 2023?",
-        "answer": "UK",
+        "answer": [
+          "UK",
+          "Tim was in the UK, visiting a castle and exploring places related to the Harry Potter universe."
+        ],
         "evidence": [
           "D18:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           18
@@ -690,11 +587,15 @@
       },
       {
         "question": "When did John get married at a greenhouse?",
-        "answer": "last week of September 2023",
+        "answer": [
+          "The last week of 2 October, 2023",
+          "last week of September 2023"
+        ],
         "evidence": [
           "D12:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 12,
         "where_ground_truth": [
           12
@@ -702,38 +603,31 @@
       },
       {
         "question": "When did John get an ankle injury in 2023?",
-        "answer": "around November 16, 2023",
+        "answer": [
+          "around November 16, 2023",
+          "November, 2023"
+        ],
         "evidence": [
           "D18:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           18
         ]
       },
       {
-        "question": "How many times has John injured his ankle?",
-        "answer": "two times",
-        "evidence": [
-          "D18:2",
-          "D19:6"
-        ],
-        "category": 1,
-        "where": 19,
-        "where_ground_truth": [
-          18,
-          19
-        ]
-      },
-      {
         "question": "Which book was John reading during his recovery from an ankle injury?",
-        "answer": "The Alchemist",
+        "answer": [
+          "The Alchemist"
+        ],
         "evidence": [
           "D19:20",
           "D18:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           18,
@@ -741,39 +635,16 @@
         ]
       },
       {
-        "question": "What kind of yoga for building core strength might John benefit from?",
-        "answer": "Hatha Yoga",
-        "evidence": [
-          "D20:2"
-        ],
-        "category": 3,
-        "where": 20,
-        "where_ground_truth": [
-          20
-        ]
-      },
-      {
         "question": "What does John do to supplement his basketball training?",
-        "answer": "Yoga, strength training",
+        "answer": [
+          "Yoga, strength training"
+        ],
         "evidence": [
           "D8:5",
           "D20:2"
         ],
         "category": 1,
-        "where": 20,
-        "where_ground_truth": [
-          8,
-          20
-        ]
-      },
-      {
-        "question": "What other exercises can help John with his basketball performance?",
-        "answer": "Sprinting, long-distance running, and boxing.",
-        "evidence": [
-          "D8:5",
-          "D20:2"
-        ],
-        "category": 3,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
           8,
@@ -782,37 +653,29 @@
       },
       {
         "question": "When did John take a trip to the Rocky Mountains?",
-        "answer": "2022",
+        "answer": [
+          "2022"
+        ],
         "evidence": [
           "D20:40"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
           20
         ]
       },
       {
-        "question": "When did John start playing professionally?",
-        "answer": "May, 2023",
-        "evidence": [
-          "D1:3",
-          "D21:4"
-        ],
-        "category": 2,
-        "where": 21,
-        "where_ground_truth": [
-          1,
-          21
-        ]
-      },
-      {
         "question": "When did Tim start playing the violin?",
-        "answer": "August 2023",
+        "answer": [
+          "August 2023"
+        ],
         "evidence": [
           "D21:13"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -820,12 +683,15 @@
       },
       {
         "question": "What instruments does Tim play?",
-        "answer": "piano, violin",
+        "answer": [
+          "piano, violin"
+        ],
         "evidence": [
           "D8:12",
           "D21:11"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           8,
@@ -834,12 +700,15 @@
       },
       {
         "question": "When did John attend the Harry Potter trivia?",
-        "answer": "August 2023.",
+        "answer": [
+          "August 2023."
+        ],
         "evidence": [
           "D4:8",
           "D22:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           4,
@@ -848,12 +717,15 @@
       },
       {
         "question": "Which career-high performances did John achieve in 2023?",
-        "answer": "highest point score, highest assist",
+        "answer": [
+          "highest point score, highest assist"
+        ],
         "evidence": [
           "D3:1",
           "D23:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           3,
@@ -862,45 +734,30 @@
       },
       {
         "question": "When did John achieve a career-high assist performance?",
-        "answer": "December 11, 2023",
+        "answer": [
+          "Last Friday before December 11, 2023"
+        ],
         "evidence": [
           "D23:2"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
         ]
       },
       {
-        "question": "What books has John read?",
-        "answer": "inpsiring book on dreaming big, The Alchemist, fantasy series, non-fiction books on personal development, Dune",
-        "evidence": [
-          "D4:10",
-          "D11:26",
-          "D17:9",
-          "D19:16",
-          "D19:20",
-          "D22:12"
-        ],
-        "category": 1,
-        "where": 22,
-        "where_ground_truth": [
-          4,
-          11,
-          17,
-          19,
-          22
-        ]
-      },
-      {
         "question": "What does John do to share his knowledge?",
-        "answer": "gives seminars, mentors younger players.",
+        "answer": [
+          "gives seminars, mentors younger players."
+        ],
         "evidence": [
           "D14:3",
           "D26:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 26,
         "where_ground_truth": [
           14,
@@ -909,11 +766,14 @@
       },
       {
         "question": "When did John organize a basketball camp for kids?",
-        "answer": "summer 2023",
+        "answer": [
+          "summer 2023"
+        ],
         "evidence": [
           "D26:23"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -921,11 +781,14 @@
       },
       {
         "question": "Which month was John in Italy?",
-        "answer": "December, 2023",
+        "answer": [
+          "December, 2023"
+        ],
         "evidence": [
           "D27:2"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -933,7 +796,9 @@
       },
       {
         "question": "What fantasy movies does Tim like?",
-        "answer": "Lord of the Rings, Harry Potter, and Star Wars.",
+        "answer": [
+          "Lord of the Rings, Harry Potter, and Star Wars."
+        ],
         "evidence": [
           "D8:16",
           "D8:18",
@@ -942,6 +807,7 @@
           "D27:21"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           8,
@@ -950,43 +816,16 @@
         ]
       },
       {
-        "question": "What is a Star Wars book that Tim might enjoy?",
-        "answer": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
-        "evidence": [
-          "D27:19",
-          "D27:21"
-        ],
-        "category": 3,
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
-        "answer": "Writing a travel blog.",
-        "evidence": [
-          "D4:1",
-          "D6:6",
-          "D15:3",
-          "D27:37"
-        ],
-        "category": 3,
-        "where": 27,
-        "where_ground_truth": [
-          4,
-          6,
-          15,
-          27
-        ]
-      },
-      {
         "question": "What day did Tim get into his study abroad program?",
-        "answer": "Januarty 5, 2024",
+        "answer": [
+          "Januarty 5, 2024",
+          "The Friday before Januarty 7, 2024"
+        ],
         "evidence": [
           "D28:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -994,39 +833,29 @@
       },
       {
         "question": "When will Tim leave for Ireland?",
-        "answer": "February, 2024",
+        "answer": [
+          "February, 2024"
+        ],
         "evidence": [
           "D28:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
-        "answer": "Skellig Michael, Malin Head, Loop Head, Ceann Sibéal, and Brow Head because they are Star Wars filming locations.",
-        "evidence": [
-          "D1:18",
-          "D27:21",
-          "D28:1"
-        ],
-        "category": 3,
-        "where": 28,
-        "where_ground_truth": [
-          1,
-          27,
           28
         ]
       },
       {
         "question": "Which team did John sign with on 21 May, 2023?",
-        "answer": "The Minnesota Wolves",
+        "answer": [
+          "The Minnesota Wolves"
+        ],
         "evidence": [
           "D1:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1034,11 +863,14 @@
       },
       {
         "question": "What is John's position on the team he signed with?",
-        "answer": "shooting guard",
+        "answer": [
+          "shooting guard"
+        ],
         "evidence": [
           "D1:7"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1046,11 +878,14 @@
       },
       {
         "question": "What challenge did John encounter during pre-season training?",
-        "answer": "fitting into the new team's style of play",
+        "answer": [
+          "fitting into the new team's style of play"
+        ],
         "evidence": [
           "D1:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1058,11 +893,14 @@
       },
       {
         "question": "What aspects of the Harry Potter universe will be discussed in John's fan project collaborations?",
-        "answer": "characters, spells, magical creatures",
+        "answer": [
+          "characters, spells, magical creatures"
+        ],
         "evidence": [
           "D1:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1070,11 +908,14 @@
       },
       {
         "question": "What forum did Tim join recently?",
-        "answer": "fantasy literature forum",
+        "answer": [
+          "fantasy literature forum"
+        ],
         "evidence": [
           "D2:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1082,11 +923,14 @@
       },
       {
         "question": "What kind of picture did Tim share as part of their Harry Potter book collection?",
-        "answer": "MinaLima's creation from the Harry Potter films",
+        "answer": [
+          "MinaLima's creation from the Harry Potter films"
+        ],
         "evidence": [
           "D2:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1094,11 +938,14 @@
       },
       {
         "question": "What was the highest number of points John scored in a game recently?",
-        "answer": "40 points",
+        "answer": [
+          "40 points"
+        ],
         "evidence": [
           "D3:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1106,11 +953,14 @@
       },
       {
         "question": "What did John celebrate at a restaurant with teammates?",
-        "answer": "a tough win",
+        "answer": [
+          "a tough win"
+        ],
         "evidence": [
           "D3:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1118,11 +968,14 @@
       },
       {
         "question": "What kind of deals did John sign with Nike and Gatorade?",
-        "answer": "basketball shoe and gear deal with Nike, potential sponsorship deal with Gatorade",
+        "answer": [
+          "basketball shoe and gear deal with Nike, potential sponsorship deal with Gatorade"
+        ],
         "evidence": [
           "D3:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1130,11 +983,14 @@
       },
       {
         "question": "Which city is John excited to have a game at?",
-        "answer": "Seattle",
+        "answer": [
+          "Seattle"
+        ],
         "evidence": [
           "D3:19"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1142,11 +998,14 @@
       },
       {
         "question": "How long has John been surfing?",
-        "answer": "five years",
+        "answer": [
+          "five years"
+        ],
         "evidence": [
           "D3:27"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1154,11 +1013,14 @@
       },
       {
         "question": "How does John feel while surfing?",
-        "answer": "super exciting and free-feeling",
+        "answer": [
+          "super exciting and free-feeling"
+        ],
         "evidence": [
           "D3:29"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1166,11 +1028,14 @@
       },
       {
         "question": "What kind of articles has Tim been writing about for the online magazine?",
-        "answer": "different fantasy novels, characters, themes, and book recommendations",
+        "answer": [
+          "different fantasy novels, characters, themes, and book recommendations"
+        ],
         "evidence": [
           "D4:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1178,11 +1043,14 @@
       },
       {
         "question": "Which two fantasy novels does Tim particularly enjoy writing about?",
-        "answer": "Harry Potter and Game of Thrones",
+        "answer": [
+          "Harry Potter and Game of Thrones"
+        ],
         "evidence": [
           "D4:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1190,11 +1058,14 @@
       },
       {
         "question": "What did Anthony and John end up playing during the charity event?",
-        "answer": "an intense Harry Potter trivia contest",
+        "answer": [
+          "an intense Harry Potter trivia contest"
+        ],
         "evidence": [
           "D4:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1202,11 +1073,14 @@
       },
       {
         "question": "What did John share with the person he skyped about?",
-        "answer": "Characters from Harry Potter",
+        "answer": [
+          "Characters from Harry Potter"
+        ],
         "evidence": [
           "D5:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1214,11 +1088,14 @@
       },
       {
         "question": "How did John describe the team bond?",
-        "answer": "Awesome",
+        "answer": [
+          "Awesome"
+        ],
         "evidence": [
           "D5:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1226,11 +1103,14 @@
       },
       {
         "question": "How did John get introduced to basketball?",
-        "answer": "Dad signed him up for a local league",
+        "answer": [
+          "He watched NBA games with his dad as a child and was later signed up for a local league by his dad when he was ten."
+        ],
         "evidence": [
           "D6:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1238,11 +1118,14 @@
       },
       {
         "question": "What is John's number one goal in his basketball career?",
-        "answer": "Winning a championship",
+        "answer": [
+          "Winning a championship"
+        ],
         "evidence": [
           "D6:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1250,11 +1133,14 @@
       },
       {
         "question": "What organization is John teaming up with for his charity work?",
-        "answer": "A local organization helping disadvantaged kids with sports and school",
+        "answer": [
+          "A local organization helping disadvantaged kids with sports and school"
+        ],
         "evidence": [
           "D6:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1262,11 +1148,15 @@
       },
       {
         "question": "When did John meet back up with his teammates after his trip in August 2023?",
-        "answer": "Aug 15th",
+        "answer": [
+          "Aug 15th",
+          "Aug 15th, 2023"
+        ],
         "evidence": [
           "D7:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1274,11 +1164,14 @@
       },
       {
         "question": "What did John's teammates give him when they met on Aug 15th?",
-        "answer": "a basketball with autographs on it",
+        "answer": [
+          "a basketball with autographs on it"
+        ],
         "evidence": [
           "D7:7"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1286,11 +1179,14 @@
       },
       {
         "question": "Why did John's teammates sign the basketball they gave him?",
-        "answer": "to show their friendship and appreciation",
+        "answer": [
+          "to show their friendship and appreciation"
+        ],
         "evidence": [
           "D7:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1298,11 +1194,14 @@
       },
       {
         "question": "What is the main intention behind Tim wanting to attend the book conference?",
-        "answer": "to learn more about literature and create a stronger bond to it",
+        "answer": [
+          "to learn more about literature and create a stronger bond to it"
+        ],
         "evidence": [
           "D7:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1310,11 +1209,14 @@
       },
       {
         "question": "What new activity has Tim started learning in August 2023?",
-        "answer": "play the piano",
+        "answer": [
+          "play the piano"
+        ],
         "evidence": [
           "D8:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1322,12 +1224,15 @@
       },
       {
         "question": "Which movie's theme is Tim's favorite to play on the piano?",
-        "answer": "\"Harry Potter and the Philosopher's Stone\"",
+        "answer": [
+          "\"Harry Potter and the Philosopher's Stone\""
+        ],
         "evidence": [
           "D8:14",
           "D8:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1335,11 +1240,14 @@
       },
       {
         "question": "What special memory does \"Harry Potter and the Philosopher's Stone\" bring to Tim?",
-        "answer": "Watching it with his family",
+        "answer": [
+          "Watching it with his family"
+        ],
         "evidence": [
           "D8:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1347,23 +1255,14 @@
       },
       {
         "question": "Which movie does Tim mention they enjoy watching during Thanksgiving?",
-        "answer": "\"Home Alone\"",
+        "answer": [
+          "\"Home Alone\""
+        ],
         "evidence": [
           "D8:24"
         ],
         "category": 4,
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What tradition does Tim mention they love during Thanksgiving?",
-        "answer": "Prepping the feast and talking about what they're thankful for",
-        "evidence": [
-          "D8:22"
-        ],
-        "category": 4,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1371,11 +1270,14 @@
       },
       {
         "question": "How long did John and his high school basketball teammates play together?",
-        "answer": "Four years",
+        "answer": [
+          "Four years"
+        ],
         "evidence": [
           "D9:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1383,11 +1285,15 @@
       },
       {
         "question": "How was John's experience in New York City?",
-        "answer": "Amazing",
+        "answer": [
+          "Amazing",
+          "Everywhere you go there's something new and exciting."
+        ],
         "evidence": [
           "D9:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1395,11 +1301,14 @@
       },
       {
         "question": "What did John say about NYC, enticing Tim to visit?",
-        "answer": "It's got so much to check out - the culture, food - you won't regret it.",
+        "answer": [
+          "It's got so much to check out - the culture, food - you won't regret it."
+        ],
         "evidence": [
           "D9:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1407,12 +1316,16 @@
       },
       {
         "question": "What kind of soup did John make recently?",
-        "answer": "tasty soup with sage",
+        "answer": [
+          "tasty soup with sage",
+          "tasty soup"
+        ],
         "evidence": [
           "D10:4",
           "D10:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1420,11 +1333,14 @@
       },
       {
         "question": "What spice did John add to the soup for flavor?",
-        "answer": "sage",
+        "answer": [
+          "sage"
+        ],
         "evidence": [
           "D10:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1432,35 +1348,29 @@
       },
       {
         "question": "What is Tim excited to see at Universal Studios?",
-        "answer": "The Harry Potter stuff",
+        "answer": [
+          "The Harry Potter stuff"
+        ],
         "evidence": [
           "D10:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
         ]
       },
       {
-        "question": "Where are John and his teammates planning to explore on a team trip?",
-        "answer": "a new city",
-        "evidence": [
-          "D11:7"
-        ],
-        "category": 4,
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
         "question": "What city did Tim suggest to John for the team trip next month?",
-        "answer": "Edinburgh, Scotland",
+        "answer": [
+          "Edinburgh, Scotland"
+        ],
         "evidence": [
           "D11:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1468,11 +1378,14 @@
       },
       {
         "question": "What does John want to do after his basketball career?",
-        "answer": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+        "answer": [
+          "positively influence and inspire others, potentially start a foundation and engage in charity work"
+        ],
         "evidence": [
           "D11:19"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1480,11 +1393,14 @@
       },
       {
         "question": "What advice did Tim give John about picking endorsements?",
-        "answer": "Ensure they align with values and brand, look for companies that share the desire to make a change and help others, make sure the endorsement feels authentic",
+        "answer": [
+          "Ensure they align with values and brand, look for companies that share the desire to make a change and help others, make sure the endorsement feels authentic"
+        ],
         "evidence": [
           "D11:22"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1492,11 +1408,14 @@
       },
       {
         "question": "What book recommendation did Tim give to John for the trip?",
-        "answer": "A fantasy novel by Patrick Rothfuss",
+        "answer": [
+          "A fantasy novel by Patrick Rothfuss"
+        ],
         "evidence": [
           "D11:24"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1504,11 +1423,14 @@
       },
       {
         "question": "What type of venue did John and his girlfriend choose for their wedding ceremony?",
-        "answer": "Greenhouse",
+        "answer": [
+          "Greenhouse"
+        ],
         "evidence": [
           "D12:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1516,11 +1438,14 @@
       },
       {
         "question": "What was the setting for John and his wife's first dance?",
-        "answer": "Cozy restaurant",
+        "answer": [
+          "Cozy restaurant"
+        ],
         "evidence": [
           "D12:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1528,11 +1453,14 @@
       },
       {
         "question": "Which basketball team does Tim support?",
-        "answer": "The Wolves",
+        "answer": [
+          "The Wolves"
+        ],
         "evidence": [
           "D12:21"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1540,11 +1468,14 @@
       },
       {
         "question": "What passion does Tim mention connects him with people from all over the world?",
-        "answer": "passion for fantasy stuff",
+        "answer": [
+          "passion for fantasy stuff"
+        ],
         "evidence": [
           "D13:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1552,11 +1483,14 @@
       },
       {
         "question": "How does John describe the game season for his team?",
-        "answer": "intense with tough losses and great wins",
+        "answer": [
+          "intense with tough losses and great wins"
+        ],
         "evidence": [
           "D13:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1564,11 +1498,14 @@
       },
       {
         "question": "How does John say his team handles tough opponents?",
-        "answer": "by backing each other up and not quitting",
+        "answer": [
+          "by backing each other up and not quitting"
+        ],
         "evidence": [
           "D13:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1576,11 +1513,14 @@
       },
       {
         "question": "What motivates John's team to get better, according to John?",
-        "answer": "facing tough opponents",
+        "answer": [
+          "facing tough opponents"
+        ],
         "evidence": [
           "D13:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1588,11 +1528,14 @@
       },
       {
         "question": "What did John's team win at the end of the season?",
-        "answer": "a trophy",
+        "answer": [
+          "a trophy"
+        ],
         "evidence": [
           "D13:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1600,11 +1543,14 @@
       },
       {
         "question": "Where did Tim capture the photography of the sunset over the mountain range?",
-        "answer": "Smoky Mountains",
+        "answer": [
+          "Smoky Mountains"
+        ],
         "evidence": [
           "D14:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1612,11 +1558,14 @@
       },
       {
         "question": "How does John feel about being seen as a mentor by some of the younger players?",
-        "answer": "It feels great",
+        "answer": [
+          "It feels great"
+        ],
         "evidence": [
           "D14:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1624,11 +1573,14 @@
       },
       {
         "question": "What does John find rewarding about mentoring the younger players?",
-        "answer": "Seeing their growth, improvement, and confidence",
+        "answer": [
+          "Seeing their growth, improvement, and confidence"
+        ],
         "evidence": [
           "D14:7"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1636,11 +1588,14 @@
       },
       {
         "question": "What has John been able to help the younger players achieve?",
-        "answer": "reach their goals",
+        "answer": [
+          "reach their goals"
+        ],
         "evidence": [
           "D14:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1648,11 +1603,14 @@
       },
       {
         "question": "What genre is the novel that Tim is writing?",
-        "answer": "Fantasy",
+        "answer": [
+          "Fantasy"
+        ],
         "evidence": [
           "D15:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1660,11 +1618,14 @@
       },
       {
         "question": "Who is one of Tim's sources of inspiration for writing?",
-        "answer": "J.K. Rowling",
+        "answer": [
+          "J.K. Rowling"
+        ],
         "evidence": [
           "D15:7"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1672,11 +1633,14 @@
       },
       {
         "question": "What J.K. Rowling quote does Tim resonate with?",
-        "answer": "\"Turn on the light - happiness hides in the darkest of times.\"",
+        "answer": [
+          "\"Turn on the light - happiness hides in the darkest of times.\""
+        ],
         "evidence": [
           "D15:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1684,11 +1648,14 @@
       },
       {
         "question": "What does John write on the whiteboard to help him stay motivated?",
-        "answer": "motivational quotes and strategies",
+        "answer": [
+          "motivational quotes and strategies"
+        ],
         "evidence": [
           "D15:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1696,11 +1663,14 @@
       },
       {
         "question": "What hobby is a therapy for John when away from the court?",
-        "answer": "Cooking",
+        "answer": [
+          "Cooking"
+        ],
         "evidence": [
           "D15:30"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1708,12 +1678,15 @@
       },
       {
         "question": "What type of meal does John often cook using a slow cooker?",
-        "answer": "honey garlic chicken with roasted veg",
+        "answer": [
+          "honey garlic chicken with roasted veg"
+        ],
         "evidence": [
           "D15:32",
           "D15:33"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1721,11 +1694,14 @@
       },
       {
         "question": "How will John share the honey garlic chicken recipe with the other person?",
-        "answer": "write it down and mail it",
+        "answer": [
+          "write it down and mail it"
+        ],
         "evidence": [
           "D15:34"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1733,11 +1709,14 @@
       },
       {
         "question": "What was Tim's huge writing issue last week,as mentioned on November 6, 2023?",
-        "answer": "He got stuck on a plot twist",
+        "answer": [
+          "He got stuck on a plot twist"
+        ],
         "evidence": [
           "D16:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1745,11 +1724,14 @@
       },
       {
         "question": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
-        "answer": "a basketball signed by his favorite player",
+        "answer": [
+          "a basketball signed by his favorite player"
+        ],
         "evidence": [
           "D16:7"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1757,12 +1739,15 @@
       },
       {
         "question": "Why do Tim and John find LeBron inspiring?",
-        "answer": "LeBron's determination and the epic block in Game 7 of the '16 Finals",
+        "answer": [
+          "LeBron's determination and the epic block in Game 7 of the '16 Finals"
+        ],
         "evidence": [
           "D16:9",
           "D16:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1770,11 +1755,14 @@
       },
       {
         "question": "How did John describe the views during their road trip out on the European coastline?",
-        "answer": "Spectacular",
+        "answer": [
+          "Spectacular"
+        ],
         "evidence": [
           "D17:3"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1782,11 +1770,14 @@
       },
       {
         "question": "What is one of Tim's favorite fantasy TV shows, as mentioned on November 11, 2023?",
-        "answer": "\"That\"",
+        "answer": [
+          "\"That\""
+        ],
         "evidence": [
           "D17:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1794,11 +1785,14 @@
       },
       {
         "question": "How does Tim stay motivated during difficult study sessions?",
-        "answer": "Visualizing goals and success",
+        "answer": [
+          "Visualizing goals and success"
+        ],
         "evidence": [
           "D18:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1806,11 +1800,14 @@
       },
       {
         "question": "What did Tim say about his injury on 16 November, 2023?",
-        "answer": "The doctor said it's not too serious",
+        "answer": [
+          "The doctor said it's not too serious"
+        ],
         "evidence": [
           "D18:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1818,11 +1815,14 @@
       },
       {
         "question": "What was the setback Tim faced in his writing project on 21 November, 2023?",
-        "answer": "Story based on experiences in the UK didn't go as planned",
+        "answer": [
+          "Story based on experiences in the UK didn't go as planned"
+        ],
         "evidence": [
           "D19:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1830,11 +1830,14 @@
       },
       {
         "question": "How did John overcome his ankle injury from last season?",
-        "answer": "stayed focused on recovery and worked hard to strengthen his body",
+        "answer": [
+          "stayed focused on recovery and worked hard to strengthen his body"
+        ],
         "evidence": [
           "D19:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1842,11 +1845,14 @@
       },
       {
         "question": "What motivated Tim to keep pushing himself to get better in writing and reading?",
-        "answer": "Love for writing and reading",
+        "answer": [
+          "Love for writing and reading"
+        ],
         "evidence": [
           "D19:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1854,11 +1860,14 @@
       },
       {
         "question": "How did John overcome a mistake he made during a big game in basketball?",
-        "answer": "Worked hard to get better and focused on growth",
+        "answer": [
+          "Worked hard to get better and focused on growth"
+        ],
         "evidence": [
           "D19:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1866,11 +1875,14 @@
       },
       {
         "question": "What book did John recently finish rereading that left him feeling inspired and hopeful about following dreams?",
-        "answer": "The Alchemist",
+        "answer": [
+          "The Alchemist"
+        ],
         "evidence": [
           "D19:20"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1878,11 +1890,14 @@
       },
       {
         "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
-        "answer": "made him think again about following dreams and searching for personal legends",
+        "answer": [
+          "made him think again about following dreams and searching for personal legends"
+        ],
         "evidence": [
           "D19:20"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1890,11 +1905,14 @@
       },
       {
         "question": "What is John trying out to improve his strength and flexibility after recovery from ankle injury?",
-        "answer": "yoga",
+        "answer": [
+          "yoga"
+        ],
         "evidence": [
           "D20:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1902,11 +1920,14 @@
       },
       {
         "question": "How long does John usually hold the yoga pose he shared with Tim?",
-        "answer": "30-60 seconds",
+        "answer": [
+          "30-60 seconds"
+        ],
         "evidence": [
           "D20:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1914,11 +1935,14 @@
       },
       {
         "question": "Where was the forest picture shared by John on December 1,2023 taken?",
-        "answer": "near his hometown",
+        "answer": [
+          "near his hometown"
+        ],
         "evidence": [
           "D20:28"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1926,11 +1950,14 @@
       },
       {
         "question": "What did Tim recently start learning in addition to being part of a travel club and working on studies?",
-        "answer": "an instrument",
+        "answer": [
+          "an instrument"
+        ],
         "evidence": [
           "D21:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1938,11 +1965,14 @@
       },
       {
         "question": "What instrument is Tim learning to play in December 2023?",
-        "answer": "violin",
+        "answer": [
+          "violin"
+        ],
         "evidence": [
           "D21:11"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1950,11 +1980,14 @@
       },
       {
         "question": "How long has Tim been playing the piano for, as of December 2023?",
-        "answer": "about four months",
+        "answer": [
+          "about four months"
+        ],
         "evidence": [
           "D21:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1962,11 +1995,14 @@
       },
       {
         "question": "What book did Tim just finish reading on 8th December, 2023?",
-        "answer": "\"A Dance with Dragons\"",
+        "answer": [
+          "\"A Dance with Dragons\""
+        ],
         "evidence": [
           "D22:13"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           22
@@ -1974,37 +2010,30 @@
       },
       {
         "question": "Which book did Tim recommend to John as a good story on 8th December, 2023?",
-        "answer": "\"A Dance with Dragons\"",
+        "answer": [
+          "\"A Dance with Dragons\""
+        ],
         "evidence": [
           "D22:13"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           22
         ]
       },
       {
-        "question": "What is the topic of discussion between John and Tim on 11 December, 2023?",
-        "answer": "Academic achievements and sports successes",
-        "evidence": [
-          "D23:1",
-          "D23:2",
-          "D23:3"
-        ],
-        "category": 4,
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
         "question": "What kind of game did John have a career-high in assists in?",
-        "answer": "basketball",
+        "answer": [
+          "basketball",
+          "A big basketballgame against their rival."
+        ],
         "evidence": [
           "D23:3"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2012,11 +2041,14 @@
       },
       {
         "question": "What was John's way of dealing with doubts and stress when he was younger?",
-        "answer": "practicing basketball outside for hours",
+        "answer": [
+          "practicing basketball outside for hours"
+        ],
         "evidence": [
           "D23:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2024,11 +2056,14 @@
       },
       {
         "question": "How did John feel about the atmosphere during the big game against the rival team?",
-        "answer": "electric and intense",
+        "answer": [
+          "electric and intense"
+        ],
         "evidence": [
           "D23:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2036,11 +2071,14 @@
       },
       {
         "question": "How did John feel after being able to jog without pain?",
-        "answer": "It was a huge success.",
+        "answer": [
+          "It was a huge success."
+        ],
         "evidence": [
           "D24:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2048,11 +2086,14 @@
       },
       {
         "question": "What kind of deal did John get in December?",
-        "answer": "Deal with a renowned outdoor gear company",
+        "answer": [
+          "Deal with a renowned outdoor gear company"
+        ],
         "evidence": [
           "D25:2"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2060,11 +2101,14 @@
       },
       {
         "question": "Where was the photoshoot done for John's gear deal?",
-        "answer": "In a gorgeous forest",
+        "answer": [
+          "In a gorgeous forest"
+        ],
         "evidence": [
           "D25:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2072,11 +2116,14 @@
       },
       {
         "question": "In which area has John's team seen the most growth during training?",
-        "answer": "Communication and bonding",
+        "answer": [
+          "Communication and bonding"
+        ],
         "evidence": [
           "D25:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2084,11 +2131,14 @@
       },
       {
         "question": "What type of seminars is John conducting?",
-        "answer": "Sports and marketing seminars",
+        "answer": [
+          "Sports and marketing seminars"
+        ],
         "evidence": [
           "D26:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 26,
         "where_ground_truth": [
           26
@@ -2096,11 +2146,14 @@
       },
       {
         "question": "What activity did Tim do after reading the stories about the Himalayan trek?",
-        "answer": "visited a travel agency",
+        "answer": [
+          "visited a travel agency"
+        ],
         "evidence": [
           "D26:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -2108,11 +2161,14 @@
       },
       {
         "question": "What is one cause that John supports with his influence and resources?",
-        "answer": "youth sports and fair chances in sports",
+        "answer": [
+          "youth sports and fair chances in sports"
+        ],
         "evidence": [
           "D26:21"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 26,
         "where_ground_truth": [
           26
@@ -2120,11 +2176,14 @@
       },
       {
         "question": "What new fantasy TV series is Tim excited about?",
-        "answer": "\"The Wheel of Time\"",
+        "answer": [
+          "\"The Wheel of Time\""
+        ],
         "evidence": [
           "D26:36"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -2132,11 +2191,14 @@
       },
       {
         "question": "Which language is Tim learning?",
-        "answer": "German",
+        "answer": [
+          "German"
+        ],
         "evidence": [
           "D27:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2144,23 +2206,29 @@
       },
       {
         "question": "What language does Tim know besides German?",
-        "answer": "Spanish",
+        "answer": [
+          "Spanish"
+        ],
         "evidence": [
           "D27:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
         ]
       },
       {
-        "question": "What book did Tim get in Italy that inspired him to cook?",
-        "answer": "a cooking book",
+        "question": "What book did John get in Italy that inspired him to cook?",
+        "answer": [
+          "a cooking book"
+        ],
         "evidence": [
           "D27:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2168,11 +2236,14 @@
       },
       {
         "question": "What is John's favorite book series?",
-        "answer": "Harry Potter",
+        "answer": [
+          "Harry Potter"
+        ],
         "evidence": [
           "D27:19"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2180,11 +2251,14 @@
       },
       {
         "question": "According to John, who is his favorite character from Lord of the Rings?",
-        "answer": "Aragorn",
+        "answer": [
+          "Aragorn"
+        ],
         "evidence": [
           "D27:24"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2192,11 +2266,14 @@
       },
       {
         "question": "Why does John like Aragorn from Lord of the Rings?",
-        "answer": "brave, selfless, down-to-earth attitude",
+        "answer": [
+          "brave, selfless, down-to-earth attitude"
+        ],
         "evidence": [
           "D27:30"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2204,11 +2281,14 @@
       },
       {
         "question": "What kind of painting does John have in his room as a reminder?",
-        "answer": "a painting of Aragorn",
+        "answer": [
+          "a painting of Aragorn"
+        ],
         "evidence": [
           "D27:28"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2216,11 +2296,14 @@
       },
       {
         "question": "What is the painting of Aragorn a reminder for John to be in everything he does?",
-        "answer": "be a leader",
+        "answer": [
+          "be a leader"
+        ],
         "evidence": [
           "D27:28"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2228,11 +2311,14 @@
       },
       {
         "question": "What map does Tim show to his friend John?",
-        "answer": "a map of Middle-earth from LOTR",
+        "answer": [
+          "a map of Middle-earth from LOTR"
+        ],
         "evidence": [
           "D27:33"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2240,11 +2326,14 @@
       },
       {
         "question": "Where will Tim be going for a semester abroad?",
-        "answer": "Ireland",
+        "answer": [
+          "Ireland"
+        ],
         "evidence": [
           "D28:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2252,11 +2341,14 @@
       },
       {
         "question": "Which city in Ireland will Tim be staying in during his semester abroad?",
-        "answer": "Galway",
+        "answer": [
+          "Galway"
+        ],
         "evidence": [
           "D28:3"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2264,11 +2356,14 @@
       },
       {
         "question": "What charity event did John organize recently in 2024?",
-        "answer": "benefit basketball game",
+        "answer": [
+          "benefit basketball game"
+        ],
         "evidence": [
           "D28:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2276,11 +2371,14 @@
       },
       {
         "question": "What achievement did John share with Tim in January 2024?",
-        "answer": "endorsement with a popular beverage company",
+        "answer": [
+          "endorsement with a popular beverage company"
+        ],
         "evidence": [
           "D29:4"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           29
@@ -2288,11 +2386,14 @@
       },
       {
         "question": "What was Johns's reaction to sealing the deal with the beverage company?",
-        "answer": "crazy feeling, sense of accomplishment",
+        "answer": [
+          "crazy feeling, sense of accomplishment"
+        ],
         "evidence": [
           "D29:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -2300,783 +2401,152 @@
       },
       {
         "question": "Which city did John recommend to Tim in January 2024?",
-        "answer": "Barcelona",
+        "answer": [
+          "Barcelona"
+        ],
         "evidence": [
           "D29:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
         ]
       },
       {
-        "question": "Which team did Tim sign with on 21 May, 2023?",
-        "evidence": [
-          "D1:5"
+        "question": "What is a Star Wars book that Tim might enjoy?",
+        "answer": [
+          "Star Wars: Jedi Apprentice"
         ],
-        "category": 5,
-        "adversarial_answer": "The Minnesota Wolves",
-        "where": 1,
+        "evidence": [
+          "D27:19",
+          "D27:21"
+        ],
+        "category": 3,
+        "is_multi_modality": true,
+        "where": 27,
         "where_ground_truth": [
-          1
+          27
         ]
       },
       {
-        "question": "What is Tim's position on the team he signed with?",
-        "evidence": [
-          "D1:7"
+        "question": "What is the topic of discussion between John and Tim on 11 December, 2023?",
+        "answer": [
+          "Academic achievements and sports successes"
         ],
-        "category": 5,
-        "adversarial_answer": "shooting guard",
-        "where": 1,
+        "evidence": [
+          "D23:1",
+          "D23:2",
+          "D23:3",
+          "D23:4",
+          "D23:5"
+        ],
+        "category": 4,
+        "is_multi_modality": true,
+        "where": 23,
         "where_ground_truth": [
-          1
+          23
         ]
       },
       {
-        "question": "What challenge did Tim encounter during pre-season training?",
-        "evidence": [
-          "D1:11"
+        "question": "Who is Anthony?",
+        "answer": [
+          "Someone who went to a charity event and a Harry Potter trivia contest with John."
         ],
-        "category": 5,
-        "adversarial_answer": "fitting into the new team's style of play",
-        "where": 1,
-        "where_ground_truth": [
-          1
-        ]
-      },
-      {
-        "question": "What cult did Tim join recently?",
-        "evidence": [
-          "D2:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "fantasy literature forum",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "What was the highest number of points Tim scored in a game recently?",
-        "evidence": [
-          "D3:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "40 points",
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
-        "question": "What did Tim celebrate at a restaurant with teammates?",
-        "evidence": [
-          "D3:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "a tough win",
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
-        "question": "What kind of deals did Tim sign with Nike and Gatorade?",
-        "evidence": [
-          "D3:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "basketball shoe and gear deal with Nike, potential sponsorship deal with Gatorade",
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
-        "question": "How does Tim feel while surfing?",
-        "evidence": [
-          "D3:29"
-        ],
-        "category": 5,
-        "adversarial_answer": "super exciting and free-feeling",
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
-        "question": "What kind of articles has John been writing about for the online magazine?",
-        "evidence": [
-          "D4:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "different fantasy novels, characters, themes, and book recommendations",
-        "where": 4,
-        "where_ground_truth": [
-          4
-        ]
-      },
-      {
-        "question": "Which two mystery novels does Tim particularly enjoy writing about?",
-        "evidence": [
-          "D4:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "Harry Potter and Game of Thrones",
-        "where": 4,
-        "where_ground_truth": [
-          4
-        ]
-      },
-      {
-        "question": "What did Anthony and Tim end up playing during the charity event?",
         "evidence": [
           "D4:8"
         ],
-        "category": 5,
-        "adversarial_answer": "an intense Harry Potter trivia contest",
+        "category": 3,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
         ]
       },
       {
-        "question": "How did Tim get introduced to basketball?",
-        "evidence": [
-          "D6:13"
+        "question": "What kind of charity organization does John mention he is teaming up with?",
+        "answer": [
+          "He mentions teaming up with a local organization that helps disadvantaged kids with sports and school."
         ],
-        "category": 5,
-        "adversarial_answer": "Dad signed him up for a local league",
-        "where": 6,
-        "where_ground_truth": [
-          6
-        ]
-      },
-      {
-        "question": "What is Tim's number one goal in his basketball career?",
         "evidence": [
-          "D6:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "Winning a championship",
-        "where": 6,
-        "where_ground_truth": [
-          6
-        ]
-      },
-      {
-        "question": "What organization is Tim teaming up with for his charity work?",
-        "evidence": [
+          "D6:16",
           "D6:17"
         ],
-        "category": 5,
-        "adversarial_answer": "A local organization helping disadvantaged kids with sports and school",
+        "category": 3,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
         ]
       },
       {
-        "question": "What did Tim's teammates give him when they met on Aug 15th?",
-        "evidence": [
-          "D7:7"
+        "question": "Which movie's theme does Tim enjoy playing on the piano?",
+        "answer": [
+          "Harry Potter and the Philosopher's Stone"
         ],
-        "category": 5,
-        "adversarial_answer": "a basketball with autographs on it",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "Why did John's teammates sign the football they gave him?",
         "evidence": [
-          "D7:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "to show their friendship and appreciation",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What is the main intention behind John wanting to attend the book conference?",
-        "evidence": [
-          "D7:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "to learn more about literature and create a stronger bond to it",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What new activity has John started learning in August 2023?",
-        "evidence": [
-          "D8:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "play the piano",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What special memory does \"Fifty Shades of Grey\" bring to Tim?",
-        "evidence": [
+          "D8:14",
           "D8:16"
         ],
-        "category": 5,
-        "adversarial_answer": "Watching it with his family",
+        "category": 3,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
         ]
       },
       {
-        "question": "Which movie does John mention they enjoy watching during Thanksgiving?",
-        "evidence": [
-          "D8:24"
+        "question": "What could John do after his basketball career?",
+        "answer": [
+          "He wants to use his platform to make a positive difference and inspire others, possibly by starting a foundation and doing charity work."
         ],
-        "category": 5,
-        "adversarial_answer": "\"Home Alone\"",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What tradition does Tim mention they love during Halloween?",
         "evidence": [
-          "D8:22"
-        ],
-        "category": 5,
-        "adversarial_answer": "Prepping the feast and talking about what they're thankful for",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "How long did Tim and his high school basketball teammates play together?",
-        "evidence": [
-          "D9:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "Four years",
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "How was Tim's experience in New York City?",
-        "evidence": [
-          "D9:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "Amazing",
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "What spice did Tim add to the soup for flavor?",
-        "evidence": [
-          "D10:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "sage",
-        "where": 10,
-        "where_ground_truth": [
-          10
-        ]
-      },
-      {
-        "question": "What is Tim excited to see at Disneyland?",
-        "evidence": [
-          "D10:11"
-        ],
-        "category": 5,
-        "adversarial_answer": "The Harry Potter stuff",
-        "where": 10,
-        "where_ground_truth": [
-          10
-        ]
-      },
-      {
-        "question": "Where are John and his teammates planning to avoid on a team trip?",
-        "evidence": [
-          "D11:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "a new city",
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
-        "question": "What does Tim want to do after his basketball career?",
-        "evidence": [
+          "D11:18",
           "D11:19"
         ],
-        "category": 5,
-        "adversarial_answer": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+        "category": 3,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
         ]
       },
       {
-        "question": "What type of venue did John and his girlfriend choose for their breakup?",
-        "evidence": [
-          "D12:4"
+        "question": "What other exercises can help John with his basketball performance?",
+        "answer": [
+          "Strength training and yoga.",
+          "strength training and yoga"
         ],
-        "category": 5,
-        "adversarial_answer": "Greenhouse",
-        "where": 12,
-        "where_ground_truth": [
-          12
-        ]
-      },
-      {
-        "question": "What passion does John mention connects him with people from all over the world?",
         "evidence": [
-          "D13:1"
+          "D8:5",
+          "D8:7",
+          "D20:2",
+          "D20:4"
         ],
-        "category": 5,
-        "adversarial_answer": "passion for fantasy stuff",
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "How does Tim say his team handles tough opponents?",
-        "evidence": [
-          "D13:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "by backing each other up and not quitting",
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "Where did Tim capture the painting of the sunset over the mountain range?",
-        "evidence": [
-          "D14:16"
-        ],
-        "category": 5,
-        "adversarial_answer": "Smoky Mountains",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "What does Tim find rewarding about mentoring the younger players?",
-        "evidence": [
-          "D14:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "Seeing their growth, improvement, and confidence",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "What has Tim been able to help the younger players achieve?",
-        "evidence": [
-          "D14:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "reach their goals",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "What genre is the novel that John is writing?",
-        "evidence": [
-          "D15:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "Fantasy",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "Who is one of Tim's sources of inspiration for painting?",
-        "evidence": [
-          "D15:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "J.K. Rowling",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "What does Tim write on the whiteboard to help him stay motivated?",
-        "evidence": [
-          "D15:14"
-        ],
-        "category": 5,
-        "adversarial_answer": "motivational quotes and strategies",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "What hobby is a therapy for Tim when away from the court?",
-        "evidence": [
-          "D15:30"
-        ],
-        "category": 5,
-        "adversarial_answer": "Cooking",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "What type of meal does Tim often cook using a slow cooker?",
-        "evidence": [
-          "D15:32",
-          "D15:33"
-        ],
-        "category": 5,
-        "adversarial_answer": "honey garlic chicken with roasted veg",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "How will Tim share the honey garlic chicken recipe with the other person?",
-        "evidence": [
-          "D15:34"
-        ],
-        "category": 5,
-        "adversarial_answer": "write it down and mail it",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "What is one of Tim's favorite crime TV shows, as mentioned on November 11, 2023?",
-        "evidence": [
-          "D17:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "\"That\"",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "What was the setback Tim faced in his coding project on 21 November, 2023?",
-        "evidence": [
-          "D19:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "Story based on experiences in the UK didn't go as planned",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "How did Tim overcome his ankle injury from last season?",
-        "evidence": [
-          "D19:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "stayed focused on recovery and worked hard to strengthen his body",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What motivated John to keep pushing himself to get better in writing and reading?",
-        "evidence": [
-          "D19:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "Love for writing and reading",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "How did Tim overcome a mistake he made during a big game in basketball?",
-        "evidence": [
-          "D19:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "Worked hard to get better and focused on growth",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What is Tim trying out to improve his strength and flexibility after recovery from ankle injury?",
-        "evidence": [
-          "D20:2"
-        ],
-        "category": 5,
-        "adversarial_answer": "yoga",
+        "category": 3,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
+          8,
           20
         ]
       },
       {
-        "question": "What did John recently start learning in addition to being part of a travel club and working on studies?",
-        "evidence": [
-          "D21:9"
+        "question": "What city does Tim suggest for John and his teammates' team trip?",
+        "answer": [
+          "Edinburgh, Scotland"
         ],
-        "category": 5,
-        "adversarial_answer": "an instrument",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What instrument is John learning to play in December 2023?",
         "evidence": [
-          "D21:11"
+          "D11:7",
+          "D11:9",
+          "D11:10"
         ],
-        "category": 5,
-        "adversarial_answer": "violin",
-        "where": 21,
+        "category": 4,
+        "is_multi_modality": true,
+        "where": 11,
         "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "How long has John been playing the piano for, as of December 2023?",
-        "evidence": [
-          "D21:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "about four months",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What movie did Tim just finish watching on 8th December, 2023?",
-        "evidence": [
-          "D22:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "\"A Dance with Dragons\"",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "What kind of game did Tim have a career-high in assists in?",
-        "evidence": [
-          "D23:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "basketball",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What was Tim's way of dealing with doubts and stress when he was younger?",
-        "evidence": [
-          "D23:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "practicing basketball outside for hours",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "Where was the photoshoot done for John's fragrance deal?",
-        "evidence": [
-          "D25:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "In a gorgeous forest",
-        "where": 25,
-        "where_ground_truth": [
-          25
-        ]
-      },
-      {
-        "question": "In which area has Tim's team seen the most growth during training?",
-        "evidence": [
-          "D25:14"
-        ],
-        "category": 5,
-        "adversarial_answer": "Communication and bonding",
-        "where": 25,
-        "where_ground_truth": [
-          25
-        ]
-      },
-      {
-        "question": "What type of seminars is Tim conducting?",
-        "evidence": [
-          "D26:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "Sports and marketing seminars",
-        "where": 26,
-        "where_ground_truth": [
-          26
-        ]
-      },
-      {
-        "question": "What is one cause that John opposes with his influence and resources?",
-        "evidence": [
-          "D26:21"
-        ],
-        "category": 5,
-        "adversarial_answer": "youth sports and fair chances in sports",
-        "where": 26,
-        "where_ground_truth": [
-          26
-        ]
-      },
-      {
-        "question": "What new fantasy TV series is John excited about?",
-        "evidence": [
-          "D26:36"
-        ],
-        "category": 5,
-        "adversarial_answer": "\"The Wheel of Time\"",
-        "where": 26,
-        "where_ground_truth": [
-          26
-        ]
-      },
-      {
-        "question": "Which language is John learning?",
-        "evidence": [
-          "D27:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "German",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "According to John, who is his least favorite character from Lord of the Rings?",
-        "evidence": [
-          "D27:24"
-        ],
-        "category": 5,
-        "adversarial_answer": "Aragorn",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "Why does Tim like Aragorn from Lord of the Rings?",
-        "evidence": [
-          "D27:30"
-        ],
-        "category": 5,
-        "adversarial_answer": "brave, selfless, down-to-earth attitude",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What kind of painting does Tim have in his room as a reminder?",
-        "evidence": [
-          "D27:28"
-        ],
-        "category": 5,
-        "adversarial_answer": "a painting of Aragorn",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What is the sculpture of Aragorn a reminder for John to be in everything he does?",
-        "evidence": [
-          "D27:28"
-        ],
-        "category": 5,
-        "adversarial_answer": "be a leader",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "Which city in Ireland will John be staying in during his semester abroad?",
-        "evidence": [
-          "D28:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "Galway",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What charity event did Tim organize recently in 2024?",
-        "evidence": [
-          "D28:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "benefit basketball game",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What was Tims's reaction to sealing the deal with the beverage company?",
-        "evidence": [
-          "D29:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "crazy feeling, sense of accomplishment",
-        "where": 29,
-        "where_ground_truth": [
-          29
+          11
         ]
       }
     ],
@@ -7247,6 +6717,1560 @@
           "text": "Cheers! I owe you one. Let me know if you need anything. Bye!"
         }
       ]
+    },
+    "event_summary": {
+      "events_session_1": {
+        "Tim": [
+          "Tim contacts his Harry Potter fan friend to discuss potential collaborations on fan projects based on various elements of the Harry Potter Universe."
+        ],
+        "John": [
+          "John signs a new contract with Minnesota Wolves playing shooting guard and strives to adjust to their style of play.",
+          "John aims to improve his shooting percentage during his practices with the new team."
+        ],
+        "date": "21 May, 2023"
+      },
+      "events_session_2": {
+        "Tim": [
+          "Tim joins a forum about fantasy literature and shares his thoughts with other members about his favorite books."
+        ],
+        "John": [
+          "John uses his contacts in the basketball industry and his marketing skills to explore potential sports endorsement opportunities with Nike and UnderArmour."
+        ],
+        "date": "15 June, 2023"
+      },
+      "events_session_3": {
+        "Tim": [
+          "Tim meets and converses with a fellow Harry Potter fan in California."
+        ],
+        "John": [
+          "John scores his highest score ever - 40 points - during a playoff in June 2023.",
+          "John and his team are thrilled by their win and celebrate in a restaurant afterwards.",
+          "John secures a basketball shoe and gear deal with Nike and is in talks with Gatorade for a potential sponsorship.",
+          "John look forward to a game in Seattle in the first week of August 2023."
+        ],
+        "date": "16 July, 2023"
+      },
+      "events_session_4": {
+        "Tim": [
+          "Tim finds an opportunity on a fantasy literature forum and starts writing articles on fantasy novels, studying characters, themes, and making book recommendations for an online magazine."
+        ],
+        "John": [
+          "John is reading a book that inspires him to keep dreaming."
+        ],
+        "date": "2 August, 2023"
+      },
+      "events_session_5": {
+        "Tim": [
+          "Tim skypes with the Harry Potter fan he met in California to discuss future collaborations.",
+          "Tim starts reading the book, The Name of the Wind, by Patrick Rothfuss."
+        ],
+        "John": [
+          "John has an intense game at Seattle followed by an exhilarating win."
+        ],
+        "date": "9 August, 2023"
+      },
+      "events_session_6": {
+        "Tim": [],
+        "John": [
+          "John travels from Seattle to Chicago and starts exploring the culture and people.",
+          "John wants to make an impact with charity work and is in talks with a local organization to help disadvantaged kids with sports and school."
+        ],
+        "date": "11 August, 2023"
+      },
+      "events_session_7": {
+        "Tim": [
+          "Tim prepares to visit a book conference in September 2023 where he wants to meet with book publishers, authors and fellow readers."
+        ],
+        "John": [
+          "John returns from his trip to Chicago and meets with his team.",
+          "John's teammates gift him a signed basketball as a mark of their friendship and team spirit."
+        ],
+        "date": "17 August, 2023"
+      },
+      "events_session_8": {
+        "Tim": [
+          "Tim focuses on school and starts learning the piano.",
+          "Tim enjoys playing tunes from the movie Harry Potter and the Philosopher's Stone on the piano."
+        ],
+        "John": [
+          "John joins a new gym to stay in basketball shape and works out an elaborate gym routine to keep up with his basketball skills as well as strength routine."
+        ],
+        "date": "21 August, 2023"
+      },
+      "events_session_9": {
+        "Tim": [
+          "Tim gets busy with school assignments and exams."
+        ],
+        "John": [
+          "John visits his family and old friends in his hometown.",
+          "John goes on a visit to New York City."
+        ],
+        "date": "26 August, 2023"
+      },
+      "events_session_10": {
+        "Tim": [
+          "Tim gets turned down for a summer job.",
+          "Tim gives a presentation in class and feels accomplished about it.",
+          "Tim plans to visit Universal Studios in Septemner 2023 and is excited to see the Harry Potter rides."
+        ],
+        "John": [
+          "John starts to cook more often and experiment with recipes, such as s soup with sage herbs.",
+          "John returns from his trip to New York City where he struggled a bit with the subway system."
+        ],
+        "date": "31 August, 2023"
+      },
+      "events_session_11": {
+        "Tim": [
+          "Tim recommends that John can visit Edinburgh, Scotland for their team trip and recommends the book, The Name of the Wind by Patrick Rothfuss to read during the trip."
+        ],
+        "John": [
+          "John attends a local restaurant with some of his new teammates.",
+          "John plans to take a trip with his teammates and seeks for city and book recommendations from Tim."
+        ],
+        "date": "21 September, 2023"
+      },
+      "events_session_12": {
+        "Tim": [],
+        "John": [
+          "John ties the knot with his long-time girlfriend in an emotional wedding ceremony at a greenhouse."
+        ],
+        "date": "2 October, 2023"
+      },
+      "events_session_13": {
+        "Tim": [
+          "Tim visits the UK to attend a Harry Potter themed conference and feels at home with fellow attendees due to their shared love for the Harry Potter universe."
+        ],
+        "John": [
+          "John's team continues on an intense game season with some wins as well as losses.",
+          "John and his team win a triphy during one of their games."
+        ],
+        "date": "13 October, 2023"
+      },
+      "events_session_14": {
+        "Tim": [],
+        "John": [
+          "John starts to mentor the younger players on his team and finds the experience rewarding."
+        ],
+        "date": "17 October, 2023"
+      },
+      "events_session_15": {
+        "Tim": [
+          "Tim reads a book about the history of castles in the UK and uses it as inspiration for his ongoing fantasy novel writing.",
+          "Tim is in the process of writing a fantasy novel."
+        ],
+        "John": [],
+        "date": "21 October, 2023"
+      },
+      "events_session_16": {
+        "Tim": [
+          "Tim gets stuck while writing a plot twist in his book but pushes through it."
+        ],
+        "John": [
+          "John goes on a European vacation with his wife."
+        ],
+        "date": "6 November, 2023"
+      },
+      "events_session_17": {
+        "Tim": [],
+        "John": [
+          "John and his wife go on a road trip to explore the coastline in Europe.",
+          "John finishes reading a gripping fantasy novel."
+        ],
+        "date": "11 November, 2023"
+      },
+      "events_session_18": {
+        "Tim": [
+          "Tim visit castles in the UK and returns home.",
+          "Tim prepares for exams at school."
+        ],
+        "John": [
+          "John suffers from an ankle injury and has to stay off court while recovering from it."
+        ],
+        "date": "16 November, 2023"
+      },
+      "events_session_19": {
+        "Tim": [
+          "Tim attempts writing a short story based off his experiences in the UK but is not able to accomplish it."
+        ],
+        "John": [
+          "John continues recovery from his ankle injury and re-reads one of his favorite books, The Alchemist, during this time."
+        ],
+        "date": "21 November, 2023"
+      },
+      "events_session_20": {
+        "Tim": [
+          "Tim faces some tough exams which make him question his competence but he perseveres and does well at it."
+        ],
+        "John": [
+          "John starts taking yoga classes to complement his basketball practice and enjoys doing the Warrior II pose."
+        ],
+        "date": "1 December, 2023"
+      },
+      "events_session_21": {
+        "Tim": [
+          "Tim joins a travel club to get more insights about countries he is interested in and meet new people.",
+          "Tim has been learning to play the violin for four months now and wants to learn to play jazz and film scores."
+        ],
+        "John": [],
+        "date": "6 December, 2023"
+      },
+      "events_session_22": {
+        "Tim": [
+          "Tim attends a Harry Potter themed party where he dresses up with his Gryffindor scarf, makes many new friends and receives chocolate frogs as treats.",
+          "Tim reads a book on the power of friendship and loyalty, and A Dance with Dragons by George R R Martin"
+        ],
+        "John": [
+          "John's team secures a win in one of their games.",
+          "John reads the book Dune by Frank Herbert"
+        ],
+        "date": "8 December, 2023"
+      },
+      "events_session_23": {
+        "Tim": [
+          "Tim does an analysis of a fantasy novel for his English literature class and it goes okay."
+        ],
+        "John": [
+          "John achieves a career-high assist during a big game."
+        ],
+        "date": "11 December, 2023"
+      },
+      "events_session_24": {
+        "Tim": [],
+        "John": [
+          "John and his team secure another win that was a close-call until the buzzer.",
+          "John continues doing physical therapy and rehab to recover from his ankle injury.",
+          "John is able to job without any pain for the first time since the injury.",
+          "John and his wife host a small get-together for his friends and family to celebrate his path to recovery from the ankle injury."
+        ],
+        "date": "16 December, 2023"
+      },
+      "events_session_25": {
+        "Tim": [],
+        "John": [
+          "John lands a new endorsement deal with a renowned outdoor gear company and completes a photoshoot for the same in a gorgeous forest."
+        ],
+        "date": "19 December, 2023"
+      },
+      "events_session_26": {
+        "Tim": [
+          "Tim visits a travel agency to inquire about the requirements of his next dream trip.",
+          "Tim finds and reads a book about travellers' stories from around the world to plan his next adventure."
+        ],
+        "John": [
+          "John starts conducting seminars to share his athletic and marketing skills with aspiring professionals.",
+          "John continues his charity work on youth sports and fighting to give youth in underserved communities a chance at sports."
+        ],
+        "date": "26 December, 2023"
+      },
+      "events_session_27": {
+        "Tim": [
+          "Tim finds a group of fellow travellers who share a common interest in exploring new cultures.",
+          "Tim starts a language course in German."
+        ],
+        "John": [],
+        "date": "2 January, 2024"
+      },
+      "events_session_28": {
+        "Tim": [
+          "Tim gets accepted to a Study Abroad program in school and will leave next month to spend the semester at Ireland.",
+          "Tim plans to live in Galway when studying in Ireland and is excited to expore Irish music, arts as well as nature such as The Cliffs of Moher."
+        ],
+        "John": [
+          "John successfully organizes and hosts a benefit basketball tournament for charity."
+        ],
+        "date": "7 January, 2024"
+      },
+      "events_session_29": {
+        "Tim": [
+          "Tim starts to research about the visa requirements of some countries of interest."
+        ],
+        "John": [
+          "John makes an endorsement deal with Moxie, a popular beverage company."
+        ],
+        "date": "12 January, 2024"
+      }
+    },
+    "observation": {
+      "session_1_observation": {
+        "John": [
+          [
+            "John signed with the Minnesota Wolves for the upcoming season as a shooting guard.",
+            "D1:5"
+          ],
+          [
+            "John's goal for the season is to improve his shooting percentage.",
+            "D1:9"
+          ],
+          [
+            "John found fitting into the new team's style of play a challenge during pre-season.",
+            "D1:11"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim is working on a Harry Potter fan project and discussing collaborations for it.",
+            "D1:2"
+          ],
+          [
+            "Tim talked to a friend who is a Harry Potter fan to figure out ideas for the project.",
+            "D1:14"
+          ],
+          [
+            "Tim went to a Harry Potter-related place in London a few years ago and went on a tour.",
+            "D1:18"
+          ]
+        ]
+      },
+      "session_2_observation": {
+        "Tim": [
+          [
+            "Tim joined a fantasy literature forum and had a great discussion about his favorite books.",
+            "D2:1"
+          ],
+          [
+            "Tim has a book collection and owns a picture from MinaLima, the creators of props for the Harry Potter films.",
+            "D2:7"
+          ],
+          [
+            "Tim considers his book collection and Harry Potter memorabilia as reminders that help him escape reality.",
+            "D2:11"
+          ],
+          [
+            "There is a chance that Tim will visit more Harry Potter-related spots in the future.",
+            "D2:13"
+          ]
+        ],
+        "John": [
+          [
+            "John is exploring endorsement opportunities and is considering linking up with sports brands like Nike and Under Armour.",
+            "D2:2"
+          ],
+          [
+            "John expressed that it would be rewarding to have his hard work pay off through endorsement opportunities.",
+            "D2:2"
+          ],
+          [
+            "John asked about Tim's book collection and the picture from MinaLima, showing an interest in Tim's hobbies.",
+            "D2:8"
+          ],
+          [
+            "John played in a recent game and finds it awesome to be out there doing what he loves.",
+            "D2:16"
+          ],
+          [
+            "John appreciates Tim's support and expresses gratitude for it.",
+            "D2:18"
+          ]
+        ]
+      },
+      "session_3_observation": {
+        "John": [
+          [
+            "John scored 40 points in a game last week, his highest ever.",
+            "D3:1"
+          ],
+          [
+            "John celebrated with his teammates at a restaurant after winning a tough game.",
+            "D3:5"
+          ],
+          [
+            "John has signed a deal with Nike for a basketball shoe and gear, and is in talks with Gatorade for a potential sponsorship.",
+            "D3:13"
+          ],
+          [
+            "John mentioned exploring endorsements and used his contacts in the basketball industry and marketing skills to make connections.",
+            "D3:11"
+          ],
+          [
+            "John's game next month is in Seattle, a city he loves for its energy, diversity, food, and fan support.",
+            "D3:19"
+          ],
+          [
+            "John started surfing five years ago and loves the connection to nature it provides.",
+            "D3:27"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim had a nice chat with a Harry Potter fan in California last week.",
+            "D3:2"
+          ],
+          [
+            "Tim finds bliss in reading a great fantasy book to escape and feel free.",
+            "D3:30"
+          ]
+        ]
+      },
+      "session_4_observation": {
+        "Tim": [
+          [
+            "Tim is currently writing articles about fantasy novels for an online magazine.",
+            "D4:1"
+          ],
+          [
+            "Tim found the opportunity to write about fantasy novels on a fantasy literature forum.",
+            "D4:3"
+          ],
+          [
+            "Tim's articles focus on studying characters, themes, and making book recommendations of different fantasy novels.",
+            "D4:5"
+          ],
+          [
+            "Tim loves writing about Harry Potter and Game of Thrones and could talk about them forever.",
+            "D4:7"
+          ]
+        ],
+        "John": [
+          [
+            "John participated in an intense Harry Potter trivia contest at a charity event with Anthony.",
+            "D4:8"
+          ],
+          [
+            "John is reading an inspiring book that reminds him to keep dreaming.",
+            "D4:10"
+          ],
+          [
+            "John wants to keep reaching for new goals.",
+            "D4:12"
+          ]
+        ]
+      },
+      "session_5_observation": {
+        "Tim": [
+          [
+            "Tim recently skyped with a Harry Potter fan he met in CA and discussed collab-ing.",
+            "D5:1"
+          ],
+          [
+            "Tim enjoys reading fantasy books that captivate him and take him to another world.",
+            "D5:13"
+          ],
+          [
+            "Tim is currently reading a fantasy book by Patrick Rothfuss which he finds awesome.",
+            "D5:15"
+          ]
+        ],
+        "John": [
+          [
+            "John had a crazy intense game last week which his team won by a tight score, and scoring the last basket was an awesome experience for him.",
+            "D5:2"
+          ],
+          [
+            "John feels that the team bond is awesome and makes all the hard work worth it.",
+            "D5:6"
+          ],
+          [
+            "John emphasizes the importance of having a strong team/support which is like a family away from home.",
+            "D5:8"
+          ],
+          [
+            "John is currently reading a fantasy book recommended by Tim and plans to let him know his thoughts after reading it.",
+            "D5:16"
+          ]
+        ]
+      },
+      "session_6_observation": {
+        "John": [
+          [
+            "John recently took a trip to Chicago and found the locals to be friendly.",
+            "D6:3"
+          ],
+          [
+            "John enjoys experiencing other cultures and connecting with new people.",
+            "D6:3"
+          ],
+          [
+            "John loves the energy in a stadium during a sports game, with everyone cheering and getting excited.",
+            "D6:5"
+          ],
+          [
+            "John has a pair of basketball shoes that he considers lucky and they hold many stories of his journey.",
+            "D6:9"
+          ],
+          [
+            "Basketball has been a part of John's life since childhood, starting with watching NBA games with his dad and then playing in local leagues.",
+            "D6:13"
+          ],
+          [
+            "John's childhood dream was to play on the big courts, which became a reality through hard work, earning a scholarship, and being drafted by a team.",
+            "D6:13"
+          ],
+          [
+            "John's number one goal is to win a championship in basketball and also wants to make a difference through charity work and inspiring others.",
+            "D6:15"
+          ],
+          [
+            "John is teaming up with a local organization to help disadvantaged kids with sports and school as part of his charity work.",
+            "D6:17"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim recently attended an event that he found fantastic and special, being with other fans who share his love for it.",
+            "D6:2"
+          ],
+          [
+            "Tim has been writing more articles to combine his love for reading and sharing great stories.",
+            "D6:6"
+          ],
+          [
+            "Tim recommends the book \"The Name of the Wind,\" describing it as a captivating fantasy novel with great world-building and character development.",
+            "D6:8"
+          ]
+        ]
+      },
+      "session_7_observation": {
+        "John": [
+          [
+            "John is part of a basketball team which he feels lucky to be a part of.",
+            "D7:1"
+          ],
+          [
+            "John values the bond created by being around people who share the same love for basketball.",
+            "D7:3"
+          ],
+          [
+            "John received a signed ball from his teammates as a reminder of their friendship and appreciation.",
+            "D7:7"
+          ],
+          [
+            "The signed ball from his teammates serves as a reminder of the bond and support he has from them in his basketball journey.",
+            "D7:11"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim felt a sense of belonging at an event last month where everyone shared the same love for a common interest.",
+            "D7:4"
+          ],
+          [
+            "Tim is hoping to attend a book conference next month to learn more about literature and create a stronger bond to it.",
+            "D7:6"
+          ],
+          [
+            "Tim appreciates having something meaningful to keep him motivated, as seen from his conversation with John.",
+            "D7:12"
+          ]
+        ]
+      },
+      "session_8_observation": {
+        "John": [
+          [
+            "John found a new gym for training to stay on his basketball game.",
+            "D8:1"
+          ],
+          [
+            "John included strength training in his workout routine to build muscle, increase power, prevent injuries, and improve agility and speed.",
+            "D8:7"
+          ],
+          [
+            "Strength training improved John's shooting accuracy, agility, and speed, giving him confidence on the court.",
+            "D8:9"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim has been learning to play the piano and finds it satisfying to see progress in his learning.",
+            "D8:12"
+          ],
+          [
+            "Tim's favorite song to play on the piano is a theme from the movie Harry Potter and the Philosopher's Stone.",
+            "D8:14"
+          ],
+          [
+            "During Thanksgiving, Tim's family enjoys watching movies like 'Home Alone', 'Elf', and 'The Santa Clause'.",
+            [
+              "D8:24",
+              "D8:26",
+              "D8:28"
+            ]
+          ]
+        ]
+      },
+      "session_9_observation": {
+        "Tim": [
+          [
+            "Tim is busy with assignments and exams this week, but is not giving up.",
+            "D9:1"
+          ],
+          [
+            "Tim is not part of a sports team but enjoys reading fantasy novels.",
+            "D9:5"
+          ],
+          [
+            "Tim loves traveling to new places to experience different kinds of magic.",
+            "D9:5"
+          ],
+          [
+            "Tim is excited about visiting New York City after seeing a picture shared by John.",
+            "D9:7"
+          ],
+          [
+            "Tim plans to add NYC to his travel list and is eager to explore and try out new things there.",
+            "D9:9"
+          ],
+          [
+            "Tim appreciates John's support as mentioned in the conversation.",
+            "D9:15"
+          ]
+        ],
+        "John": [
+          [
+            "John caught up with his family and old friends during a visit home last week.",
+            "D9:2"
+          ],
+          [
+            "John and his friends were teammates for four years in high school and have played together for quite some time.",
+            "D9:4"
+          ],
+          [
+            "John loves discovering new cities and enjoys exploring different places.",
+            "D9:6"
+          ],
+          [
+            "John had a great time in New York City, exploring the city and trying out different restaurants.",
+            "D9:8"
+          ],
+          [
+            "John encourages Tim to visit NYC and assures him it's an adventure he'll never forget.",
+            "D9:10"
+          ],
+          [
+            "John offers to help Tim out when he plans to visit NYC.",
+            "D9:12"
+          ],
+          [
+            "John is supportive of Tim and offers help whenever needed.",
+            "D9:14"
+          ]
+        ]
+      },
+      "session_10_observation": {
+        "Tim": [
+          [
+            "Tim received a no for a summer job he wanted, but is staying positive.",
+            "D10:1"
+          ],
+          [
+            "Tim recently gave a presentation in class and felt it was a small but significant progress.",
+            "D10:3"
+          ],
+          [
+            "Tim loves experimenting with spices when cooking.",
+            "D10:9"
+          ],
+          [
+            "Tim is planning a trip to Universal Studios, particularly excited for the Harry Potter stuff.",
+            "D10:11"
+          ]
+        ],
+        "John": [
+          [
+            "John had some trouble figuring out the subway in NYC during his trip, but found it easier with someone's help.",
+            "D10:2"
+          ],
+          [
+            "John has been trying out cooking recipes, recently making a tasty soup with sage.",
+            "D10:4"
+          ],
+          [
+            "John hasn't been to Universal Studios yet, but it's on his bucket list.",
+            "D10:10"
+          ]
+        ]
+      },
+      "session_11_observation": {
+        "John": [
+          [
+            "John connected with new teammates over a shared love for basketball.",
+            "D11:5"
+          ],
+          [
+            "John is planning a team trip with his friends to explore a new city next month.",
+            "D11:7"
+          ],
+          [
+            "John is considering Edinburgh, Scotland for the team trip based on Tim's suggestion.",
+            "D11:11"
+          ],
+          [
+            "John loves his basketball career and finds it challenging and fulfilling, especially when he sees improvement and achieves goals.",
+            "D11:15"
+          ],
+          [
+            "John is focusing on improving shooting and making a greater impact on the court. He is also working on building his brand and seeking more endorsements for life after basketball.",
+            "D11:17"
+          ],
+          [
+            "John plans to use his platform post-basketball to make a positive difference, potentially by starting a foundation and doing charity work to leave a meaningful legacy.",
+            "D11:19"
+          ],
+          [
+            "John is open to receiving support and advice from others, like Tim.",
+            "D11:20"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim suggested Edinburgh, Scotland as a potential destination for the team trip.",
+            "D11:10"
+          ],
+          [
+            "Tim shared advice on picking endorsements that align with values and feel authentic to followers.",
+            "D11:22"
+          ],
+          [
+            "Tim recommended a fantasy novel by Patrick Rothfuss for John's trip, suggesting it as a great read while traveling.",
+            "D11:24"
+          ]
+        ]
+      },
+      "session_12_observation": {
+        "Tim": [
+          [
+            "Tim has a bookshelf filled with favorite fantasy novels that he enjoys for escapism.",
+            "D12:15"
+          ],
+          [
+            "Tim collects jerseys and has an interest in basketball.",
+            "D12:18"
+          ],
+          [
+            "Tim's favorite basketball team is The Wolves and his favorite player is LeBron, admiring his skills and leadership.",
+            "D12:20"
+          ],
+          [
+            "Tim appreciates LeBron's work ethic and dedication to the game, finding him inspiring.",
+            "D12:22"
+          ],
+          [
+            "Tim has not only met LeBron a few times but also had the opportunity to see him play live.",
+            "D12:24"
+          ]
+        ],
+        "John": [
+          [
+            "John recently had an emotional wedding ceremony in a lovely greenhouse venue with safety protocols for an intimate gathering.",
+            "D12:4"
+          ],
+          [
+            "John is a member of a hiking club, even though he just joined.",
+            "D12:6"
+          ],
+          [
+            "John's favorite memory from his wedding day is seeing his wife walking down the aisle, which made him emotional.",
+            "D12:8"
+          ],
+          [
+            "John had their first dance with his wife at a cozy restaurant with music and candlelight, finding it dreamy.",
+            "D12:10"
+          ],
+          [
+            "John values moments filled with love and joy, believing that they are special.",
+            "D12:12"
+          ],
+          [
+            "John enjoys watching basketball games, finding them motivating, and admires top players like LeBron for their skills.",
+            "D12:24"
+          ]
+        ]
+      },
+      "session_13_observation": {
+        "Tim": [
+          [
+            "Tim attended a Harry Potter conference in the UK last week and felt inspired and rejuvenated by the experience.",
+            "D13:1"
+          ],
+          [
+            "Tim feels that his passion for fantasy stuff brings him closer to people from all over the world.",
+            "D13:1"
+          ],
+          [
+            "Tim appears to be supportive and encouraging towards John's achievements and goals.",
+            "D13:9"
+          ],
+          [
+            "Tim recommended a pair of very comfortable shoes that he got online to John.",
+            "D13:17"
+          ],
+          [
+            "Tim offered to help John with anything and mentioned his availability for assistance.",
+            "D13:19"
+          ],
+          [
+            "Tim advised John to stay motivated and keep chasing his dreams.",
+            "D13:21"
+          ]
+        ],
+        "John": [
+          [
+            "John had an intense season with tough losses and great wins in the games.",
+            "D13:4"
+          ],
+          [
+            "John's team faced tough opponents, but they do not quit and back each other up to get better.",
+            "D13:6"
+          ],
+          [
+            "John's team won a trophy after all their hard work and effort.",
+            "D13:8"
+          ],
+          [
+            "John appreciates Tim's support and encouragement, and feels motivated by it.",
+            "D13:14"
+          ],
+          [
+            "John mentioned needing new shoes after all the games and showed interest in Tim's comfortable shoe recommendation.",
+            "D13:14"
+          ],
+          [
+            "John agrees to stay motivated and keep chasing his dreams.",
+            "D13:22"
+          ]
+        ]
+      },
+      "session_14_observation": {
+        "John": [
+          [
+            "John is currently mentoring younger players on his team during the off-season.",
+            "D14:3"
+          ],
+          [
+            "John finds mentoring the younger players super rewarding, motivating, and encouraging.",
+            "D14:5"
+          ],
+          [
+            "Some of the younger players see John as a mentor, and he enjoys providing them with advice and support on and off the court.",
+            "D14:9"
+          ],
+          [
+            "John feels honored to have the trust and admiration of the younger players and enjoys being a role model for them.",
+            "D14:11"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim took a stunning picture last summer on his trip to the Smoky Mountains.",
+            "D14:14"
+          ],
+          [
+            "Tim is busy with studies but finds time to relax with books, seeking a good balance.",
+            "D14:20"
+          ],
+          [
+            "Tim is currently reading a book that he's totally hooked on.",
+            "D14:22"
+          ]
+        ]
+      },
+      "session_15_observation": {
+        "Tim": [
+          [
+            "Tim enjoys reading and is inspired by books, movies, and real-life experiences for his writing.",
+            "D15:5"
+          ],
+          [
+            "J.K. Rowling is a significant inspiration for Tim's writing, and he takes notes on her style.",
+            "D15:7"
+          ],
+          [
+            "Tim has been reading J.K. Rowling's works for a long time and finds her writing special.",
+            "D15:9"
+          ],
+          [
+            "A quote by J.K. Rowling, \"Turn on the light - happiness hides in the darkest of times,\" is meaningful to Tim during tough times.",
+            "D15:11"
+          ],
+          [
+            "Tim is writing a fantasy novel that brings him joy and excitement.",
+            "D15:3"
+          ],
+          [
+            "Tim enjoys exploring and going on road trips with friends and family, as well as hiking and playing board games.",
+            "D15:29"
+          ],
+          [
+            "Tim loves curling up with a good book to escape reality and get lost in different worlds during his free time.",
+            "D15:29"
+          ]
+        ],
+        "John": [
+          [
+            "John is interested in historical architecture and dreams of visiting castles in different places.",
+            "D15:2"
+          ],
+          [
+            "John finds motivation in staying focused and pushing through tough workouts by using strategies and motivational quotes written on a whiteboard.",
+            "D15:14"
+          ],
+          [
+            "John keeps a plaque on his desk as a constant reminder to believe in himself and trust his abilities during challenging times.",
+            "D15:16"
+          ],
+          [
+            "John's teammates believing in him and his love for improving his skills keep him motivated, especially during challenging times.",
+            "D15:18"
+          ],
+          [
+            "John spends time with his family and considers them as a source of happiness and support.",
+            "D15:24"
+          ],
+          [
+            "John enjoys cooking as a therapy to be creative, experiment with flavors, and take a break from his routine.",
+            "D15:30"
+          ],
+          [
+            "John loves making honey garlic chicken with roasted vegetables and often tries out new recipes.",
+            "D15:32"
+          ]
+        ]
+      },
+      "session_16_observation": {
+        "Tim": [
+          [
+            "Tim faced a writing issue last week where he got stuck on a plot twist, but eventually got the ideas flowing again.",
+            "D16:1"
+          ],
+          [
+            "Tim owns a basketball signed by his favorite player, LeBron, as a prized possession.",
+            "D16:7"
+          ],
+          [
+            "Tim finds overcoming challenges to be a source of personal growth and strength.",
+            "D16:5"
+          ]
+        ],
+        "John": [
+          [
+            "John had a basketball game where his team was trailing significantly in the 4th quarter, but they dug deep to overturn the deficit and win the game.",
+            "D16:6"
+          ],
+          [
+            "John admires LeBron's determination and heart, particularly referencing an epic block in Game 7 of the '16 Finals.",
+            "D16:9"
+          ],
+          [
+            "John finds that struggles in sports, like overcoming deficits, lead to a greater sense of satisfaction when victorious.",
+            "D16:4"
+          ]
+        ]
+      },
+      "session_17_observation": {
+        "John": [
+          [
+            "John and his wife went on a road trip along the European coastline, creating amazing memories and bonding.",
+            "D17:3"
+          ],
+          [
+            "John recently finished an amazing fantasy series and loves getting lost in fantasy worlds.",
+            "D17:9"
+          ],
+          [
+            "John has watched the fantasy show 'That' and finds it a great way to escape reality.",
+            "D17:11"
+          ],
+          [
+            "John believes taking time for oneself is crucial for staying sharp, gaining new perspectives, and tackling challenges with more energy.",
+            "D17:17"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim enjoys reading as usual and finds being lost in an awesome fantasy realm like an escape.",
+            "D17:2"
+          ],
+          [
+            "Tim believes books and movies serve as a mental break and allow minds to wander, giving a sense of refreshment.",
+            "D17:14"
+          ],
+          [
+            "Tim thinks taking a break from life helps recharge, gain peace, reconnect with oneself, and approach life's challenges with a new outlook.",
+            "D17:16"
+          ],
+          [
+            "Tim emphasizes that balance, taking care of oneself mentally and physically, is key for success.",
+            "D17:18"
+          ]
+        ]
+      },
+      "session_18_observation": {
+        "Tim": [
+          [
+            "Tim visited a castle during his trip to the UK last Friday and was amazed by the architecture and history.",
+            "D18:1"
+          ],
+          [
+            "Tim's week has been swamped with exams, but he is plowing through them.",
+            "D18:3"
+          ],
+          [
+            "Tim breaks up his studying into smaller parts, with 25 minutes of study and 5 minutes of fun activities.",
+            "D18:7"
+          ]
+        ],
+        "John": [
+          [
+            "John has had a tough week with an injury but is staying positive.",
+            "D18:2"
+          ],
+          [
+            "John visualizes his goals and success for focus and motivation during tough studying sessions.",
+            "D18:6"
+          ],
+          [
+            "John's doctor mentioned that his injury is not too serious.",
+            "D18:10"
+          ],
+          [
+            "John hates not being on the court.",
+            "D18:12"
+          ]
+        ]
+      },
+      "session_19_observation": {
+        "Tim": [
+          [
+            "Tim had a setback with a story he was writing based on his experiences in the UK.",
+            "D19:3"
+          ],
+          [
+            "Tim loves writing and reading to stay motivated and push himself to improve.",
+            "D19:9"
+          ],
+          [
+            "Tim enjoys fantasy books like Harry Potter and Game of Thrones.",
+            "D19:14"
+          ],
+          [
+            "Tim recently read a book that focused on how small changes can make a big difference, changing the way he does things.",
+            "D19:19"
+          ]
+        ],
+        "John": [
+          [
+            "John had a major challenge when he hurt his ankle last season and had to undergo physical therapy.",
+            "D19:6"
+          ],
+          [
+            "John values personal development and mindset books to know himself better.",
+            "D19:16"
+          ],
+          [
+            "John recently reread 'The Alchemist' and found it inspiring, motivating him to keep chasing his dreams and trust the process.",
+            "D19:20"
+          ]
+        ]
+      },
+      "session_20_observation": {
+        "Tim": [
+          [
+            "Tim had a tough exam recently that he turned into a learning experience, showcasing his resilience and determination.",
+            "D20:1"
+          ],
+          [
+            "Tim appreciates John's encouragement and support throughout his journey.",
+            "D20:3"
+          ],
+          [
+            "Tim enjoys fantasy books and movies, sharing favorites with John and mutual interest in the genre.",
+            "D20:17"
+          ],
+          [
+            "Tim has a bookshelf with some of his favorite books, including The Hobbit.",
+            "D20:19"
+          ],
+          [
+            "Tim loves how fantasy books allow for an escape to different worlds and a break from reality.",
+            "D20:25"
+          ],
+          [
+            "Tim finds nature calming and appreciates the beauty around him.",
+            "D20:31"
+          ]
+        ],
+        "John": [
+          [
+            "John is trying out yoga to improve strength, flexibility, focus, and balance during workouts.",
+            "D20:2"
+          ],
+          [
+            "John enjoys certain yoga poses like Warrior II for strength and balance.",
+            "D20:6"
+          ],
+          [
+            "John typically holds challenging poses for 30-60 seconds to build strength and stability.",
+            "D20:10"
+          ],
+          [
+            "John appreciates the escapism and joy of fantasy books and movies, sharing favorites with Tim.",
+            "D20:17"
+          ],
+          [
+            "John enjoys nature and finds peace and refreshment when camping in the mountains.",
+            "D20:36"
+          ],
+          [
+            "John values the calming and humbling effect of nature, recognizing the beauty and grandeur of the world.",
+            "D20:42"
+          ],
+          [
+            "John shares a photo of a tranquil forest from near his hometown.",
+            "D20:28"
+          ]
+        ]
+      },
+      "session_21_observation": {
+        "Tim": [
+          [
+            "Tim recently joined a travel club to explore different cultures and countries.",
+            "D21:1"
+          ],
+          [
+            "Tim is working on his studies.",
+            "D21:9"
+          ],
+          [
+            "Tim recently started learning how to play the violin and has been playing the piano for about four months.",
+            [
+              "D21:9",
+              "D21:13"
+            ]
+          ]
+        ],
+        "John": [
+          [
+            "John has been playing professional basketball for just under a year.",
+            "D21:4"
+          ],
+          [
+            "John has been working on improving his overall game, getting endorsement deals, and learning how to market himself to boost his brand.",
+            "D21:8"
+          ],
+          [
+            "John believes in creating a positive environment and showing care for teammates to motivate them.",
+            "D21:16"
+          ]
+        ]
+      },
+      "session_22_observation": {
+        "Tim": [
+          [
+            "Tim recently attended a cool Harry Potter party and wore a Gryffindor scarf.",
+            "D22:1"
+          ],
+          [
+            "Tim mentioned reading an amazing series about the power of friendship and loyalty.",
+            "D22:7"
+          ],
+          [
+            "Tim is looking for new reads and asked John for book recommendations.",
+            "D22:9"
+          ],
+          [
+            "Tim recently finished reading 'A Dance with Dragons' and highly recommends it.",
+            "D22:13"
+          ]
+        ],
+        "John": [
+          [
+            "John attended a charity event with Harry Potter trivia in August and enjoys Harry Potter.",
+            "D22:2"
+          ],
+          [
+            "John's basketball team recently played a tough game against a top team and won.",
+            "D22:4"
+          ],
+          [
+            "John is currently reading 'Dune' by Frank Herbert, a story about religion and human control over ecology.",
+            "D22:12"
+          ],
+          [
+            "John is open to reading George R. R. Martin's books after Tim recommended them.",
+            "D22:16"
+          ]
+        ]
+      },
+      "session_23_observation": {
+        "John": [
+          [
+            "John had a career-high in assists last Friday during a big game against their rival.",
+            "D23:3"
+          ],
+          [
+            "John hit a buzzer-beater shot to win a game when they were down 10 in the 4th quarter, which was one of their favorite thrilling sports moments.",
+            "D23:7"
+          ],
+          [
+            "John used to practice basketball outside for hours when he was younger, dreaming of playing in big games.",
+            "D23:9"
+          ],
+          [
+            "John values basketball as a meaningful part of his life that allows him to pursue his passions.",
+            "D23:11"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim struggled with his English lit class but did an analysis on a series that he thinks went okay.",
+            "D23:2"
+          ],
+          [
+            "Tim finds sports as a way to express himself and stay positive.",
+            "D23:10"
+          ],
+          [
+            "Tim sent John a pic that reminds John of practicing basketball outside when he was younger.",
+            "D23:8"
+          ],
+          [
+            "Tim believes in the importance of following dreams and doing one's own thing.",
+            "D23:12"
+          ]
+        ]
+      },
+      "session_24_observation": {
+        "Tim": [
+          [
+            "Tim is interested in catching up and asks John about recent b-ball games.",
+            "D24:1"
+          ],
+          [
+            "Tim congratulated John on winning a close b-ball game.",
+            "D24:3"
+          ],
+          [
+            "Tim notes that winning a game must have been thrilling for John.",
+            "D24:5"
+          ],
+          [
+            "Tim asks John about challenges he has faced, specifically regarding his recent injury.",
+            "D24:9"
+          ],
+          [
+            "Tim acknowledges the importance of staying active or keeping up with a fitness routine during recovery.",
+            "D24:11"
+          ],
+          [
+            "Tim asks John about the progress of his rehab and encourages him to keep it up.",
+            "D24:13"
+          ],
+          [
+            "Tim congratulates John on his milestone at the gym and hosting a get-together to celebrate.",
+            "D24:17"
+          ],
+          [
+            "Tim expresses happiness that everyone had fun at the get-together.",
+            "D24:19"
+          ]
+        ],
+        "John": [
+          [
+            "John talks about winning a b-ball game against another team that was close until the final buzzer.",
+            "D24:2"
+          ],
+          [
+            "John injured himself recently, had to miss games, and couldn't help his team.",
+            "D24:10"
+          ],
+          [
+            "John mentions that he does physical therapy exercises every day for his recovery.",
+            "D24:12"
+          ],
+          [
+            "John shares that he had a milestone moment at the gym where he was able to jog without pain.",
+            "D24:14"
+          ],
+          [
+            "John hosted a small get-together with friends and family to celebrate his recovery milestone.",
+            "D24:16"
+          ],
+          [
+            "John appreciates Tim's support and encouragement, stating he will keep pushing and staying positive.",
+            "D24:18"
+          ]
+        ]
+      },
+      "session_25_observation": {
+        "Tim": [
+          [
+            "Tim is in touch with John after a while and asks how things are going.",
+            "D25:1"
+          ],
+          [
+            "Tim is curious about the gear John got from an outdoor gear company and asks about the photoshoot.",
+            "D25:3"
+          ],
+          [
+            "Tim appreciates the outdoor location where John did the photoshoot and asks to see pictures.",
+            "D25:5"
+          ],
+          [
+            "Tim comments on the photo John shows, mentioning the peaceful rocks and river.",
+            "D25:7"
+          ],
+          [
+            "Tim acknowledges the benefits of nature in bringing peace and joy.",
+            "D25:9"
+          ],
+          [
+            "Tim asks John about recent happenings and appreciates the importance of hard work paying off.",
+            "D25:11"
+          ],
+          [
+            "Tim asks about areas of growth in John's team during training.",
+            "D25:13"
+          ],
+          [
+            "Tim expresses gladness that John's team is bonding and encourages them to keep it up.",
+            "D25:15"
+          ],
+          [
+            "Tim offers support and advises John to continue believing in himself before saying bye.",
+            "D25:17"
+          ]
+        ],
+        "John": [
+          [
+            "John got an amazing deal with a renowned outdoor gear company last week, obtaining hiking stuff and top-notch outdoor gear.",
+            "D25:2"
+          ],
+          [
+            "The photoshoot John did in a gorgeous forest went really well, capturing him in epic shots.",
+            "D25:4"
+          ],
+          [
+            "John stumbled upon a soothing spot by a river while hiking, feeling at peace and admiring nature's beauty.",
+            "D25:8"
+          ],
+          [
+            "Things have been going great on the court for John and his team, putting in work and achieving their goals.",
+            "D25:10"
+          ],
+          [
+            "John's team has seen growth in communication and bonding during their training.",
+            "D25:14"
+          ],
+          [
+            "John appreciates Tim's support and expresses thanks for the assistance.",
+            "D25:16"
+          ]
+        ]
+      },
+      "session_26_observation": {
+        "John": [
+          [
+            "John started doing seminars to help people with sports and marketing.",
+            "D26:1"
+          ],
+          [
+            "John organized a basketball camp for kids in his hometown last summer, creating opportunities for young athletes.",
+            "D26:23"
+          ],
+          [
+            "John is passionate about supporting youth sports and fighting for fair chances in sports for underserved communities.",
+            "D26:21"
+          ],
+          [
+            "John uses his influence and resources to help causes he believes in, particularly in making the world a better place.",
+            "D26:19"
+          ],
+          [
+            "John is a movie fan who enjoys seeing stories come alive on the big screen as a way to relax.",
+            "D26:29"
+          ]
+        ],
+        "Tim": [
+          [
+            "Tim is planning his next adventure by reading stories from travelers around the world.",
+            "D26:6"
+          ],
+          [
+            "Tim is a fan of the fantasy genre, particularly enjoying epic adventures and magical worlds.",
+            "D26:32"
+          ],
+          [
+            "Tim is excited to watch the new fantasy TV series called \"The Wheel of Time\" based on a book series he loves.",
+            "D26:36"
+          ]
+        ]
+      },
+      "session_27_observation": {
+        "Tim": [
+          [
+            "Tim joined a group of globetrotters who share his interest in traveling.",
+            "D27:1"
+          ],
+          [
+            "Tim is currently learning German and finds it tough but worth it.",
+            "D27:5"
+          ],
+          [
+            "Tim appreciates encouragement and plans to continue with his German lessons.",
+            "D27:13"
+          ],
+          [
+            "Tim loves reading and has a collection of books that he enjoys escaping into.",
+            "D27:15"
+          ],
+          [
+            "Tim's favorite book is Harry Potter because it is immersive.",
+            "D27:19"
+          ],
+          [
+            "Tim's favorite fantasy film is Star Wars as it never gets old.",
+            "D27:21"
+          ],
+          [
+            "Tim appreciates fantasy stories for allowing him to explore other cultures and landscapes.",
+            "D27:35"
+          ]
+        ],
+        "John": [
+          [
+            "John has been to Italy and had a blast there last month.",
+            "D27:2"
+          ],
+          [
+            "John knows a bit of German and Spanish which he finds useful for travel.",
+            "D27:6"
+          ],
+          [
+            "John practices and trains in basketball daily as it is his passion.",
+            "D27:14"
+          ],
+          [
+            "John loves reading and finds playing a game helps personal growth.",
+            "D27:18"
+          ],
+          [
+            "John's favorite book is The Alchemist which he finds magical and inspiring.",
+            "D27:18"
+          ],
+          [
+            "John's favorite fantasy film is Lord of the Rings for its adventure, world, and characters.",
+            "D27:22"
+          ],
+          [
+            "John's favorite character from Lord of the Rings is Aragorn because of his growth and leadership.",
+            "D27:24"
+          ],
+          [
+            "John has a painting in his room as a reminder to stay true and be a leader.",
+            "D27:28"
+          ]
+        ]
+      },
+      "session_28_observation": {
+        "Tim": [
+          [
+            "Tim got accepted into a study abroad program in Ireland.",
+            "D28:1"
+          ],
+          [
+            "Tim will be staying in Galway for its arts and Irish music.",
+            "D28:3"
+          ],
+          [
+            "Tim is excited to explore the nature in Galway.",
+            "D28:5"
+          ],
+          [
+            "Tim wants to visit The Cliffs of Moher for the ocean views and cliffs.",
+            "D28:7"
+          ],
+          [
+            "Tim is currently reading a fantasy novel called 'The Name of the Wind' by Patrick Rothfuss.",
+            "D28:17"
+          ]
+        ],
+        "John": [
+          [
+            "John held a benefit basketball game that was a success and raised money for charity.",
+            "D28:12"
+          ],
+          [
+            "John expressed that basketball brings people together and creates a positive impact.",
+            "D28:14"
+          ],
+          [
+            "John is keen on stopping by The Cliffs of Moher after his season.",
+            "D28:8"
+          ],
+          [
+            "John is adding 'The Name of the Wind' by Patrick Rothfuss to his reading list.",
+            "D28:18"
+          ]
+        ]
+      },
+      "session_29_observation": {
+        "Tim": [
+          [
+            "Tim is researching visa requirements for countries he wants to visit.",
+            "D29:3"
+          ],
+          [
+            "Tim feels that taking initiative to research visas is a step towards making his travel dreams a reality.",
+            "D29:9"
+          ],
+          [
+            "Tim expresses excitement about sharing his future travel adventures with John.",
+            "D29:10"
+          ],
+          [
+            "Tim shows interest in John's recommendation of visiting Barcelona and plans to add it to his travel list.",
+            "D29:13"
+          ]
+        ],
+        "John": [
+          [
+            "John recently got an endorsement with a popular beverage company, which he describes as a dream come true.",
+            "D29:4"
+          ],
+          [
+            "John feels that all the hard work he put in paid off with the endorsement deal.",
+            "D29:6"
+          ],
+          [
+            "John believes that reaching a goal is rewarding and a sign of moving in the right direction.",
+            "D29:8"
+          ],
+          [
+            "John recommends Barcelona as a must-visit city for Tim, mentioning cultural exploration, architecture, food, and beaches as highlights.",
+            "D29:12"
+          ]
+        ]
+      }
+    },
+    "session_summary": {
+      "session_1_summary": "John and Tim had a conversation at 7:48 pm on 21 May, 2023. Tim is working on a Harry Potter fan project while John recently signed with the Minnesota Wolves as a shooting guard. John's goal is to improve his shooting percentage for the upcoming season. He mentioned facing challenges fitting into the new team's style of play during pre-season. Tim's fan project involves collaborations discussing various Harry Potter universe aspects. Tim has visited Harry Potter-related places in London and encouraged John to do the same. Tim offered tips for visiting and bid farewell.",
+      "session_2_summary": "Tim and John had a conversation at 5:08 pm on 15 June, 2023. Tim shared his excitement about discussing fantasy books on a forum, while John talked about exploring endorsement opportunities with sports brands like Nike and Under Armour. Tim admired a picture from MinaLima, creators of props for Harry Potter films, expressing his love for the wizarding world. John expressed his passion for playing basketball, sharing a photo from a recent game. They both supported each other's interests and dreams, ending with Tim encouraging John to keep pursuing his goals.",
+      "session_3_summary": "John and Tim met at 4:21 on July 16, 2023. John shared about scoring 40 points in a game, celebrating with teammates, and securing endorsements with Nike and Gatorade. Tim talked about a magical chat with a Harry Potter fan in California and the love for the sport community. They discussed Seattle, surfing, and finding happiness through different activities, ending the conversation on a positive note.",
+      "session_4_summary": "At 4:17 pm on 2 August, 2023, Tim excitedly told John about writing articles on fantasy novels for an online magazine, a passion project he found through a fantasy lit forum. John congratulated Tim and enquired about the kind of articles he was working on. Tim mentioned analyzing characters, themes, and book recommendations. They discussed favorite books like Harry Potter and Game of Thrones. John shared a Harry Potter trivia experience, while Tim encouraged John to keep dreaming inspired by a book he's reading. Both expressed a desire to reach new goals before bidding farewell.",
+      "session_5_summary": "Tim and John spoke at 10:29 am on 9 August, 2023. Tim mentioned reconnecting with a Harry Potter fan and discussing collaboration. John shared about winning a close game and feeling the adrenaline rush. They talked about the importance of a supportive team and discussed Tim's current fantasy book by Patrick Rothfuss. John agreed to read it and they ended the conversation with plans to chat soon.",
+      "session_6_summary": "On August 11, 2023, at 1:08 pm, John told Tim he had an amazing trip to Chicago, loving the energy and meeting friendly locals. Tim shared his excitement about attending a fantastic event recently. They discussed the energy in sports games and sharing their passions. Tim recommended a fantasy novel, \"The Name of the Wind,\" to John, who shared stories about his lucky basketball shoes symbolizing resilience and dedication. John explained his basketball journey from childhood to being drafted. He mentioned his big goal of winning a championship and giving back to the community through charity work. Tim expressed admiration for John's plans and offered support, ending the conversation with encouragement.",
+      "session_7_summary": "John and Tim had a conversation at 7:54 pm on 17 August, 2023. John shared his excitement about reuniting with his basketball teammates on the 15th, feeling welcomed and appreciated by the team. Tim expressed his own sense of belonging at certain events where people shared his interests. John mentioned a gift from his teammates, a signed basketball, symbolizing their friendship and support. Tim noted the significance of such a reminder from friends. Both agreed on the power of supportive relationships in staying motivated and reaching goals. Tim ended the conversation by acknowledging the strength gained from mutual encouragement.",
+      "session_8_summary": "John and Tim caught up at 4:29 pm on 21 August, 2023. John shared his new gym routine to enhance his basketball game, emphasizing the importance of balance and rest. Tim praised John's holistic approach, leading to improved basketball performance. Tim then shared his focus on school, playing the piano, and favorite memories associated with \"Harry Potter.\" They discussed family traditions, favorite holiday movies like \"Home Alone\" and \"The Santa Clause,\" and shared photos of their festive decorations. They exchanged well wishes and agreed to talk soon, ending the conversation.",
+      "session_9_summary": "Tim mentioned his struggles with balancing studies and hobbies, specifically his love for fantasy reading. John shared about catching up with old friends from his high school sports team, where they played together for four years. Tim expressed his interest in traveling to experience different magical worlds through books and actual visits. John shared his experience exploring New York City and recommended it as a must-visit place. They both discussed their love for exploring new cities and hobbies. John offered assistance with Tim's travel plans, and Tim thanked him for his support before ending the conversation.",
+      "session_10_summary": "Tim and John caught up at 2:52 pm on 31 August, 2023. Tim shared his job rejection but remained positive. John discussed his NYC trip and troubles with the subway. Tim mentioned overcoming nerves to give a presentation. John shared his cooking experiment with a sage-flavored soup. Tim planned a trip to Universal Studios for the first time, excited for the Harry Potter attractions. They ended the conversation with well-wishes and a promise to catch up soon.",
+      "session_11_summary": "John and Tim caught up at 8:17 pm on 21 September, 2023. John shared about connecting with new teammates over basketball at a local restaurant. Tim suggested Edinburgh as a destination for their upcoming team trip, which John found appealing. They discussed John's passion for basketball, his career goals, and plans for life after sports. Tim advised John on picking endorsements and recommended a fantasy novel for his trip. John shared his bookshelf and praised \"The Alchemist.\" They ended the conversation by wishing each other well.",
+      "session_12_summary": "At 3:00 pm on 2 October, 2023, Tim and John caught up. John shared about his intimate wedding ceremony in a greenhouse venue that followed safety protocols, filled with loved ones. Tim admired the special day and asked about favorite memories. John mentioned the magical moment of seeing his bride walk down the aisle and their first dance in a cozy restaurant. They expressed how love brings joy. Tim congratulated John, admired the love between the couple, and shared his favorite fantasy novels. They later discussed John's love for collecting jerseys and admiration for LeBron James. John met LeBron and saw him play live, finding it inspiring. Tim encouraged John to continue pursuing what he loves.",
+      "session_13_summary": "Tim and John reconnected at 1:50 pm on 13 October, 2023. Tim shared his excitement about attending a Harry Potter conference in the UK, feeling inspired by the magical atmosphere and the shared passion. John admired Tim's enthusiasm and shared his own connection with his team, discussing their recent sports season with tough losses and great wins. Tim congratulated John on their success, acknowledging the hard work that paid off with a trophy. John appreciated Tim's support and encouragement to stay motivated, while Tim recommended some comfortable shoes for John to check out. They ended their conversation with mutual support and a commitment to chase their dreams, promising to keep in touch.",
+      "session_14_summary": "John and Tim caught up at 1:50 pm on October 17, 2023, after a long time. John is now mentoring young players, finding it rewarding and fulfilling. He enjoys being a positive role model for them and is proud to see their growth and success. Tim shared a stunning nature picture from the Smoky Mountains, emphasizing the beauty of nature and the importance of taking a break from city life. They discussed finding balance in life, with Tim mentioning his busy school schedule and love for reading, while John expressed his recent enjoyment of reading.",
+      "session_15_summary": "Tim and John, who are both passionate about exploring historical architecture and writing, catch up on their interests. Tim is working on a fantasy novel inspired by books, movies, and real-life experiences, including visits to UK castles that give him ideas. He admires J.K. Rowling's captivating writing style and shares a quote that inspires him. John, who finds motivation through quotes and strategies during tough workouts, values his supportive teammates and family. They bond over their shared love for spending time with friends and family, enjoying activities like road trips, hiking, and cooking. John shares a honey garlic chicken recipe with Tim after discussing their interests. Their friendly conversation ends on a positive note, expressing gratitude for their support networks.",
+      "session_16_summary": "Tim and John caught up at 11:41 am on 6 November, 2023. Tim shared how he overcame a writing issue by staying persistent. John likened it to toughing it out in sports. Both agreed that struggles lead to growth and satisfaction. John recounted a basketball game where his team made a remarkable comeback. Tim showed his basketball signed by his favorite player, LeBron, who inspires him with his determination. They discussed memorable moments in basketball and the importance of perseverance. John mentioned his upcoming European vacation, seeking recommendations from Tim who suggested visiting castles. They wished each other well and vowed to stay connected.",
+      "session_17_summary": "John and Tim had a chat at 3:36 pm on 11 November, 2023. John shared about his recent road trip on the European coastline with his wife, praising the beautiful views and the bonding experience. Tim admired the trip and discussed the power and beauty of nature. They bonded over their love for fantasy stories and shows. Tim highlighted the importance of mental breaks for recharging, gaining new perspectives, and tackling challenges with renewed energy. John appreciated the support and emphasized the significance of finding balance and taking care of oneself. They ended their conversation with well wishes.",
+      "session_18_summary": "Tim told John about his trip to a castle in the UK last Friday, praising its architecture and history. John mentioned a tough week due to an injury but staying positive. Tim shared being swamped with exams but staying optimistic and working hard. John asked about exam prep and shared visualizing goals for motivation. Tim discussed breaking study sessions into smaller parts for better focus. They wished each other well, with John hoping for a quick recovery from the injury. Tim expressed understanding and support. John expressed missing playing due to the injury, likening it to Tim not being able to read. They encouraged each other to keep going and promised to talk soon. The conversation took place at 3:59 pm on 16 November, 2023.",
+      "session_19_summary": "Tim and John caught up at 10:22 am on 21 November 2023. Tim mentioned struggling with storytelling and sought advice from John. They discussed overcoming challenges, with John sharing his experience recovering from an ankle injury. They emphasized resilience and motivation in facing difficulties. They also bonded over their love for reading, particularly fantasy and personal development books. Both found inspiration in books and shared a commitment to growth and improvement.",
+      "session_20_summary": "Tim and John had a conversation at 9:52 am on 1 December, 2023. Tim shared his success in a tough exam, stating he turned it into a learning experience. John congratulated Tim and mentioned trying out yoga to improve strength and flexibility. They discussed yoga poses and John shared a photo of one he enjoys. They talked about their mutual love for fantasy books and movies. Tim shared a photo of a forest, and John shared a photo from a camping trip in the mountains. They both reflected on the calming effects of nature. The conversation ended with both agreeing on the humbling and connected nature of the world before Tim bid farewell.",
+      "session_21_summary": "At 5:34 pm on 6 December 2023, Tim told John he joined a travel club to explore different cultures and meet new people. John, a professional basketball player for almost a year, discussed his growth on and off the court. Tim mentioned joining the travel club, studying, and learning the violin. John praised Tim's dedication, and they discussed motivating others. They shared tips and encouragement before ending the conversation.",
+      "session_22_summary": "Tim and John, who are both passionate about Harry Potter, discussed their recent activities at 7:42 pm on 8 December, 2023. Tim shared his experience at a Harry Potter party where he wore a Gryffindor scarf and enjoyed meeting like-minded people. John talked about his recent basketball games, emphasizing the camaraderie and unity within his team. They also discussed their reading preferences, with John recommending \"Dune\" by Frank Herbert and Tim recommending \"A Dance with Dragons\". They both expressed interest in each other's recommendations and wished each other a great day, ending the conversation on a positive note.",
+      "session_23_summary": "John and Tim, who met at 8:28 pm on 11 December 2023, had a conversation where Tim shared about his English lit class struggles and John talked about his recent career-high in assists. John described a thrilling game against their rivals and reminisced about a buzzer-beater shot. They discussed the power of sports and chasing dreams, inspiring and motivating each other before saying goodbye.",
+      "session_24_summary": "At 3:37 pm on 16 December 2023, Tim and John caught up. John shared about a close basketball game his team won, which was thrilling for him. Tim admired John's dedication to the sport despite facing an injury recently. John revealed he was progressing well with his recovery and had a milestone moment jogging without pain. Tim congratulated him and encouraged him to stay positive. The two friends discussed the importance of staying motivated and supporting each other, ending their conversation on a positive note.",
+      "session_25_summary": "Tim and John caught up after a while at 10:04 am on 19 December, 2023. John shared his excitement about a deal with an outdoor gear company and a successful photoshoot in a beautiful forest. Tim admired the epic photos and discussed the peaceful spot that inspired John. John also mentioned his team's progress in basketball, especially in communication and bonding. Tim encouraged John to keep believing in himself before concluding their conversation.",
+      "session_26_summary": "John and Tim caught up at 3:35 pm on 26 December, 2023. John shared about his busy week starting seminars to help people with sports and marketing, which went well. Tim mentioned reading traveler stories to plan his next adventure, including one about hiking in the Himalayas. They discussed the importance of challenges, their admiration for Emma Watson's advocacy, and how they use their platforms for good causes. John talked about supporting youth sports and creating opportunities for young athletes. Tim enjoys escaping in books and movies, particularly fantasy genres like \"The Lord of the Rings\", and looks forward to a new TV series, \"The Wheel of Time\". They both share a love for movie marathons and making a difference in the world.",
+      "session_27_summary": "Tim and John spoke at 5:26 pm on 2 January 2024. Tim mentioned his involvement in a globetrotting group and his interest in learning German. John shared his recent trip to Italy and knowledge of German and Spanish. They discussed language learning resources and shared their passion for reading and favorite fantasy books and movies, such as \"Harry Potter\" and \"Star Wars\" for Tim, and \"Lord of the Rings\" for John, with a particular focus on the character Aragorn. They highlighted the inspiration drawn from these stories and the importance of perseverance and leadership. Their conversation touched on the immersive nature of fantasy stories, traveling, and cultural exploration. John shared his painting of Aragorn as a reminder to be a leader, emphasizing the character's qualities of bravery and selflessness. They agreed on the educational and eye-opening aspects of both traveling and delving into fantasy worlds.",
+      "session_28_summary": "Tim and John caught up at 5:24 pm on 7 January, 2024. Tim shared that he got accepted into a study abroad program and will be heading to Ireland for a semester, staying in Galway known for its arts and music. He expressed excitement about exploring the nature and visiting The Cliffs of Moher. John complimented Tim's plans and mentioned hosting a successful benefit basketball game. Tim praised John for making a positive impact through sports. They discussed books and Tim recommended \"The Name of the Wind\" by Patrick Rothfuss to John. They ended the conversation on a positive note, planning to stay in touch.",
+      "session_29_summary": "Tim and John spoke at 1:41 pm on 12 January, 2024. Tim shared his excitement about researching visa requirements for upcoming travels, while John revealed his recent endorsement deal with a beverage company, expressing pride in his hard work paying off. Tim praised John's achievement, highlighting the importance of accomplishment and self-esteem boosts. John recommended Barcelona as a travel destination, which Tim happily added to his list. They concluded the conversation with Tim offering to return the favor and John offering support in the future."
     },
     "sample_id": "conv-43"
   }

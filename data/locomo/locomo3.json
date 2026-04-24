@@ -3,45 +3,32 @@
     "qa": [
       {
         "question": "Is it likely that Nate has friends besides Joanna?",
-        "answer": "Yesteammates on hisvideo game team.",
+        "answer": [
+          "Yes.",
+          "Yes, teammates on hisvideo game team."
+        ],
         "evidence": [
           "D1:7"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
         ]
       },
       {
-        "question": "What kind of interests do Joanna and Nate share?",
-        "answer": "Watching movies, making desserts",
-        "evidence": [
-          "D1:10",
-          "D1:11",
-          "D1:12",
-          "D3:4",
-          "D4:9",
-          "D10:9",
-          "D20:2"
-        ],
-        "category": 1,
-        "where": 20,
-        "where_ground_truth": [
-          1,
-          3,
-          4,
-          10,
-          20
-        ]
-      },
-      {
         "question": "When did Joanna first watch \"Eternal Sunshine of the Spotless Mind?",
-        "answer": "2019",
+        "answer": [
+          "2019",
+          "3 years before 21 January, 2022",
+          "3 years before 2022"
+        ],
         "evidence": [
           "D1:18"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -49,49 +36,32 @@
       },
       {
         "question": "When did Nate win his first video game tournament?",
-        "answer": "the week before 21Janury, 2022",
+        "answer": [
+          "the week before 21 January, 2022",
+          "January, 2022",
+          "the middle of January, 2022",
+          "From January 10, 2022 to January 16, 2022"
+        ],
         "evidence": [
           "D1:3"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
         ]
       },
       {
-        "question": "What pets wouldn't cause any discomfort to Joanna?",
-        "answer": "Hairless cats or pigs,since they don't have fur, which is one of the main causes of Joanna's allergy.",
-        "evidence": [
-          "D2:23"
-        ],
-        "category": 3,
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "What are Joanna's hobbies?",
-        "answer": "Writing, watchingmovies, exploringnature, hanging withfriends.",
-        "evidence": [
-          "D1:10",
-          "D2:25"
-        ],
-        "category": 1,
-        "where": 2,
-        "where_ground_truth": [
-          1,
-          2
-        ]
-      },
-      {
         "question": "How long has Nate had his first two turtles?",
-        "answer": "three years",
+        "answer": [
+          "three years"
+        ],
         "evidence": [
           "D2:12"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -99,11 +69,16 @@
       },
       {
         "question": "When did Joanna finish her first screenplay?",
-        "answer": "The Friday before 23January, 2022",
+        "answer": [
+          "The Friday before 23 January, 2022",
+          "January, 2022",
+          "21 January, 2022"
+        ],
         "evidence": [
           "D2:3"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -111,11 +86,15 @@
       },
       {
         "question": "When did Nate get his first two turtles?",
-        "answer": "2019",
+        "answer": [
+          "2019",
+          "3 years before 2022"
+        ],
         "evidence": [
           "D2:12"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -123,11 +102,14 @@
       },
       {
         "question": "What major achievement did Joanna accomplish in January 2022?",
-        "answer": "finished her screenplay and printed it",
+        "answer": [
+          "finished her screenplay and printed it"
+        ],
         "evidence": [
           "D2:3"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -135,12 +117,15 @@
       },
       {
         "question": "What emotions is Joanna feeling about  the screenplay she submitted?",
-        "answer": "Relief, excitement,worry, hope,anxiety.",
+        "answer": [
+          "Relief, excitement,worry(anxiety) and hope"
+        ],
         "evidence": [
           "D2:7",
           "D3:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           2,
@@ -149,13 +134,17 @@
       },
       {
         "question": "What is Joanna allergic to?",
-        "answer": "Most reptiles,animals with fur,cockroaches, dairy",
+        "answer": [
+          "Most reptiles, animals with fur, cockroaches, and dairy.",
+          "Most reptiles, animals with fur, cockroaches, dairy"
+        ],
         "evidence": [
+          "D2:23",
           "D4:4",
-          "D5:11",
-          "D2:23"
+          "D5:11"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           2,
@@ -164,26 +153,15 @@
         ]
       },
       {
-        "question": "What underlying condition might Joanna have based on her allergies?",
-        "answer": "asthma",
-        "evidence": [
-          "D5:11",
-          "D2:23"
-        ],
-        "category": 3,
-        "where": 5,
-        "where_ground_truth": [
-          2,
-          5
-        ]
-      },
-      {
         "question": "When did Joanna have an audition for a writing gig?",
-        "answer": "23 March, 2022.",
+        "answer": [
+          "23 March, 2022."
+        ],
         "evidence": [
           "D6:2"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -191,23 +169,14 @@
       },
       {
         "question": "What nickname does Nate use for Joanna?",
-        "answer": "Jo",
+        "answer": [
+          "Jo"
+        ],
         "evidence": [
           "D7:1"
         ],
         "category": 3,
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "When did Nate get purple hair?",
-        "answer": "The week before 15April, 2022.",
-        "evidence": [
-          "D7:1"
-        ],
-        "category": 2,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -215,12 +184,16 @@
       },
       {
         "question": "What physical transformation did Nate undergo in April 2022?",
-        "answer": "dyed his hair purple",
+        "answer": [
+          "dyed his hair purple",
+          "dyed his hair"
+        ],
         "evidence": [
           "D7:1",
           "D7:3"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 7,
         "where_ground_truth": [
           7
@@ -228,11 +201,14 @@
       },
       {
         "question": "What movie did Joanna watch on 1 May, 2022?",
-        "answer": "Lord of the Rings",
+        "answer": [
+          "Lord of the Rings"
+        ],
         "evidence": [
           "D10:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -240,11 +216,14 @@
       },
       {
         "question": "Which outdoor spot did Joanna visit in May?",
-        "answer": "Whispering Falls waterfall",
+        "answer": [
+          "Whispering Falls waterfall"
+        ],
         "evidence": [
           "D11:7"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -252,12 +231,15 @@
       },
       {
         "question": "How many times has Joanna found new hiking trails?",
-        "answer": "twice",
+        "answer": [
+          "twice"
+        ],
         "evidence": [
           "D8:4",
           "D11:3"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           8,
@@ -266,11 +248,14 @@
       },
       {
         "question": "When did Nate adopt Max?",
-        "answer": "May 2022",
+        "answer": [
+          "May 2022"
+        ],
         "evidence": [
           "D12:3"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 12,
         "where_ground_truth": [
           12
@@ -278,11 +263,14 @@
       },
       {
         "question": "Who was the new addition to Nate's family in May 2022?",
-        "answer": "Max",
+        "answer": [
+          "Max"
+        ],
         "evidence": [
           "D12:3"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 12,
         "where_ground_truth": [
           12
@@ -290,43 +278,31 @@
       },
       {
         "question": "When did Joanna start writing her third screenplay?",
-        "answer": "May 2022",
+        "answer": [
+          "May 2022"
+        ],
         "evidence": [
           "D12:13",
           "D12:14"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
         ]
       },
       {
-        "question": "Which of Joanna's screenplay were rejected from production companies?",
-        "answer": "first screenplay on drama and romance, third screenplay on loss identity and connection",
-        "evidence": [
-          "D14:1",
-          "D3:1",
-          "D2:7",
-          "D24:12",
-          "D24:13"
-        ],
-        "category": 1,
-        "where": 24,
-        "where_ground_truth": [
-          2,
-          3,
-          14,
-          24
-        ]
-      },
-      {
         "question": "When is Nate hosting a gaming party?",
-        "answer": "The weekend after 3June, 2022.",
+        "answer": [
+          "Two weekend after 3 June, 2022.",
+          "From June 18, 2022 to June 19, 2022"
+        ],
         "evidence": [
           "D14:20"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -334,11 +310,16 @@
       },
       {
         "question": "When did Joanna hike with her buddies?",
-        "answer": "The weekend after 3June, 2022.",
+        "answer": [
+          "The weekend after 3 June, 2022.",
+          "June, 2022",
+          "From June 4, 2022 to June 5, 2022"
+        ],
         "evidence": [
           "D14:19"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -346,11 +327,17 @@
       },
       {
         "question": "When did Nate win his third tourney?",
-        "answer": "The week before 3June, 2022",
+        "answer": [
+          "The week before 3 June, 2022",
+          "May 2022",
+          "The end of May 2022",
+          "From May 23, 2022 to May 29, 2022"
+        ],
         "evidence": [
           "D14:8"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -358,12 +345,15 @@
       },
       {
         "question": "What places has Joanna submitted her work to?",
-        "answer": "film contest, film festival.",
+        "answer": [
+          "film contest, film festival."
+        ],
         "evidence": [
           "D2:7",
           "D16:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           2,
@@ -372,11 +362,17 @@
       },
       {
         "question": "When did Nate make vegan icecream and share it with a vegan diet group?",
-        "answer": "The Friday before 24June, 2022.",
+        "answer": [
+          "The Friday before 24 June, 2022.",
+          "17 June, 2022.",
+          "June, 2022.",
+          "The middle of June, 2022."
+        ],
         "evidence": [
           "D16:8"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           16
@@ -384,40 +380,35 @@
       },
       {
         "question": "When is Joanna going to make Nate's ice cream for her family?",
-        "answer": "The weekend of 24June, 2022.",
+        "answer": [
+          "The weekend of 24 June, 2022.",
+          "June, 2022.",
+          "The end of June, 2022.",
+          "From June 25, 2022 to June 26, 2022"
+        ],
         "evidence": [
           "D16:11"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
         ]
       },
       {
-        "question": "What kind of writings does Joanna do?",
-        "answer": "Screenplays,books, online blog posts, journal",
-        "evidence": [
-          "D2:3",
-          "D17:14",
-          "D18:1",
-          "D18:5"
-        ],
-        "category": 1,
-        "where": 18,
-        "where_ground_truth": [
-          2,
-          17,
-          18
-        ]
-      },
-      {
         "question": "When did Nate win his fourth video game tournament?",
-        "answer": "The Friday before 10July, 2022.",
+        "answer": [
+          "The Friday before 10 July, 2022.",
+          "July, 2022.",
+          "The beginning of July, 2022.",
+          "July 8, 2022"
+        ],
         "evidence": [
           "D17:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           17
@@ -425,11 +416,14 @@
       },
       {
         "question": "Where did Joanna travel to in July 2022?",
-        "answer": "Woodhaven",
+        "answer": [
+          "Woodhaven"
+        ],
         "evidence": [
           "D17:4"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           17
@@ -437,11 +431,16 @@
       },
       {
         "question": "When did someone write Joanna a touching letter?",
-        "answer": "The week before 14August, 2022.",
+        "answer": [
+          "The week before 14 August, 2022.",
+          "August, 2022.",
+          "From August 1, 2022 to August 7, 2022"
+        ],
         "evidence": [
           "D18:5"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           18
@@ -449,13 +448,17 @@
       },
       {
         "question": "What book recommendations has Joanna given to Nate?",
-        "answer": "\"Little Women\",'A Court of Thorns andRoses'.",
+        "answer": [
+          "\\\"Little Women\\\",'A Court of Thorns and Roses'.",
+          "\\\"Little Women\\\" and a fantasy book series to Nate."
+        ],
         "evidence": [
           "D3:17",
           "D19:14",
           "D19:16"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           3,
@@ -464,11 +467,15 @@
       },
       {
         "question": "When did Nate take time off to chill with his pets?",
-        "answer": "The weekend of 22August, 2022.",
+        "answer": [
+          "The weekend following August 22, 2022.",
+          "From August 27, 2022 to August 28, 2022"
+        ],
         "evidence": [
           "D19:9"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -476,11 +483,17 @@
       },
       {
         "question": "When did Joanna share her book with her writers group?",
-        "answer": "The week before 22August, 2022.",
+        "answer": [
+          "The week before 22 August, 2022.",
+          "August, 2022.",
+          "The middle of August, 2022.",
+          "From August 15, 2022 to August 21, 2022"
+        ],
         "evidence": [
           "D19:6"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           19
@@ -488,11 +501,14 @@
       },
       {
         "question": "When did Nate win an international tournament?",
-        "answer": "21 August, 2022",
+        "answer": [
+          "21 August, 2022"
+        ],
         "evidence": [
           "D19:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -500,11 +516,16 @@
       },
       {
         "question": "When did Joanna make a desert with almond milk?",
-        "answer": "The Friday before 14September, 2022",
+        "answer": [
+          "The Friday before 14 September, 2022",
+          "9 September, 2022",
+          "September, 2022"
+        ],
         "evidence": [
           "D21:9"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -512,11 +533,16 @@
       },
       {
         "question": "When did Nate attend a cooking show?",
-        "answer": "The Monday before 14September, 2022",
+        "answer": [
+          "The Monday of the week before 14 September, 2022",
+          "5 September, 2022",
+          "The beginning of September, 2022"
+        ],
         "evidence": [
           "D21:4"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -524,11 +550,16 @@
       },
       {
         "question": "When did Joanna's laptop crash?",
-        "answer": "The week before 14September, 2022",
+        "answer": [
+          "The week before 14 September, 2022",
+          "September, 2022",
+          "From September 5, 2022 to September 11, 2022"
+        ],
         "evidence": [
           "D21:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -536,11 +567,14 @@
       },
       {
         "question": "When did Joanna make a chocolate tart with raspberries?",
-        "answer": "5 October, 2022",
+        "answer": [
+          "5 October, 2022"
+        ],
         "evidence": [
           "D22:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           22
@@ -548,13 +582,16 @@
       },
       {
         "question": "What movies have both Joanna and Nate seen?",
-        "answer": "\"Little Women\", \"Lord of the Rings\"",
+        "answer": [
+          "\"Little Women\", \"Lord of the Rings\""
+        ],
         "evidence": [
           "D3:17",
           "D10:1",
           "D22:8"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           3,
@@ -564,12 +601,15 @@
       },
       {
         "question": "How long did it take for Joanna to finish writing her book?",
-        "answer": "four months",
+        "answer": [
+          "3 months"
+        ],
         "evidence": [
           "D17:14",
           "D22:9"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           17,
@@ -578,11 +618,16 @@
       },
       {
         "question": "When did Nate win a lot of money in a video game tournament?",
-        "answer": "September 2022",
+        "answer": [
+          "September 2022",
+          "The week before 6 October, 2022.",
+          "The end of September 2022."
+        ],
         "evidence": [
           "D22:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           22
@@ -590,11 +635,15 @@
       },
       {
         "question": "When did Joanna finish up the writing for her book?",
-        "answer": "The week before 6October, 2022",
+        "answer": [
+          "The week before 6October, 2022",
+          "From September 26, 2022 to October 2, 2022"
+        ],
         "evidence": [
           "D22:9"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -602,12 +651,15 @@
       },
       {
         "question": "What board games has Nate played?",
-        "answer": "Chess, Catan.",
+        "answer": [
+          "Chess, Catan."
+        ],
         "evidence": [
           "D16:2",
           "D23:7"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           16,
@@ -616,12 +668,15 @@
       },
       {
         "question": "What places has Nate met new people?",
-        "answer": "A tournament and agaming convention.",
+        "answer": [
+          "A tournament and agaming convention."
+        ],
         "evidence": [
           "D14:8",
           "D23:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           14,
@@ -630,11 +685,17 @@
       },
       {
         "question": "When did Nate go to a convention and meet new people?",
-        "answer": "The Friday before 9October, 2022.",
+        "answer": [
+          "The Friday before 9 October, 2022.",
+          "7 October, 2022.",
+          "October, 2022.",
+          "The beginning of October, 2022."
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -642,12 +703,15 @@
       },
       {
         "question": "How many times has Joanna's scripts been rejected?",
-        "answer": "Twice",
+        "answer": [
+          "Twice"
+        ],
         "evidence": [
           "D14:1",
           "D24:12"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           14,
@@ -656,12 +720,15 @@
       },
       {
         "question": "What is something Nate gave to Joanna that brings her a lot of joy?",
-        "answer": "stuffed toy pup",
+        "answer": [
+          "stuffed toy pup"
+        ],
         "evidence": [
           "D13:9",
           "D24:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           13,
@@ -670,12 +737,15 @@
       },
       {
         "question": "When did Nate get Tilly for Joanna?",
-        "answer": "25 May, 2022",
+        "answer": [
+          "25 May, 2022"
+        ],
         "evidence": [
           "D13:9",
           "D24:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           13,
@@ -684,12 +754,15 @@
       },
       {
         "question": "How many of Joanna's writing have made it to the big screen?",
-        "answer": "two",
+        "answer": [
+          "two"
+        ],
         "evidence": [
           "D15:1",
           "D25:2"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           15,
@@ -697,60 +770,34 @@
         ]
       },
       {
-        "question": "How many times has Nate taken his turtles on a walk?",
-        "answer": "Twice.",
-        "evidence": [
-          "D5:4",
-          "D25:15"
-        ],
-        "category": 1,
-        "where": 25,
-        "where_ground_truth": [
-          5,
-          25
-        ]
-      },
-      {
         "question": "When was Joanna's second movie script shown on the big screens?",
-        "answer": "The Sunday before 25October, 2022.",
+        "answer": [
+          "The Sunday before 25 October, 2022.",
+          "October, 2022.",
+          "23 October 2022"
+        ],
         "evidence": [
           "D25:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
         ]
       },
       {
-        "question": "What is Joanna inspired by?",
-        "answer": "Personal experiences,her own journey ofself discovery, Nate,nature, validation,stories about findingcourage and takingrisks, people she knows, stuff she sees, imagination",
-        "evidence": [
-          "D4:6",
-          "D7:6",
-          "D11:11",
-          "D26:3",
-          "D26:7",
-          "D25:10"
-        ],
-        "category": 1,
-        "where": 26,
-        "where_ground_truth": [
-          4,
-          7,
-          11,
-          25,
-          26
-        ]
-      },
-      {
         "question": "What animal do both Nate and Joanna like?",
-        "answer": "Turtles.",
+        "answer": [
+          "Turtles.",
+          "Turtles and dogs."
+        ],
         "evidence": [
           "D5:6",
           "D26:9"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 26,
         "where_ground_truth": [
           5,
@@ -759,87 +806,30 @@
       },
       {
         "question": "When did Joanna plan to go over to Nate's and share recipes?",
-        "answer": "5 November, 2022.",
+        "answer": [
+          "5 November, 2022."
+        ],
         "evidence": [
           "D26:19"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
         ]
       },
       {
-        "question": "What things has Nate reccomended to Joanna?",
-        "answer": "A pet,\"The Lord of the Rings\" movies,a dragon book series,coconut flavoring,\"Project Hail Mary\" book,Xenoblade Chronicles, dairy-free margarine, coconut oil",
-        "evidence": [
-          "D2:14",
-          "D9:12",
-          "D9:14",
-          "D10:11",
-          "D19:17",
-          "D27:23",
-          "D10:19"
-        ],
-        "category": 1,
-        "where": 27,
-        "where_ground_truth": [
-          2,
-          9,
-          10,
-          19,
-          27
-        ]
-      },
-      {
-        "question": "What does Joanna do to remember happy memories?",
-        "answer": "Hangs them on a corkboard, writes themin a notebook.",
-        "evidence": [
-          "D15:9",
-          "D27:34"
-        ],
-        "category": 1,
-        "where": 27,
-        "where_ground_truth": [
-          15,
-          27
-        ]
-      },
-      {
-        "question": "What Console does Nate own?",
-        "answer": "A Nintendo Switch; since the game \"Xenoblade 2\" is made for this console.",
-        "evidence": [
-          "D27:23"
-        ],
-        "category": 3,
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What mediums does Nate use to play games?",
-        "answer": "Gamecube, PC,Playstation.",
-        "evidence": [
-          "D22:2",
-          "D27:21",
-          "D27:15"
-        ],
-        "category": 1,
-        "where": 27,
-        "where_ground_truth": [
-          22,
-          27
-        ]
-      },
-      {
         "question": "How many letters has Joanna recieved?",
-        "answer": "Two",
+        "answer": [
+          "Two"
+        ],
         "evidence": [
           "D14:1",
           "D18:5"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           14,
@@ -848,7 +838,9 @@
       },
       {
         "question": "What video games does Nate play?",
-        "answer": "Valorant, Counter Strike:Global Offensive,Xenoblade Chronicles, StreetFighter, Cyberpunk 2077",
+        "answer": [
+          "Valorant, Counter Strike:Global Offensive,Xenoblade Chronicles, StreetFighter, Cyberpunk 2077"
+        ],
         "evidence": [
           "D10:6",
           "D27:1",
@@ -857,6 +849,7 @@
           "D23:17"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           1,
@@ -867,11 +860,17 @@
       },
       {
         "question": "When did Nate win a big Valorant tourney?",
-        "answer": "The Saturday before 7November, 2022",
+        "answer": [
+          "The Saturday before 7 November, 2022",
+          "5 November 2022.",
+          "November 2022.",
+          "the beginning of November 2022"
+        ],
         "evidence": [
           "D27:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -879,43 +878,31 @@
       },
       {
         "question": "Which torunament did Nate win in the beginning of November 2022?",
-        "answer": "Valorant",
+        "answer": [
+          "Valorant"
+        ],
         "evidence": [
           "D27:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
         ]
       },
       {
-        "question": "What alternative career might Nate consider after gaming?",
-        "answer": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
-        "evidence": [
-          "D5:8",
-          "D19:3",
-          "D25:19",
-          "D28:25"
-        ],
-        "category": 3,
-        "where": 28,
-        "where_ground_truth": [
-          5,
-          19,
-          25,
-          28
-        ]
-      },
-      {
         "question": "What pets does Nate have?",
-        "answer": "A dog and threeturtles.",
+        "answer": [
+          "A dog and threeturtles."
+        ],
         "evidence": [
           "D8:3",
           "D12:3",
           "D28:23"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           8,
@@ -925,7 +912,9 @@
       },
       {
         "question": "How many hikes has Joanna been on?",
-        "answer": "Four",
+        "answer": [
+          "Four"
+        ],
         "evidence": [
           "D7:6",
           "D11:5",
@@ -933,6 +922,7 @@
           "D28:22"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           7,
@@ -943,12 +933,15 @@
       },
       {
         "question": "How many turtles does Nate have?",
-        "answer": "Three",
+        "answer": [
+          "Three"
+        ],
         "evidence": [
           "D8:3",
           "D28:23"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           8,
@@ -956,28 +949,16 @@
         ]
       },
       {
-        "question": "What activities does Nate do with his turtles?",
-        "answer": "takes them onwalks, holds them,feeds themstrawberries, givesthem baths.",
-        "evidence": [
-          "D25:21",
-          "D25:23",
-          "D28:31"
-        ],
-        "category": 1,
-        "where": 28,
-        "where_ground_truth": [
-          25,
-          28
-        ]
-      },
-      {
         "question": "What do both Joanna and Nate appreciate the beauty of?",
-        "answer": "Nature",
+        "answer": [
+          "Nature"
+        ],
         "evidence": [
           "D11:9",
           "D28:23"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           11,
@@ -986,11 +967,14 @@
       },
       {
         "question": "When did Joanna plan on going to Nate's to watch him play with his turtles?",
-        "answer": "10 November, 2022",
+        "answer": [
+          "10 November, 2022"
+        ],
         "evidence": [
           "D28:32"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -998,41 +982,24 @@
       },
       {
         "question": "What state did Joanna visit in summer 2021?",
-        "answer": "Indiana",
+        "answer": [
+          "Indiana"
+        ],
         "evidence": [
           "D28:22"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
         ]
       },
       {
-        "question": "What recommendations has Nate received from Joanna?",
-        "answer": "\"Eternal Sunshine of the Spotless Mind\" movie, \"A Court of Thorns and Roses\" book, pointers for making living room comfy, starting a cork board for memories, \"Little Women\" movie",
-        "evidence": [
-          "D1:16",
-          "D3:17",
-          "D15:14",
-          "D15:15",
-          "D19:15",
-          "D19:16",
-          "D23:26"
-        ],
-        "category": 1,
-        "where": 23,
-        "where_ground_truth": [
-          1,
-          3,
-          15,
-          19,
-          23
-        ]
-      },
-      {
         "question": "What are Nate's favorite desserts?",
-        "answer": "coconut milk icecream, dairy-free chocolate cake with berries, chocolate and mixed-berry icecream, dairy-free chocolate mousse",
+        "answer": [
+          "coconut milk ice cream and dairy-free chocolate mousse"
+        ],
         "evidence": [
           "D3:4",
           "D3:10",
@@ -1040,6 +1007,7 @@
           "D3:12"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           3,
@@ -1048,12 +1016,15 @@
       },
       {
         "question": "How has Nate tried to disburse his vegan ice-cream recipes?",
-        "answer": "teaching others, cooking show",
+        "answer": [
+          "teaching others, cooking show"
+        ],
         "evidence": [
           "D18:8",
           "D21:4"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           18,
@@ -1062,47 +1033,26 @@
       },
       {
         "question": "When did Nate win his second tournament?",
-        "answer": "The week before 2 May, 2022.",
+        "answer": [
+          "The week before 2 May, 2022.",
+          "From April 25, 2022 to May 1, 2022"
+        ],
         "evidence": [
           "D10:4"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
         ]
       },
       {
-        "question": "How many video game tournaments has Nate participated in?",
-        "answer": "nine",
-        "evidence": [
-          "D1:3",
-          "D6:7",
-          "D10:4",
-          "D14:8",
-          "D17:1",
-          "D19:1",
-          "D20:1",
-          "D22:2",
-          "D27:1"
-        ],
-        "category": 1,
-        "where": 27,
-        "where_ground_truth": [
-          1,
-          6,
-          10,
-          14,
-          17,
-          19,
-          20,
-          22,
-          27
-        ]
-      },
-      {
         "question": "How many screenplays has Joanna written?",
-        "answer": "three",
+        "answer": [
+          "three",
+          "At least three"
+        ],
         "evidence": [
           "D2:3",
           "D4:10",
@@ -1111,6 +1061,7 @@
           "D12:14"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 12,
         "where_ground_truth": [
           2,
@@ -1121,7 +1072,9 @@
       },
       {
         "question": "How many tournaments has Nate won?",
-        "answer": "seven",
+        "answer": [
+          "seven"
+        ],
         "evidence": [
           "D1:3",
           "D10:4",
@@ -1132,6 +1085,7 @@
           "D27:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           1,
@@ -1144,37 +1098,16 @@
         ]
       },
       {
-        "question": "What recipes has Joanna made?",
-        "answer": "dairy free vanilla cake with strawberry filling and coconut cream frosting, parfait, strawberry chocolate cake, chocolate coconut cupcakes, chocolate raspberry tart, chocolate cake with raspberries, blueberry cheesecake bars",
-        "evidence": [
-          "D10:9",
-          "D10:11",
-          "D19:8",
-          "D20:2",
-          "D20:10",
-          "D21:11",
-          "D22:1",
-          "D21:3",
-          "D21:17"
-        ],
-        "category": 1,
-        "where": 22,
-        "where_ground_truth": [
-          10,
-          19,
-          20,
-          21,
-          22
-        ]
-      },
-      {
         "question": "What recipes has Nate made?",
-        "answer": "coconut milk icecream, chocolate and vanilla swirl",
+        "answer": [
+          "coconut milk icecream, chocolate and vanilla swirl, vegan ice cream"
+        ],
         "evidence": [
           "D3:4",
           "D4:3"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           3,
@@ -1183,13 +1116,17 @@
       },
       {
         "question": "What are the skills that Nate has helped others learn?",
-        "answer": "coconut milk ice cream recipe, reset high scores, tips to improve gaming skills",
+        "answer": [
+          "coconut milk ice cream recipe, reset high scores, tips to improve gaming skills",
+          "Nate has helped others learn gaming skills and dairy-free dessert recipes."
+        ],
         "evidence": [
           "D18:8",
           "D26:12",
           "D14:16"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 26,
         "where_ground_truth": [
           14,
@@ -1199,12 +1136,16 @@
       },
       {
         "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
-        "answer": "No; because both of them faced setbacks in their career",
+        "answer": [
+          "No; because both of them faced setbacks in their career",
+          "No."
+        ],
         "evidence": [
           "D20:1",
           "D21:1"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           20,
@@ -1212,24 +1153,15 @@
         ]
       },
       {
-        "question": "What kind of job is Joanna beginning to preform the duties of because of her movie scripts?",
-        "answer": "filmmaker.",
-        "evidence": [
-          "D29:1"
-        ],
-        "category": 3,
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
         "question": "When did Nate take his turtles to the beach?",
-        "answer": "10 November, 2022",
+        "answer": [
+          "10 November, 2022"
+        ],
         "evidence": [
           "D29:6"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1237,87 +1169,45 @@
       },
       {
         "question": "What state did Nate visit?",
-        "answer": "Florida",
+        "answer": [
+          "Florida"
+        ],
         "evidence": [
           "D29:6"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
         ]
       },
       {
-        "question": "What is one of Joanna's favorite movies?",
-        "answer": "\"Eternal Sunshineof the Spotless Mind\"",
-        "evidence": [
-          "D1:18",
-          "D",
-          "D1:20"
-        ],
-        "category": 4,
-        "where": 1,
-        "where_ground_truth": [
-          1
-        ]
-      },
-      {
-        "question": "What color did Nate choose for his hair?",
-        "answer": "purple",
-        "evidence": [
-          "D7:1",
-          "D7:3"
-        ],
-        "category": 4,
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
         "question": "What is Nate's favorite movie trilogy?",
-        "answer": "Lord of the Rings",
+        "answer": [
+          "Lord of the Rings"
+        ],
         "evidence": [
           "D9:12"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           9
-        ]
-      },
-      {
-        "question": "What is Nate's favorite book series about?",
-        "answer": "dragons",
-        "evidence": [
-          "D9:14"
-        ],
-        "category": 4,
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "What kind of lighting does Nate's gaming room have?",
-        "answer": "red and purple lighting",
-        "evidence": [
-          "D10:2"
-        ],
-        "category": 4,
-        "where": 10,
-        "where_ground_truth": [
-          10
         ]
       },
       {
         "question": "What game was the second tournament that Nate won based on?",
-        "answer": "Street Fighter",
+        "answer": [
+          "Street Fighter"
+        ],
         "evidence": [
           "D10:4",
           "D10:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1325,12 +1215,15 @@
       },
       {
         "question": "What is Joanna's third screenplay about?",
-        "answer": "loss, identity, and connection",
+        "answer": [
+          "loss, identity, and connection"
+        ],
         "evidence": [
           "D12:13",
           "D12:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1338,12 +1231,15 @@
       },
       {
         "question": "What is Nate's favorite video game?",
-        "answer": "Xenoblade Chronicles",
+        "answer": [
+          "Xenoblade Chronicles"
+        ],
         "evidence": [
           "D27:22",
           "D27:23"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           27
@@ -1351,11 +1247,14 @@
       },
       {
         "question": "What type of movies does Nate enjoy watching the most?",
-        "answer": "action and sci-fi",
+        "answer": [
+          "action and sci-fi"
+        ],
         "evidence": [
           "D1:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -1363,11 +1262,15 @@
       },
       {
         "question": "What did Joanna just finish last Friday on 23 January, 2022?",
-        "answer": "screenplay",
+        "answer": [
+          "screenplay",
+          "her first full screenplay"
+        ],
         "evidence": [
           "D2:3"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1375,11 +1278,14 @@
       },
       {
         "question": "What genre is Joanna's first screenplay?",
-        "answer": "drama and romance",
+        "answer": [
+          "drama and romance"
+        ],
         "evidence": [
           "D2:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1387,11 +1293,14 @@
       },
       {
         "question": "What are Joanna's plans for her finished screenplay in January 2022?",
-        "answer": "submit it to film festivals and get producers and directors to check it out",
+        "answer": [
+          "submit it to film festivals and get producers and directors to check it out"
+        ],
         "evidence": [
           "D2:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1399,11 +1308,14 @@
       },
       {
         "question": "For how long has Nate had his turtles?",
-        "answer": "3 years",
+        "answer": [
+          "3 years"
+        ],
         "evidence": [
           "D2:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -1411,11 +1323,14 @@
       },
       {
         "question": "What did Nate think of the coconut milk ice cream he made?",
-        "answer": "Super good, rich and creamy",
+        "answer": [
+          "Super good, rich and creamy"
+        ],
         "evidence": [
           "D3:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1423,11 +1338,14 @@
       },
       {
         "question": "Which dairy-free dessert flavors does Nate enjoy?",
-        "answer": "chocolate and mixed berry",
+        "answer": [
+          "coconut milk, chocolate, and mixed berry"
+        ],
         "evidence": [
           "D3:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1435,11 +1353,14 @@
       },
       {
         "question": "What did Joanna recently watch and recommend to Nate on February 7, 2022?",
-        "answer": "\"Little Women\"",
+        "answer": [
+          "\"Little Women\""
+        ],
         "evidence": [
           "D3:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1447,11 +1368,14 @@
       },
       {
         "question": "What is \"Little Women\" about according to Joanna?",
-        "answer": "Sisterhood, love, and reaching for your dreams",
+        "answer": [
+          "Sisterhood, love, and reaching for your dreams"
+        ],
         "evidence": [
           "D3:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -1459,11 +1383,14 @@
       },
       {
         "question": "What flavor of ice cream did Nate make for his friend on 25 February, 2022?",
-        "answer": "chocolate and vanilla swirl",
+        "answer": [
+          "chocolate and vanilla swirl"
+        ],
         "evidence": [
           "D4:3"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1471,11 +1398,14 @@
       },
       {
         "question": "What inspired Joanna's new screenplay on 25 February, 2022?",
-        "answer": "personal experiences and her own journey of self-discovery",
+        "answer": [
+          "personal experiences and her own journey of self-discovery"
+        ],
         "evidence": [
           "D4:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1483,11 +1413,15 @@
       },
       {
         "question": "Why does Nate like turtles as pets?",
-        "answer": "Their slow pace and calming nature",
+        "answer": [
+          "Their slow pace and calming nature",
+          "They're unique and slow-pace. They're also low-maintenance and calming."
+        ],
         "evidence": [
           "D5:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1495,11 +1429,15 @@
       },
       {
         "question": "How does Nate describe the process of taking care of turtles?",
-        "answer": "Not tough; keep their area clean, feed them properly, give them enough light.",
+        "answer": [
+          "Not tough, kinda fun; keep their area clean, feed them properly, give them enough light.",
+          "Not tough, kinda fun."
+        ],
         "evidence": [
           "D5:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1507,11 +1445,14 @@
       },
       {
         "question": "What was Joanna's audition for?",
-        "answer": "writing gig",
+        "answer": [
+          "writing gig"
+        ],
         "evidence": [
           "D6:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1519,11 +1460,14 @@
       },
       {
         "question": "Why did Nate choose the hair color he did?",
-        "answer": "Bright and bold - like him",
+        "answer": [
+          "Bright and bold - like him"
+        ],
         "evidence": [
           "D7:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1531,11 +1475,14 @@
       },
       {
         "question": "What are the main ingredients of the ice cream recipe shared by Nate?",
-        "answer": "Coconut milk, vanilla extract, sugar, salt",
+        "answer": [
+          "Coconut milk, vanilla extract, sugar, salt"
+        ],
         "evidence": [
           "D8:19"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1543,11 +1490,14 @@
       },
       {
         "question": "What is Joanna's project called in the writers group?",
-        "answer": "\"Finding Home\"",
+        "answer": [
+          "\"Finding Home\""
+        ],
         "evidence": [
           "D9:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1555,11 +1505,15 @@
       },
       {
         "question": "What is Nate's favorite genre of movies?",
-        "answer": "Fantasy and sci-fi",
+        "answer": [
+          "Fantasy and sci-fi",
+          "Action and sci-fi"
+        ],
         "evidence": [
           "D9:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1567,11 +1521,14 @@
       },
       {
         "question": "What kind of books does Nate enjoy?",
-        "answer": "Adventures and magic",
+        "answer": [
+          "Adventures and magic"
+        ],
         "evidence": [
           "D9:14"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1579,11 +1536,14 @@
       },
       {
         "question": "What kind of films does Joanna enjoy?",
-        "answer": "Dramas and emotionally-driven films",
+        "answer": [
+          "Dramas and emotionally-driven films"
+        ],
         "evidence": [
           "D9:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1591,11 +1551,14 @@
       },
       {
         "question": "Which activity helps Nate escape and stimulates his imagination?",
-        "answer": "watching fantasy and sci-fi movies",
+        "answer": [
+          "watching fantasy and sci-fi movies"
+        ],
         "evidence": [
           "D9:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1603,11 +1566,14 @@
       },
       {
         "question": "What filling did Joanna use in the cake she made recently in May 2022?",
-        "answer": "strawberry",
+        "answer": [
+          "strawberry"
+        ],
         "evidence": [
           "D10:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1615,35 +1581,29 @@
       },
       {
         "question": "What kind of frosting did Joanna use on the cake she made recently in May 2022?",
-        "answer": "coconut cream",
+        "answer": [
+          "coconut cream"
+        ],
         "evidence": [
           "D10:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
         ]
       },
       {
-        "question": "What does Nate feel he could do when out in cool places like Whispering Falls?",
-        "answer": "write a whole movie",
-        "evidence": [
-          "D11:13"
-        ],
-        "category": 4,
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
         "question": "What creative activity does Nate joke about pursuing after being inspired by their hikes with Jo?",
-        "answer": "Start thinking about a drama and publish a screenplay",
+        "answer": [
+          "Start thinking about a drama and publish a screenplay"
+        ],
         "evidence": [
           "D11:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1651,11 +1611,14 @@
       },
       {
         "question": "Who invited Nate to join her on the trails sometime?",
-        "answer": "Joanna",
+        "answer": [
+          "Joanna"
+        ],
         "evidence": [
           "D11:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1663,11 +1626,14 @@
       },
       {
         "question": "What did Nate do for Joanna on 25 May, 2022?",
-        "answer": "get her a stuffed animal",
+        "answer": [
+          "get her a stuffed animal"
+        ],
         "evidence": [
           "D13:9"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1675,11 +1641,15 @@
       },
       {
         "question": "How does Nate describe the stuffed animal he got for Joanna?",
-        "answer": "A stuffed animal to remind you of the good vibes",
+        "answer": [
+          "A stuffed animal to remind you of the good vibes",
+          "Nate describes the stuffed animal as \\\"like having joy in your pocket\\\" and a reminder of good vibes."
+        ],
         "evidence": [
           "D13:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1687,11 +1657,14 @@
       },
       {
         "question": "What event is Nate organizing in June 2022?",
-        "answer": "A gaming party",
+        "answer": [
+          "A gaming party"
+        ],
         "evidence": [
           "D14:20"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1699,11 +1672,14 @@
       },
       {
         "question": "Who did Nate plan to invite to his gaming party in June 2022?",
-        "answer": "Tournament friends, old friends, teammates",
+        "answer": [
+          "Tournament friends, and some old friends and teammates from other tournaments."
+        ],
         "evidence": [
           "D14:22"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1711,35 +1687,29 @@
       },
       {
         "question": "What special items did Nate get for everyone at his gaming party?",
-        "answer": "Custom controller decorations",
+        "answer": [
+          "Custom controller decorations"
+        ],
         "evidence": [
           "D14:24"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
         ]
       },
       {
-        "question": "What did Joanna write yesterday that appeared on the big screen?",
-        "answer": "screenplay bits",
-        "evidence": [
-          "D15:1"
-        ],
-        "category": 4,
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
         "question": "What superhero is Joanna a fan of?",
-        "answer": "Spider-Man",
+        "answer": [
+          "Spider-Man"
+        ],
         "evidence": [
           "D15:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1747,11 +1717,14 @@
       },
       {
         "question": "Which superhero toy figure does Nate share a photo of?",
-        "answer": "Iron Man",
+        "answer": [
+          "Iron Man"
+        ],
         "evidence": [
           "D15:4"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1759,11 +1732,16 @@
       },
       {
         "question": "What is displayed on Joanna's cork board for motivation and creativity?",
-        "answer": "inspiring quotes, photos, and little keepsakes",
+        "answer": [
+          "inspiring quotes, photos, and little keepsakes",
+          "inspiring quotes and pictures"
+        ],
         "evidence": [
-          "D15:7"
+          "D15:7",
+          "D15:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1771,11 +1749,14 @@
       },
       {
         "question": "What does the photo on Joanna's cork board remind her of?",
-        "answer": "love and encouragement from her family",
+        "answer": [
+          "love and encouragement from her family"
+        ],
         "evidence": [
           "D15:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1783,11 +1764,14 @@
       },
       {
         "question": "What did Nate make and share with his vegan diet group?",
-        "answer": "vegan ice cream",
+        "answer": [
+          "vegan ice cream"
+        ],
         "evidence": [
           "D16:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1795,23 +1779,31 @@
       },
       {
         "question": "How many people attended the gaming party hosted by Nate in June 2022?",
-        "answer": "7",
+        "answer": [
+          "7"
+        ],
         "evidence": [
           "D16:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
         ]
       },
       {
-        "question": "What recipe Nate offer to share with Joanna?",
-        "answer": "vegan ice cream recipe",
+        "question": "What recipe did Nate offer to share with Joanna in June 2022?",
+        "answer": [
+          "vegan ice cream recipe"
+        ],
         "evidence": [
+          "D16:8",
+          "D16:9",
           "D16:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1819,11 +1811,14 @@
       },
       {
         "question": "What did Joanna plan to do with the recipe Nate promised to share?",
-        "answer": "make it for her family",
+        "answer": [
+          "make it for her family"
+        ],
         "evidence": [
           "D16:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1831,11 +1826,14 @@
       },
       {
         "question": "How many video game tournaments has Nate won by July 10, 2022?",
-        "answer": "Four",
+        "answer": [
+          "Four"
+        ],
         "evidence": [
           "D17:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1843,11 +1841,14 @@
       },
       {
         "question": "Where did Joanna go for a road trip for research?",
-        "answer": "Woodhaven",
+        "answer": [
+          "Woodhaven"
+        ],
         "evidence": [
           "D17:4"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1855,11 +1856,14 @@
       },
       {
         "question": "What did Joanna discover at the library in Woodhaven?",
-        "answer": "cool old book collection",
+        "answer": [
+          "cool old book collection"
+        ],
         "evidence": [
           "D17:4"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1867,11 +1871,14 @@
       },
       {
         "question": "What specific themes are explored in Joanna's new book?",
-        "answer": "loss, redemption, and forgiveness",
+        "answer": [
+          "loss, redemption, and forgiveness"
+        ],
         "evidence": [
           "D17:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1879,11 +1886,14 @@
       },
       {
         "question": "What inspired Joanna's new script in July 2022?",
-        "answer": "Woodhaven's interesting past and people",
+        "answer": [
+          "Woodhaven's interesting past and people and its changes."
+        ],
         "evidence": [
           "D17:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1891,11 +1901,14 @@
       },
       {
         "question": "What did Nate do while Joanna was on her road trip?",
-        "answer": "Won a video game tournament",
+        "answer": [
+          "Won a video game tournament"
+        ],
         "evidence": [
           "D17:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1903,11 +1916,14 @@
       },
       {
         "question": "What does Nate do that he loves and can make money from?",
-        "answer": "Competing in video game tournaments",
+        "answer": [
+          "Competing in video game tournaments"
+        ],
         "evidence": [
           "D17:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1915,11 +1931,14 @@
       },
       {
         "question": "How did Joanna feel when someone wrote her a letter after reading her blog post?",
-        "answer": "Touched",
+        "answer": [
+          "Touched"
+        ],
         "evidence": [
           "D18:5"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1927,11 +1946,14 @@
       },
       {
         "question": "What kind of impact does Joanna hope to have with her writing?",
-        "answer": "share her stories and hopefully have an impact",
+        "answer": [
+          "Joanna hopes her writing brings comfort and makes a difference."
+        ],
         "evidence": [
           "D18:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1939,11 +1961,14 @@
       },
       {
         "question": "What kind of content did Joanna share that someone wrote her a letter about?",
-        "answer": "A blog post about a hard moment in her life",
+        "answer": [
+          "A blog post about a hard moment in her life"
+        ],
         "evidence": [
           "D18:5"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1951,11 +1976,14 @@
       },
       {
         "question": "What motivates Joanna to keep writing even on tough days?",
-        "answer": "Knowing that her writing can make a difference",
+        "answer": [
+          "Knowing that her writing can make a difference"
+        ],
         "evidence": [
           "D18:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1963,11 +1991,14 @@
       },
       {
         "question": "What type of ice cream does Joanna mention that Nate makes and is delicious?",
-        "answer": "Coconut milk ice cream",
+        "answer": [
+          "Coconut milk ice cream"
+        ],
         "evidence": [
           "D18:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1975,11 +2006,14 @@
       },
       {
         "question": "How did Nate feel about sharing his love for dairy-free desserts with Joanna?",
-        "answer": "Happy to share",
+        "answer": [
+          "Happy to share"
+        ],
         "evidence": [
           "D18:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1987,11 +2021,14 @@
       },
       {
         "question": "What did Joanna share with her writers group in August 2022?",
-        "answer": "her book",
+        "answer": [
+          "her book"
+        ],
         "evidence": [
           "D19:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1999,23 +2036,14 @@
       },
       {
         "question": "How did Joanna celebrate after sharing her book with her writers group?",
-        "answer": "making a delicious treat",
+        "answer": [
+          "making a delicious treat"
+        ],
         "evidence": [
           "D19:8"
         ],
         "category": 4,
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "How did Nate celebrate winning the international tournament?",
-        "answer": "Taking time off to chill with pets",
-        "evidence": [
-          "D19:9"
-        ],
-        "category": 4,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           19
@@ -2023,11 +2051,14 @@
       },
       {
         "question": "Why is Joanna experimenting with dairy-free options in her dessert recipes?",
-        "answer": "lactose intolerance",
+        "answer": [
+          "lactose intolerance"
+        ],
         "evidence": [
           "D20:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 20,
         "where_ground_truth": [
           20
@@ -2035,11 +2066,14 @@
       },
       {
         "question": "What substitution does Nate suggest for butter in dairy-free baking?",
-        "answer": "dairy-free margarine or coconut oil",
+        "answer": [
+          "dairy-free margarine or coconut oil"
+        ],
         "evidence": [
           "D20:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -2047,11 +2081,14 @@
       },
       {
         "question": "What type of show did Nate host where he taught vegan ice cream recipes?",
-        "answer": "a cooking show",
+        "answer": [
+          "a cooking show"
+        ],
         "evidence": [
           "D21:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2059,11 +2096,14 @@
       },
       {
         "question": "What is Nate's favorite dish from the cooking show he hosted?",
-        "answer": "Coconut milk ice cream",
+        "answer": [
+          "Coconut milk ice cream"
+        ],
         "evidence": [
           "D21:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2071,11 +2111,14 @@
       },
       {
         "question": "What is one of Nate's favorite dairy-free treats besides coconut milk ice cream?",
-        "answer": "dairy-free chocolate mousse",
+        "answer": [
+          "dairy-free chocolate mousse"
+        ],
         "evidence": [
           "D21:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2083,11 +2126,14 @@
       },
       {
         "question": "What dessert did Joanna share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
-        "answer": "chocolate raspberry tart",
+        "answer": [
+          "chocolate raspberry tart"
+        ],
         "evidence": [
           "D21:11"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2095,11 +2141,15 @@
       },
       {
         "question": "What kind of cake did Joanna share a photo of that she likes making for birthdays and special days?",
-        "answer": "chocolate cake with raspberries",
+        "answer": [
+          "chocolate cake with raspberries",
+          "A dairy-free chocolate cake with raspberries."
+        ],
         "evidence": [
           "D21:13"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2107,11 +2157,14 @@
       },
       {
         "question": "What two main ingredients are part of the dessert Joanna shared a photo of with blueberries, coconut milk, and a gluten-free crust?",
-        "answer": "blueberries and coconut milk",
+        "answer": [
+          "blueberries and coconut milk"
+        ],
         "evidence": [
           "D21:17"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -2119,11 +2172,14 @@
       },
       {
         "question": "What movie did Nate recently watch and enjoy on October 6, 2022?",
-        "answer": "Little Women",
+        "answer": [
+          "Little Women"
+        ],
         "evidence": [
           "D22:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -2131,11 +2187,14 @@
       },
       {
         "question": "What did Joanna make for one of the ladies at her writing club?",
-        "answer": "a bookmark",
+        "answer": [
+          "a bookmark"
+        ],
         "evidence": [
           "D22:19"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           22
@@ -2143,11 +2202,14 @@
       },
       {
         "question": "What game did Nate play at the game convention he attended on 9 October, 2022?",
-        "answer": "Catan",
+        "answer": [
+          "Catan"
+        ],
         "evidence": [
           "D23:7"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2155,11 +2217,14 @@
       },
       {
         "question": "What movie has Nate recently seen that blew his mind?",
-        "answer": "\"Inception\"",
+        "answer": [
+          "\"Inception\""
+        ],
         "evidence": [
           "D23:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2167,23 +2232,14 @@
       },
       {
         "question": "What game has Nate been playing nonstop with a futuristic setting and gameplay on October 9, 2022?",
-        "answer": "Cyberpunk 2077",
+        "answer": [
+          "Cyberpunk 2077"
+        ],
         "evidence": [
           "D23:17"
         ],
         "category": 4,
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What did Nate share a photo of when mentioning unwinding at home?",
-        "answer": "a bookcase filled with dvds and movies",
-        "evidence": [
-          "D23:15"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2191,11 +2247,14 @@
       },
       {
         "question": "How did Joanna describe the classic movie he watched?",
-        "answer": "gripping with great actors",
+        "answer": [
+          "gripping with great actors"
+        ],
         "evidence": [
           "D23:18"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2203,11 +2262,14 @@
       },
       {
         "question": "What does Joanna recommend to make a living room comfy like hers?",
-        "answer": "couch for multiple people, fluffy blanket, lights that can be dimmed",
+        "answer": [
+          "fluffy couch for multiple people, weighted blanket, lights that can be dimmed"
+        ],
         "evidence": [
           "D23:26"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -2215,11 +2277,14 @@
       },
       {
         "question": "What helps Joanna stay focused and brings her joy?",
-        "answer": "stuffed animal dog named Tilly",
+        "answer": [
+          "stuffed animal dog named Tilly"
+        ],
         "evidence": [
           "D24:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2227,11 +2292,14 @@
       },
       {
         "question": "What does Joanna do while she writes?",
-        "answer": "have a stuffed animal dog named Tilly with her",
+        "answer": [
+          "have a stuffed animal dog named Tilly with her"
+        ],
         "evidence": [
           "D24:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2239,11 +2307,15 @@
       },
       {
         "question": "Why did Joanna name the stuffed animal dog Tilly?",
-        "answer": "after a dog she had in Michigan",
+        "answer": [
+          "after a dog she had in Michigan",
+          "after her childhood dog in Michigan"
+        ],
         "evidence": [
           "D24:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2251,11 +2323,14 @@
       },
       {
         "question": "What does Joanna do after receiving a rejection from a production company?",
-        "answer": "keep grinding and moving ahead",
+        "answer": [
+          "keep grinding and moving ahead"
+        ],
         "evidence": [
           "D24:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2263,11 +2338,14 @@
       },
       {
         "question": "How does Nate feel about Joanna's ability to bounce back from setbacks?",
-        "answer": "respect Joanna for being able to bounce back",
+        "answer": [
+          "respect Joanna for being able to bounce back"
+        ],
         "evidence": [
           "D24:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2275,11 +2353,14 @@
       },
       {
         "question": "What encouragement does Nate give to Joanna after her setback?",
-        "answer": "rejections don't define her, keep grinding and she'll find the perfect opportunity",
+        "answer": [
+          "rejections don't define her, keep grinding and she'll find the perfect opportunity"
+        ],
         "evidence": [
           "D24:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2287,11 +2368,14 @@
       },
       {
         "question": "What does Nate rely on for cheer and joy?",
-        "answer": "his turtles",
+        "answer": [
+          "his turtles"
+        ],
         "evidence": [
           "D24:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2299,11 +2383,16 @@
       },
       {
         "question": "What does Joanna use to remember her dog from Michigan?",
-        "answer": "naming a stuffed animal dog Tilly",
+        "answer": [
+          "naming a stuffed animal dog Tilly"
+        ],
         "evidence": [
+          "D24:4",
+          "D24:5",
           "D24:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -2311,11 +2400,14 @@
       },
       {
         "question": "What did Joanna contribute to that was shown on the big screen on the Sunday before October 25, 2022?",
-        "answer": "movie script",
+        "answer": [
+          "movie script"
+        ],
         "evidence": [
           "D25:2"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2323,11 +2415,14 @@
       },
       {
         "question": "What inspires Joanna to create drawings of her characters?",
-        "answer": "visuals to help bring the characters alive in her head so she can write better",
+        "answer": [
+          "visuals to help bring the characters alive in her head so she can write better"
+        ],
         "evidence": [
           "D25:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2335,11 +2430,14 @@
       },
       {
         "question": "Where does Joanna get her ideas for the characters from?",
-        "answer": "people she knows, things she saw, her imagination",
+        "answer": [
+          "people she knows, things she saw, her imagination"
+        ],
         "evidence": [
           "D25:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2347,11 +2445,14 @@
       },
       {
         "question": "How did Joanna feel on October 25, 2022 about seeing her characters come alive on the big screen?",
-        "answer": "surreal and cool",
+        "answer": [
+          "surreal"
+        ],
         "evidence": [
           "D25:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2359,11 +2460,14 @@
       },
       {
         "question": "What type of diet do Nate's turtles have?",
-        "answer": "combination of vegetables, fruits, and insects",
+        "answer": [
+          "combination of vegetables, fruits, and insects"
+        ],
         "evidence": [
           "D25:19"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -2371,11 +2475,14 @@
       },
       {
         "question": "What ingredient did Nate use to make the ice cream lactose-free?",
-        "answer": "coconut milk",
+        "answer": [
+          "coconut milk"
+        ],
         "evidence": [
           "D26:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -2383,11 +2490,14 @@
       },
       {
         "question": "What did Joanna find in old notebooks last week that prompted her to reflect on her progress as a writer?",
-        "answer": "early writings",
+        "answer": [
+          "early writings"
+        ],
         "evidence": [
           "D26:5"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 26,
         "where_ground_truth": [
           26
@@ -2395,11 +2505,14 @@
       },
       {
         "question": "What game is Nate currently playing and recommends to others on November 7, 2022?",
-        "answer": "\"Xenoblade Chronicles\"",
+        "answer": [
+          "\"Xenoblade Chronicles\""
+        ],
         "evidence": [
           "D27:23"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2407,11 +2520,15 @@
       },
       {
         "question": "What did Joanna receive from her brother that brought back childhood memories?",
-        "answer": "a handwritten letter",
+        "answer": [
+          "a handwritten letter",
+          "a letter"
+        ],
         "evidence": [
           "D27:29"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2419,11 +2536,14 @@
       },
       {
         "question": "What is the type of game \"Xenoblade Chronicles\" that Nate is playing?",
-        "answer": "fantasy RPG",
+        "answer": [
+          "fantasy RPG"
+        ],
         "evidence": [
           "D27:23"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           27
@@ -2431,11 +2551,14 @@
       },
       {
         "question": "What dish did Nate make on 9 November, 2022?",
-        "answer": "Homemade coconut ice cream",
+        "answer": [
+          "Homemade coconut ice cream"
+        ],
         "evidence": [
           "D28:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2443,11 +2566,14 @@
       },
       {
         "question": "What project is Joanna working on in her notebook on November 9, 2022?",
-        "answer": "A suspenseful thriller set in a small Midwestern town",
+        "answer": [
+          "A suspenseful thriller set in a small Midwestern town"
+        ],
         "evidence": [
           "D28:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2455,11 +2581,14 @@
       },
       {
         "question": "What is Nate creating for YouTube on 9 November, 2022?",
-        "answer": "gaming content",
+        "answer": [
+          "gaming content"
+        ],
         "evidence": [
           "D28:13"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2467,11 +2596,14 @@
       },
       {
         "question": "What inspired Nate to start making gaming videos?",
-        "answer": "Love of gaming and connecting with others who enjoy it too",
+        "answer": [
+          "Love of gaming and connecting with others who enjoy it too"
+        ],
         "evidence": [
           "D28:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2479,11 +2611,14 @@
       },
       {
         "question": "What new content is Nate creating for YouTube?",
-        "answer": "Gaming videos",
+        "answer": [
+          "Gaming videos"
+        ],
         "evidence": [
           "D28:13"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2491,11 +2626,14 @@
       },
       {
         "question": "What advice does Joanna give to Nate about making YouTube videos?",
-        "answer": "Watch other people's videos to understand what the audience likes",
+        "answer": [
+          "Watch other people's videos to understand what the audience likes"
+        ],
         "evidence": [
           "D28:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2503,11 +2641,14 @@
       },
       {
         "question": "What did Joanna take a picture of near Fort Wayne last summer?",
-        "answer": "Sunset",
+        "answer": [
+          "Sunset"
+        ],
         "evidence": [
           "D28:22"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2515,11 +2656,14 @@
       },
       {
         "question": "What inspired Joanna to take a picture of the sunset in the field near Fort Wayne?",
-        "answer": "The incredible sunset and surrounding beauty",
+        "answer": [
+          "The incredible sunset and surrounding beauty"
+        ],
         "evidence": [
           "D28:22"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2527,23 +2671,29 @@
       },
       {
         "question": "Why did Nate get a third turtle?",
-        "answer": "He saw another one at a pet store and wanted to get it",
+        "answer": [
+          "He saw another one at a pet store and wanted to get it"
+        ],
         "evidence": [
           "D28:25"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
         ]
       },
       {
-        "question": "What does Nate want to do when he goes over to Joanna's place?",
-        "answer": "Watch one of Joanna's movies together or go to the park",
+        "question": "What does Nate want to do when Joanna comes over to his place?",
+        "answer": [
+          "Watch one of Joanna's movies together or go to the park"
+        ],
         "evidence": [
           "D28:29"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -2551,11 +2701,14 @@
       },
       {
         "question": "What did Nate take to the beach in Tampa?",
-        "answer": "turtles",
+        "answer": [
+          "turtles"
+        ],
         "evidence": [
           "D29:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -2563,761 +2716,155 @@
       },
       {
         "question": "What does Nate love most about having turtles?",
-        "answer": "They make him feel calm and don't require much looking after",
+        "answer": [
+          "They make him feel calm and don't require much looking after"
+        ],
         "evidence": [
           "D29:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           29
         ]
       },
       {
-        "question": "What did Nate share a photo of as a part of his experimentation in November 2022?",
-        "answer": "colorful bowls of coconut milk ice cream",
-        "evidence": [
-          "D29:10"
+        "question": "When did Nate get purple hair?",
+        "answer": [
+          "The week before 15April, 2022.",
+          "From April 4, 2022 to April 10, 2022"
         ],
-        "category": 4,
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What color did Joanna choose for her hair?",
         "evidence": [
-          "D7:1",
-          "D7:3"
+          "D7:1"
         ],
-        "category": 5,
-        "adversarial_answer": "purple",
+        "category": 2,
+        "is_multi_modality": true,
         "where": 7,
         "where_ground_truth": [
           7
         ]
       },
       {
-        "question": "What is Joanna's favorite movie trilogy?",
-        "evidence": [
-          "D9:12"
+        "question": "What is one of Joanna's favorite movies?",
+        "answer": [
+          "\"Eternal Sunshineof the Spotless Mind\""
         ],
-        "category": 5,
-        "adversarial_answer": "Lord of the Rings",
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "What is Joanna's favorite book series about?",
         "evidence": [
-          "D9:14"
+          "D1:18",
+          "D",
+          "D1:20"
         ],
-        "category": 5,
-        "adversarial_answer": "dragons",
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "What kind of lighting does Joanna's gaming room have?",
-        "evidence": [
-          "D10:2"
-        ],
-        "category": 5,
-        "adversarial_answer": "red and purple lighting",
-        "where": 10,
-        "where_ground_truth": [
-          10
-        ]
-      },
-      {
-        "question": "What game was the second tournament that Joanna won based on?",
-        "evidence": [
-          "D10:4",
-          "D10:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Street Fighter",
-        "where": 10,
-        "where_ground_truth": [
-          10
-        ]
-      },
-      {
-        "question": "What is Nate's third screenplay about?",
-        "evidence": [
-          "D12:13",
-          "D12:14"
-        ],
-        "category": 5,
-        "adversarial_answer": "loss, identity, and connection",
-        "where": 12,
-        "where_ground_truth": [
-          12
-        ]
-      },
-      {
-        "question": "What type of movies does Nate hate watching the most?",
-        "evidence": [
-          "D1:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "action and sci-fi",
+        "category": 4,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
         ]
       },
       {
-        "question": "What genre is Joanna's first novella?",
-        "evidence": [
-          "D2:5"
+        "question": "What color did Nate choose for his hair?",
+        "answer": [
+          "purple"
         ],
-        "category": 5,
-        "adversarial_answer": "drama and romance",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "What are Nate's plans for his finished screenplay in January 2022?",
         "evidence": [
-          "D2:7"
+          "D7:1",
+          "D7:3"
         ],
-        "category": 5,
-        "adversarial_answer": "submit it to film festivals and get producers and directors to check it out",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "For how long has Nate had his snakes?",
-        "evidence": [
-          "D2:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "3 years",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "What did Nate think of the caramel ice cream he made?",
-        "evidence": [
-          "D3:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Super good, rich and creamy",
-        "where": 3,
-        "where_ground_truth": [
-          3
-        ]
-      },
-      {
-        "question": "What flavor of cake did Nate make for his friend on 25 February, 2022?",
-        "evidence": [
-          "D4:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "chocolate and vanilla swirl",
-        "where": 4,
-        "where_ground_truth": [
-          4
-        ]
-      },
-      {
-        "question": "What was Nate's audition for?",
-        "evidence": [
-          "D6:2"
-        ],
-        "category": 5,
-        "adversarial_answer": "writing gig",
-        "where": 6,
-        "where_ground_truth": [
-          6
-        ]
-      },
-      {
-        "question": "Why did Joanna choose the hair color she did?",
-        "evidence": [
-          "D7:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "Bright and bold - like her",
+        "category": 4,
+        "is_multi_modality": true,
         "where": 7,
         "where_ground_truth": [
           7
         ]
       },
       {
-        "question": "What are the main ingredients of the ice cream recipe shared by Joanna?",
-        "evidence": [
-          "D8:19"
+        "question": "What kind of lighting does Nate's gaming room have?",
+        "answer": [
+          "red and purple lighting"
         ],
-        "category": 5,
-        "adversarial_answer": "Coconut milk, vanilla extract, sugar, salt",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What is Nate's project called in the writers group?",
         "evidence": [
-          "D9:3"
+          "D10:2"
         ],
-        "category": 5,
-        "adversarial_answer": "\"Finding Home\"",
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "Which activity helps Nate escape and numbs his mind?",
-        "evidence": [
-          "D9:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "watching fantasy and sci-fi movies",
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "What filling did Nate use in the cake he made recently in May 2022?",
-        "evidence": [
-          "D10:11"
-        ],
-        "category": 5,
-        "adversarial_answer": "strawberry",
+        "category": 4,
+        "is_multi_modality": true,
         "where": 10,
         "where_ground_truth": [
           10
         ]
       },
       {
-        "question": "Who did Joanna plan to invite to her gaming party in June 2022?",
-        "evidence": [
-          "D14:22"
+        "question": "What did Nate share a photo of when mentioning unwinding at home?",
+        "answer": [
+          "a bookcase filled with dvds and movies"
         ],
-        "category": 5,
-        "adversarial_answer": "Tournament friends, old friends, teammates",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "What special items did Joanna get for everyone at her gaming party?",
         "evidence": [
-          "D14:24"
+          "D23:15"
         ],
-        "category": 5,
-        "adversarial_answer": "Custom controller decorations",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "What supervillain is Joanna a fan of?",
-        "evidence": [
-          "D15:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "Spider-Man",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "Which superhero toy figure does Joanna share a photo of?",
-        "evidence": [
-          "D15:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "Iron Man",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "What did Joanna make and share with her vegan diet group?",
-        "evidence": [
-          "D16:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "vegan ice cream",
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
-        "question": "How many people attended the gaming party hosted by Joanna in June 2022?",
-        "evidence": [
-          "D16:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "7",
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
-        "question": "Where did Nate go for a road trip for research?",
-        "evidence": [
-          "D17:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "Woodhaven",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "What did Joanna discover at the museum in Woodhaven?",
-        "evidence": [
-          "D17:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "cool old book collection",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "What specific themes are explored in Nate's new book?",
-        "evidence": [
-          "D17:16"
-        ],
-        "category": 5,
-        "adversarial_answer": "loss, redemption, and forgiveness",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "How did Nate feel when someone wrote him a letter after reading his blog post?",
-        "evidence": [
-          "D18:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "Touched",
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "What kind of impact does Joanna hope to have with her painting?",
-        "evidence": [
-          "D18:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "share her stories and hopefully have an impact",
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "What did Nate share with his writers group in August 2022?",
-        "evidence": [
-          "D19:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "her book",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "How did Nate celebrate after sharing his book with a writers group?",
-        "evidence": [
-          "D19:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "making a delicious treat",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "How did Joanna celebrate winning the international tournament?",
-        "evidence": [
-          "D19:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "Taking time off to chill with pets",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What substitution does Nate suggest for sugar in dairy-free baking?",
-        "evidence": [
-          "D20:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "dairy-free margarine or coconut oil",
-        "where": 20,
-        "where_ground_truth": [
-          20
-        ]
-      },
-      {
-        "question": "What type of show did Joanna host where she taught vegan ice cream recipes?",
-        "evidence": [
-          "D21:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "a cooking show",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What is Joanna's favorite dish from the cooking show she hosted?",
-        "evidence": [
-          "D21:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Coconut milk ice cream",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What dessert did Nate share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
-        "evidence": [
-          "D21:11"
-        ],
-        "category": 5,
-        "adversarial_answer": "chocolate raspberry tart",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What two main ingredients are part of the dessert Nate shared a photo of with blueberries, coconut milk, and a gluten-free crust?",
-        "evidence": [
-          "D21:17"
-        ],
-        "category": 5,
-        "adversarial_answer": "blueberries and coconut milk",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "What movie did Joanna recently watch and enjoy on October 6, 2022?",
-        "evidence": [
-          "D22:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "Little Women",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "What did Nate make for one of the ladies at his writing club?",
-        "evidence": [
-          "D22:19"
-        ],
-        "category": 5,
-        "adversarial_answer": "a bookmark",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "What game has Joanna been playing nonstop with a futuristic setting and gameplay on October 9, 2022?",
-        "evidence": [
-          "D23:17"
-        ],
-        "category": 5,
-        "adversarial_answer": "Cyberpunk 2077",
+        "category": 4,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           23
         ]
       },
       {
-        "question": "How did Nate describe the classic movie he watched?",
-        "evidence": [
-          "D23:18"
+        "question": "What did Nate share a photo of as a part of his experimentation in November 2022?",
+        "answer": [
+          "colorful bowls of coconut milk ice cream"
         ],
-        "category": 5,
-        "adversarial_answer": "gripping with great actors",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What does Nate recommend to make a living room comfy like his?",
         "evidence": [
-          "D23:26"
+          "D29:10"
         ],
-        "category": 5,
-        "adversarial_answer": "couch for multiple people, fluffy blanket, lights that can be dimmed",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What helps Joanna stay distracted and brings her sadness?",
-        "evidence": [
-          "D24:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "stuffed animal dog named Tilly",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What does Nate do while he writes?",
-        "evidence": [
-          "D24:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "have a stuffed animal dog named Tilly with him",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What does Nate do after receiving a rejection from a production company?",
-        "evidence": [
-          "D24:14"
-        ],
-        "category": 5,
-        "adversarial_answer": "keep grinding and moving ahead",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What does Joanna rely on for cheer and joy?",
-        "evidence": [
-          "D24:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "her turtles",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What does Nate use to remember his dog from Michigan?",
-        "evidence": [
-          "D24:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "stuffed animal dog Tilly",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What inspires Joanna to create music for her characters?",
-        "evidence": [
-          "D25:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "visuals to help bring the characters alive in her head so she can write better",
-        "where": 25,
-        "where_ground_truth": [
-          25
-        ]
-      },
-      {
-        "question": "What type of diet do Joanna's turtles have?",
-        "evidence": [
-          "D25:19"
-        ],
-        "category": 5,
-        "adversarial_answer": "combination of vegetables, fruits, and insects",
-        "where": 25,
-        "where_ground_truth": [
-          25
-        ]
-      },
-      {
-        "question": "What did Nate find in old notebooks last week that prompted him to reflect on her progress as a writer?",
-        "evidence": [
-          "D26:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "early writings",
-        "where": 26,
-        "where_ground_truth": [
-          26
-        ]
-      },
-      {
-        "question": "What game is Joanna currently playing and recommends to others on November 7, 2022?",
-        "evidence": [
-          "D27:23"
-        ],
-        "category": 5,
-        "adversarial_answer": "\"Xenoblade Chronicles\"",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What did Nate receive from his brother that brought back childhood memories?",
-        "evidence": [
-          "D27:29"
-        ],
-        "category": 5,
-        "adversarial_answer": "a handwritten letter",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What is the type of game \"Xenoblade Chronicles\" that Joanna is playing?",
-        "evidence": [
-          "D27:23"
-        ],
-        "category": 5,
-        "adversarial_answer": "fantasy RPG",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What project is Nate working on in his notebook on November 9, 2022?",
-        "evidence": [
-          "D28:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "A suspenseful thriller set in a small Midwestern town",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What is Joanna creating for YouTube on 9 November, 2022?",
-        "evidence": [
-          "D28:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "gaming content",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What inspired Joanna to start making gaming videos?",
-        "evidence": [
-          "D28:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "Love of gaming and connecting with others who enjoy it too",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What new content is Nate creating for television?",
-        "evidence": [
-          "D28:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "Gaming videos",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What did Nate take a picture of near Fort Wayne last summer?",
-        "evidence": [
-          "D28:22"
-        ],
-        "category": 5,
-        "adversarial_answer": "Sunset",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "Why did Joanna get a third turtle?",
-        "evidence": [
-          "D28:25"
-        ],
-        "category": 5,
-        "adversarial_answer": "She saw another one at a pet store and wanted to get it",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What did Joanna take to the beach in Tampa?",
-        "evidence": [
-          "D29:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "turtles",
+        "category": 4,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           29
         ]
       },
       {
-        "question": "What does Joanna love most about having turtles?",
-        "evidence": [
-          "D29:8"
+        "question": "What types of animals and insects does Joanna mention being allergic to?",
+        "answer": [
+          "Most reptiles, animals with fur, and cockroaches."
         ],
-        "category": 5,
-        "adversarial_answer": "They make her feel calm and don't require much looking after",
-        "where": 29,
+        "evidence": [
+          "D2:23",
+          "D5:11"
+        ],
+        "category": 3,
+        "is_multi_modality": false,
+        "where": 5,
         "where_ground_truth": [
-          29
+          2,
+          5
+        ]
+      },
+      {
+        "question": "How many video game tournaments has Nate won?",
+        "answer": [
+          "seven"
+        ],
+        "evidence": [
+          "D1:3",
+          "D10:4",
+          "D14:8",
+          "D17:1",
+          "D19:1",
+          "D22:2",
+          "D27:1"
+        ],
+        "category": 1,
+        "is_multi_modality": true,
+        "where": 27,
+        "where_ground_truth": [
+          1,
+          10,
+          14,
+          17,
+          19,
+          22,
+          27
         ]
       }
     ],

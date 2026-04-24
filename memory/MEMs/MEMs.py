@@ -96,28 +96,17 @@ class MEMs(MemoryMechanism):
                 )
                 return Mem0Memory(memory_config)
 
-            elif "awmpro" in yaml_data:
-                from ..awmPro.awmPro import AWMPro, AWMProConfig
-                awm_cfg = yaml_data["awmpro"]
-                rag_cfg = awm_cfg.get("workflow_rag", {}) or {}
-                memory_config = AWMProConfig(
-                    model_name=awm_cfg.get("model_name", ""),
-                    workflow_induction_prompt=awm_cfg.get("workflow_induction_prompt", ""),
-                    workflow_management_prompt=awm_cfg.get("workflow_management_prompt", ""),
-                    workflow_induction_max_retries=awm_cfg.get("workflow_induction_max_retries", 5),
-                    workflow_management_max_retries=awm_cfg.get("workflow_management_max_retries", 5),
-                    workflow_rag_embedding_model=rag_cfg.get("embedding_model", ""),
-                    workflow_rag_top_k=rag_cfg.get("top_k", 50),
-                    workflow_rag_order=rag_cfg.get("order", "similar_at_top"),
-                    workflow_rag_seed=rag_cfg.get("seed", 42),
-                    workflow_rag_prompt_template=awm_cfg.get("prompt_template", ""),
-                    workflow_rag_where=awm_cfg.get("where", "tail"),
-                    workflow_rag_success_only=awm_cfg.get("success_only", True),
-                    workflow_rag_reward_bigger_than_zero=awm_cfg.get("reward_bigger_than_zero", True),
-                    workflow_management_similarity_top_k=awm_cfg.get("workflow_management_similarity_top_k", 5),
-                    workflow_storage_path=Path(awm_cfg.get("workflow_storage_path", "memory/awmPro/workflows.jsonl")),
-                )
-                return AWMPro(memory_config)
+            elif "everos_agent" in yaml_data:
+                from ..everos_agent import load_everos_agent_from_yaml
+                return load_everos_agent_from_yaml(str(config_path))
+
+            elif "everos_personal" in yaml_data:
+                from ..everos_personal import load_everos_personal_from_yaml
+                return load_everos_personal_from_yaml(str(config_path))
+
+            elif isinstance(yaml_data.get("AWM"), dict):
+                from ..AWM import load_awm_from_yaml
+                return load_awm_from_yaml(str(config_path))
 
             elif "streamicl" in yaml_data:
                 from ..streamICL.streamICL import StreamICLMemory, StreamICLConfig

@@ -2,7 +2,7 @@
 Memory Mechanism Registry - centralized management for registering and loading all memory mechanisms
 
 Naming convention:
-- Use snake_case in configuration (e.g. stream_icl, awm_pro, mems)
+- Use snake_case in configuration (e.g. stream_icl, awm, mems)
 - The registry maps these names to their actual classes and loader functions
 """
 from __future__ import annotations
@@ -26,7 +26,7 @@ def register_memory(
     Register a memory mechanism.
 
     Args:
-        name: mechanism name in snake_case (e.g. stream_icl, awm_pro)
+        name: mechanism name in snake_case (e.g. stream_icl, awm)
         loader_func: loader function that accepts a config_path and returns a MemoryMechanism instance
         default_config_path: default config file path relative to the project root
     """
@@ -89,6 +89,22 @@ def _register_all_memories():
         default_config_path="memory/mem0/mem0.yaml",
     )
 
+    # everos_agent
+    from memory.everos_agent.everos_agent import load_everos_agent_from_yaml
+    register_memory(
+        name="everos_agent",
+        loader_func=load_everos_agent_from_yaml,
+        default_config_path="memory/everos_agent/everos_agent.yaml",
+    )
+
+    # everos_personal
+    from memory.everos_personal.everos_personal import load_everos_personal_from_yaml
+    register_memory(
+        name="everos_personal",
+        loader_func=load_everos_personal_from_yaml,
+        default_config_path="memory/everos_personal/everos_personal.yaml",
+    )
+
     # mems (lowercase)
     from memory.MEMs import load_mems_from_yaml
     register_memory(
@@ -97,14 +113,13 @@ def _register_all_memories():
         default_config_path="memory/MEMs/MEMs.yaml",
     )
 
-    # awm_pro (snake_case)
-    from memory.awmPro.awmPro import load_awmpro_from_yaml
+    # awm (snake_case)
+    from memory.AWM import load_awm_from_yaml
     register_memory(
-        name="awm_pro",
-        loader_func=load_awmpro_from_yaml,
-        default_config_path="memory/awmPro/awmPro.yaml",
+        name="awm",
+        loader_func=load_awm_from_yaml,
+        default_config_path="memory/AWM/AWM.yaml",
     )
-
 
 # Auto-register all memory mechanisms on import
 _register_all_memories()

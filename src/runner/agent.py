@@ -9,34 +9,60 @@ import time
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-import requests
 import yaml
-from requests.exceptions import ReadTimeout, Timeout
+from openai import (
+    APIConnectionError,
+    APITimeoutError,
+    BadRequestError,
+    InternalServerError,
+    OpenAI,
+    RateLimitError,
+)
 
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 LLMAPI_DIR = ROOT_DIR / "configs" / "llmapi"
 
 
+def _extract_api_key(headers: Dict[str, Any]) -> str:
+    auth_value = str(headers.get("Authorization", "") or "").strip()
+    if auth_value.lower().startswith("bearer "):
+        return auth_value[7:].strip()
+    raise ValueError("Authorization header missing Bearer token in llmapi config")
+
+
+def _normalize_base_url(url: str) -> str:
+    normalized = str(url or "").rstrip("/")
+    suffix = "/chat/completions"
+    if normalized.endswith(suffix):
+        normalized = normalized[: -len(suffix)]
+    return normalized + "/"
+
+
+def _message_to_dict(message: Any) -> Dict[str, Any]:
+    if hasattr(message, "model_dump"):
+        return message.model_dump(exclude_none=True)
+    if isinstance(message, dict):
+        return dict(message)
+    return {}
+
+
 class SimpleHTTPChatAgent:
     """
-    A minimal LLM agent:
-    - Reads HTTP configuration from configs/llmapi/api.yaml + agent.yaml
-    - Calls an OpenAI-style chat completions endpoint, supporting tools / tool_choice=auto
-    - Simple 429 / 500 retry logic
+    A minimal LLM agent backed by the OpenAI Python SDK.
+
+    - Reads configuration from configs/llmapi/api.yaml + agent.yaml
+    - Calls an OpenAI-compatible chat completions endpoint
+    - Keeps the existing retry / logging behavior
     """
 
     def __init__(self, agent_name: str) -> None:
         self.agent_name = agent_name
-        self.url, self.headers, self.base_body = self._load_agent_config(agent_name)
+        self.base_url, self.api_key, self.base_body = self._load_agent_config(agent_name)
+        self.client = OpenAI(base_url=self.base_url, api_key=self.api_key)
 
     @staticmethod
-    def _load_agent_config(agent_name: str) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
-        """
-        Reuses the merge logic from test_client.py:
-        - api.yaml provides base parameters (url/headers/body/prompter/return_format)
-        - agent.yaml overrides body fields such as model/max_tokens for the specific agent
-        """
+    def _load_agent_config(agent_name: str) -> Tuple[str, str, Dict[str, Any]]:
         agent_cfg_path = LLMAPI_DIR / "agent.yaml"
         api_cfg_path = LLMAPI_DIR / "api.yaml"
 
@@ -53,7 +79,6 @@ class SimpleHTTPChatAgent:
         base_params = api_cfg.get("parameters", {}) or {}
         agent_params = agent_cfg.get("parameters", {}) or {}
 
-        # Deep-merge body
         body = dict(base_params.get("body", {}) or {})
         body.update(agent_params.get("body", {}) or {})
 
@@ -64,7 +89,9 @@ class SimpleHTTPChatAgent:
         headers = dict(base_params.get("headers", {}) or {})
         headers.update(agent_params.get("headers", {}) or {})
 
-        return url, headers, body
+        api_key = _extract_api_key(headers)
+        base_url = _normalize_base_url(url)
+        return base_url, api_key, body
 
     def inference(self, history: List[Dict[str, Any]], tools: List[Dict[str, Any]] | None = None) -> Dict[str, Any]:
         """
@@ -74,74 +101,75 @@ class SimpleHTTPChatAgent:
             **(self.base_body or {}),
             "messages": history,
         }
-        # Support function calling (tools)
         if tools:
             body["tools"] = tools
             body["tool_choice"] = "auto"
 
-        # Simple serial retry: 429/500/timeout/network errors retry indefinitely;
-        # non-retryable errors raise immediately.
-        data: Dict[str, Any] | None = None
         attempt = 0
-
         while True:
             try:
-                # Per-request timeout of 250 seconds to avoid a single sample blocking too long
-                resp = requests.post(self.url, headers=self.headers, json=body, timeout=250)
-                # Too Many Requests / 500: retry with linear backoff (5s increments, max 60s)
-                if resp.status_code in (429, 500):
-                    # Linear backoff: 5 * (attempt + 1) seconds (5, 10, 15, ..., 60, 60, ...), max 60s
-                    wait_sec = min(5 * (attempt + 1), 60)
-                    logging.warning(
-                        f"LLM API HTTP {resp.status_code} (attempt {attempt + 1}), "
-                        f"retrying after {wait_sec}s (linear backoff, max 60s)..."
-                    )
-                    time.sleep(wait_sec)
-                    attempt += 1
-                    continue
-                # For other HTTP errors (e.g. 400 Bad Request), raise immediately
-                resp.raise_for_status()
-                data = resp.json()
+                completion = self.client.chat.completions.create(**body)
                 break
-            except (ReadTimeout, Timeout) as e:
-                # Timeout: retry with linear backoff (5s increments, max 60s)
+            except (RateLimitError, InternalServerError) as e:
                 wait_sec = min(5 * (attempt + 1), 60)
                 logging.warning(
-                    f"LLM API timeout (attempt {attempt + 1}), retrying after {wait_sec}s (linear backoff, max 60s)..."
+                    "LLM API retryable error %s (attempt %s), retrying after %ss...",
+                    type(e).__name__,
+                    attempt + 1,
+                    wait_sec,
                 )
                 time.sleep(wait_sec)
                 attempt += 1
                 continue
-            except requests.exceptions.RequestException as e:
-                # Other network errors (e.g. connection errors): retry with linear backoff
+            except (APITimeoutError, APIConnectionError) as e:
                 wait_sec = min(5 * (attempt + 1), 60)
                 logging.warning(
-                    f"LLM API network error (attempt {attempt + 1}): {str(e)}, retrying after {wait_sec}s (linear backoff, max 60s)..."
+                    "LLM API network/timeout error %s (attempt %s), retrying after %ss...",
+                    type(e).__name__,
+                    attempt + 1,
+                    wait_sec,
                 )
                 time.sleep(wait_sec)
                 attempt += 1
                 continue
-            except Exception as e:
-                # Other errors (e.g. 400 Bad Request): no retry, raise immediately
+            except BadRequestError as e:
                 raise RuntimeError(
-                    f"LLM API error {getattr(e, 'status_code', 'unknown')}: {str(e)}. "
-                    f"Request snippet: {json.dumps(body)[:4000]}"
+                    f"LLM API bad request: {str(e)}. Request snippet: {json.dumps(body, ensure_ascii=False)[:4000]}"
+                ) from e
+            except Exception as e:
+                raise RuntimeError(
+                    f"LLM API error {type(e).__name__}: {str(e)}. "
+                    f"Request snippet: {json.dumps(body, ensure_ascii=False)[:4000]}"
                 ) from e
 
-        # If we exit the loop normally, data is guaranteed non-None (assigned before break)
-        # This check is defensive programming and should never actually trigger
-        if data is None:
-            raise RuntimeError("LLM API call failed: no response data parsed (unexpected state)")
-        choices = data.get("choices") or []
+        choices = getattr(completion, "choices", None) or []
         if not choices:
-            raise RuntimeError(f"Empty choices from LLM API: {data}")
-        message = choices[0].get("message") or {}
-        # Ensure at least role/content fields are present
+            raise RuntimeError(f"Empty choices from LLM API: {completion}")
+
+        message = _message_to_dict(choices[0].message)
         if "role" not in message:
             message["role"] = "assistant"
-        if "content" not in message:
-            message["content"] = ""
-        # Preserve reasoning_content if present (returned as-is)
-        if "reasoning_content" in message:
-            pass
+        message["content"] = self._normalize_message_content(message.get("content", ""))
         return message
+
+    @staticmethod
+    def _normalize_message_content(content: Any) -> str:
+        if isinstance(content, str):
+            return content
+        if isinstance(content, list):
+            text_parts: List[str] = []
+            for item in content:
+                if isinstance(item, str):
+                    text_parts.append(item)
+                    continue
+                if not isinstance(item, dict):
+                    continue
+                if item.get("type") == "text" and item.get("text"):
+                    text_parts.append(str(item.get("text")))
+                    continue
+                if item.get("content"):
+                    text_parts.append(str(item.get("content")))
+            return "\n".join(part for part in text_parts if part).strip()
+        if content is None:
+            return ""
+        return str(content)

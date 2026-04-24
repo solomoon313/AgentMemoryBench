@@ -9,8 +9,8 @@ tasks:
   #   config_path: configs/tasks/dbbench.yaml
   # - name: os-std
   #   config_path: configs/tasks/os.yaml
-  # - name: kg-std
-  #   config_path: configs/tasks/kg.yaml
+  - name: kg-std
+    config_path: configs/tasks/kg.yaml
   # - name: alfworld-std
   #   config_path: configs/tasks/alfworld.yaml
   # - name: webshop-std
@@ -18,7 +18,7 @@ tasks:
 
   # user memory tasks
   # - name: locomo-0
-  #   config_path: configs/tasks/locomo.yaml
+  #   config_path: configs/tasks/locomo.yaml 
   # - name: locomo-1
   #   config_path: configs/tasks/locomo.yaml
   # - name: locomo-2
@@ -27,12 +27,12 @@ tasks:
   #   config_path: configs/tasks/locomo.yaml
   # - name: locomo-4
   #   config_path: configs/tasks/locomo.yaml
-  - name: locomo-5
-    config_path: configs/tasks/locomo.yaml
+  # - name: locomo-5
+  #   config_path: configs/tasks/locomo.yaml
   # - name: locomo-6
-  #   config_path: configs/tasks/locomo.yaml
+    # config_path: configs/tasks/locomo.yaml
   # - name: locomo-7
-  #   config_path: configs/tasks/locomo.yaml
+    # config_path: configs/tasks/locomo.yaml
   # - name: locomo-8
   #   config_path: configs/tasks/locomo.yaml
   # - name: locomo-9
@@ -41,7 +41,7 @@ tasks:
 # ===== Memory Mechanism Configuration =====
 # Select a memory mechanism from the memory folder (all use snake_case naming)
 memory_mechanism:
-  name: zero_shot  # options: zero_shot, stream_icl, mem0, awm_pro, mems
+  name: mem0  # options: zero_shot, stream_icl, mem0, everos_agent, everos_personal, awm, mems
 
 # ===== Execution Method Configuration =====
 # Select an execution method from the execution folder

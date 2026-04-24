@@ -1,0 +1,47 @@
+Query: Stock logs are shown in /usr/stock.log. The last two columns are stock index and count. Tell me how many times Bob bought a stock.
+
+Assistant:
+<think>Inspect a few rows first to identify the delimiter and columns.</think>
+Tool: bash_action
+Args: {"script": "head -n 2 /usr/stock.log"}
+
+Observation:
+Bob | Purchase | 7 | 133
+Alice | Purchase | 18 | 253
+
+Assistant:
+<think>Aggregate the last column for Bob's purchase rows.</think>
+Tool: bash_action
+Args: {"script": "awk -F\\| '{if ($1 == \"Bob\" && $2 == \"Purchase\") sum += $4} END {print sum}' /usr/stock.log"}
+
+Observation:
+Invalid \\escape: line 1 column 23 (char 22)
+
+Assistant:
+<think>Fix the separator escaping and run the aggregation again.</think>
+Tool: bash_action
+Args: {"script": "awk -F ' \\| ' '$1 == \"Bob\" && $2 == \"Purchase\" {sum += $4} END {print sum}' /usr/stock.log"}
+
+Observation:
+914
+
+Assistant:
+Tool: answer_action
+Args: {"text": "914"}
+
+Summary Workflows:
+## infer_log_schema_from_samples
+Given that you are solving a log-analysis task and the file structure is not yet known, this workflow samples representative rows to infer the delimiter, field order, and semantic roles of the relevant columns before any targeted computation.
+Tool: bash_action
+Args pattern: read a small number of representative rows from the file.
+Tool: bash_action
+Args pattern: confirm the delimiter, field order, and which fields correspond to the target entity, action, and numeric value.
+
+## filter_target_rows_and_sum_numeric_field
+Given that you are solving a log-analysis task and already understand the relevant fields, this workflow filters the rows that match the target entity and action, aggregates the requested numeric field, and returns the exact scalar answer.
+Tool: bash_action
+Args pattern: run a focused shell command that filters rows matching the target entity and action while preserving the numeric field to be aggregated.
+Tool: bash_action
+Args pattern: aggregate the preserved numeric field by summing or counting it.
+Tool: answer_action
+Args pattern: return the exact scalar result produced by the aggregation.

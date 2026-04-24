@@ -2,54 +2,31 @@
   {
     "qa": [
       {
-        "question": "What are John's suspected health problems?",
-        "answer": "Obesity",
-        "evidence": [
-          "D1:27"
-        ],
-        "category": 3,
-        "where": 1,
-        "where_ground_truth": [
-          1
-        ]
-      },
-      {
         "question": "Which recreational activity was James pursuing on March 16, 2022?",
-        "answer": "bowling",
+        "answer": [
+          "bowling"
+        ],
         "evidence": [
           "D1:26"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
         ]
       },
       {
-        "question": "Which places or events have John and James planned to meet at?",
-        "answer": "VR Club, McGee's, baseball game",
-        "evidence": [
-          "D1:36",
-          "D21:15",
-          "D23:5",
-          "D23:6"
-        ],
-        "category": 1,
-        "where": 23,
-        "where_ground_truth": [
-          1,
-          21,
-          23
-        ]
-      },
-      {
         "question": "Do both James and John have pets?",
-        "answer": "No",
+        "answer": [
+          "No"
+        ],
         "evidence": [
           "D1:12",
           "D2:18"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 2,
         "where_ground_truth": [
           1,
@@ -58,11 +35,14 @@
       },
       {
         "question": "When did John resume playing drums in his adulthood?",
-        "answer": "February 2022",
+        "answer": [
+          "February 2022"
+        ],
         "evidence": [
           "D3:5"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -70,12 +50,15 @@
       },
       {
         "question": "What are John and James' favorite games?",
-        "answer": "John's favorite game is CS:GO, and James's is Apex Legends.",
+        "answer": [
+          "John's favorite game is CS:GO, and James's is Apex Legends."
+        ],
         "evidence": [
           "D3:11",
           "D4:16"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           3,
@@ -83,38 +66,17 @@
         ]
       },
       {
-        "question": "Does James live in Connecticut?",
-        "answer": "Likely yes",
-        "evidence": [
-          "D5:1"
-        ],
-        "category": 3,
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
-        "question": "In which state is the shelter from which James adopted the puppy?",
-        "answer": "Connecticut.",
-        "evidence": [
-          "D5:1"
-        ],
-        "category": 3,
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
         "question": "How many pets does James have?",
-        "answer": "Three dogs.",
+        "answer": [
+          "Three dogs."
+        ],
         "evidence": [
           "D1:12",
           "D1:14",
           "D5:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           1,
@@ -123,12 +85,15 @@
       },
       {
         "question": "What are the names of James's dogs?",
-        "answer": "Ned, Daisy, Max",
+        "answer": [
+          "Ned, Daisy, Max"
+        ],
         "evidence": [
           "D1:14",
           "D5:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           1,
@@ -137,35 +102,30 @@
       },
       {
         "question": "When did James adopt Ned?",
-        "answer": "first week of April 2022",
+        "answer": [
+          "first week of April 2022",
+          "last week of April 12 2022"
+        ],
         "evidence": [
           "D5:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
         ]
       },
       {
-        "question": "How was John feeling on April 10, 2022?",
-        "answer": "seeking solitude",
-        "evidence": [
-          "D6:7"
-        ],
-        "category": 2,
-        "where": 6,
-        "where_ground_truth": [
-          6
-        ]
-      },
-      {
         "question": "Did James have a girlfriend during April 2022?",
-        "answer": "Presumably not",
+        "answer": [
+          "Presumably not"
+        ],
         "evidence": [
           "D6:6"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -173,11 +133,14 @@
       },
       {
         "question": "When did James visit Italy?",
-        "answer": "In 2021",
+        "answer": [
+          "In 2021"
+        ],
         "evidence": [
           "D6:12"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -185,23 +148,14 @@
       },
       {
         "question": "When did James buy himself a new adventure book?",
-        "answer": "April 26, 2022",
+        "answer": [
+          "April 26, 2022"
+        ],
         "evidence": [
           "D8:11"
         ],
         "category": 2,
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "When did James start playing Civilization VI?",
-        "answer": "March 2022",
-        "evidence": [
-          "D8:29"
-        ],
-        "category": 2,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
@@ -209,23 +163,14 @@
       },
       {
         "question": "What is the game with different colored cards that was John talking about with James?",
-        "answer": "UNO",
+        "answer": [
+          "UNO"
+        ],
         "evidence": [
           "D8:34"
         ],
         "category": 3,
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What is the board game where you have to find the imposter that John mentions to James?",
-        "answer": "Mafia",
-        "evidence": [
-          "D8:36"
-        ],
-        "category": 3,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -233,12 +178,15 @@
       },
       {
         "question": "Which books has John recommended to James?",
-        "answer": "The Name of the Wind, Stormlight Archive, Kingkiller Chronicles, Expanse",
+        "answer": [
+          "The Name of the Wind, Stormlight Archive, Kingkiller Chronicles, Expanse"
+        ],
         "evidence": [
           "D8:14",
           "D14:10"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           8,
@@ -246,25 +194,16 @@
         ]
       },
       {
-        "question": "Was James feeling lonely before meeting Samantha?",
-        "answer": "Most likely yes, because he mentioned that the only creatures that gave him joy are dogs and he was actively trying to date.",
-        "evidence": [
-          "D9:16"
-        ],
-        "category": 3,
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
         "question": "How many charity tournaments has John organized till date?",
-        "answer": "two",
+        "answer": [
+          "two"
+        ],
         "evidence": [
           "D10:2",
           "D29:1"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           10,
@@ -273,11 +212,14 @@
       },
       {
         "question": "When did John first organize a charity tournament with his friends?",
-        "answer": "May 7, 2022",
+        "answer": [
+          "May 7, 2022"
+        ],
         "evidence": [
           "D10:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 10,
         "where_ground_truth": [
           10
@@ -285,13 +227,16 @@
       },
       {
         "question": "Who or which organizations have been the beneficiaries of John's charity tournaments?",
-        "answer": "animal shelter, homeless, children's hospital",
+        "answer": [
+          "animal shelter, homeless, children's hospital"
+        ],
         "evidence": [
           "D10:10",
           "D10:12",
           "D29:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           10,
@@ -299,41 +244,16 @@
         ]
       },
       {
-        "question": "When will John start his new job?",
-        "answer": "In July, 2022",
-        "evidence": [
-          "D13:5"
-        ],
-        "category": 2,
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "What kind of games has James tried to develop?",
-        "answer": "football simulator, virtual world inspired by Witcher 3",
-        "evidence": [
-          "D13:7",
-          "D1:4",
-          "D27:2"
-        ],
-        "category": 1,
-        "where": 27,
-        "where_ground_truth": [
-          1,
-          13,
-          27
-        ]
-      },
-      {
         "question": "Are John and James fans of the same football team?",
-        "answer": "No, James is a Liverpool fan and John is a Manchester City fan.",
+        "answer": [
+          "No, James is a Liverpool fan and John is a Manchester City fan."
+        ],
         "evidence": [
           "D13:12",
           "D13:15"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -341,7 +261,9 @@
       },
       {
         "question": "Which countries has James visited?",
-        "answer": "Italy, Mexico, Turkey, Canada, Greenland",
+        "answer": [
+          "Italy, Mexico, Turkey, Canada, Greenland"
+        ],
         "evidence": [
           "D6:12",
           "D6:14",
@@ -349,6 +271,7 @@
           "D17:22"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           6,
@@ -357,26 +280,15 @@
         ]
       },
       {
-        "question": "What kind of classes has James joined?",
-        "answer": "game design course, cooking classes",
-        "evidence": [
-          "D13:6",
-          "D23:13"
-        ],
-        "category": 1,
-        "where": 23,
-        "where_ground_truth": [
-          13,
-          23
-        ]
-      },
-      {
         "question": "When did James volunteer at an organization?",
-        "answer": "May 2022",
+        "answer": [
+          "May 2022"
+        ],
         "evidence": [
           "D15:9"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
           15
@@ -384,11 +296,14 @@
       },
       {
         "question": "When did James depart for his trip to Canada?",
-        "answer": "July 11, 2022",
+        "answer": [
+          "July 11, 2022"
+        ],
         "evidence": [
           "D16:9"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -396,12 +311,15 @@
       },
       {
         "question": "Which country did James book tickets for in July 2022?",
-        "answer": "Canada",
+        "answer": [
+          "Canada"
+        ],
         "evidence": [
           "D16:9",
           "D16:11"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -409,12 +327,15 @@
       },
       {
         "question": "How many days did James plan to spend on his trip in Canada?",
-        "answer": "19 days",
+        "answer": [
+          "9 days"
+        ],
         "evidence": [
           "D16:9",
           "D16:13"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -422,36 +343,30 @@
       },
       {
         "question": "Where was James at on July 12, 2022?",
-        "answer": "Toronto, Canada",
+        "answer": [
+          "Toronto, Canada"
+        ],
         "evidence": [
           "D16:9"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
         ]
       },
       {
-        "question": "Did John and James study together?",
-        "answer": "Yes",
-        "evidence": [
-          "D17:13"
-        ],
-        "category": 3,
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
         "question": "Which countries did James visit in July 2022?",
-        "answer": "Canada, Greenland",
+        "answer": [
+          "Canada, Greenland"
+        ],
         "evidence": [
           "D16:9",
           "D17:22"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           16,
@@ -460,11 +375,14 @@
       },
       {
         "question": "What additional country did James visit during his trip to Canada?",
-        "answer": "Greenland",
+        "answer": [
+          "Greenland"
+        ],
         "evidence": [
           "D17:22"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -472,11 +390,15 @@
       },
       {
         "question": "Who is Jill?",
-        "answer": "Most likely John's partner.",
+        "answer": [
+          "Most likely John's partner."
+        ],
         "evidence": [
-          "D17:24"
+          "D17:24",
+          "D17:25"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -484,11 +406,14 @@
       },
       {
         "question": "When did John spend time with his sister and dogs?",
-        "answer": "July 21, 2022",
+        "answer": [
+          "July 21, 2022"
+        ],
         "evidence": [
           "D17:28"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -496,55 +421,50 @@
       },
       {
         "question": "What happened to John's job situation in 2022?",
-        "answer": "quit his IT Job, secured his dream job, aspires to become an eSports competition organizer",
+        "answer": [
+          "quit his IT Job, secured his dream job, aspires to become an eSports competition organizer"
+        ],
         "evidence": [
-          "D4:36",
+          "D13:3",
           "D18:1",
           "D18:7"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
-          4,
+          13,
           18
         ]
       },
       {
         "question": "When did John start his job in IT?",
-        "answer": "2019",
+        "answer": [
+          "2019"
+        ],
         "evidence": [
           "D18:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
         ]
       },
       {
-        "question": "What kind of tricks do James's pets know?",
-        "answer": "swimming, catching frisbees, balancing on a skateboard, sit, stay, paw, and rollover",
-        "evidence": [
-          "D2:17",
-          "D14:17",
-          "D14:23",
-          "D17:16"
-        ],
-        "category": 1,
-        "where": 17,
-        "where_ground_truth": [
-          2,
-          14,
-          17
-        ]
-      },
-      {
         "question": "When did James meet Samantha?",
-        "answer": "August 9, 2022",
+        "answer": [
+          "August 9, 2022"
+        ],
         "evidence": [
-          "D19:12"
+          "D19:12",
+          "D19:14",
+          "D19:15",
+          "D19:16"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -552,11 +472,14 @@
       },
       {
         "question": "When did James take his 3 dogs to the beach?",
-        "answer": "August 9, 2022",
+        "answer": [
+          "August 9, 2022"
+        ],
         "evidence": [
           "D19:12"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -564,11 +487,14 @@
       },
       {
         "question": "When did John plan his next meeting with his siblings?",
-        "answer": "In September, 2022",
+        "answer": [
+          "In September, 2022"
+        ],
         "evidence": [
           "D20:17"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -576,12 +502,15 @@
       },
       {
         "question": "Why didn't John want to go to Starbucks?",
-        "answer": "Possibly because he likes to drink beer on his days off.",
+        "answer": [
+          "Possibly because he likes to drink beer on his days off."
+        ],
         "evidence": [
           "D21:12",
           "D21:14"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -589,13 +518,16 @@
       },
       {
         "question": "What kind of beer does McGee's bar serve?",
-        "answer": "Stout, lager",
+        "answer": [
+          "Stout, light beers, and lager"
+        ],
         "evidence": [
           "D21:15",
           "D21:17",
           "D23:3"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           21,
@@ -604,11 +536,14 @@
       },
       {
         "question": "When did John and James meet at McGee's bar?",
-        "answer": "August 27, 2022",
+        "answer": [
+          "August 27, 2022"
+        ],
         "evidence": [
           "D21:18"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -616,11 +551,14 @@
       },
       {
         "question": "When did James ask Samantha to be his girlfriend?",
-        "answer": "September 3, 2022",
+        "answer": [
+          "September 3, 2022"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -628,12 +566,15 @@
       },
       {
         "question": "When did James, Samantha and John go to the baseball game together?",
-        "answer": "September 11, 2022",
+        "answer": [
+          "September 11, 2022"
+        ],
         "evidence": [
           "D23:5",
           "D23:6"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -641,13 +582,16 @@
       },
       {
         "question": "What gaming equipments did John buy or refurbish?",
-        "answer": "Sennheiser headphones, Logitech mouse, gaming desk",
+        "answer": [
+          "Sennheiser headphones, Logitech mouse, gaming desk"
+        ],
         "evidence": [
           "D23:8",
           "D23:10",
           "D20:9"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 23,
         "where_ground_truth": [
           20,
@@ -656,11 +600,14 @@
       },
       {
         "question": "When did James start taking cooking classes?",
-        "answer": "September 2, 2022",
+        "answer": [
+          "September 2, 2022"
+        ],
         "evidence": [
           "D23:13"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -668,7 +615,9 @@
       },
       {
         "question": "Which new games did John start play during the course of the conversation with James?",
-        "answer": "AC Valhalla, Witcher 3, FIFA 23, Dungeons of the Dragons, futuristic dystopian game",
+        "answer": [
+          "AC Valhalla, Witcher 3, FIFA 23, Dungeons of the Dragons, futuristic dystopian game"
+        ],
         "evidence": [
           "D5:4",
           "D19:7",
@@ -678,6 +627,7 @@
           "D8:20"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 30,
         "where_ground_truth": [
           5,
@@ -688,25 +638,16 @@
         ]
       },
       {
-        "question": "When did John start working on his 2D Adventure mobile game?",
-        "answer": "approximately summer of 2022",
-        "evidence": [
-          "D25:9"
-        ],
-        "category": 2,
-        "where": 25,
-        "where_ground_truth": [
-          25
-        ]
-      },
-      {
         "question": "How long did it take for James to complete his Witcher-inspired game?",
-        "answer": "six months",
+        "answer": [
+          "six months"
+        ],
         "evidence": [
           "D6:1",
           "D27:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           6,
@@ -715,12 +656,15 @@
       },
       {
         "question": "What kind of programming-related events has John hosted?",
-        "answer": "online programming competition, programming seminar",
+        "answer": [
+          "online programming competition, programming seminar"
+        ],
         "evidence": [
           "D27:1",
           "D28:6"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           27,
@@ -729,11 +673,15 @@
       },
       {
         "question": "When did John and his programming friends host an online programming competition?",
-        "answer": "Last week before 13 October 2022.",
+        "answer": [
+          "Last week before 13 October 2022.",
+          "From October 3, 2022 to October 9, 2022"
+        ],
         "evidence": [
           "D27:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           27
@@ -741,12 +689,15 @@
       },
       {
         "question": "Which of James's family members have visited him in the last year?",
-        "answer": "mother, sister",
+        "answer": [
+          "mother, sister"
+        ],
         "evidence": [
           "D17:28",
           "D28:19"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           17,
@@ -755,11 +706,14 @@
       },
       {
         "question": "When did James' mother and her friend visit him?",
-        "answer": "October 19, 2022",
+        "answer": [
+          "October 19, 2022"
+        ],
         "evidence": [
           "D28:19"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 28,
         "where_ground_truth": [
           28
@@ -767,11 +721,14 @@
       },
       {
         "question": "When did James try Cyberpunk 2077 game?",
-        "answer": "October 20, 2022",
+        "answer": [
+          "October 20, 2022"
+        ],
         "evidence": [
           "D28:27"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -779,11 +736,14 @@
       },
       {
         "question": "When did John and his gaming friends organize the charity tournament?",
-        "answer": "On the night of October 30 to 31, 2022",
+        "answer": [
+          "On the night of October 30, 2022"
+        ],
         "evidence": [
           "D29:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -791,13 +751,16 @@
       },
       {
         "question": "What games has John played with his friends at charity tournaments?",
-        "answer": "CS:GO, Fortnite, Overwatch and Apex Legends",
+        "answer": [
+          "CS:GO, Fortnite, Overwatch and Apex Legends"
+        ],
         "evidence": [
           "D10:4",
           "D29:1",
           "D29:3"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           10,
@@ -805,67 +768,46 @@
         ]
       },
       {
-        "question": "What was James' big moment with Samantha in October 2023?",
-        "answer": "They decided to live together and rented an apartment not far from McGee's bar.",
+        "question": "What was James' big moment with Samantha in October 2022?",
+        "answer": [
+          "They decided to live together and rented an apartment not far from McGee's bar."
+        ],
         "evidence": [
           "D29:8",
           "D29:10"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "How long did James and Samantha date for before deciding to move in together?",
-        "answer": "nearly three months",
-        "evidence": [
-          "D19:14",
-          "D29:8",
-          "D29:10"
-        ],
-        "category": 2,
-        "where": 29,
-        "where_ground_truth": [
-          19,
           29
         ]
       },
       {
         "question": "When did James, his family and his dogs start on a road trip together?",
-        "answer": "November 4, 2022",
+        "answer": [
+          "November 4, 2022"
+        ],
         "evidence": [
           "D30:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 30,
         "where_ground_truth": [
-          30
-        ]
-      },
-      {
-        "question": "How long did John practice chess for before winning the chess tournament?",
-        "answer": "nearly four months",
-        "evidence": [
-          "D17:1",
-          "D30:2",
-          "D30:4"
-        ],
-        "category": 2,
-        "where": 30,
-        "where_ground_truth": [
-          17,
           30
         ]
       },
       {
         "question": "When did James and his family visit Mark and Josh?",
-        "answer": "November 7, 2022",
+        "answer": [
+          "November 7, 2022"
+        ],
         "evidence": [
           "D31:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 31,
         "where_ground_truth": [
           31
@@ -873,11 +815,15 @@
       },
       {
         "question": "When did John work with a game developer on a project?",
-        "answer": "November 5-6, 2022",
+        "answer": [
+          "November 5-6, 2022",
+          "Last weekend before 7 November, 2022."
+        ],
         "evidence": [
           "D31:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 31,
         "where_ground_truth": [
           31
@@ -885,11 +831,14 @@
       },
       {
         "question": "What programming languages has James worked with?",
-        "answer": "Python and C++",
+        "answer": [
+          "Python and C++"
+        ],
         "evidence": [
           "D1:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -897,11 +846,14 @@
       },
       {
         "question": "What type of mobile application does James plan to build with John?",
-        "answer": "An app for dog walking and pet care",
+        "answer": [
+          "An app for dog walking and pet care"
+        ],
         "evidence": [
           "D1:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -909,11 +861,14 @@
       },
       {
         "question": "How does James plan to make his dog-sitting app unique?",
-        "answer": "By allowing users to customize their pup's preferences/needs",
+        "answer": [
+          "By allowing users to customize their pup's preferences/needs"
+        ],
         "evidence": [
           "D1:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -921,11 +876,15 @@
       },
       {
         "question": "What has John mostly found with the metal detector so far?",
-        "answer": "bottle caps",
+        "answer": [
+          "bottle caps",
+          "bottle caps, coins, a gold ring"
+        ],
         "evidence": [
           "D2:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -933,11 +892,14 @@
       },
       {
         "question": "What did James offer to do for John regarding pets?",
-        "answer": "help find the perfect pet",
+        "answer": [
+          "help find the perfect pet"
+        ],
         "evidence": [
           "D2:19"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -945,12 +907,15 @@
       },
       {
         "question": "What instrument is John learning to play as of 27 March, 2022?",
-        "answer": "Drums",
+        "answer": [
+          "Drums"
+        ],
         "evidence": [
           "D3:2",
           "D3:3"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 3,
         "where_ground_truth": [
           3
@@ -958,11 +923,14 @@
       },
       {
         "question": "How long has John been playing the drums as of 27 March, 2022?",
-        "answer": "One month",
+        "answer": [
+          "One month"
+        ],
         "evidence": [
           "D3:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -970,11 +938,14 @@
       },
       {
         "question": "What game did John play in an intense tournament at the gaming convention in March 2022?",
-        "answer": "CS:GO",
+        "answer": [
+          "CS:GO"
+        ],
         "evidence": [
           "D3:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -982,11 +953,14 @@
       },
       {
         "question": "What game was James playing in the online gaming tournament in April 2022?",
-        "answer": "Apex Legends",
+        "answer": [
+          "Apex Legends"
+        ],
         "evidence": [
           "D4:16"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 4,
         "where_ground_truth": [
           4
@@ -994,11 +968,14 @@
       },
       {
         "question": "How does James communicate with his gaming team?",
-        "answer": "voice chat",
+        "answer": [
+          "voice chat"
+        ],
         "evidence": [
           "D4:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1006,11 +983,14 @@
       },
       {
         "question": "What advice did James receive from the famous players he met at the tournament?",
-        "answer": "never put your ego above team success",
+        "answer": [
+          "never put your ego above team success"
+        ],
         "evidence": [
           "D4:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 4,
         "where_ground_truth": [
           4
@@ -1018,11 +998,14 @@
       },
       {
         "question": "What did James adopt in April 2022?",
-        "answer": "a pup",
+        "answer": [
+          "a pup"
+        ],
         "evidence": [
           "D5:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1030,11 +1013,14 @@
       },
       {
         "question": "What is the name of the pup that was adopted by James?",
-        "answer": "Ned",
+        "answer": [
+          "Ned"
+        ],
         "evidence": [
           "D5:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1042,11 +1028,14 @@
       },
       {
         "question": "Why did James embody the appearance of the game character from the woman he saw during a walk?",
-        "answer": "He found her appearance and eyes amazing.",
+        "answer": [
+          "He found her appearance and eyes amazing."
+        ],
         "evidence": [
           "D6:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1054,11 +1043,14 @@
       },
       {
         "question": "What inspired James to create the game character in the virtual world?",
-        "answer": "Appearance of a woman he saw during a walk",
+        "answer": [
+          "Appearance of a woman he saw during a walk"
+        ],
         "evidence": [
           "D6:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1066,11 +1058,14 @@
       },
       {
         "question": "Which country did James visit in 2021?",
-        "answer": "Italy",
+        "answer": [
+          "Italy"
+        ],
         "evidence": [
           "D6:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1078,11 +1073,14 @@
       },
       {
         "question": "What impresses John about Japan?",
-        "answer": "Technologically advanced megacities and tasty street food",
+        "answer": [
+          "Technologically advanced megacities and tasty street food"
+        ],
         "evidence": [
           "D6:15"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 6,
         "where_ground_truth": [
           6
@@ -1090,11 +1088,14 @@
       },
       {
         "question": "What kind of assignment was giving John a hard time at work?",
-        "answer": "Coding assignment",
+        "answer": [
+          "Coding assignment"
+        ],
         "evidence": [
           "D7:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1102,11 +1103,14 @@
       },
       {
         "question": "What breed is Daisy, one of James' dogs?",
-        "answer": "Labrador",
+        "answer": [
+          "Labrador"
+        ],
         "evidence": [
           "D9:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1114,11 +1118,14 @@
       },
       {
         "question": "What type of pizza is James' favorite?",
-        "answer": "Pepperoni",
+        "answer": [
+          "Pepperoni"
+        ],
         "evidence": [
           "D9:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1126,11 +1133,14 @@
       },
       {
         "question": "What type of pizza is John's favorite?",
-        "answer": "Hawaiian",
+        "answer": [
+          "Hawaiian"
+        ],
         "evidence": [
           "D9:19"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1138,11 +1148,14 @@
       },
       {
         "question": "What did John organize with his friends on May 8, 2022?",
-        "answer": "A tournament for CS:GO",
+        "answer": [
+          "A tournament for CS:GO"
+        ],
         "evidence": [
           "D10:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1150,11 +1163,14 @@
       },
       {
         "question": "What did John and his friends do with the remaining money after helping the dog shelter?",
-        "answer": "Bought groceries and cooked food for the homeless",
+        "answer": [
+          "Bought groceries and cooked food for the homeless"
+        ],
         "evidence": [
           "D10:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1162,11 +1178,14 @@
       },
       {
         "question": "What was the main goal of the money raised from the charity tournament organized by John and his friends in May 2022?",
-        "answer": "Raise money for a dog shelter",
+        "answer": [
+          "Raise money for a dog shelter"
+        ],
         "evidence": [
           "D10:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1174,11 +1193,14 @@
       },
       {
         "question": "What did the system John created help the charitable foundation with?",
-        "answer": "tracking inventory, resources, and donations",
+        "answer": [
+          "tracking inventory, resources, and donations"
+        ],
         "evidence": [
           "D11:5"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1186,11 +1208,14 @@
       },
       {
         "question": "What did John create for the charitable foundation that helped generate reports for analysis?",
-        "answer": "computer application on smartphones",
+        "answer": [
+          "computer application on smartphones"
+        ],
         "evidence": [
           "D11:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1198,12 +1223,15 @@
       },
       {
         "question": "What did John receive for achieving second place in the tournament?",
-        "answer": "money and a trophy",
+        "answer": [
+          "money and a trophy"
+        ],
         "evidence": [
-          "D12:5",
-          "D12:6"
+          "D12:6",
+          "D12:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1211,11 +1239,14 @@
       },
       {
         "question": "What project is James working on in his game design course?",
-        "answer": "a new part of the football simulator, collecting player databases",
+        "answer": [
+          "a new part of the football simulator, collecting player databases"
+        ],
         "evidence": [
           "D13:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1223,11 +1254,14 @@
       },
       {
         "question": "Who does James support in football matches?",
-        "answer": "Liverpool",
+        "answer": [
+          "Liverpool"
+        ],
         "evidence": [
           "D13:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1235,23 +1269,14 @@
       },
       {
         "question": "Which football club does John support?",
-        "answer": "Manchester City",
+        "answer": [
+          "Manchester City"
+        ],
         "evidence": [
           "D13:15"
         ],
         "category": 4,
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "What disagreement do James and John have about their football teams?",
-        "answer": "debating on which team will perform better in the championship",
-        "evidence": [
-          "D13:15"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1259,11 +1284,14 @@
       },
       {
         "question": "What is Max good at doing according to James?",
-        "answer": "catching frisbees in mid-air",
+        "answer": [
+          "catching frisbees in mid-air"
+        ],
         "evidence": [
           "D14:23"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1271,11 +1299,14 @@
       },
       {
         "question": "What is the main focus of the organization that James volunteered with?",
-        "answer": "providing necessary items to those who are less fortunate",
+        "answer": [
+          "providing necessary items to those who are less fortunate"
+        ],
         "evidence": [
           "D15:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1283,11 +1314,14 @@
       },
       {
         "question": "Will there be an interview required to volunteer with the organization James volunteered for?",
-        "answer": "No",
+        "answer": [
+          "No"
+        ],
         "evidence": [
           "D15:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1295,11 +1329,14 @@
       },
       {
         "question": "How did John relax in his free time on 9 July, 2022?",
-        "answer": "Reading",
+        "answer": [
+          "Reading"
+        ],
         "evidence": [
           "D16:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1307,11 +1344,14 @@
       },
       {
         "question": "What did James enjoy doing on cold winter days?",
-        "answer": "Reading while snuggled under the covers",
+        "answer": [
+          "Reading while snuggled under the covers"
+        ],
         "evidence": [
           "D16:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1319,11 +1359,14 @@
       },
       {
         "question": "What new hobby did James become interested in on 9 July, 2022?",
-        "answer": "Extreme sports",
+        "answer": [
+          "Extreme sports"
+        ],
         "evidence": [
           "D16:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1331,11 +1374,16 @@
       },
       {
         "question": "Where did James plan to visit after Toronto?",
-        "answer": "Vancouver",
+        "answer": [
+          "Vancouver",
+          "perhaps Vancouver",
+          "Maybe Vancouver, maybe somewhere else."
+        ],
         "evidence": [
           "D16:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1343,11 +1391,17 @@
       },
       {
         "question": "When did James plan to return from his trip to Toronto and Vancouver?",
-        "answer": "July 20",
+        "answer": [
+          "July 20",
+          "July 20, 2022"
+        ],
         "evidence": [
+          "D16:11",
+          "D16:12",
           "D16:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1355,11 +1409,14 @@
       },
       {
         "question": "What online game did John start playing recently for improving strategy?",
-        "answer": "Chess",
+        "answer": [
+          "Chess"
+        ],
         "evidence": [
           "D17:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1367,11 +1424,14 @@
       },
       {
         "question": "What made John leave his IT job?",
-        "answer": "to focus on things that align with his values and passions",
+        "answer": [
+          "to focus on things that align with his values and passions"
+        ],
         "evidence": [
           "D18:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1379,11 +1439,14 @@
       },
       {
         "question": "Which game tournaments does John plan to organize besides CS:GO?",
-        "answer": "Fortnite competitions",
+        "answer": [
+          "Fortnite competitions"
+        ],
         "evidence": [
           "D18:9"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1391,11 +1454,14 @@
       },
       {
         "question": "What happened to James's puppy during the recent visit to the clinic?",
-        "answer": "routine examination and vaccination",
+        "answer": [
+          "routine examination and vaccination"
+        ],
         "evidence": [
           "D18:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1403,11 +1469,14 @@
       },
       {
         "question": "What game genre did John start exploring instead of shooters?",
-        "answer": "strategy and RPG games",
+        "answer": [
+          "strategy and RPG games"
+        ],
         "evidence": [
           "D19:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1415,11 +1484,14 @@
       },
       {
         "question": "Which RPG game is John playing and enjoying on 10 August, 2022?",
-        "answer": "The Witcher 3",
+        "answer": [
+          "The Witcher 3"
+        ],
         "evidence": [
           "D19:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1427,11 +1499,14 @@
       },
       {
         "question": "What aspect of \"The Witcher 3\" does John find immersive?",
-        "answer": "shaping the world with choices",
+        "answer": [
+          "shaping the world with choices"
+        ],
         "evidence": [
           "D19:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1439,11 +1514,15 @@
       },
       {
         "question": "Whose phone number did James receive during the beach outing?",
-        "answer": "Samantha",
+        "answer": [
+          "Samantha"
+        ],
         "evidence": [
-          "D19:14"
+          "D19:14",
+          "D19:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1451,11 +1530,14 @@
       },
       {
         "question": "What is James planning to do after receiving Samantha's phone number?",
-        "answer": "call her",
+        "answer": [
+          "call her"
+        ],
         "evidence": [
           "D19:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1463,11 +1545,16 @@
       },
       {
         "question": "What is John organizing with his siblings?",
-        "answer": "a gaming night",
+        "answer": [
+          "a gaming night"
+        ],
         "evidence": [
+          "D20:15",
+          "D20:16",
           "D20:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1475,11 +1562,14 @@
       },
       {
         "question": "What type of beer does John not like?",
-        "answer": "dark beer",
+        "answer": [
+          "dark beer"
+        ],
         "evidence": [
           "D21:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1487,11 +1577,14 @@
       },
       {
         "question": "What were some difficulties James faced during the development of his game?",
-        "answer": "balancing mechanics and ensuring fairness",
+        "answer": [
+          "balancing mechanics and ensuring fairness"
+        ],
         "evidence": [
           "D22:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -1499,11 +1592,14 @@
       },
       {
         "question": "What has John been teaching his siblings?",
-        "answer": "coding",
+        "answer": [
+          "coding"
+        ],
         "evidence": [
           "D22:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -1511,11 +1607,14 @@
       },
       {
         "question": "What kind of programs are John's siblings making?",
-        "answer": "basic games and stories",
+        "answer": [
+          "basic games and stories"
+        ],
         "evidence": [
           "D22:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -1523,11 +1622,14 @@
       },
       {
         "question": "Which company's headphones did John choose for gaming?",
-        "answer": "Sennheiser",
+        "answer": [
+          "Sennheiser"
+        ],
         "evidence": [
           "D23:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1535,11 +1637,14 @@
       },
       {
         "question": "What did James and Samantha discover they both enjoy at McGee's bar?",
-        "answer": "Lager beer",
+        "answer": [
+          "Lager beer"
+        ],
         "evidence": [
           "D23:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1547,11 +1652,14 @@
       },
       {
         "question": "How much does James pay per cooking class?",
-        "answer": "$10",
+        "answer": [
+          "$10"
+        ],
         "evidence": [
           "D23:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1559,11 +1667,14 @@
       },
       {
         "question": "What did James learn to make in the cooking class besides omelette and meringue?",
-        "answer": "Dough",
+        "answer": [
+          "Dough"
+        ],
         "evidence": [
           "D23:15"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1571,11 +1682,14 @@
       },
       {
         "question": "Why did James sign up for a cooking class?",
-        "answer": "He wanted to learn something new",
+        "answer": [
+          "He wanted to learn something new"
+        ],
         "evidence": [
           "D23:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1583,11 +1697,14 @@
       },
       {
         "question": "What did James prepare for the first time in the cooking class?",
-        "answer": "Omelette",
+        "answer": [
+          "Omelette"
+        ],
         "evidence": [
           "D23:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1595,11 +1712,14 @@
       },
       {
         "question": "What is the name of the board game John tried in September 2022?",
-        "answer": "Dungeons of the Dragon",
+        "answer": [
+          "Dungeons of the Dragon"
+        ],
         "evidence": [
           "D24:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1607,11 +1727,14 @@
       },
       {
         "question": "Where does James get his ideas from?",
-        "answer": "books, movies, dreams",
+        "answer": [
+          "books, movies, dreams"
+        ],
         "evidence": [
           "D24:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1619,11 +1742,14 @@
       },
       {
         "question": "What kind of dream did James have recently?",
-        "answer": "a dream with a medieval castle full of puzzles and traps",
+        "answer": [
+          "a dream with a medieval castle full of puzzles and traps"
+        ],
         "evidence": [
           "D24:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1631,11 +1757,14 @@
       },
       {
         "question": "What kind of music does John like?",
-        "answer": "electronic and rock music",
+        "answer": [
+          "electronic and rock music"
+        ],
         "evidence": [
           "D24:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1643,11 +1772,14 @@
       },
       {
         "question": "What instrument did James used to play when he was younger?",
-        "answer": "guitar",
+        "answer": [
+          "guitar"
+        ],
         "evidence": [
           "D24:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1655,11 +1787,14 @@
       },
       {
         "question": "What did John use to play when he was younger to let off steam?",
-        "answer": "drums",
+        "answer": [
+          "drums"
+        ],
         "evidence": [
           "D24:15"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1667,11 +1802,14 @@
       },
       {
         "question": "What career milestone did John achieve recently in September 2022?",
-        "answer": "making his first mobile game",
+        "answer": [
+          "making his first mobile game"
+        ],
         "evidence": [
           "D25:7"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 25,
         "where_ground_truth": [
           25
@@ -1679,11 +1817,14 @@
       },
       {
         "question": "What type of game is John's upcoming mobile game?",
-        "answer": "2D adventure",
+        "answer": [
+          "2D adventure"
+        ],
         "evidence": [
           "D25:9"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 25,
         "where_ground_truth": [
           25
@@ -1691,11 +1832,14 @@
       },
       {
         "question": "What does John do to stay informed and constantly learn about game design?",
-        "answer": "watch tutorials and keep up with developer forums",
+        "answer": [
+          "watch tutorials and keep up with developer forums"
+        ],
         "evidence": [
           "D25:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -1703,11 +1847,14 @@
       },
       {
         "question": "What kind of gig was John offered at the game dev non-profit organization?",
-        "answer": "programming mentor for game developers",
+        "answer": [
+          "programming mentor for game developers"
+        ],
         "evidence": [
           "D26:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -1715,11 +1862,14 @@
       },
       {
         "question": "What does John feel about starting the journey as a programming mentor for game developers?",
-        "answer": "excited and inspired",
+        "answer": [
+          "excited and inspired"
+        ],
         "evidence": [
           "D26:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -1727,11 +1877,15 @@
       },
       {
         "question": "What kind of games is James excited to play with his new video card?",
-        "answer": "RPGs",
+        "answer": [
+          "RPGs cyberpunk2077",
+          "RPGs"
+        ],
         "evidence": [
           "D26:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -1739,11 +1893,14 @@
       },
       {
         "question": "What inspired James to create his game?",
-        "answer": "Witcher 3",
+        "answer": [
+          "Witcher 3"
+        ],
         "evidence": [
           "D27:6"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -1751,11 +1908,14 @@
       },
       {
         "question": "What sparked James' passion for gaming when he was a kid?",
-        "answer": "Super Mario and The Legend of Zelda games",
+        "answer": [
+          "Super Mario and The Legend of Zelda games"
+        ],
         "evidence": [
           "D28:25"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -1763,11 +1923,14 @@
       },
       {
         "question": "What did James lose progress on due to a power outage?",
-        "answer": "a game",
+        "answer": [
+          "a game"
+        ],
         "evidence": [
           "D28:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -1775,12 +1938,15 @@
       },
       {
         "question": "What games were played at the gaming tournament organized by John on 31 October, 2022?",
-        "answer": "Fortnite, Overwatch, Apex Legends",
+        "answer": [
+          "Fortnite, Overwatch, Apex Legends"
+        ],
         "evidence": [
           "D29:1",
           "D29:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1788,12 +1954,15 @@
       },
       {
         "question": "What was the purpose of the gaming tournament organized by John on 31 October, 2022?",
-        "answer": "To raise money for a children's hospital",
+        "answer": [
+          "To raise money for a children's hospital"
+        ],
         "evidence": [
           "D29:1",
           "D29:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1801,12 +1970,15 @@
       },
       {
         "question": "What decision did James and Samantha make on 31 October, 2022?",
-        "answer": "To move in together",
+        "answer": [
+          "To move in together"
+        ],
         "evidence": [
           "D29:8",
           "D29:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1814,11 +1986,14 @@
       },
       {
         "question": "Where did James and Samantha decide to live together on 31 October, 2022?",
-        "answer": "In an apartment not far from McGee's bar",
+        "answer": [
+          "In an apartment not far from McGee's bar"
+        ],
         "evidence": [
           "D29:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1826,11 +2001,14 @@
       },
       {
         "question": "Why did James and Samantha choose an apartment near McGee's bar?",
-        "answer": "They love spending time together at the bar",
+        "answer": [
+          "They love spending time together at the bar"
+        ],
         "evidence": [
           "D29:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1838,11 +2016,14 @@
       },
       {
         "question": "What game is John hooked on playing on 5 November, 2022?",
-        "answer": "FIFA 23",
+        "answer": [
+          "FIFA 23"
+        ],
         "evidence": [
           "D30:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 30,
         "where_ground_truth": [
           30
@@ -1850,11 +2031,17 @@
       },
       {
         "question": "What did John suggest James practice before playing FIFA 23 together?",
-        "answer": "Control with a gamepad and timing",
+        "answer": [
+          "Control with a gamepad and timing"
+        ],
         "evidence": [
+          "D30:14",
+          "D30:16",
+          "D30:17",
           "D30:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 30,
         "where_ground_truth": [
           30
@@ -1862,11 +2049,14 @@
       },
       {
         "question": "What project did John work on with a game developer by 7 November, 2022?",
-        "answer": "An online board game",
+        "answer": [
+          "An online board game"
+        ],
         "evidence": [
           "D31:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 31,
         "where_ground_truth": [
           31
@@ -1874,497 +2064,79 @@
       },
       {
         "question": "What is the name of John's cousin's dog?",
-        "answer": "Luna",
+        "answer": [
+          "Luna"
+        ],
         "evidence": [
           "D31:22"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 31,
         "where_ground_truth": [
           31
         ]
       },
       {
-        "question": "What did John adopt in April 2022?",
+        "question": "What physical reason does John give for not being able to play bowling?",
+        "answer": [
+          "His fingers are too big."
+        ],
+        "evidence": [
+          "D1:26",
+          "D1:27"
+        ],
+        "category": 3,
+        "is_multi_modality": false,
+        "where": 1,
+        "where_ground_truth": [
+          1
+        ]
+      },
+      {
+        "question": "In which city is the shelter from which James adopted the puppy?",
+        "answer": [
+          "Stamford."
+        ],
         "evidence": [
           "D5:1"
         ],
-        "category": 5,
-        "adversarial_answer": "a pup",
+        "category": 3,
+        "is_multi_modality": true,
         "where": 5,
         "where_ground_truth": [
           5
         ]
       },
       {
-        "question": "What is the name of the kitten that was adopted by James?",
-        "evidence": [
-          "D5:1"
+        "question": "How was John feeling on April 18, 2022?",
+        "answer": [
+          "He wanted to be alone with nature."
         ],
-        "category": 5,
-        "adversarial_answer": "Ned",
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
-        "question": "What inspired John to create the game character in the virtual world?",
         "evidence": [
-          "D6:6"
+          "D6:7"
         ],
-        "category": 5,
-        "adversarial_answer": "Appearance of a woman he saw during a walk",
+        "category": 2,
+        "is_multi_modality": true,
         "where": 6,
         "where_ground_truth": [
           6
         ]
       },
       {
-        "question": "Which country did John visit in 2021?",
-        "evidence": [
-          "D6:12"
+        "question": "Did John and James study together?",
+        "answer": [
+          "Yes"
         ],
-        "category": 5,
-        "adversarial_answer": "Italy",
-        "where": 6,
-        "where_ground_truth": [
-          6
-        ]
-      },
-      {
-        "question": "What kind of assignment was giving James a hard time at work?",
         "evidence": [
-          "D7:13"
+          "D17:13",
+          "D17:16"
         ],
-        "category": 5,
-        "adversarial_answer": "Coding assignment",
-        "where": 7,
+        "category": 3,
+        "is_multi_modality": true,
+        "where": 17,
         "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What did James and his friends do with the remaining money after helping the dog shelter?",
-        "evidence": [
-          "D10:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "Bought groceries and cooked food for the homeless",
-        "where": 10,
-        "where_ground_truth": [
-          10
-        ]
-      },
-      {
-        "question": "What was the main goal of the money raised from the political campaign organized by John and his friends in May 2022?",
-        "evidence": [
-          "D10:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "Raise money for a dog shelter",
-        "where": 10,
-        "where_ground_truth": [
-          10
-        ]
-      },
-      {
-        "question": "What did the system John created help the illegal organization with?",
-        "evidence": [
-          "D11:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "tracking inventory, resources, and donations",
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
-        "question": "What did James create for the charitable foundation that helped generate reports for analysis?",
-        "evidence": [
-          "D11:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "computer application on smartphones",
-        "where": 11,
-        "where_ground_truth": [
-          11
-        ]
-      },
-      {
-        "question": "Who does James support in cricket matches?",
-        "evidence": [
-          "D13:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "Liverpool",
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "What is Max good at doing according to John?",
-        "evidence": [
-          "D14:23"
-        ],
-        "category": 5,
-        "adversarial_answer": "catching frisbees in mid-air",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "Will there be a background check required to volunteer with the organization James volunteered for?",
-        "evidence": [
-          "D15:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "No",
-        "where": 15,
-        "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "How did James relax in his free time on 9 July, 2022?",
-        "evidence": [
-          "D16:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "Reading",
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
-        "question": "What new hobby did John become interested in on 9 July, 2022?",
-        "evidence": [
-          "D16:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "Extreme sports",
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
-        "question": "When did John plan to return from his trip to Toronto and Vancouver?",
-        "evidence": [
-          "D16:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "July 20",
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
-        "question": "What made James leave his IT job?",
-        "evidence": [
-          "D18:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "to focus on things that align with his values and passions",
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "Which game tournaments does James plan to organize besides CS:GO?",
-        "evidence": [
-          "D18:9"
-        ],
-        "category": 5,
-        "adversarial_answer": "Fortnite competitions",
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "What happened to James's kitten during the recent visit to the clinic?",
-        "evidence": [
-          "D18:16"
-        ],
-        "category": 5,
-        "adversarial_answer": "routine examination and vaccination",
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "What aspect of \"The Witcher 3\" does John find boring?",
-        "evidence": [
-          "D19:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "shaping the world with choices",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What is John planning to do after receiving Samantha's phone number?",
-        "evidence": [
-          "D19:14"
-        ],
-        "category": 5,
-        "adversarial_answer": "call her",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What has James been teaching his siblings?",
-        "evidence": [
-          "D22:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "coding",
-        "where": 22,
-        "where_ground_truth": [
-          22
-        ]
-      },
-      {
-        "question": "How much does James pay per dance class?",
-        "evidence": [
-          "D23:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "$10",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What did James learn to make in the chemistry class besides omelette and meringue?",
-        "evidence": [
-          "D23:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "Dough",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "Why did James sign up for a ballet class?",
-        "evidence": [
-          "D23:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "He wanted to learn something new",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What did John prepare for the first time in the cooking class?",
-        "evidence": [
-          "D23:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "Omelette",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What is the name of the board game James tried in September 2022?",
-        "evidence": [
-          "D24:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "Dungeons of the Dragon",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "Where does John get his ideas from?",
-        "evidence": [
-          "D24:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "books, movies, dreams",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What did James use to play when he was younger to let off steam?",
-        "evidence": [
-          "D24:15"
-        ],
-        "category": 5,
-        "adversarial_answer": "drums",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What does James do to stay informed and constantly learn about game design?",
-        "evidence": [
-          "D25:13"
-        ],
-        "category": 5,
-        "adversarial_answer": "watch tutorials and keep up with developer forums",
-        "where": 25,
-        "where_ground_truth": [
-          25
-        ]
-      },
-      {
-        "question": "What kind of gig was James offered at the game dev non-profit organization?",
-        "evidence": [
-          "D26:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "programming mentor for game developers",
-        "where": 26,
-        "where_ground_truth": [
-          26
-        ]
-      },
-      {
-        "question": "What does James feel about starting the journey as a programming mentor for game developers?",
-        "evidence": [
-          "D26:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "excited and inspired",
-        "where": 26,
-        "where_ground_truth": [
-          26
-        ]
-      },
-      {
-        "question": "What inspired James to create his painting?",
-        "evidence": [
-          "D27:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Witcher 3",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What games were played at the gaming tournament organized by James on 31 October, 2022?",
-        "evidence": [
-          "D29:1",
-          "D29:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "Fortnite, Overwatch, Apex Legends",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What was the purpose of the gaming tournament organized by James on 31 October, 2022?",
-        "evidence": [
-          "D29:1",
-          "D29:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "To raise money for a children's hospital",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What decision did John and Samantha make on 31 October, 2022?",
-        "evidence": [
-          "D29:8",
-          "D29:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "To move in together",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "Where did John and Samantha decide to live together on 31 October, 2022?",
-        "evidence": [
-          "D29:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "In an apartment not far from McGee's bar",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "Why did John and Samantha choose an apartment near McGee's bar?",
-        "evidence": [
-          "D29:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "They love spending time together at the bar",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What game is James hooked on playing on 5 November, 2022?",
-        "evidence": [
-          "D30:14"
-        ],
-        "category": 5,
-        "adversarial_answer": "FIFA 23",
-        "where": 30,
-        "where_ground_truth": [
-          30
-        ]
-      },
-      {
-        "question": "What project did James work on with a game developer by 7 November, 2022?",
-        "evidence": [
-          "D31:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "An online board game",
-        "where": 31,
-        "where_ground_truth": [
-          31
-        ]
-      },
-      {
-        "question": "What is the name of James's cousin's dog?",
-        "evidence": [
-          "D31:22"
-        ],
-        "category": 5,
-        "adversarial_answer": "Luna",
-        "where": 31,
-        "where_ground_truth": [
-          31
+          17
         ]
       }
     ],

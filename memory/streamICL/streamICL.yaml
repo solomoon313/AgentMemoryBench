@@ -8,6 +8,8 @@ stream_icl:
   # The memory block is injected into the user message at the position specified by `where`
   prompt_template: "Here are some examples of the task you have completed:\n\n{examples}"
   where: front  # tail: inject after the user question | front: inject before the user question
+  storage_path: "memory/streamICL/trajectories.jsonl"
+  include_reasoning_content: true  # true: store assistant reasoning_content in exemplars, false: store final answer/tool trajectory only
 
   # RAG configuration
   rag:

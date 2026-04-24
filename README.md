@@ -114,8 +114,10 @@ AgentMemoryBench/
 │   ├── registry.py            # Memory registry system
 │   ├── zero_shot/             # Baseline (no memory)
 │   ├── streamICL/             # RAG-based retrieval (topk=4)
-│   ├── awmPro/                # System memory via workflows (topk=8)
+│   ├── AWM/                   # System memory via workflows
 │   ├── mem0/                  # Personal memory via preferences
+│   ├── everos_agent/          # Hosted agent memory via EverOS
+│   ├── everos_personal/       # Hosted personal memory via EverOS
 │   └── MEMs/                  # Multi-memory coordination (proposed)
 │
 ├── execution/                  # Execution engines
@@ -204,7 +206,7 @@ The Knowledge Graph task requires the Freebase database:
 
 Make sure `nltk` is installed via `requirements.txt`.
 
-#### Embedding Model (for streamICL and awmPro)
+#### Embedding Model (for streamICL and AWM)
 
 Download the embedding model for fair comparison:
 
@@ -214,7 +216,7 @@ Download the embedding model for fair comparison:
 
 # Configure paths in YAML files:
 # - memory/streamICL/streamICL.yaml
-# - memory/awmPro/awmPro.yaml
+# - memory/AWM/AWM.yaml
 ```
 
 #### Mem0 API Key
@@ -226,6 +228,35 @@ To use the Mem0 method:
    ```yaml
    api_key: "your_mem0_api_key_here"
    wait_time: 60.0  # Recommended: 60s for system tasks, 150s for personal, 100s for mixed
+   ```
+
+#### EverOS API Key
+
+To use the EverOS agent-memory method:
+
+1. Register for an API key at [everos.evermind.ai](https://everos.evermind.ai)
+2. Configure in `memory/everos_agent/everos_agent.yaml`:
+   ```yaml
+   api_key: "your_everos_api_key_here"
+   user_id: "exp_001"
+   search_method: "hybrid"
+   memory_types:
+     - "agent_memory"
+   flush_after_add: true
+   ```
+
+To use the EverOS personal-memory method:
+
+1. Register for an API key at [everos.evermind.ai](https://everos.evermind.ai)
+2. Configure in `memory/everos_personal/everos_personal.yaml`:
+   ```yaml
+   api_key: "your_everos_api_key_here"
+   user_id: "exp_001"
+   search_method: "hybrid"
+   memory_types:
+     - "episodic_memory"
+     - "profile"
+   flush_after_add: true
    ```
 
 ### 3. Start Backend Services
@@ -407,15 +438,19 @@ memory_mechanism:
 |--------|------|-------------|--------------|
 | **zero_shot** | Baseline | No memory | Reflects base LLM capability |
 | **streamICL** | Retrieval | RAG-based ICL | Stores full trajectories, topk=4 |
-| **awmPro** | System | Workflow memory | Extracts execution patterns, topk=8 |
+| **awm** | System | Workflow memory | Extracts reusable tool workflows |
 | **mem0** | Personal | Preference memory | Graph-based storage with ADD/UPDATE/DELETE |
+| **everos_agent** | Hosted | Agent memory | EverOS-backed add/flush/search over trajectories |
+| **everos_personal** | Hosted | Personal memory | EverOS-backed personal memory extraction and retrieval |
 | **MEMs** | Hybrid | Multi-memory | Coordinates system & personal memory via trigger model |
 
 ### Fair Comparison Notes
 
 - **streamICL**: Uses topk=4 following original paper
-- **awmPro**: Modified from AWM with mem0-inspired management, topk=8 based on workflow induction experiments
+- **awm**: Lightweight workflow memory based on workflow induction and retrieval
 - **mem0**: Uses best practices from official implementation
+- **everos_agent**: Uses EverOS `agent` add/flush/search APIs for experience memory
+- **everos_personal**: Uses EverOS `personal` add/flush/search APIs for factual or preference memory
 
 See ablation studies in paper for detailed topk analysis across different tasks.
 

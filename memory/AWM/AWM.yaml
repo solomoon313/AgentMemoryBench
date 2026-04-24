@@ -1,0 +1,23 @@
+AWM:
+  model_name: "gpt-4o-mini"
+
+  instruction_prompt_path: "memory/AWM/prompt/instruction_action.txt"
+  one_shot_prompt_path: "memory/AWM/prompt/one_shot_action.txt"
+
+  workflow_storage_path: "memory/AWM/workflows.jsonl"
+
+  prompt_template: |
+    Here are some useful workflows:
+
+    {workflows}
+
+  where: "front"
+  success_only: true
+  reward_bigger_than_zero: true
+  max_retries: 5
+
+  workflow_rag:
+    embedding_model: "C:/Users/123/Desktop/code/agent-memory/bge-base-en-v1.5"
+    top_k: 8
+    order: "similar_at_top"
+    seed: 42

@@ -1,7 +1,7 @@
 default:
   module: "src.server.tasks.locomo.LocomoBaseTask"
   parameters:
-    llm_judge_agent: "gpt-4o-mini"  # select agent from configs/llmapi/evaluate_agent.yaml
+    llm_judge_agent: "Qwen/Qwen3-14B"  # select agent from configs/llmapi/evaluate_agent.yaml
 
 locomo-0:
   parameters:

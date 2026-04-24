@@ -3,11 +3,14 @@
     "qa": [
       {
         "question": "Who did Maria have dinner with on May 3, 2023?",
-        "answer": "her mother",
+        "answer": [
+          "her mother"
+        ],
         "evidence": [
           "D13:16"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -15,11 +18,14 @@
       },
       {
         "question": "When did Maria donate her car?",
-        "answer": "21 December 2022",
+        "answer": [
+          "21 December 2022"
+        ],
         "evidence": [
           "D2:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -27,12 +33,15 @@
       },
       {
         "question": "What martial arts has John done?",
-        "answer": "Kickboxing, Taekwondo",
+        "answer": [
+          "Kickboxing, Taekwondo"
+        ],
         "evidence": [
           "D2:28",
           "D1:4"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           1,
@@ -41,12 +50,15 @@
       },
       {
         "question": "What type of volunteering have John and Maria both done?",
-        "answer": "Volunteering at a homeless shelter",
+        "answer": [
+          "Volunteering at a homeless shelter"
+        ],
         "evidence": [
           "D3:5",
           "D2:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           2,
@@ -55,11 +67,15 @@
       },
       {
         "question": "When did John join the online support group?",
-        "answer": "The week before 1 January 2023",
+        "answer": [
+          "The week before 1 January 2023",
+          "From December 19, 2022 to December 25, 2022"
+        ],
         "evidence": [
           "D3:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -67,11 +83,16 @@
       },
       {
         "question": "When did Maria go to the beach?",
-        "answer": "December 2022",
+        "answer": [
+          "December 2022"
+        ],
         "evidence": [
-          "D3:15"
+          "D3:12",
+          "D3:13",
+          "D3:14"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -79,7 +100,9 @@
       },
       {
         "question": "Where has Maria made friends?",
-        "answer": "homeless shelter, gym, church",
+        "answer": [
+          "homeless shelter, gym, church"
+        ],
         "evidence": [
           "D4:1",
           "D2:1",
@@ -87,6 +110,7 @@
           "D14:10"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           2,
@@ -96,13 +120,16 @@
         ]
       },
       {
-        "question": "What items des John mention having as a child?",
-        "answer": "A doll, a film camera",
+        "question": "What items does John mention having as a child?",
+        "answer": [
+          "A doll, a film camera"
+        ],
         "evidence": [
           "D5:13",
           "D3:15"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           3,
@@ -110,25 +137,16 @@
         ]
       },
       {
-        "question": "What might John's financial status be?",
-        "answer": "Middle-class or wealthy",
-        "evidence": [
-          "D5:5"
-        ],
-        "category": 3,
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
         "question": "Who gave Maria's family money when she was younger and her family was going through tough times?",
-        "answer": "Her aunt",
+        "answer": [
+          "Her aunt"
+        ],
         "evidence": [
           "D6:9",
           "D5:8"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 6,
         "where_ground_truth": [
           5,
@@ -136,43 +154,16 @@
         ]
       },
       {
-        "question": "When did Maria meet Jean?",
-        "answer": "February 24, 2023",
-        "evidence": [
-          "D7:1"
-        ],
-        "category": 2,
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What people has Maria met and helped while volunteering?",
-        "answer": "David, Jean, Cindy, Laura",
-        "evidence": [
-          "D7:5",
-          "D6:5",
-          "D27:8",
-          "D21:19"
-        ],
-        "category": 1,
-        "where": 27,
-        "where_ground_truth": [
-          6,
-          7,
-          21,
-          27
-        ]
-      },
-      {
         "question": "What test has John taken multiple times?",
-        "answer": "The military aptitude test",
+        "answer": [
+          "The military aptitude test"
+        ],
         "evidence": [
           "D8:18",
           "D3:11"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           3,
@@ -181,11 +172,15 @@
       },
       {
         "question": "When did Maria's grandmother pass away?",
-        "answer": "The week before 6 March 2023",
+        "answer": [
+          "The week before 6 March 2023",
+          "From February 27, 2023 to March 5, 2023"
+        ],
         "evidence": [
           "D8:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -193,12 +188,15 @@
       },
       {
         "question": "Would John be considered a patriotic person?",
-        "answer": "Yes",
+        "answer": [
+          "Yes"
+        ],
         "evidence": [
           "D8:18",
           "D8:20"
         ],
         "category": 3,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -206,12 +204,15 @@
       },
       {
         "question": "What writing classes has Maria taken?",
-        "answer": "Poetry, creative writing",
+        "answer": [
+          "Poetry, creative writing"
+        ],
         "evidence": [
           "D9:1",
           "D7:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           7,
@@ -220,23 +221,15 @@
       },
       {
         "question": "When did John get his degree?",
-        "answer": "The week before 2 April 2023",
+        "answer": [
+          "The week before 2 April 2023",
+          "From March 20, 2023 to March 26, 2023"
+        ],
         "evidence": [
           "D9:2"
         ],
         "category": 2,
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
-        "question": "What might John's degree be in?",
-        "answer": "Political science, Public administration, Public affairs",
-        "evidence": [
-          "D9:6"
-        ],
-        "category": 3,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           9
@@ -244,12 +237,15 @@
       },
       {
         "question": "Who did John go to yoga with?",
-        "answer": "Rob",
+        "answer": [
+          "Rob"
+        ],
         "evidence": [
           "D7:16",
           "D10:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           7,
@@ -258,12 +254,15 @@
       },
       {
         "question": "What damages have happened to John's car?",
-        "answer": "Broken windshield, Car broke down",
+        "answer": [
+          "Broken windshield, Car broke down"
+        ],
         "evidence": [
           "D11:1",
           "D4:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           4,
@@ -272,12 +271,15 @@
       },
       {
         "question": "When did John take a road trip to the Pacific Northwest?",
-        "answer": "2022",
+        "answer": [
+          "2022"
+        ],
         "evidence": [
           "D11:3",
           "D11:5"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 11,
         "where_ground_truth": [
           11
@@ -285,12 +287,15 @@
       },
       {
         "question": "What areas of the U.S. has John been to or is planning to go to?",
-        "answer": "Pacific northwest, east coast",
+        "answer": [
+          "Pacific northwest, east coast"
+        ],
         "evidence": [
           "D11:5",
           "D12:17"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           11,
@@ -299,37 +304,29 @@
       },
       {
         "question": "When did John go to a convention with colleagues?",
-        "answer": "March 2023",
+        "answer": [
+          "March 2023"
+        ],
         "evidence": [
           "D12:9"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
         ]
       },
       {
-        "question": "What desserts has Maria made?",
-        "answer": "Banana split sundae, Peach cobbler",
-        "evidence": [
-          "D2:25",
-          "D13:18"
-        ],
-        "category": 1,
-        "where": 13,
-        "where_ground_truth": [
-          2,
-          13
-        ]
-      },
-      {
         "question": "When did John start boot camp with his family?",
-        "answer": "April.2023",
+        "answer": [
+          "April.2023"
+        ],
         "evidence": [
           "D13:3"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -337,12 +334,15 @@
       },
       {
         "question": "What European countries has Maria been to?",
-        "answer": "Spain, England",
+        "answer": [
+          "Spain, England"
+        ],
         "evidence": [
           "D13:24",
           "D8:15"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           8,
@@ -351,12 +351,15 @@
       },
       {
         "question": "What has Maria done to feel closer to her faith?",
-        "answer": "Join a local church, buy a cross necklace",
+        "answer": [
+          "Join a local church, buy a cross necklace"
+        ],
         "evidence": [
           "D14:10",
           "D11:10"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           11,
@@ -365,42 +368,31 @@
       },
       {
         "question": "When did John have a party with veterans?",
-        "answer": "The Friday before 20 May 2023",
+        "answer": [
+          "The Friday before 20 May 2023",
+          "May 19, 2023"
+        ],
         "evidence": [
           "D15:11"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 15,
         "where_ground_truth": [
-          15
-        ]
-      },
-      {
-        "question": "What causes does John feel passionate about supporting?",
-        "answer": "Veterans, schools, infrastructure",
-        "evidence": [
-          "D15:3",
-          "D12:5",
-          "D9:8",
-          "D1:8"
-        ],
-        "category": 1,
-        "where": 15,
-        "where_ground_truth": [
-          1,
-          9,
-          12,
           15
         ]
       },
       {
         "question": "What events is Maria planning for the homeless shelter funraiser?",
-        "answer": "Chili cook-off, ring-toss tournament",
+        "answer": [
+          "Chili cook-off, ring-toss tournament"
+        ],
         "evidence": [
           "D16:4",
           "D15:18"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           15,
@@ -409,13 +401,16 @@
       },
       {
         "question": "What shelters does Maria volunteer at?",
-        "answer": "The homeless shelter, the dog shelter",
+        "answer": [
+          "The homeless shelter, the dog shelter"
+        ],
         "evidence": [
           "D2:1",
           "D11:10",
           "D17:12"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           2,
@@ -425,11 +420,14 @@
       },
       {
         "question": "When did John get his dog Max?",
-        "answer": "In 2013",
+        "answer": [
+          "In 2013"
+        ],
         "evidence": [
           "D17:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -437,12 +435,15 @@
       },
       {
         "question": "What outdoor activities has John done with his colleagues?",
-        "answer": "Hiking, mountaineering",
+        "answer": [
+          "Hiking, mountaineering"
+        ],
         "evidence": [
           "D18:2",
           "D16:2"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 18,
         "where_ground_truth": [
           16,
@@ -451,13 +452,16 @@
       },
       {
         "question": "What types of yoga has Maria practiced?",
-        "answer": "Aerial, kundalini",
+        "answer": [
+          "Aerial, kundalini"
+        ],
         "evidence": [
           "D1:3",
           "D18:15",
           "D19:3"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           1,
@@ -467,11 +471,15 @@
       },
       {
         "question": "When did Maria join a gym?",
-        "answer": "The week before 16 June 2023",
+        "answer": [
+          "The week before 16 June 2023",
+          "From June 5, 2023 to June 11, 2023"
+        ],
         "evidence": [
           "D19:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -479,12 +487,15 @@
       },
       {
         "question": "What states has Maria vacationed at?",
-        "answer": "Oregon, Florida",
+        "answer": [
+          "Oregon, Florida"
+        ],
         "evidence": [
           "D19:23",
           "D18:3"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           18,
@@ -493,12 +504,15 @@
       },
       {
         "question": "What music events has John attended?",
-        "answer": "Live music event, violin concert",
+        "answer": [
+          "Live music event, violin concert"
+        ],
         "evidence": [
           "D20:4",
           "D8:12"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           8,
@@ -506,43 +520,15 @@
         ]
       },
       {
-        "question": "What events for veterans has John participated in?",
-        "answer": "Petition, march, party, visiting veterans hospital, 5K charity run",
-        "evidence": [
-          "D15:1",
-          "D15:11",
-          "D21:22",
-          "D24:1",
-          "D29:4"
-        ],
-        "category": 1,
-        "where": 29,
-        "where_ground_truth": [
-          15,
-          21,
-          24,
-          29
-        ]
-      },
-      {
         "question": "When did Maria get in a car accident?",
-        "answer": "July 2, 2023",
+        "answer": [
+          "July 2, 2023"
+        ],
         "evidence": [
           "D21:3"
         ],
         "category": 2,
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "Around which US holiday did Maria get into a car accident?",
-        "answer": "Independence Day",
-        "evidence": [
-          "D21:3"
-        ],
-        "category": 3,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
@@ -550,12 +536,15 @@
       },
       {
         "question": "What are the names of John's children?",
-        "answer": "Kyle, Sara",
+        "answer": [
+          "Kyle, Sara"
+        ],
         "evidence": [
           "D8:4",
           "D22:7"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           8,
@@ -564,11 +553,14 @@
       },
       {
         "question": "Does John live close to a beach or the mountains?",
-        "answer": "beach",
+        "answer": [
+          "beach"
+        ],
         "evidence": [
           "D22:15"
         ],
         "category": 3,
+        "is_multi_modality": true,
         "where": 22,
         "where_ground_truth": [
           22
@@ -576,12 +568,15 @@
       },
       {
         "question": "What area was hit by a flood?",
-        "answer": "West County",
+        "answer": [
+          "West County"
+        ],
         "evidence": [
           "D14:21",
           "D23:1"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           14,
@@ -590,95 +585,48 @@
       },
       {
         "question": "When was John's old area hit with a flood?",
-        "answer": "The week before 7 July 2023",
+        "answer": [
+          "The week before 7 July 2023",
+          "From June 26, 2023 to July 2, 2023"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
         ]
       },
       {
-        "question": "What activities has Maria done with her church friends?",
-        "answer": "Hiking, picnic, volunteer work",
-        "evidence": [
-          "D25:2",
-          "D24:6",
-          "D28:5"
-        ],
-        "category": 1,
-        "where": 28,
-        "where_ground_truth": [
-          24,
-          25,
-          28
-        ]
-      },
-      {
-        "question": "Would John be open to moving to another country?",
-        "answer": "No, he has goals specifically in the U.S. like joining the military and running for office.",
-        "evidence": [
-          "D24:3",
-          "D7:2"
-        ],
-        "category": 3,
-        "where": 24,
-        "where_ground_truth": [
-          7,
-          24
-        ]
-      },
-      {
         "question": "When did Maria go hiking with her church friends?",
-        "answer": "The weekend before 22 July 2023",
+        "answer": [
+          "The weekend before 22 July 2023",
+          "From July 15, 2023 to July 16, 2023"
+        ],
         "evidence": [
           "D25:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 25,
         "where_ground_truth": [
           25
-        ]
-      },
-      {
-        "question": "What exercises has John done?",
-        "answer": "Weight training, Circuit training, Kickboxing, yoga",
-        "evidence": [
-          "D25:17",
-          "D25:13",
-          "D10:1",
-          "D1:4"
-        ],
-        "category": 1,
-        "where": 25,
-        "where_ground_truth": [
-          1,
-          10,
-          25
-        ]
-      },
-      {
-        "question": "When did John have his first firefighter call-out?",
-        "answer": "The sunday before 3` July 2023",
-        "evidence": [
-          "D26:4"
-        ],
-        "category": 2,
-        "where": 26,
-        "where_ground_truth": [
-          26
         ]
       },
       {
         "question": "What food item did Maria drop off at the homeless shelter?",
-        "answer": "Cakes",
+        "answer": [
+          "Cakes",
+          "bake stuff"
+        ],
         "evidence": [
           "D26:1",
           "D25:19"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           25,
@@ -686,30 +634,15 @@
         ]
       },
       {
-        "question": "What attributes describe John?",
-        "answer": "Selfless, family-oriented, passionate, rational",
-        "evidence": [
-          "D26:6",
-          "D2:14",
-          "D3:5",
-          "D4:6"
-        ],
-        "category": 3,
-        "where": 26,
-        "where_ground_truth": [
-          2,
-          3,
-          4,
-          26
-        ]
-      },
-      {
         "question": "When did Maria start volunteering at the homeless shelter?",
-        "answer": "Around August 2022",
+        "answer": [
+          "Around August 2022"
+        ],
         "evidence": [
           "D27:4"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -717,12 +650,15 @@
       },
       {
         "question": "Who have written notes of gratitude to Maria?",
-        "answer": "Cindy, Laura",
+        "answer": [
+          "Cindy, Laura"
+        ],
         "evidence": [
           "D27:8",
           "D21:19"
         ],
         "category": 1,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           21,
@@ -731,11 +667,14 @@
       },
       {
         "question": "When did John help renovate his hometown community center?",
-        "answer": "2022",
+        "answer": [
+          "2022"
+        ],
         "evidence": [
           "D28:11"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -743,11 +682,14 @@
       },
       {
         "question": "When did Maria take up community work with her church friends?",
-        "answer": "August 4, 2023",
+        "answer": [
+          "August 4, 2023"
+        ],
         "evidence": [
           "D28:8"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -755,11 +697,15 @@
       },
       {
         "question": "When did Maria receive a medal from the homeless shelter?",
-        "answer": "The week before 9 August 2023",
+        "answer": [
+          "The week before 9 August 2023",
+          "From July 31, 2023 to August 6, 2023"
+        ],
         "evidence": [
           "D29:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           29
@@ -767,41 +713,32 @@
       },
       {
         "question": "When did John participate in a 5K charity run?",
-        "answer": "first weekend of August 2023",
+        "answer": [
+          "first weekend of August 2023",
+          "Last weekend before August 9th"
+        ],
         "evidence": [
           "D29:2",
           "D29:4"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What causes has John done events for?",
-        "answer": "Toy drive, Community food drive, veterans, domestic violence",
-        "evidence": [
-          "D3:5",
-          "D6:12",
-          "D29:4",
-          "D29:10"
-        ],
-        "category": 1,
-        "where": 29,
-        "where_ground_truth": [
-          3,
-          6,
           29
         ]
       },
       {
         "question": "When did Maria get Coco?",
-        "answer": "Two weeks before 11 August 2023",
+        "answer": [
+          "Two weeks before 11 August 2023",
+          "From July 24, 2023 to July 30, 2023"
+        ],
         "evidence": [
           "D30:1"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 30,
         "where_ground_truth": [
           30
@@ -809,11 +746,14 @@
       },
       {
         "question": "When did John go on a camping trip with Max?",
-        "answer": "The summer of 2022",
+        "answer": [
+          "The summer of 2022"
+        ],
         "evidence": [
           "D30:6"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 30,
         "where_ground_truth": [
           30
@@ -821,12 +761,15 @@
       },
       {
         "question": "What are Maria's dogs' names?",
-        "answer": "Coco, Shadow",
+        "answer": [
+          "Coco, Shadow"
+        ],
         "evidence": [
           "D30:1",
           "D31:4"
         ],
         "category": 1,
+        "is_multi_modality": true,
         "where": 31,
         "where_ground_truth": [
           30,
@@ -835,38 +778,31 @@
       },
       {
         "question": "When did Maria adopt Shadow?",
-        "answer": "The week before 13 August 2023",
+        "answer": [
+          "The week before 13 August 2023",
+          "From July 31, 2023 to August 6, 2023"
+        ],
         "evidence": [
           "D31:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 31,
         "where_ground_truth": [
-          31
-        ]
-      },
-      {
-        "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
-        "answer": "two",
-        "evidence": [
-          "D30:1",
-          "D31:2"
-        ],
-        "category": 1,
-        "where": 31,
-        "where_ground_truth": [
-          30,
           31
         ]
       },
       {
         "question": "How many weeks passed between Maria adopting Coco and Shadow?",
-        "answer": "two weeks",
+        "answer": [
+          "two weeks"
+        ],
         "evidence": [
           "D30:1",
           "D31:2"
         ],
         "category": 2,
+        "is_multi_modality": true,
         "where": 31,
         "where_ground_truth": [
           30,
@@ -874,30 +810,15 @@
         ]
       },
       {
-        "question": "What job might Maria pursue in the future?",
-        "answer": "Shelter coordinator, Counselor",
-        "evidence": [
-          "D32:14",
-          "D5:8",
-          "D11:10",
-          "D27:4"
-        ],
-        "category": 3,
-        "where": 32,
-        "where_ground_truth": [
-          5,
-          11,
-          27,
-          32
-        ]
-      },
-      {
         "question": "What is John's main focus in local politics?",
-        "answer": "Improving education and infrastructure",
+        "answer": [
+          "Improving education and infrastructure"
+        ],
         "evidence": [
           "D1:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -905,11 +826,14 @@
       },
       {
         "question": "What sparked John's interest in improving education and infrastructure in the community?",
-        "answer": "Seeing how lack of education and crumbling infrastructure affected his neighborhood while growing up.",
+        "answer": [
+          "Seeing how lack of education and crumbling infrastructure affected his neighborhood while growing up."
+        ],
         "evidence": [
           "D1:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 1,
         "where_ground_truth": [
           1
@@ -917,11 +841,14 @@
       },
       {
         "question": "How did the extra funding help the school shown in the photo shared by John?",
-        "answer": "Enabled needed repairs and renovations, making the learning environment safer and more modern for students.",
+        "answer": [
+          "Enabled needed repairs and renovations, making the learning environment safer and more modern for students."
+        ],
         "evidence": [
           "D1:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
@@ -929,23 +856,29 @@
       },
       {
         "question": "What type of workout class did Maria start doing in December 2023?",
-        "answer": "aerial yoga",
+        "answer": [
+          "aerial yoga"
+        ],
         "evidence": [
           "D1:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 1,
         "where_ground_truth": [
           1
         ]
       },
       {
-        "question": "What did Maria donate to a homeless shelter in December 2023?",
-        "answer": "old car",
+        "question": "What did Maria donate to a homeless shelter in December 2022?",
+        "answer": [
+          "old car"
+        ],
         "evidence": [
           "D2:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -953,11 +886,14 @@
       },
       {
         "question": "What kind of meal did John and his family make together in the photo shared by John?",
-        "answer": "pizza",
+        "answer": [
+          "pizza"
+        ],
         "evidence": [
           "D2:24"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 2,
         "where_ground_truth": [
           2
@@ -965,11 +901,14 @@
       },
       {
         "question": "What kind of online group did John join?",
-        "answer": "service-focused online group",
+        "answer": [
+          "service-focused online group"
+        ],
         "evidence": [
           "D3:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -977,11 +916,14 @@
       },
       {
         "question": "What kind of activities did John and his mates from the online group do as part of their service efforts?",
-        "answer": "gave out food and supplies at a homeless shelter, organized a toy drive for kids in need",
+        "answer": [
+          "gave out food and supplies at a homeless shelter, organized a toy drive for kids in need"
+        ],
         "evidence": [
           "D3:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 3,
         "where_ground_truth": [
           3
@@ -989,11 +931,14 @@
       },
       {
         "question": "Who inspired Maria to start volunteering?",
-        "answer": "Her aunt",
+        "answer": [
+          "Her aunt"
+        ],
         "evidence": [
           "D5:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1001,11 +946,14 @@
       },
       {
         "question": "Why did Maria sit with the little girl at the shelter event in February 2023?",
-        "answer": "The girl seemed sad and had no other family",
+        "answer": [
+          "The girl seemed sad and had no other family"
+        ],
         "evidence": [
           "D5:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 5,
         "where_ground_truth": [
           5
@@ -1013,11 +961,14 @@
       },
       {
         "question": "What did Jean go through before meeting Maria?",
-        "answer": "divorce, job loss, homelessness",
+        "answer": [
+          "divorce, job loss, homelessness"
+        ],
         "evidence": [
           "D7:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1025,11 +976,14 @@
       },
       {
         "question": "Why did John decide to run for office again?",
-        "answer": "saw the impact he could make in the community through politics",
+        "answer": [
+          "saw the impact he could make in the community through politics"
+        ],
         "evidence": [
           "D7:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1037,11 +991,14 @@
       },
       {
         "question": "What activity did John's colleague, Rob, invite him to?",
-        "answer": "beginner's yoga class",
+        "answer": [
+          "beginner's yoga class"
+        ],
         "evidence": [
           "D7:16"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 7,
         "where_ground_truth": [
           7
@@ -1049,11 +1006,14 @@
       },
       {
         "question": "What is the name of John's one-year-old child?",
-        "answer": "Kyle",
+        "answer": [
+          "Kyle"
+        ],
         "evidence": [
           "D8:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1061,23 +1021,14 @@
       },
       {
         "question": "How often does John take his kids to the park?",
-        "answer": "A few times a week",
+        "answer": [
+          "A few times a week"
+        ],
         "evidence": [
           "D8:8"
         ],
         "category": 4,
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What did Maria make for her home to remind her of a trip to England?",
-        "answer": "painting of a castle on a hill",
-        "evidence": [
-          "D8:15"
-        ],
-        "category": 4,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
@@ -1085,35 +1036,30 @@
       },
       {
         "question": "Where did Maria get the idea for the castle shadow box in her home?",
-        "answer": "England",
+        "answer": [
+          "England",
+          "London, England"
+        ],
         "evidence": [
           "D8:15"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
         ]
       },
       {
-        "question": "What did John receive a certificate for?",
-        "answer": "completion of a university degree",
-        "evidence": [
-          "D9:2"
-        ],
-        "category": 4,
-        "where": 9,
-        "where_ground_truth": [
-          9
-        ]
-      },
-      {
         "question": "What areas is John particularly interested in for policymaking?",
-        "answer": "education and infrastructure",
+        "answer": [
+          "education and infrastructure"
+        ],
         "evidence": [
           "D9:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 9,
         "where_ground_truth": [
           9
@@ -1121,11 +1067,14 @@
       },
       {
         "question": "What did Maria participate in last weekend before April 10, 2023?",
-        "answer": "a 5K charity run",
+        "answer": [
+          "a 5K charity run"
+        ],
         "evidence": [
           "D10:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1133,11 +1082,14 @@
       },
       {
         "question": "What event did John volunteer at last weekend?",
-        "answer": "career fair at a local school",
+        "answer": [
+          "career fair at a local school"
+        ],
         "evidence": [
           "D10:13"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 10,
         "where_ground_truth": [
           10
@@ -1145,11 +1097,14 @@
       },
       {
         "question": "What did John do that put a strain on his wallet?",
-        "answer": "His car broke down",
+        "answer": [
+          "His car broke down"
+        ],
         "evidence": [
           "D11:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1157,11 +1112,14 @@
       },
       {
         "question": "Where did John explore on a road trip last year?",
-        "answer": "Pacific Northwest",
+        "answer": [
+          "Pacific Northwest"
+        ],
         "evidence": [
           "D11:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 11,
         "where_ground_truth": [
           11
@@ -1169,11 +1127,14 @@
       },
       {
         "question": "What topic has John been blogging about recently?",
-        "answer": "politics and the government",
+        "answer": [
+          "politics and the government"
+        ],
         "evidence": [
           "D12:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1181,11 +1142,14 @@
       },
       {
         "question": "Why did John start blogging about politics and policies?",
-        "answer": "raise awareness and start conversations to create positive change",
+        "answer": [
+          "raise awareness and start conversations to create positive change"
+        ],
         "evidence": [
           "D12:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1193,11 +1157,14 @@
       },
       {
         "question": "What was the focus of John's recent research and writing on his blog?",
-        "answer": "education reform and infrastructure development",
+        "answer": [
+          "education reform and infrastructure development"
+        ],
         "evidence": [
           "D12:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1205,11 +1172,14 @@
       },
       {
         "question": "What did John attend with his colleagues in March 2023?",
-        "answer": "a tech-for-good convention",
+        "answer": [
+          "a convention"
+        ],
         "evidence": [
           "D12:9"
         ],
         "category": 2,
+        "is_multi_modality": false,
         "where": 12,
         "where_ground_truth": [
           12
@@ -1217,11 +1187,14 @@
       },
       {
         "question": "How often does John work out with his family?",
-        "answer": "Three times a week",
+        "answer": [
+          "Three times a week"
+        ],
         "evidence": [
           "D13:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1229,11 +1202,14 @@
       },
       {
         "question": "How has John's fitness improved since starting boot camps with his family?",
-        "answer": "More energy, gains in strength and endurance",
+        "answer": [
+          "More energy, gains in strength and endurance"
+        ],
         "evidence": [
           "D13:5"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1241,11 +1217,14 @@
       },
       {
         "question": "What kind of food did Maria have on her dinner spread iwth her mother?",
-        "answer": "Salads, sandwiches, homemade desserts",
+        "answer": [
+          "Salads, sandwiches, homemade desserts"
+        ],
         "evidence": [
           "D13:18"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1253,11 +1232,14 @@
       },
       {
         "question": "What activity did Maria and her mom do together in May 2023?",
-        "answer": "Made dinner together",
+        "answer": [
+          "Made dinner together"
+        ],
         "evidence": [
           "D13:16"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 13,
         "where_ground_truth": [
           13
@@ -1265,11 +1247,14 @@
       },
       {
         "question": "What did Maria do to feel closer to a community and her faith?",
-        "answer": "joined a nearby church",
+        "answer": [
+          "joined a nearby church"
+        ],
         "evidence": [
           "D14:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1277,11 +1262,14 @@
       },
       {
         "question": "Why did Maria join a nearby church recently?",
-        "answer": "to feel closer to a community and her faith",
+        "answer": [
+          "to feel closer to a community and her faith"
+        ],
         "evidence": [
           "D14:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 14,
         "where_ground_truth": [
           14
@@ -1289,11 +1277,14 @@
       },
       {
         "question": "What did John host for the veterans in May 2023 as part of the project?",
-        "answer": "a small party to share their stories",
+        "answer": [
+          "a small party to share their stories"
+        ],
         "evidence": [
           "D15:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1301,11 +1292,14 @@
       },
       {
         "question": "What did John and the veterans do during the small party?",
-        "answer": "share stories and make connections",
+        "answer": [
+          "share stories and make connections"
+        ],
         "evidence": [
           "D15:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
@@ -1313,35 +1307,29 @@
       },
       {
         "question": "What emotions did John feel during the small party with the veterans?",
-        "answer": "heartwarming",
+        "answer": [
+          "heartwarming"
+        ],
         "evidence": [
           "D15:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 15,
         "where_ground_truth": [
           15
         ]
       },
       {
-        "question": "What event is Maria getting ready for at the shelter on May 25, 2023?",
-        "answer": "fundraiser",
-        "evidence": [
-          "D16:2"
-        ],
-        "category": 4,
-        "where": 16,
-        "where_ground_truth": [
-          16
-        ]
-      },
-      {
         "question": "What does Maria need to spread the word about for the fundraiser for the volunteer shelter?",
-        "answer": "chili cook-off",
+        "answer": [
+          "chili cook-off"
+        ],
         "evidence": [
           "D16:4"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 16,
         "where_ground_truth": [
           16
@@ -1349,11 +1337,14 @@
       },
       {
         "question": "What was the name of the pet that John had to say goodbye to on 3 June, 2023?",
-        "answer": "Max",
+        "answer": [
+          "Max"
+        ],
         "evidence": [
           "D17:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1361,11 +1352,14 @@
       },
       {
         "question": "How long was Max a part of John's family?",
-        "answer": "10 years",
+        "answer": [
+          "10 years"
+        ],
         "evidence": [
           "D17:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1373,11 +1367,14 @@
       },
       {
         "question": "How does John plan to honor the memories of his beloved pet?",
-        "answer": "By considering adopting a rescue dog",
+        "answer": [
+          "By considering adopting a rescue dog"
+        ],
         "evidence": [
           "D17:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1385,11 +1382,14 @@
       },
       {
         "question": "What important values does John want to teach his kids through adopting a rescue dog?",
-        "answer": "Responsibility and compassion",
+        "answer": [
+          "Responsibility and compassion"
+        ],
         "evidence": [
           "D17:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1397,11 +1397,14 @@
       },
       {
         "question": "What new activity did Maria start recently, as mentioned on 3 June, 2023?",
-        "answer": "volunteering at a local dog shelter once a month",
+        "answer": [
+          "volunteering at a local dog shelter once a month"
+        ],
         "evidence": [
           "D17:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 17,
         "where_ground_truth": [
           17
@@ -1409,11 +1412,14 @@
       },
       {
         "question": "What did Maria say it was like being at the waterfall in Oregon?",
-        "answer": "Like being in a fairy tale",
+        "answer": [
+          "Like being in a fairy tale"
+        ],
         "evidence": [
           "D18:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1421,11 +1427,14 @@
       },
       {
         "question": "What does Maria say she feels when doing upside-down yoga poses?",
-        "answer": "Free and light",
+        "answer": [
+          "Free and light"
+        ],
         "evidence": [
           "D18:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 18,
         "where_ground_truth": [
           18
@@ -1433,11 +1442,15 @@
       },
       {
         "question": "What exciting news did Maria share on 16 June, 2023?",
-        "answer": "joined a gym",
+        "answer": [
+          "joined a gym",
+          "joined a gym last week"
+        ],
         "evidence": [
           "D19:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1445,11 +1458,14 @@
       },
       {
         "question": "What yoga activity has Maria been trying to improve her strength and endurance?",
-        "answer": "kundalini yoga",
+        "answer": [
+          "kundalini yoga"
+        ],
         "evidence": [
           "D19:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1457,11 +1473,14 @@
       },
       {
         "question": "What did John recently get promoted to?",
-        "answer": "assistant manager",
+        "answer": [
+          "assistant manager"
+        ],
         "evidence": [
           "D19:8"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1469,11 +1488,14 @@
       },
       {
         "question": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
-        "answer": "self-doubt",
+        "answer": [
+          "self-doubt"
+        ],
         "evidence": [
           "D19:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1481,11 +1503,14 @@
       },
       {
         "question": "How does John describe the support he received during his journey to becoming assistant manager?",
-        "answer": "having support at home and his own grit",
+        "answer": [
+          "having support at home and his own grit"
+        ],
         "evidence": [
           "D19:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 19,
         "where_ground_truth": [
           19
@@ -1493,11 +1518,14 @@
       },
       {
         "question": "What kind of event did John and his family attend in June 2023?",
-        "answer": "live music event",
+        "answer": [
+          "live music event"
+        ],
         "evidence": [
           "D20:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 20,
         "where_ground_truth": [
           20
@@ -1505,11 +1533,17 @@
       },
       {
         "question": "Why did Maria need to help her cousin find a new place to live?",
-        "answer": "Her cousin had to leave and find a new place in a hurry.",
+        "answer": [
+          "Her cousin had to leave and find a new place in a hurry.",
+          "Her cousin had a tough time recently."
+        ],
         "evidence": [
-          "D21:5"
+          "D21:5",
+          "D21:6",
+          "D21:7"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1517,11 +1551,14 @@
       },
       {
         "question": "What event did John participate in to show support for veterans' rights?",
-        "answer": "marching event",
+        "answer": [
+          "marching event"
+        ],
         "evidence": [
           "D21:22"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1529,11 +1566,14 @@
       },
       {
         "question": "What inspired John to join the marching event for veterans' rights?",
-        "answer": "Respect for the military and the desire to show support",
+        "answer": [
+          "Respect for the military and the desire to show support"
+        ],
         "evidence": [
           "D21:24"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 21,
         "where_ground_truth": [
           21
@@ -1541,11 +1581,14 @@
       },
       {
         "question": "How often does John get to see sunsets like the one he shared with Maria?",
-        "answer": "At least once a week",
+        "answer": [
+          "At least once a week"
+        ],
         "evidence": [
           "D22:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 22,
         "where_ground_truth": [
           22
@@ -1553,11 +1596,14 @@
       },
       {
         "question": "What natural disaster affected John's old area on 7 July, 2023?",
-        "answer": "Flood",
+        "answer": [
+          "Flood"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1565,11 +1611,14 @@
       },
       {
         "question": "How did the flood impact the homes in John's old area?",
-        "answer": "Lots of homes were ruined.",
+        "answer": [
+          "Lots of homes were ruined."
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1577,11 +1626,14 @@
       },
       {
         "question": "What motivated Maria and John to discuss potential solutions for their community on 7 July, 2023?",
-        "answer": "Flood in John's old area",
+        "answer": [
+          "Flood in John's old area"
+        ],
         "evidence": [
           "D23:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1589,11 +1641,14 @@
       },
       {
         "question": "What did Maria plan to do later on the evening of 7 July, 2023?",
-        "answer": "have dinner with friends from the gym",
+        "answer": [
+          "have dinner with friends from the gym"
+        ],
         "evidence": [
           "D23:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 23,
         "where_ground_truth": [
           23
@@ -1601,11 +1656,14 @@
       },
       {
         "question": "What kind of activities did Maria do at the picnic with her church friends?",
-        "answer": "played games like charades and a scavenger hunt",
+        "answer": [
+          "played games like charades and a scavenger hunt"
+        ],
         "evidence": [
           "D24:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1613,11 +1671,17 @@
       },
       {
         "question": "What does John appreciate about the veteran's hospital visit?",
-        "answer": "the resilience of the veterans and their inspiring stories",
+        "answer": [
+          "the resilience of the veterans and their inspiring stories",
+          "Samuel's resilience and the hope it gave him."
+        ],
         "evidence": [
-          "D24:3"
+          "D24:2",
+          "D24:3",
+          "D24:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1625,11 +1689,14 @@
       },
       {
         "question": "What did John take away from visiting the veteran's hospital?",
-        "answer": "appreciation for giving back",
+        "answer": [
+          "appreciation for giving back"
+        ],
         "evidence": [
           "D24:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
@@ -1637,35 +1704,29 @@
       },
       {
         "question": "Why did John feel inspired to join the military after the visit to the hospital?",
-        "answer": "seeing the resilience of the veterans",
+        "answer": [
+          "seeing the resilience of the veterans"
+        ],
         "evidence": [
           "D24:3"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 24,
         "where_ground_truth": [
           24
         ]
       },
       {
-        "question": "In what activity did Maria and her church friends participate in July 2023?",
-        "answer": "hiking",
-        "evidence": [
-          "D25:2"
-        ],
-        "category": 4,
-        "where": 25,
-        "where_ground_truth": [
-          25
-        ]
-      },
-      {
         "question": "What does John think about trying new classes at the yoga studio?",
-        "answer": "Trying new classes is a fun way to switch up the exercise routine.",
+        "answer": [
+          "Trying new classes is a fun way to switch up the exercise routine."
+        ],
         "evidence": [
           "D25:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -1673,11 +1734,14 @@
       },
       {
         "question": "Which activity has John done apart from yoga at the studio?",
-        "answer": "weight training",
+        "answer": [
+          "weight training"
+        ],
         "evidence": [
           "D25:17"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 25,
         "where_ground_truth": [
           25
@@ -1685,11 +1749,14 @@
       },
       {
         "question": "What community service did Maria mention that she was involved in on 31 July, 2023?",
-        "answer": "volunteered at a homeless shelter",
+        "answer": [
+          "volunteered at a homeless shelter"
+        ],
         "evidence": [
           "D26:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 26,
         "where_ground_truth": [
           26
@@ -1697,11 +1764,14 @@
       },
       {
         "question": "How did Maria start volunteering at the homeless shelter?",
-        "answer": "Witnessed a family struggling on the streets and reached out to the shelter",
+        "answer": [
+          "Witnessed a family struggling on the streets and reached out to the shelter"
+        ],
         "evidence": [
           "D27:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -1709,11 +1779,14 @@
       },
       {
         "question": "What did John do the week before August 3, 2023 involving his kids?",
-        "answer": "Had a meaningful experience at a military memorial",
+        "answer": [
+          "Had a meaningful experience at a military memorial"
+        ],
         "evidence": [
           "D27:9"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 27,
         "where_ground_truth": [
           27
@@ -1721,11 +1794,14 @@
       },
       {
         "question": "How did John describe his kids' reaction at the military memorial?",
-        "answer": "awestruck and humbled",
+        "answer": [
+          "awestruck and humbled"
+        ],
         "evidence": [
           "D27:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -1733,11 +1809,14 @@
       },
       {
         "question": "Why does Maria think it's important for younger generations to visit military memorials?",
-        "answer": "To remember and appreciate those who served",
+        "answer": [
+          "To remember and appreciate those who served"
+        ],
         "evidence": [
           "D27:12"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -1745,11 +1824,14 @@
       },
       {
         "question": "What does John believe is important for children regarding veterans?",
-        "answer": "Teaching them to respect and appreciate those who served",
+        "answer": [
+          "Teaching them to respect and appreciate those who served"
+        ],
         "evidence": [
           "D27:13"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 27,
         "where_ground_truth": [
           27
@@ -1757,11 +1839,14 @@
       },
       {
         "question": "What happened to John's job in August 2023?",
-        "answer": "John lost his job at the mechanical engineering company.",
+        "answer": [
+          "John lost his job at the mechanical engineering company."
+        ],
         "evidence": [
           "D28:1"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -1769,11 +1854,14 @@
       },
       {
         "question": "What activity did Maria take up with her friends from church in August 2023?",
-        "answer": "community work",
+        "answer": [
+          "community work"
+        ],
         "evidence": [
           "D28:8"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -1781,11 +1869,14 @@
       },
       {
         "question": "What did John do to help his community last year in his hometown?",
-        "answer": "Helped renovate a rundown community center.",
+        "answer": [
+          "Helped renovate a rundown community center."
+        ],
         "evidence": [
           "D28:11"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 28,
         "where_ground_truth": [
           28
@@ -1793,11 +1884,14 @@
       },
       {
         "question": "What cause did the 5K charity run organized by John support?",
-        "answer": "veterans and their families",
+        "answer": [
+          "veterans and their families"
+        ],
         "evidence": [
           "D29:4"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1805,11 +1899,14 @@
       },
       {
         "question": "Who did John work with to raise awareness and funds for victims of domestic abuse?",
-        "answer": "a local organization",
+        "answer": [
+          "a local organization"
+        ],
         "evidence": [
           "D29:10"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1817,11 +1914,14 @@
       },
       {
         "question": "What recognition did Maria receive at the homeless shelter in August 2023?",
-        "answer": "a medal for volunteering",
+        "answer": [
+          "a medal for volunteering"
+        ],
         "evidence": [
           "D29:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 29,
         "where_ground_truth": [
           29
@@ -1829,11 +1929,14 @@
       },
       {
         "question": "What is the name of Maria's puppy she got two weeks before August 11, 2023?",
-        "answer": "Coco",
+        "answer": [
+          "Coco"
+        ],
         "evidence": [
           "D30:1"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 30,
         "where_ground_truth": [
           30
@@ -1841,11 +1944,14 @@
       },
       {
         "question": "What activity did John and Max enjoy together last summer?",
-        "answer": "Camping",
+        "answer": [
+          "Camping"
+        ],
         "evidence": [
           "D30:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 30,
         "where_ground_truth": [
           30
@@ -1853,11 +1959,14 @@
       },
       {
         "question": "How does John describe the camping trip with Max?",
-        "answer": "Peaceful and awesome",
+        "answer": [
+          "Peaceful and awesome"
+        ],
         "evidence": [
           "D30:6"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 30,
         "where_ground_truth": [
           30
@@ -1865,11 +1974,14 @@
       },
       {
         "question": "Why does John say he feels stuck and questioning his decisions and goals?",
-        "answer": "Not feeling like making much of an impact",
+        "answer": [
+          "Not feeling like making much of an impact"
+        ],
         "evidence": [
           "D30:14"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 30,
         "where_ground_truth": [
           30
@@ -1877,11 +1989,14 @@
       },
       {
         "question": "What is the name of Maria's second puppy?",
-        "answer": "Shadow",
+        "answer": [
+          "Shadow"
+        ],
         "evidence": [
           "D31:4"
         ],
         "category": 4,
+        "is_multi_modality": false,
         "where": 31,
         "where_ground_truth": [
           31
@@ -1889,11 +2004,14 @@
       },
       {
         "question": "How is Maria's new puppy adjusting to its new home?",
-        "answer": "doing great - learning commands and house training",
+        "answer": [
+          "doing great - learning commands and house training"
+        ],
         "evidence": [
           "D31:10"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 31,
         "where_ground_truth": [
           31
@@ -1901,23 +2019,14 @@
       },
       {
         "question": "What is John currently doing as a volunteer in August 2023?",
-        "answer": "mentoring students at a local school",
+        "answer": [
+          "mentoring students at a local school"
+        ],
         "evidence": [
           "D31:1"
         ],
         "category": 4,
-        "where": 31,
-        "where_ground_truth": [
-          31
-        ]
-      },
-      {
-        "question": "What activities does John's family enjoy doing together?",
-        "answer": "going for hikes, hanging out at the park, having picnics, playing board games, having movie nights",
-        "evidence": [
-          "D31:19"
-        ],
-        "category": 4,
+        "is_multi_modality": false,
         "where": 31,
         "where_ground_truth": [
           31
@@ -1925,506 +2034,94 @@
       },
       {
         "question": "What did the donations help John's community acquire on 16 August, 2023?",
-        "answer": "a brand new fire truck",
+        "answer": [
+          "a brand new fire truck"
+        ],
         "evidence": [
           "D32:11"
         ],
         "category": 4,
+        "is_multi_modality": true,
         "where": 32,
         "where_ground_truth": [
           32
         ]
       },
       {
-        "question": "What is John's main focus in international politics?",
-        "evidence": [
-          "D1:8"
+        "question": "What did Maria make for her home to remind her of a trip to England?",
+        "answer": [
+          "painting of a castle on a hill"
         ],
-        "category": 5,
-        "adversarial_answer": "Improving education and infrastructure",
-        "where": 1,
-        "where_ground_truth": [
-          1
-        ]
-      },
-      {
-        "question": "What did Maria donate to a luxury store in December 2023?",
-        "evidence": [
-          "D2:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "old car",
-        "where": 2,
-        "where_ground_truth": [
-          2
-        ]
-      },
-      {
-        "question": "Who inspired John to start volunteering?",
-        "evidence": [
-          "D5:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "His aunt",
-        "where": 5,
-        "where_ground_truth": [
-          5
-        ]
-      },
-      {
-        "question": "Why did Maria decide to run for office again?",
-        "evidence": [
-          "D7:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "saw the impact she could make in the community through politics",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What activity did Maria's colleague, Rob, invite her to?",
-        "evidence": [
-          "D7:16"
-        ],
-        "category": 5,
-        "adversarial_answer": "beginner's yoga class",
-        "where": 7,
-        "where_ground_truth": [
-          7
-        ]
-      },
-      {
-        "question": "What is the name of Maria's one-year-old child?",
-        "evidence": [
-          "D8:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "Kyle",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "How often does John take his kids to the library?",
-        "evidence": [
-          "D8:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "A few times a week",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What did Maria make for her home to remind her of a trip to France?",
         "evidence": [
           "D8:15"
         ],
-        "category": 5,
-        "adversarial_answer": "painting of a castle on a hill",
+        "category": 4,
+        "is_multi_modality": true,
         "where": 8,
         "where_ground_truth": [
           8
         ]
       },
       {
-        "question": "Where did John get the idea for the castle shadow box in his home?",
-        "evidence": [
-          "D8:15"
+        "question": "What did John receive a certificate for?",
+        "answer": [
+          "completion of a university degree"
         ],
-        "category": 5,
-        "adversarial_answer": "England",
-        "where": 8,
-        "where_ground_truth": [
-          8
-        ]
-      },
-      {
-        "question": "What did Maria receive a certificate for?",
         "evidence": [
           "D9:2"
         ],
-        "category": 5,
-        "adversarial_answer": "completion of a university degree",
+        "category": 4,
+        "is_multi_modality": true,
         "where": 9,
         "where_ground_truth": [
           9
         ]
       },
       {
-        "question": "What areas is John particularly interested in for art appreciation?",
-        "evidence": [
-          "D9:8"
+        "question": "In what activity did Maria and her church friends participate in July 2023?",
+        "answer": [
+          "hiking"
         ],
-        "category": 5,
-        "adversarial_answer": "education and infrastructure",
-        "where": 9,
+        "evidence": [
+          "D25:2"
+        ],
+        "category": 4,
+        "is_multi_modality": true,
+        "where": 25,
         "where_ground_truth": [
-          9
+          25
         ]
       },
       {
-        "question": "Why did Maria start blogging about politics and policies?",
-        "evidence": [
-          "D12:3"
+        "question": "When did Maria meet Jean?",
+        "answer": [
+          "February 24, 2023"
         ],
-        "category": 5,
-        "adversarial_answer": "raise awareness and start conversations to create positive change",
-        "where": 12,
+        "evidence": [
+          "D7:5"
+        ],
+        "category": 2,
+        "is_multi_modality": true,
+        "where": 7,
         "where_ground_truth": [
-          12
+          7
         ]
       },
       {
-        "question": "What was the focus of John's recent travel and photography blog?",
-        "evidence": [
-          "D12:5"
+        "question": "Around which US holiday did Maria get into a car accident?",
+        "answer": [
+          "Independence Day"
         ],
-        "category": 5,
-        "adversarial_answer": "education reform and infrastructure development",
-        "where": 12,
-        "where_ground_truth": [
-          12
-        ]
-      },
-      {
-        "question": "How often does Maria work out with her family?",
         "evidence": [
-          "D13:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "Three times a week",
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "How has John's artistic skills improved since starting boot camps with his family?",
-        "evidence": [
-          "D13:5"
-        ],
-        "category": 5,
-        "adversarial_answer": "More energy, gains in strength and endurance",
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "What kind of food did Maria have on her dinner spread with her father?",
-        "evidence": [
-          "D13:18"
-        ],
-        "category": 5,
-        "adversarial_answer": "Salads, sandwiches, homemade desserts",
-        "where": 13,
-        "where_ground_truth": [
-          13
-        ]
-      },
-      {
-        "question": "What did John do to feel closer to a community and his faith?",
-        "evidence": [
-          "D14:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "joined a nearby church",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "Why did John join a nearby church recently?",
-        "evidence": [
-          "D14:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "to feel closer to a community and her faith",
-        "where": 14,
-        "where_ground_truth": [
-          14
-        ]
-      },
-      {
-        "question": "How long was Max a part of Maria's family?",
-        "evidence": [
-          "D17:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "10 years",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "How does Maria plan to honor the memories of her beloved pet?",
-        "evidence": [
-          "D17:11"
-        ],
-        "category": 5,
-        "adversarial_answer": "By considering adopting a rescue dog",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "What important values does Maria want to teach her kids through adopting a rescue dog?",
-        "evidence": [
-          "D17:11"
-        ],
-        "category": 5,
-        "adversarial_answer": "Responsibility and compassion",
-        "where": 17,
-        "where_ground_truth": [
-          17
-        ]
-      },
-      {
-        "question": "What did Maria say it was like being at the desert in Oregon?",
-        "evidence": [
-          "D18:7"
-        ],
-        "category": 5,
-        "adversarial_answer": "Like being in a fairy tale",
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "What does John say she feels when doing upside-down yoga poses?",
-        "evidence": [
-          "D18:17"
-        ],
-        "category": 5,
-        "adversarial_answer": "Free and light",
-        "where": 18,
-        "where_ground_truth": [
-          18
-        ]
-      },
-      {
-        "question": "What did Maria recently get promoted to?",
-        "evidence": [
-          "D19:8"
-        ],
-        "category": 5,
-        "adversarial_answer": "assistant manager",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "What was one of the biggest challenges Maria faced in her journey to becoming assistant manager?",
-        "evidence": [
-          "D19:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "self-doubt",
-        "where": 19,
-        "where_ground_truth": [
-          19
-        ]
-      },
-      {
-        "question": "Why did John need to help his cousin find a new place to live?",
-        "evidence": [
+          "D21:3",
+          "D21:4",
           "D21:5"
         ],
-        "category": 5,
-        "adversarial_answer": "His cousin had to leave and find a new place in a hurry.",
+        "category": 3,
+        "is_multi_modality": true,
         "where": 21,
         "where_ground_truth": [
           21
-        ]
-      },
-      {
-        "question": "What event did Maria participate in to show support for veterans' rights?",
-        "evidence": [
-          "D21:22"
-        ],
-        "category": 5,
-        "adversarial_answer": "marching event",
-        "where": 21,
-        "where_ground_truth": [
-          21
-        ]
-      },
-      {
-        "question": "How did the drought impact the homes in John's old area?",
-        "evidence": [
-          "D23:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "Lots of homes were ruined.",
-        "where": 23,
-        "where_ground_truth": [
-          23
-        ]
-      },
-      {
-        "question": "What does John criticize about the veteran's hospital visit?",
-        "evidence": [
-          "D24:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "the resilience of the veterans and their inspiring stories",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "What did John take away from visiting the orphanage?",
-        "evidence": [
-          "D24:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "appreciation for giving back",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "Why did Maria feel inspired to join the military after the visit to the hospital?",
-        "evidence": [
-          "D24:3"
-        ],
-        "category": 5,
-        "adversarial_answer": "seeing the resilience of the veterans",
-        "where": 24,
-        "where_ground_truth": [
-          24
-        ]
-      },
-      {
-        "question": "How did Maria describe her kids' reaction at the military memorial?",
-        "evidence": [
-          "D27:11"
-        ],
-        "category": 5,
-        "adversarial_answer": "awestruck and humbled",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "Why does Maria think it's important for younger generations to visit art galleries?",
-        "evidence": [
-          "D27:12"
-        ],
-        "category": 5,
-        "adversarial_answer": "To remember and appreciate those who served",
-        "where": 27,
-        "where_ground_truth": [
-          27
-        ]
-      },
-      {
-        "question": "What happened to Maria's job in August 2023?",
-        "evidence": [
-          "D28:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "John lost his job at the mechanical engineering company.",
-        "where": 28,
-        "where_ground_truth": [
-          28
-        ]
-      },
-      {
-        "question": "What cause did the 5K charity run organized by Maria support?",
-        "evidence": [
-          "D29:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "veterans and their families",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "Who did John work with to raise awareness and funds for animal welfare?",
-        "evidence": [
-          "D29:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "a local organization",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What recognition did John receive at the homeless shelter in August 2023?",
-        "evidence": [
-          "D29:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "a medal for volunteering",
-        "where": 29,
-        "where_ground_truth": [
-          29
-        ]
-      },
-      {
-        "question": "What is the name of John's puppy he got two weeks before August 11, 2023?",
-        "evidence": [
-          "D30:1"
-        ],
-        "category": 5,
-        "adversarial_answer": "Coco",
-        "where": 30,
-        "where_ground_truth": [
-          30
-        ]
-      },
-      {
-        "question": "How does Maria describe the camping trip with Max?",
-        "evidence": [
-          "D30:6"
-        ],
-        "category": 5,
-        "adversarial_answer": "Peaceful and awesome",
-        "where": 30,
-        "where_ground_truth": [
-          30
-        ]
-      },
-      {
-        "question": "What is the name of Maria's second kitten?",
-        "evidence": [
-          "D31:4"
-        ],
-        "category": 5,
-        "adversarial_answer": "Shadow",
-        "where": 31,
-        "where_ground_truth": [
-          31
-        ]
-      },
-      {
-        "question": "How is John's new puppy adjusting to its new home?",
-        "evidence": [
-          "D31:10"
-        ],
-        "category": 5,
-        "adversarial_answer": "doing great - learning commands and house training",
-        "where": 31,
-        "where_ground_truth": [
-          31
         ]
       }
     ],

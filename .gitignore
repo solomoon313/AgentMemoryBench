@@ -42,6 +42,7 @@ outputs/
 .claude/
 AGENTS.md
 TASK_FAILURE_TYPES.md
+plan.md
 
 # other projects as references
 ref-project/

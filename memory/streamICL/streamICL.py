@@ -7,6 +7,7 @@ import re
 import random
 import numpy as np
 import logging
+from pathlib import Path
 
 from src.utils.message_schema import (
     extract_message_info,
@@ -21,7 +22,7 @@ try:
     HAS_DEPENDENCIES = True
 except ImportError: #"except" wiil not disturb the execution of file
     HAS_DEPENDENCIES = False
-    print("Warning: faiss, torch, or transformers not installed. StreamICL will not work.")
+    logging.warning("faiss, torch, or transformers not installed. StreamICL will not work.")
 
 from ..base import MemoryMechanism
 
@@ -139,6 +140,8 @@ class StreamICLMemory(MemoryMechanism):
         prompt_template: str = "Here are some examples of the task you have completed:\n\n{examples}",
         where: str = "tail",  # "tail": inject after user question | "front": inject before user question
         seed: int = 42,
+        storage_path: Optional[Path] = None,
+        include_reasoning_content: bool = True,
     ):
         """
         Initialize the StreamICL memory mechanism.
@@ -167,6 +170,10 @@ class StreamICLMemory(MemoryMechanism):
         self.reward_bigger_than_zero = reward_bigger_than_zero
         self.prompt_template = prompt_template
         self.where = where
+        self.storage_path = Path(storage_path) if storage_path else None
+        self.include_reasoning_content = include_reasoning_content
+        if self.storage_path:
+            self.storage_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Extract the template title from the prompt_template (used to detect injected memory)
         # e.g. "Here are some examples:\n\n{examples}" -> "Here are some examples:"
@@ -178,6 +185,43 @@ class StreamICLMemory(MemoryMechanism):
             self.rag = RAG(**self.rag_config)
         except Exception as e:
             raise ImportError(f"Failed to initialize RAG: {e}")
+        self._bootstrap_rag()
+
+    def _bootstrap_rag(self) -> None:
+        if not self.rag or not self.storage_path or not self.storage_path.exists():
+            return
+
+        try:
+            with self.storage_path.open("r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        record = json.loads(line)
+                    except Exception:
+                        continue
+                    key = str(record.get("key", "") or "").strip()
+                    value = str(record.get("value", "") or "").strip()
+                    if key and value:
+                        self.rag.insert(key=key, value=value)
+        except Exception as e:
+            logging.warning("[StreamICL] Failed to bootstrap storage from %s: %s", self.storage_path, e)
+
+    def _append_record(self, task: str, key: str, value: str, result: Dict[str, Any]) -> None:
+        if not self.storage_path:
+            return
+
+        record = {
+            "task": task,
+            "key": key,
+            "value": value,
+            "status": result.get("status", ""),
+            "reward": result.get("reward", 0),
+            "type": result.get("type", ""),
+        }
+        with self.storage_path.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
     def use_memory(self, task: str, messages: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """
@@ -189,6 +233,11 @@ class StreamICLMemory(MemoryMechanism):
         question = extract_original_question(messages, where=self.where, template_titles=template_titles)
         if not question:
             return list(messages) if messages is not None else []  # fallback; rarely triggered
+
+        if str(task).startswith("locomo-"):
+            question = self._extract_locomo_question(question)
+            if not question:
+                return list(messages) if messages is not None else []
 
         # Retrieve similar experiences from the global vector store
         if not self.rag:
@@ -210,6 +259,8 @@ class StreamICLMemory(MemoryMechanism):
         Called after a single sample finishes execution.
         Writes the new trajectory/result into the memory store.
         """
+        result_type = str(result.get("type", "") or "")
+
         status = result.get("status", "")
         reward = result.get("reward", 0)
         # is_success is based solely on status, independent of reward
@@ -217,29 +268,63 @@ class StreamICLMemory(MemoryMechanism):
 
         # Filter: if success_only=True, skip samples that did not complete successfully
         if self.success_only and not is_success:
-            print(f"[StreamICL] Skipping sample storage: success_only=True but sample not completed (status={status}, task={task})")
+            logging.debug(
+                "[StreamICL] Skipping sample storage: success_only=True but sample not completed "
+                "(status=%s, task=%s)",
+                status,
+                task,
+            )
             return
 
         # Filter: if reward_bigger_than_zero=True, skip samples with non-positive reward
         if self.reward_bigger_than_zero:
             if reward <= 0:
-                print(f"[StreamICL] Skipping sample storage: reward_bigger_than_zero=True but reward={reward} (task={task})")
+                logging.debug(
+                    "[StreamICL] Skipping sample storage: reward_bigger_than_zero=True but reward=%s (task=%s)",
+                    reward,
+                    task,
+                )
                 return
 
-        # Extract the question text from history (used as the retrieval key)
-        template_titles = [self.template_title]
-        question = extract_original_question(history, where=self.where, template_titles=template_titles)
-        if not question:
-            print(f"[StreamICL] Skipping sample storage: No question extracted from history (task={task})")
-            return
+        if str(task).startswith("locomo-") and result_type == "session_injection":
+            question = self._build_locomo_session_key(history)
+            chunk = self._format_locomo_session_experience(history)
+        else:
+            # Extract the question text from history (used as the retrieval key)
+            template_titles = [self.template_title]
+            question = extract_original_question(history, where=self.where, template_titles=template_titles)
+            if not question:
+                logging.debug(
+                    "[StreamICL] Skipping sample storage: No question extracted from history (task=%s)",
+                    task,
+                )
+                return
 
-        # Format the trajectory into an experience chunk
-        chunk = self._format_experience(history)
+            if str(task).startswith("locomo-"):
+                question = self._extract_locomo_question(question)
+                chunk = self._format_locomo_experience(history)
+            else:
+                chunk = self._format_experience(history)
+
+            if not question:
+                logging.debug(
+                    "[StreamICL] Skipping sample storage: No locomo question extracted from history (task=%s)",
+                    task,
+                )
+                return
+
+        if not chunk:
+            logging.debug(
+                "[StreamICL] Skipping sample storage: Empty formatted chunk (task=%s)",
+                task,
+            )
+            return
 
         # Insert into the global vector store (not partitioned by task)
         if not self.rag:
             return
         self.rag.insert(key=question, value=chunk)
+        self._append_record(task=task, key=question, value=chunk, result=result)
 
     def _format_experience(self, history: List[Dict[str, Any]]) -> str:
         """
@@ -285,8 +370,12 @@ class StreamICLMemory(MemoryMechanism):
             # Format assistant messages
             if role == "assistant":
                 tool_calls = msg_dict.get("tool_calls", []) if msg_dict else []
-                reasoning_content = msg_dict.get("reasoning_content", "") if msg_dict else ""
-                reasoning_content = reasoning_content[:500] + "..." if len(reasoning_content) > 500 else reasoning_content
+                reasoning_content = ""
+                if self.include_reasoning_content:
+                    reasoning_content = msg_dict.get("reasoning_content", "") if msg_dict else ""
+                    reasoning_content = (
+                        reasoning_content[:500] + "..." if len(reasoning_content) > 500 else reasoning_content
+                    )
                 think_part = f"<think>{reasoning_content}</think> " if reasoning_content else ""
 
                 if tool_calls:
@@ -314,6 +403,141 @@ class StreamICLMemory(MemoryMechanism):
         answer = "\n".join(answer_lines) if answer_lines else "Completed successfully."
         return f"Question: {question}\n{answer}"
 
+    def _format_locomo_experience(self, history: List[Dict[str, Any]]) -> str:
+        """
+        Serialize a Locomo sample into a cleaner QA example.
+
+        Output format:
+            Memories:
+            {full_memories_block}
+
+            Question: {question}
+            Answer:
+            Assistant: <think>{thinking}</think> {final_answer}
+
+        Notes:
+        - Keep session content as one big memories block; do not re-split it into User:/Assistant: turns.
+        - Keep only the answer trajectory: assistant reasoning + final answer.
+        - Drop all tool/judge artifacts such as `Tool: response: {"label": "CORRECT"}`.
+        """
+        template_titles = [self.template_title]
+        raw_prompt = extract_original_question(history, where=self.where, template_titles=template_titles)
+        if not raw_prompt:
+            return ""
+
+        memories_text, question = self._extract_locomo_memories_and_question(raw_prompt)
+        if not question:
+            return ""
+
+        think_text = ""
+        final_answer = ""
+        for msg in history:
+            role, content, msg_dict = extract_message_info(msg)
+            if role != "assistant":
+                continue
+
+            msg_dict = msg_dict or {}
+            cleaned_answer = self._clean_locomo_answer(str(content or ""))
+            if cleaned_answer:
+                final_answer = cleaned_answer
+
+            reasoning_content = ""
+            if self.include_reasoning_content:
+                reasoning_content = str(msg_dict.get("reasoning_content", "") or "")
+            if reasoning_content:
+                think_text = self._clean_locomo_reasoning(reasoning_content)
+
+        if not think_text and not final_answer:
+            return ""
+
+        answer_line = "Assistant:"
+        if think_text:
+            answer_line += f" <think>{think_text}</think>"
+        if final_answer:
+            answer_line += f" {final_answer}"
+
+        if memories_text:
+            return f"Memories:\n\n{memories_text}\n\nQuestion: {question}\nAnswer:\n{answer_line}"
+        return f"Question: {question}\nAnswer:\n{answer_line}"
+
+    @staticmethod
+    def _build_locomo_session_key(history: List[Dict[str, Any]]) -> str:
+        """Use the full session text as the retrieval key for locomo session injections."""
+        lines: List[str] = []
+        for msg in history:
+            role, content, _ = extract_message_info(msg)
+            if role in {"assistant", "user"} and content:
+                lines.append(str(content).strip())
+        return "\n".join(line for line in lines if line).strip()
+
+    def _format_locomo_session_experience(self, history: List[Dict[str, Any]]) -> str:
+        """
+        Store raw locomo session injections as a memories block.
+
+        These are learnable context chunks, but they are not QA examples.
+        """
+        session_text = self._build_locomo_session_key(history)
+        if not session_text:
+            return ""
+        return f"Memories:\n\n{session_text}"
+
+    @staticmethod
+    def _extract_locomo_memories_and_question(raw_prompt: str) -> tuple[str, str]:
+        text = str(raw_prompt or "").strip()
+        if not text:
+            return "", ""
+
+        match = re.search(
+            r"Memories:\s*(.*?)\s*Question:\s*(.*?)\s*Answer:\s*$",
+            text,
+            flags=re.DOTALL,
+        )
+        if match:
+            return match.group(1).strip(), match.group(2).strip()
+
+        question = StreamICLMemory._extract_locomo_question(text)
+        return "", question
+
+    @staticmethod
+    def _extract_locomo_question(raw_prompt: str) -> str:
+        text = str(raw_prompt or "").strip()
+        if not text:
+            return ""
+
+        match = re.search(r"Question:\s*(.*?)\s*Answer:\s*$", text, flags=re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        return text
+
+    @staticmethod
+    def _clean_locomo_answer(text: str) -> str:
+        cleaned = str(text or "").strip()
+        if not cleaned:
+            return ""
+
+        cleaned = re.sub(r"<think>.*?</think>", "", cleaned, flags=re.DOTALL | re.IGNORECASE)
+        cleaned = re.sub(r"</?think>", "", cleaned, flags=re.IGNORECASE)
+        cleaned = cleaned.strip()
+        return cleaned
+
+    @staticmethod
+    def _clean_locomo_reasoning(text: str) -> str:
+        cleaned = str(text or "").strip()
+        if not cleaned:
+            return ""
+
+        stop_markers = [
+            "\nTool: response:",
+            "\nTool:",
+            "\n--- Original Question Below ---",
+            "\nQuestion: Memories:",
+        ]
+        for marker in stop_markers:
+            if marker in cleaned:
+                cleaned = cleaned.split(marker, 1)[0].rstrip()
+
+        return cleaned.strip()
+
 
 def load_stream_icl_from_yaml(config_path: str) -> StreamICLMemory:
     """
@@ -334,6 +558,8 @@ def load_stream_icl_from_yaml(config_path: str) -> StreamICLMemory:
     reward_bigger_than_zero = bool(stream_icl_cfg.get("reward_bigger_than_zero", False))
     prompt_template = stream_icl_cfg.get("prompt_template", "Here are some examples of the task you have completed:\n\n{examples}")
     where = stream_icl_cfg.get("where", "tail")
+    storage_path = stream_icl_cfg.get("storage_path", "memory/streamICL/trajectories.jsonl")
+    include_reasoning_content = bool(stream_icl_cfg.get("include_reasoning_content", True))
 
     return StreamICLMemory(
         embedding_model=embedding_model,
@@ -344,4 +570,6 @@ def load_stream_icl_from_yaml(config_path: str) -> StreamICLMemory:
         prompt_template=prompt_template,
         where=where,
         seed=seed,
+        storage_path=Path(storage_path) if storage_path else None,
+        include_reasoning_content=include_reasoning_content,
     )

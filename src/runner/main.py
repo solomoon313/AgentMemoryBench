@@ -58,7 +58,7 @@ class LocomoSessionWrapper:
         self.locomo_task_instance = locomo_task_instance
         self.training_mode = training_mode
         self._loop = None
-        self._empty_response_retry_limit = 3
+        self._empty_response_retry_limit = 5
 
     def inject(self, messages):
         """注入消息到 history"""
@@ -93,82 +93,7 @@ class LocomoSessionWrapper:
             if msg.get("role") in ["system", "user", "assistant"]:
                 messages.append(msg)
 
-        # 对于 zero-shot + locomo 任务，需要特殊处理：
-        # 将当前 QA 所属的 session 以 user 角色插入到 system prompt 和当前问题之间
         if self.memory_for_enhance is not None:
-            from memory.zero_shot.zero_shot import ZeroShotMemory
-
-            # 检查是否是 zero-shot 方法
-            is_zero_shot = isinstance(self.memory_for_enhance, ZeroShotMemory)
-
-            if is_zero_shot and is_locomo_task(self.task_name) and self.locomo_task_instance is not None:
-                # Zero-shot + locomo：根据 where_ground_truth 插入对应的 session(s)
-                # where_ground_truth 是一个 list，包含该问题需要参考的所有 session id
-                sample_index = self.session_id  # session_id 在这里实际上是 sample_index
-                if sample_index < len(self.locomo_task_instance.qa_list):
-                    qa_item = self.locomo_task_instance.qa_list[sample_index]
-                    where_ground_truth = qa_item.get("where_ground_truth", [])
-
-                    # 如果没有 where_ground_truth，回退到使用 where（单个 session）
-                    if not where_ground_truth:
-                        current_session_id = qa_item.get("where")
-                        if current_session_id is not None:
-                            where_ground_truth = [current_session_id]
-
-                    if where_ground_truth:
-                        # Determine which sessions to inject based on training_mode:
-                        # - offline: inject ALL sessions (model has seen all conversations before testing)
-                        # - online/transfer/replay/repair: inject sessions 1..max(where_ground_truth),
-                        #   simulating what the agent has accumulated in the conversation stream so far
-                        all_session_ids = self.locomo_task_instance.session_ids
-                        if self.training_mode == "offline":
-                            sessions_to_inject = all_session_ids
-                        else:
-                            max_session = max(where_ground_truth)
-                            sessions_to_inject = [s for s in all_session_ids if s <= max_session]
-
-                        session_messages = []
-                        for session_id in sessions_to_inject:
-                            session_history = self.locomo_task_instance.get_session_history(session_id)
-                            for hist_item in session_history:
-                                session_messages.append({
-                                    "role": "user",
-                                    "content": hist_item.get("content", "")
-                                })
-
-                        # 插入位置：system prompt 之后，当前问题之前
-                        # messages 结构：[system_prompt, current_question]
-                        if len(messages) >= 2 and messages[0].get("role") == "system":
-                            # 在 system prompt 和 question 之间插入 session(s)
-                            messages = [messages[0]] + session_messages + messages[1:]
-                            print(f"  -> [Zero-shot + Locomo] Injected {len(sessions_to_inject)} session(s) {sessions_to_inject} ({len(session_messages)} messages) for QA {sample_index} (mode={self.training_mode})")
-
-                            # 同时将这些历史session消息注入到self.history中，以便保存时包含它们
-                            # 插入位置：在system prompt之后，current question之前
-                            # 找到self.history中system prompt的位置
-                            system_idx = -1
-                            for i, item in enumerate(self.history):
-                                if hasattr(item, 'root'):
-                                    msg = item.root
-                                elif isinstance(item, dict):
-                                    msg = item
-                                else:
-                                    continue
-
-                                if msg.get("role") == "system":
-                                    system_idx = i
-                                    break
-
-                            # 在system prompt之后插入历史session消息
-                            if system_idx >= 0:
-                                insert_position = system_idx + 1
-                                for session_msg in session_messages:
-                                    self.history.insert(insert_position, ChatCompletionUserMessageParam(
-                                        role="user",
-                                        content=session_msg.get("content", "")
-                                    ))
-                                    insert_position += 1
-
             # single_agent
             enhanced_messages = self.memory_for_enhance.use_memory(self.task_name, messages)
 
@@ -217,29 +142,49 @@ class LocomoSessionWrapper:
         # 直接调用 LLM agent
         agent = self.llm_agent
         assistant_messages = []
+        last_response = None
         for attempt in range(self._empty_response_retry_limit):
             response = agent.inference(enhanced_messages, tools=None)
+            last_response = response
             content = response.get("content")
             if content:
                 assistant_msg = {
                     "role": "assistant",
                     "content": content
                 }
+                reasoning_content = response.get("reasoning_content")
+                if reasoning_content:
+                    assistant_msg["reasoning_content"] = reasoning_content
                 assistant_messages.append(assistant_msg)
-                self.inject(ChatCompletionAssistantMessageParam(
-                    role="assistant",
-                    content=content
-                ))
+                self.inject(assistant_msg)
                 break
 
             logging.warning(
-                "[LocomoSessionWrapper] Empty assistant response for session %s "
-                "(attempt %s/%s); retrying...",
+                "[LocomoSessionWrapper] Empty assistant response for sample %s "
+                "(attempt %s/%s); retrying... keys=%s reasoning_present=%s tool_calls_present=%s",
                 self.session_id,
                 attempt + 1,
                 self._empty_response_retry_limit,
+                list(response.keys()),
+                bool(response.get("reasoning_content")),
+                bool(response.get("tool_calls")),
             )
             time.sleep(min(2 * (attempt + 1), 5))
+
+        if not assistant_messages:
+            logging.error(
+                "[LocomoSessionWrapper] Exhausted retries for sample %s; "
+                "recording an empty assistant message to avoid validation failure.",
+                self.session_id,
+            )
+            assistant_msg = {
+                "role": "assistant",
+                "content": "",
+            }
+            if last_response and last_response.get("reasoning_content"):
+                assistant_msg["reasoning_content"] = last_response["reasoning_content"]
+            assistant_messages.append(assistant_msg)
+            self.inject(assistant_msg)
 
         return AgentOutput(
             status=AgentOutputStatus.NORMAL,
